@@ -1,0 +1,78 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Preamble 
+\documentclass{scrartcl} 
+\usepackage{amsmath,amssymb,amsthm,fullpage} 
+
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{caption}
+\usepackage{subcaption}
+
+\begin{document}
+\pagenumbering{gobble}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Heading 
+	\title{SoPC Digital Oscilloscope Functional Specification}
+	\subtitle{EE/CS 52 - Winter 2014}
+	\author{Santiago Navonne} 
+	\date{} 
+	\maketitle
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Body
+	\section*{Description}
+	The system allows users to graphically visualize analog signals on an LCD display. Signals of frequencies up to 5 MHz, between -12 V and +12 V can be visualized.
+
+	Users operate a touch screen interface and a rotary encoder to choose between a variety of sample rates (100, 200, 500 ns; 1, 2, 5, 10, 20, 50, 100, 200, 500 us; 1, 2, 5, 10, 20 ms), and to configure triggering (level; slope, positive or negative; delay, up to 50000 sample times). Additionally, users can select points on the output waveform and obtain their voltages.
+
+	The system has a sampling resolution of 8 bits, a trigger level resolution of 7 bits, and captures and displays 640 data points. Data and configuration menus are displayed on a 3.5 inch, 320x240 pixel color TFT LCD.
+	
+	\section*{Inputs}
+	The system takes input through the user through a touch screen module overlaid on the display for selection, and a rotary encoder for plus/minus configuration. Data to be analyzed enters the system through an analog coaxial cable interface.
+	
+	\subsection*{Touch Screen}
+	A touch screen interface allows users to configure how the signals are visualized, and to obtain more information on them.
+	The touch screen is the same size as the display, 3.5 inches, and is accessed via a serial I2C connection.
+	
+	\subsection*{Rotary Encoder}
+	A rotary encoder allows users to increment or decrement the selected settings. The signal is decoded within the FPGA and transmitter on the data bus to the CPU.
+
+	\subsection*{Signal Probe}
+	The analog signal to be measured, after entering the system through a coaxial connector, is amplified and converted to digital by an analog/digital converter, and inserted into a FIFO memory unit. The FIFO memory unit is then accessed by the CPU for processing.
+	
+	\section*{Outputs}
+	The system outputs data for visualization purposes to a display.
+	
+	\subsection*{Display}
+	A 3.5 inch, 320x240 pixel TFT LCD display displays the signal measured, as well as configurable settings. The display is controlled through the VRAM and VRAM controller.
+	
+	\section*{User Interface}
+	Users interface with the system via the touch screen panel and the rotary encoder, visualizing data on the display.
+	
+	\subsection*{Displayed Data}
+	The captured signal is visualized on the display. In addition to the display, the following menus are available for configuration:
+	\begin{enumerate}
+		\item \textbf{Sample rate} displays the current sample rate.
+		\item \textbf{Trigger level} displays the current trigger level.
+		\item \textbf{Trigger slope} displays the current trigger slope.
+		\item \textbf{Trigger delay} displays the current trigger delay.
+	\end{enumerate}
+	
+	\subsection*{Touch Screen and Rotary Encoder Usage}
+	To change a parameter in the oscilloscope's configuration, users simply touch the screen where information about that parameter is displayed. This causes the system to enter configuration mode for that setting: the parameter is highlighted, and turning the rotary encoder causes the parameter to change. Rotating clockwise increments the value every 20 degrees, and rotating clockwise decrements it at the same rate. Touching the parameter again deactivates configuration mode. When no parameter is selected, turning the rotary encoder has no effect.
+
+	Additionally, users can visualize the voltage value of any point on the function by touching the screen on that point. The point is thus highlighted, and its value is shown next to it. When a value is displayed on the signal, rotating the rotary encoder causes the highlighted point to move along the waveform, displaying the voltage value for the corresponding point.
+	
+	\section*{Error Handling}
+	Voltages outside the supported range are not displayed.
+
+	\section*{Data Structures}
+	The system uses a FIFO memory unit to buffer the input from the signal probe, already scaled and converted to digital. Once the structure fills, an interrupt is thrown, causing the system to processes the signal and display it.
+	
+	\section*{Limitations}
+	The system is limited to signals of less than 5 MHz at the following sampling rates: 100, 200, 500 ns; 1, 2, 5, 10, 20, 50, 100, 200, 500 us; 1, 2, 5, 10, 20 ms. Additionally, the system only supports voltages between -12 V and 12 V, only captures and visualizes 640 data points, and is limited to a trigger delay of up to 50,000 sample times.
+	
+	\section*{Known Bugs}
+	None.
+		
+	\section*{Special Notes}
+	None.
+	
+	\end{document}
