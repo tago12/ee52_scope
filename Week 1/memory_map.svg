@@ -111,12 +111,7 @@
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;stroke:#000000;stroke-width:2.03160167px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 178.92105,504.85951 337.14285,0"
-       id="path3773-2"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:2.03160167px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 176.90074,654.36208 337.14285,0"
+       d="m 176.90074,512.36208 337.14285,0"
        id="path3773-3"
        inkscape:connector-curvature="0" />
     <path
@@ -153,25 +148,14 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="299.00516"
-       y="442.23004"
-       id="text3824"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3826"
-         x="299.00516"
-         y="442.23004">FIFO</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="288.90359"
-       y="593.75293"
+       x="284.20313"
+       y="455.48328"
        id="text3828"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3830"
-         x="288.90359"
-         y="593.75293">SRAM</tspan></text>
+         x="284.20313"
+         y="455.48328">SRAM</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -186,14 +170,14 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="331.33002"
-       y="779.62097"
+       x="336.36719"
+       y="712.36218"
        id="text3836"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3838"
-         x="331.33002"
-         y="779.62097">...</tspan></text>
+         x="336.36719"
+         y="712.36218">...</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -204,7 +188,7 @@
          sodipodi:role="line"
          id="tspan3842"
          x="534.16992"
-         y="72.118042">000000</tspan></text>
+         y="72.118042">00000</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -215,7 +199,7 @@
          sodipodi:role="line"
          id="tspan3842-8"
          x="534.16992"
-         y="172.11804">0FFFFF</tspan></text>
+         y="172.11804">0FFFF</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -226,7 +210,7 @@
          sodipodi:role="line"
          id="tspan3842-7"
          x="534.16992"
-         y="232.11804">100000</tspan></text>
+         y="232.11804">10000</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -237,7 +221,7 @@
          sodipodi:role="line"
          id="tspan3842-1"
          x="534.16992"
-         y="332.11804">1FFFFF</tspan></text>
+         y="332.11804">1FFFF</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -248,7 +232,7 @@
          sodipodi:role="line"
          id="tspan3842-0"
          x="534.16992"
-         y="386.73718">200000</tspan></text>
+         y="386.73718">20000</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -259,18 +243,7 @@
          sodipodi:role="line"
          id="tspan3842-9"
          x="534.16992"
-         y="486.73718">2FFFFF</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="534.16992"
-       y="646.73718"
-       id="text3840-46"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3842-03"
-         x="534.16992"
-         y="646.73718">3FFFFF</tspan></text>
+         y="486.73718">2FFFF</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -281,7 +254,7 @@
          sodipodi:role="line"
          id="tspan3842-2"
          x="534.16992"
-         y="912.11804">E00000</tspan></text>
+         y="912.11804">E0000</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -292,17 +265,6 @@
          sodipodi:role="line"
          id="tspan3842-88"
          x="534.16992"
-         y="992.11804">FFFFFF</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="534.16992"
-       y="532.11804"
-       id="text3840-1"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3842-21"
-         x="534.16992"
-         y="532.11804">300000</tspan></text>
+         y="992.11804">FFFFF</tspan></text>
   </g>
 </svg>
