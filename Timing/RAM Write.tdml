@@ -117,8 +117,8 @@
       <e id="TT57" driven="1" locked="1" s="Z" te="36500" tl="36500"/>
       <e id="TT58" driven="1" locked="1" s="Z" te="52632" tl="54632"/>
       <e id="TT191" driven="1" locked="1" s="V" te="59132" tl="59132"/>
-      <e id="TT208" driven="1" locked="1" s="V" te="105264" tl="107264"/>
-      <e id="TT149" driven="1" locked="1" s="X" te="111764" tl="111764"/>
+      <e id="TT208" driven="1" locked="1" s="V" te="131580" tl="133580"/>
+      <e id="TT149" driven="1" locked="1" s="X" te="138080" tl="138080"/>
       <e id="TT178" driven="1" locked="1" s="Z" te="163080" tl="163080"/>
     </waveform>
     <width>
@@ -188,10 +188,10 @@
       <relationship.label label.type="default"/>
     </relationship>
     <relationship id="TT171" containing.signal.ptr="TT43" show="1" slot="1" tdml.cc.ptr="TT155" type="hold" user.created="0">
-      <two.edge source.e="TT110" target.e="TT149"/>
+      <two.edge source.e="TT110" target.e="TT208"/>
       <relationship.label label.type="default"/>
     </relationship>
-    <relationship id="TT173" containing.signal.ptr="TT36" show="1" slot="2" tdml.cc.ptr="TT174" type="hold" user.created="0">
+    <relationship id="TT173" containing.signal.ptr="TT31" show="1" slot="1" tdml.cc.ptr="TT174" type="hold" user.created="1">
       <two.edge source.e="TT110" target.e="TT207"/>
       <relationship.label label.type="default"/>
     </relationship>
@@ -232,14 +232,14 @@
       <relationship.label label.type="default"/>
     </relationship>
     <relationship id="TT211" containing.signal.ptr="TT43" show="1" slot="3" tdml.cc.ptr="TT63" type="delay" user.created="0">
-      <two.edge source.e="TT209" target.e="TT208"/>
+      <two.edge source.e="TT228" target.e="TT208"/>
       <relationship.label label.type="default"/>
     </relationship>
     <relationship id="TT212" containing.signal.ptr="TT36" show="1" slot="2" tdml.cc.ptr="TT68" type="delay" user.created="1">
       <two.edge source.e="TT207" target.e="TT172"/>
       <relationship.label label.type="default"/>
     </relationship>
-    <relationship id="TT213" containing.signal.ptr="TT43" show="1" slot="2" tdml.cc.ptr="TT68" type="delay" user.created="0">
+    <relationship id="TT213" containing.signal.ptr="TT43" show="1" slot="2" tdml.cc.ptr="TT68" type="delay" user.created="1">
       <two.edge source.e="TT208" target.e="TT149"/>
       <relationship.label label.type="default"/>
     </relationship>
