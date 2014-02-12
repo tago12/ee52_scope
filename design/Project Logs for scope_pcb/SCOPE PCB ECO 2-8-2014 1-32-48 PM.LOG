@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=VCC33 Pin=C66-1
+Removed Pin From Net: NetName=GND Pin=C66-2
+Removed Pin From Net: NetName=VCC33 Pin=C67-1
+Removed Pin From Net: NetName=GND Pin=C67-2
+Added Component: Designator=C66(CAPC1608L)
+Added Component: Designator=C67(CAPC1608L)
+Added Component: Designator=P1(HDR1X2)
+Added Component: Designator=P2(BNC_RA CON)
+Added Pin To Net: NetName=VCC33 Pin=C66-1
+Added Pin To Net: NetName=GND Pin=C66-2
+Added Pin To Net: NetName=VCC33 Pin=C67-1
+Added Pin To Net: NetName=GND Pin=C67-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=D2-2
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetP1_1 Pin=P1-1
+Added Pin To Net: NetName=NetP1_1 Pin=P2-1
+Added Pin To Net: NetName=NetP1_1 Pin=R38-2
+Added Net: Name=NetP1_1
+Added Member To Class: ClassName=analog_frontend Member=Component P1 Header 2
+Added Member To Class: ClassName=analog_frontend Member=Component P2 BNC
+Added Room: Name=analog_frontend
+Added Room: Name=fpga_sch
+Added Room: Name=sram_rom
+Added Room: Name=user_input

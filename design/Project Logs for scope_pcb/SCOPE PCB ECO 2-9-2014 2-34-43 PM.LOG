@@ -1,0 +1,58 @@
+Removed Pin From Net: NetName=VCC33 Pin=C66-1
+Removed Pin From Net: NetName=AGND Pin=C66-2
+Removed Pin From Net: NetName=VCC33 Pin=C67-1
+Removed Pin From Net: NetName=AGND Pin=C67-2
+Added Component: Designator=C66(CAPC1608L)
+Added Component: Designator=C67(CAPC1608L)
+Added Component: Designator=C68(CAPC1608M)
+Added Component: Designator=C69(CAPC2012M)
+Added Component: Designator=C70(CAPC1608M)
+Added Component: Designator=D3(SOD123)
+Added Component: Designator=L1(INDC2012M)
+Added Component: Designator=R54(J1-0603)
+Added Component: Designator=R55(J1-0603)
+Added Component: Designator=R56(J1-0603)
+Added Component: Designator=U19(MF05A)
+Added Pin To Net: NetName=VCC33 Pin=C66-1
+Added Pin To Net: NetName=AGND Pin=C66-2
+Added Pin To Net: NetName=VCC33 Pin=C67-1
+Added Pin To Net: NetName=AGND Pin=C67-2
+Added Pin To Net: NetName=AGND Pin=C68-2
+Added Pin To Net: NetName=AGND Pin=C70-2
+Added Pin To Net: NetName=AGND Pin=R56-1
+Added Pin To Net: NetName=AGND Pin=U19-2
+Added Pin To Net: NetName=NetC69_1 Pin=C69-1
+Added Pin To Net: NetName=NetC69_1 Pin=R55-1
+Added Pin To Net: NetName=NetC69_1 Pin=R56-2
+Added Pin To Net: NetName=NetC69_1 Pin=U19-3
+Added Net: Name=NetC69_1
+Added Pin To Net: NetName=NetC69_2 Pin=C69-2
+Added Pin To Net: NetName=NetC69_2 Pin=C70-1
+Added Pin To Net: NetName=NetC69_2 Pin=R55-2
+Added Net: Name=NetC69_2
+Added Pin To Net: NetName=NetD3_1 Pin=D3-1
+Added Pin To Net: NetName=NetD3_1 Pin=L1-2
+Added Pin To Net: NetName=NetD3_1 Pin=U19-1
+Added Net: Name=NetD3_1
+Added Pin To Net: NetName=NetD3_2 Pin=D3-2
+Added Pin To Net: NetName=NetD3_2 Pin=J5-2
+Added Net: Name=NetD3_2
+Added Pin To Net: NetName=NetR54_2 Pin=R54-2
+Added Pin To Net: NetName=NetR54_2 Pin=U19-4
+Added Net: Name=NetR54_2
+Added Pin To Net: NetName=VCC Pin=C68-1
+Added Pin To Net: NetName=VCC Pin=L1-1
+Added Pin To Net: NetName=VCC Pin=R54-1
+Added Pin To Net: NetName=VCC Pin=U19-5
+Added Net: Name=VCC
+Added Member To Class: ClassName=user_input Member=Component C68 Cap2
+Added Member To Class: ClassName=user_input Member=Component C69 Cap2
+Added Member To Class: ClassName=user_input Member=Component C70 Cap2
+Added Member To Class: ClassName=user_input Member=Component D3 D Schottky
+Added Member To Class: ClassName=user_input Member=Component L1 Inductor
+Added Member To Class: ClassName=user_input Member=Component R53 Res3
+Added Member To Class: ClassName=user_input Member=Component R54 Res3
+Added Member To Class: ClassName=user_input Member=Component R55 Res3
+Added Member To Class: ClassName=user_input Member=Component R56 Res3
+Added Member To Class: ClassName=user_input Member=Component SW1 SW-ROTARY&PB
+Added Member To Class: ClassName=user_input Member=Component U19 LMR62014

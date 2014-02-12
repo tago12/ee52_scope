@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=SIG0 Pin=U3-37
+Removed Pin From Net: NetName=SIG1 Pin=U3-38
+Removed Pin From Net: NetName=SIG2 Pin=U3-40
+Removed Pin From Net: NetName=SIG3 Pin=U3-41
+Removed Pin From Net: NetName=SIG4 Pin=U3-43
+Removed Pin From Net: NetName=SIG5 Pin=U3-44
+Removed Pin From Net: NetName=SIG6 Pin=U3-46
+Removed Pin From Net: NetName=SIG7 Pin=U3-47
+Added Pin To Net: NetName=SIG7 Pin=U3-37
+Added Pin To Net: NetName=SIG6 Pin=U3-38
+Added Pin To Net: NetName=SIG5 Pin=U3-40
+Added Pin To Net: NetName=SIG4 Pin=U3-41
+Added Pin To Net: NetName=SIG3 Pin=U3-43
+Added Pin To Net: NetName=SIG2 Pin=U3-44
+Added Pin To Net: NetName=SIG1 Pin=U3-46
+Added Pin To Net: NetName=SIG0 Pin=U3-47

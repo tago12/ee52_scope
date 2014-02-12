@@ -1,0 +1,33 @@
+Removed Pin From Net: NetName=VCC33 Pin=C66-1
+Removed Pin From Net: NetName=AGND Pin=C66-2
+Removed Pin From Net: NetName=VCC33 Pin=C67-1
+Removed Pin From Net: NetName=AGND Pin=C67-2
+Removed Pin From Net: NetName=ROT1A Pin=R52-2
+Removed Pin From Net: NetName=ROT1B Pin=R53-2
+Removed Pin From Net: NetName=ROT1A Pin=SW1-1
+Removed Pin From Net: NetName=ROT1B Pin=SW1-3
+Change Component Designator: OldDesignator=R52 NewDesignator=R48
+Change Component Designator: OldDesignator=R52 NewDesignator=R51
+Change Component Designator: OldDesignator=R53 NewDesignator=R49
+Change Component Designator: OldDesignator=R53 NewDesignator=R52
+Change Component Designator: OldDesignator=R54 NewDesignator=R50
+Change Component Designator: OldDesignator=R54 NewDesignator=R53
+Change Component Designator: OldDesignator=SW1 NewDesignator=SW2
+Added Component: Designator=C66(CAPC1608L)
+Added Component: Designator=C67(CAPC1608L)
+Added Pin To Net: NetName=VCC33 Pin=C66-1
+Added Pin To Net: NetName=AGND Pin=C66-2
+Added Pin To Net: NetName=VCC33 Pin=C67-1
+Added Pin To Net: NetName=AGND Pin=C67-2
+Added Pin To Net: NetName=ROT1A Pin=R48-2
+Added Pin To Net: NetName=ROT1B Pin=R49-2
+Added Pin To Net: NetName=ROT0A Pin=R51-2
+Added Pin To Net: NetName=ROT0B Pin=R52-2
+Added Pin To Net: NetName=ROT0A Pin=SW1-1
+Added Pin To Net: NetName=ROT0B Pin=SW1-3
+Added Pin To Net: NetName=ROT1A Pin=SW2-1
+Added Pin To Net: NetName=ROT1B Pin=SW2-3
+Added Member To Class: ClassName=user_input Member=Component R51 Res3
+Added Member To Class: ClassName=user_input Member=Component R52 Res3
+Added Member To Class: ClassName=user_input Member=Component R53 Res3
+Added Member To Class: ClassName=user_input Member=Component SW2 SW-ROTARY&PB

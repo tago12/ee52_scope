@@ -1,0 +1,44 @@
+Removed Pin From Net: NetName=NetR3_1 Pin=U1-1
+Removed Pin From Net: NetName=PENIRQ Pin=U1-37
+Removed Pin From Net: NetName=SW0 Pin=U1-38
+Removed Pin From Net: NetName=SW1 Pin=U1-40
+Removed Pin From Net: NetName=SW2 Pin=U1-41
+Removed Pin From Net: NetName=SW3 Pin=U1-43
+Removed Pin From Net: NetName=SW4 Pin=U1-44
+Removed Pin From Net: NetName=ROT0 Pin=U1-46
+Removed Pin From Net: NetName=ROT1 Pin=U1-47
+Removed Pin From Net: NetName=NetR4_1 Pin=U1-48
+Removed Pin From Net: NetName=IO51 Pin=U7-1
+Removed Pin From Net: NetName=PIN28 Pin=U7-37
+Removed Pin From Net: NetName=PIN29 Pin=U7-38
+Removed Pin From Net: NetName=PIN30 Pin=U7-40
+Removed Pin From Net: NetName=PIN31 Pin=U7-41
+Removed Pin From Net: NetName=PIN32 Pin=U7-43
+Removed Pin From Net: NetName=PIN33 Pin=U7-44
+Removed Pin From Net: NetName=PIN34 Pin=U7-46
+Removed Pin From Net: NetName=PIN35 Pin=U7-47
+Removed Pin From Net: NetName=IO52 Pin=U7-48
+Added Pin To Net: NetName=IO51 Pin=U1-1
+Added Pin To Net: NetName=PIN28 Pin=U1-37
+Added Pin To Net: NetName=PIN29 Pin=U1-38
+Added Pin To Net: NetName=PIN30 Pin=U1-40
+Added Pin To Net: NetName=PIN31 Pin=U1-41
+Added Pin To Net: NetName=PIN32 Pin=U1-43
+Added Pin To Net: NetName=PIN33 Pin=U1-44
+Added Pin To Net: NetName=PIN34 Pin=U1-46
+Added Pin To Net: NetName=PIN35 Pin=U1-47
+Added Pin To Net: NetName=IO52 Pin=U1-48
+Added Pin To Net: NetName=NetR3_1 Pin=U7-1
+Added Pin To Net: NetName=PENIRQ Pin=U7-37
+Added Pin To Net: NetName=SW0 Pin=U7-38
+Added Pin To Net: NetName=SW1 Pin=U7-40
+Added Pin To Net: NetName=SW2 Pin=U7-41
+Added Pin To Net: NetName=SW3 Pin=U7-43
+Added Pin To Net: NetName=SW4 Pin=U7-44
+Added Pin To Net: NetName=ROT0 Pin=U7-46
+Added Pin To Net: NetName=ROT1 Pin=U7-47
+Added Pin To Net: NetName=NetR4_1 Pin=U7-48
+Added Room: Name=analog_frontend
+Added Room: Name=fpga_sch
+Added Room: Name=sram_rom
+Added Room: Name=user_input

@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=PENIRQ Pin=U7-26
+Removed Pin From Net: NetName=SW0 Pin=U7-27
+Removed Pin From Net: NetName=SW1 Pin=U7-29
+Removed Pin From Net: NetName=SW2 Pin=U7-30
+Removed Pin From Net: NetName=SW3 Pin=U7-32
+Removed Pin From Net: NetName=SW4 Pin=U7-33
+Removed Pin From Net: NetName=ROT0 Pin=U7-35
+Removed Pin From Net: NetName=ROT1 Pin=U7-36
+Added Pin To Net: NetName=SW0 Pin=U7-26
+Added Pin To Net: NetName=SW1 Pin=U7-27
+Added Pin To Net: NetName=SW2 Pin=U7-29
+Added Pin To Net: NetName=SW3 Pin=U7-30
+Added Pin To Net: NetName=SW4 Pin=U7-32
+Added Pin To Net: NetName=ROT0 Pin=U7-33
+Added Pin To Net: NetName=ROT1 Pin=U7-35
+Added Pin To Net: NetName=PENIRQ Pin=U7-36
+Added Room: Name=analog_frontend
+Added Room: Name=fpga_sch
+Added Room: Name=sram_rom
+Added Room: Name=user_input

@@ -20,7 +20,7 @@
       </connection>
     </conn.source>
   </sources>
-  <signal id="TT73" clock="1" falling.slope.degrees="90" rising.slope.degrees="90" show="1" show.grid="0">
+  <signal id="TT73" clock="1" falling.slope.degrees="90" rising.slope.degrees="90" show="1" show.grid="0" show.uncertainty="ALL">
     <conn.ptr conn.id="TT70">CLK</conn.ptr>
     <clock.info>
       <period>
@@ -45,12 +45,13 @@
         <number id="TT81">0</number>
       </uncertainty.rising>
     </clock.info>
-    <waveform id="TT72" locked="0">
-      <e id="TT74" driven="1" s="0"/>
-      <e id="TT82" driven="1" s="1" te="0" tl="0"/>
+    <waveform id="TT72" e.label.type="default" locked="0" show.uncertainty="ALL">
+      <e id="TT74" driven="1" s="0" show.uncertainty="ALL"/>
+      <e id="TT82" driven="1" s="1" show.uncertainty="ALL" te="0" tl="0"/>
+      <e id="TT18" driven="1" s="1" show.uncertainty="ALL" te="500000" tl="500000"/>
     </waveform>
   </signal>
-  <signal id="TT9" clock="1" falling.slope.degrees="90" rising.slope.degrees="90" show="1" show.grid="0">
+  <signal id="TT9" clock="1" falling.slope.degrees="90" rising.slope.degrees="90" show="1" show.grid="0" show.uncertainty="ALL">
     <conn.ptr conn.id="TT6">ACLK</conn.ptr>
     <clock.info>
       <period>
@@ -75,20 +76,20 @@
         <number id="TT17">0</number>
       </uncertainty.rising>
     </clock.info>
-    <waveform id="TT8" locked="0">
-      <e id="TT10" driven="1" s="0"/>
-      <e id="TT83" driven="1" locked="1" s="1" te="4500" tl="4500"/>
-      <e id="TT34" driven="1" s="1" te="404500" tl="404500"/>
-      <e id="TT46" driven="1" s="1" te="504500" tl="504500"/>
+    <waveform id="TT8" e.label.type="default" locked="0" show.uncertainty="ALL">
+      <e id="TT10" driven="1" s="0" show.uncertainty="ALL"/>
+      <e id="TT83" driven="1" locked="1" s="1" show.uncertainty="ALL" te="4500" tl="4500"/>
+      <e id="TT34" driven="1" s="1" show.uncertainty="ALL" te="404500" tl="404500"/>
+      <e id="TT46" driven="1" s="1" show.uncertainty="ALL" te="504500" tl="504500"/>
     </waveform>
   </signal>
-  <signal id="TT29" clock="0" show="1" show.grid="0">
+  <signal id="TT29" clock="0" show="1" show.grid="0" show.uncertainty="ALL">
     <conn.ptr conn.id="TT26">ADATA</conn.ptr>
-    <waveform id="TT28" locked="0">
-      <e id="TT30" driven="1" s="X"/>
-      <e id="TT33" driven="1" locked="1" s="X" te="416500" tl="416500"/>
-      <e id="TT56" driven="1" locked="1" s="V" te="421000" tl="421000"/>
-      <e id="TT45" driven="1" locked="1" s="X" te="508400" tl="508400"/>
+    <waveform id="TT28" e.label.type="default" locked="0" show.uncertainty="ALL">
+      <e id="TT30" driven="1" s="X" show.uncertainty="ALL"/>
+      <e id="TT33" driven="1" locked="1" s="X" show.uncertainty="ALL" te="416500" tl="416500"/>
+      <e id="TT56" driven="1" locked="1" s="V" show.uncertainty="ALL" te="421000" tl="421000"/>
+      <e id="TT45" driven="1" locked="1" s="X" show.uncertainty="ALL" te="508400" tl="508400"/>
     </waveform>
     <width>
       <msb>
@@ -104,7 +105,7 @@
       <two.edge source.e="TT34" target.e="TT33"/>
       <relationship.label label.type="default"/>
     </relationship>
-    <relationship id="TT47" containing.signal.ptr="TT29" show="1" slot="1" tdml.cc.ptr="TT48" type="delay" user.created="0">
+    <relationship id="TT47" containing.signal.ptr="TT29" show="1" slot="2" tdml.cc.ptr="TT48" type="delay" user.created="1">
       <two.edge source.e="TT46" target.e="TT45"/>
       <relationship.label label.type="default"/>
     </relationship>
@@ -116,9 +117,13 @@
       <two.edge source.e="TT82" target.e="TT83"/>
       <relationship.label label.type="default"/>
     </relationship>
+    <relationship id="TT19" containing.signal.ptr="TT29" show="1" slot="1" tdml.cc.ptr="TT20" type="hold" user.created="1">
+      <two.edge source.e="TT18" target.e="TT45"/>
+      <relationship.label label.type="default"/>
+    </relationship>
   </edge.relationships>
   <view.group>
-    <view begin.time="290000" end.time="610000"/>
+    <view begin.time="-90000" end.time="660000"/>
   </view.group>
   <cc.list>
     <title id="TT36">General Data</title>
@@ -153,6 +158,17 @@
         <number id="TT90">4.5</number>
         <order.of.mag id="TT91">n</order.of.mag>
         <unit id="TT92">s</unit>
+      </tdml.value>
+    </tdml.cc>
+    <tdml.cc id="TT20" show="1" static="1">
+      <parm id="P21">
+        <parm.symbol id="TT22">t<sub>RH</sub></parm.symbol>
+        <parm.desc id="TT23">Read cycle hold requirement</parm.desc>
+      </parm>
+      <tdml.value id="TT24" value.type="MIN">
+        <number id="TT25">0</number>
+        <order.of.mag id="TT38">n</order.of.mag>
+        <unit id="TT49">s</unit>
       </tdml.value>
     </tdml.cc>
   </cc.list>

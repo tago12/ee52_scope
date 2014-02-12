@@ -1,0 +1,63 @@
+Removed Pin From Net: NetName=VCC33 Pin=C62-1
+Removed Pin From Net: NetName=VCC33 Pin=C63-1
+Removed Member From Class: ClassName=fpga_sch Member=C55
+Removed Member From Class: ClassName=fpga_sch Member=C56
+Removed Member From Class: ClassName=fpga_sch Member=C61
+Removed Member From Class: ClassName=fpga_sch Member=C62
+Removed Member From Class: ClassName=fpga_sch Member=J5
+Removed Member From Class: ClassName=fpga_sch Member=R30
+Removed Member From Class: ClassName=fpga_sch Member=R31
+Removed Member From Class: ClassName=sram_rom Member=R36
+Removed Member From Class: ClassName=analog_frontend Member=R42
+Removed Member From Class: ClassName=analog_frontend Member=R43
+Removed Member From Class: ClassName=fpga_sch Member=U16
+Removed Member From Class: ClassName=fpga_sch Member=U17
+Removed Member From Class: ClassName=sram_rom Member=U17
+Removed Member From Class: ClassName=fpga_sch Member=U18
+Removed Member From Class: ClassName=sram_rom Member=U18
+Change Component DesignItemId : Designator=C63 Old DesignItemId=Cap2 New DesignItemId=Cap Pol3
+Change Component DesignItemId : Designator=D1 Old DesignItemId=D Zener New DesignItemId=D Schottky
+Change Component DesignItemId : Designator=D2 Old DesignItemId=D Zener New DesignItemId=D Schottky
+Change Component Footprint: Designator=C63 Old Footprint=CAPC1608L New Footprint=C0805
+Change Component Footprint: Designator=D1 Old Footprint=SOD323F New Footprint=SMB
+Change Component Footprint: Designator=D2 Old Footprint=SOD323F New Footprint=SMB
+Change Component Comment : Designator=C63 Old Comment=Cap2 New Comment=Cap Pol3
+Change Component Comment : Designator=D1 Old Comment=D Zener New Comment=D Schottky
+Change Component Comment : Designator=D2 Old Comment=D Zener New Comment=D Schottky
+Added Component: Designator=C64(CAPC1608L)
+Added Component: Designator=C65(C0805)
+Added Component: Designator=C66(CAPC1608L)
+Added Component: Designator=C67(CAPC1608L)
+Added Pin To Net: NetName=VCC+12 Pin=C62-1
+Added Pin To Net: NetName=VCC+12 Pin=C63-1
+Added Pin To Net: NetName=VCC-12 Pin=C64-1
+Added Pin To Net: NetName=GND Pin=C64-2
+Added Pin To Net: NetName=VCC-12 Pin=C65-1
+Added Pin To Net: NetName=GND Pin=C65-2
+Added Pin To Net: NetName=VCC33 Pin=C66-1
+Added Pin To Net: NetName=GND Pin=C66-2
+Added Pin To Net: NetName=VCC33 Pin=C67-1
+Added Pin To Net: NetName=GND Pin=C67-2
+Added Member To Class: ClassName=fpga_sch Member=Component C1 Cap Pol1
+Added Member To Class: ClassName=fpga_sch Member=Component C24 Cap Pol3
+Added Member To Class: ClassName=fpga_sch Member=Component C25 Cap Pol3
+Added Member To Class: ClassName=fpga_sch Member=Component C54 Cap Pol3
+Added Member To Class: ClassName=analog_frontend Member=Component C58 Cap2
+Added Member To Class: ClassName=analog_frontend Member=Component C59 Cap2
+Added Member To Class: ClassName=analog_frontend Member=Component C64 Cap2
+Added Member To Class: ClassName=analog_frontend Member=Component C65 Cap Pol3
+Added Member To Class: ClassName=fpga_sch Member=Component J4 PS_CONN
+Added Member To Class: ClassName=fpga_sch Member=Component R24 Res3
+Added Member To Class: ClassName=fpga_sch Member=Component R27 Res3
+Added Member To Class: ClassName=sram_rom Member=Component R32 Res3
+Added Member To Class: ClassName=analog_frontend Member=Component R40 Res3
+Added Member To Class: ClassName=analog_frontend Member=Component R41 Res3
+Added Member To Class: ClassName=fpga_sch Member=Component U11 TLV1117-ADJ
+Added Member To Class: ClassName=fpga_sch Member=Component U12 TLV1117-ADJ
+Added Member To Class: ClassName=fpga_sch Member=Component U13 TLV1117-33
+Added Member To Class: ClassName=sram_rom Member=Component U14 AM29F040B
+Added Member To Class: ClassName=sram_rom Member=Component U15 HM628128B
+Added Room: Name=analog_frontend
+Added Room: Name=fpga_sch
+Added Room: Name=sram_rom
+Added Room: Name=user_input
