@@ -1,0 +1,234 @@
+Removed Pin From Net: NetName=VCC33 Pin=C66-1
+Removed Pin From Net: NetName=AGND Pin=C66-2
+Removed Pin From Net: NetName=VCC33 Pin=C67-1
+Removed Pin From Net: NetName=AGND Pin=C67-2
+Removed Pin From Net: NetName=VCCA Pin=R5-1
+Removed Pin From Net: NetName=NetJ1_10 Pin=R5-2
+Removed Pin From Net: NetName=VCCA Pin=R6-1
+Removed Pin From Net: NetName=NetJ1_5 Pin=R6-2
+Removed Pin From Net: NetName=IO87 Pin=U1-22
+Removed Pin From Net: NetName=IO84 Pin=U1-23
+Removed Pin From Net: NetName=IO51 Pin=U1-24
+Removed Pin From Net: NetName=IO52 Pin=U1-25
+Removed Pin From Net: NetName=PIN28 Pin=U1-26
+Removed Pin From Net: NetName=PIN29 Pin=U1-27
+Removed Pin From Net: NetName=PIN30 Pin=U1-29
+Removed Pin From Net: NetName=PIN31 Pin=U1-30
+Removed Pin From Net: NetName=PIN32 Pin=U1-32
+Removed Pin From Net: NetName=PIN33 Pin=U1-33
+Removed Pin From Net: NetName=PIN34 Pin=U1-35
+Removed Pin From Net: NetName=PIN35 Pin=U1-36
+Removed Pin From Net: NetName=DE Pin=U1-41
+Removed Pin From Net: NetName=IO50 Pin=U3-2
+Removed Pin From Net: NetName=IO49 Pin=U3-3
+Removed Pin From Net: NetName=IO46 Pin=U3-5
+Removed Pin From Net: NetName=IO45 Pin=U3-6
+Removed Pin From Net: NetName=IO44 Pin=U3-8
+Removed Pin From Net: NetName=IO43 Pin=U3-9
+Removed Pin From Net: NetName=IO41 Pin=U3-11
+Removed Pin From Net: NetName=IO39 Pin=U3-12
+Removed Pin From Net: NetName=IO38 Pin=U3-13
+Removed Pin From Net: NetName=IO37 Pin=U3-14
+Removed Pin From Net: NetName=IO21 Pin=U3-16
+Removed Pin From Net: NetName=IO18 Pin=U3-17
+Removed Pin From Net: NetName=IO13 Pin=U3-19
+Removed Pin From Net: NetName=PIN15 Pin=U3-30
+Removed Pin From Net: NetName=PIN16 Pin=U3-32
+Removed Pin From Net: NetName=PIN17 Pin=U3-33
+Removed Pin From Net: NetName=PIN18 Pin=U3-35
+Removed Pin From Net: NetName=ACLK Pin=U3-36
+Removed Pin From Net: NetName=IO55 Pin=U7-1
+Removed Pin From Net: NetName=IO83 Pin=U7-2
+Removed Pin From Net: NetName=IO82 Pin=U7-3
+Removed Pin From Net: NetName=IO81 Pin=U7-5
+Removed Pin From Net: NetName=IO80 Pin=U7-6
+Removed Pin From Net: NetName=IO78 Pin=U7-8
+Removed Pin From Net: NetName=IO76 Pin=U7-9
+Removed Pin From Net: NetName=IO73 Pin=U7-11
+Removed Pin From Net: NetName=IO72 Pin=U7-12
+Removed Pin From Net: NetName=IO71 Pin=U7-13
+Removed Pin From Net: NetName=IO70 Pin=U7-14
+Removed Pin From Net: NetName=IO69 Pin=U7-16
+Removed Pin From Net: NetName=IO68 Pin=U7-17
+Removed Pin From Net: NetName=IO65 Pin=U7-19
+Removed Pin From Net: NetName=IO64 Pin=U7-20
+Removed Pin From Net: NetName=IO63 Pin=U7-22
+Removed Pin From Net: NetName=IO57 Pin=U7-23
+Removed Pin From Net: NetName=PIN19 Pin=U7-35
+Removed Pin From Net: NetName=PENIRQ Pin=U7-36
+Removed Pin From Net: NetName=IO56 Pin=U7-48
+Change Component Designator: OldDesignator=R7 NewDesignator=R9
+Change Component Designator: OldDesignator=R8 NewDesignator=R10
+Change Component Designator: OldDesignator=R9 NewDesignator=R11
+Change Component Designator: OldDesignator=R10 NewDesignator=R12
+Change Component Designator: OldDesignator=R11 NewDesignator=R13
+Change Component Designator: OldDesignator=R12 NewDesignator=R14
+Change Component Designator: OldDesignator=R13 NewDesignator=R15
+Change Component Designator: OldDesignator=R14 NewDesignator=R16
+Change Component Designator: OldDesignator=R15 NewDesignator=R17
+Change Component Designator: OldDesignator=R16 NewDesignator=R18
+Change Component Designator: OldDesignator=R17 NewDesignator=R19
+Change Component Designator: OldDesignator=R18 NewDesignator=R20
+Change Component Designator: OldDesignator=R19 NewDesignator=R21
+Change Component Designator: OldDesignator=R20 NewDesignator=R22
+Change Component Designator: OldDesignator=R21 NewDesignator=R23
+Change Component Designator: OldDesignator=R22 NewDesignator=R24
+Change Component Designator: OldDesignator=R23 NewDesignator=R25
+Change Component Designator: OldDesignator=R24 NewDesignator=R26
+Change Component Designator: OldDesignator=R25 NewDesignator=R27
+Change Component Designator: OldDesignator=R26 NewDesignator=R28
+Change Component Designator: OldDesignator=R27 NewDesignator=R29
+Change Component Designator: OldDesignator=R28 NewDesignator=R30
+Change Component Designator: OldDesignator=R29 NewDesignator=R31
+Change Component Designator: OldDesignator=R30 NewDesignator=R32
+Change Component Designator: OldDesignator=R31 NewDesignator=R33
+Change Component Designator: OldDesignator=R32 NewDesignator=R34
+Change Component Designator: OldDesignator=R33 NewDesignator=R35
+Change Component Designator: OldDesignator=R34 NewDesignator=R36
+Change Component Designator: OldDesignator=R35 NewDesignator=R37
+Change Component Designator: OldDesignator=R36 NewDesignator=R38
+Change Component Designator: OldDesignator=R37 NewDesignator=R39
+Change Component Designator: OldDesignator=R38 NewDesignator=R40
+Change Component Designator: OldDesignator=R39 NewDesignator=R41
+Change Component Designator: OldDesignator=R40 NewDesignator=R42
+Change Component Designator: OldDesignator=R41 NewDesignator=R43
+Change Component Designator: OldDesignator=R42 NewDesignator=R44
+Change Component Designator: OldDesignator=R43 NewDesignator=R45
+Change Component Designator: OldDesignator=R44 NewDesignator=R46
+Change Component Designator: OldDesignator=R45 NewDesignator=R47
+Change Component Designator: OldDesignator=R46 NewDesignator=R48
+Change Component Designator: OldDesignator=R47 NewDesignator=R49
+Change Component Designator: OldDesignator=R48 NewDesignator=R50
+Change Component Designator: OldDesignator=R49 NewDesignator=R51
+Change Component Designator: OldDesignator=R50 NewDesignator=R52
+Change Component Designator: OldDesignator=R51 NewDesignator=R53
+Change Component Designator: OldDesignator=R52 NewDesignator=R54
+Change Component Designator: OldDesignator=R53 NewDesignator=R55
+Change Component Designator: OldDesignator=R54 NewDesignator=R56
+Change Component Designator: OldDesignator=R55 NewDesignator=R57
+Change Component Designator: OldDesignator=R56 NewDesignator=R58
+Added Component: Designator=C66(CAPC1608L)
+Added Component: Designator=C67(CAPC1608L)
+Added Component: Designator=R7(J1-0603)
+Added Component: Designator=R8(J1-0603)
+Added Pin To Net: NetName=VCC33 Pin=C66-1
+Added Pin To Net: NetName=AGND Pin=C66-2
+Added Pin To Net: NetName=VCC33 Pin=C67-1
+Added Pin To Net: NetName=AGND Pin=C67-2
+Added Pin To Net: NetName=AGND Pin=R5-2
+Added Pin To Net: NetName=AGND Pin=R6-2
+Added Pin To Net: NetName=VCCA Pin=R7-1
+Added Pin To Net: NetName=NetJ1_10 Pin=R7-2
+Added Pin To Net: NetName=VCCA Pin=R8-1
+Added Pin To Net: NetName=NetJ1_5 Pin=R8-2
+Added Pin To Net: NetName=IO87 Pin=U1-23
+Added Pin To Net: NetName=ACLK Pin=U1-26
+Added Pin To Net: NetName=PIN32 Pin=U1-29
+Added Pin To Net: NetName=PIN33 Pin=U1-30
+Added Pin To Net: NetName=PIN34 Pin=U1-32
+Added Pin To Net: NetName=PIN35 Pin=U1-33
+Added Pin To Net: NetName=IO55 Pin=U3-2
+Added Pin To Net: NetName=IO52 Pin=U3-3
+Added Pin To Net: NetName=IO51 Pin=U3-5
+Added Pin To Net: NetName=IO50 Pin=U3-6
+Added Pin To Net: NetName=IO49 Pin=U3-8
+Added Pin To Net: NetName=IO46 Pin=U3-9
+Added Pin To Net: NetName=IO45 Pin=U3-11
+Added Pin To Net: NetName=IO44 Pin=U3-12
+Added Pin To Net: NetName=IO43 Pin=U3-13
+Added Pin To Net: NetName=IO41 Pin=U3-14
+Added Pin To Net: NetName=IO39 Pin=U3-16
+Added Pin To Net: NetName=IO38 Pin=U3-17
+Added Pin To Net: NetName=IO37 Pin=U3-19
+Added Pin To Net: NetName=IO21 Pin=U3-20
+Added Pin To Net: NetName=IO18 Pin=U3-22
+Added Pin To Net: NetName=IO13 Pin=U3-23
+Added Pin To Net: NetName=PIN15 Pin=U3-26
+Added Pin To Net: NetName=PIN16 Pin=U3-27
+Added Pin To Net: NetName=PIN17 Pin=U3-29
+Added Pin To Net: NetName=PIN18 Pin=U3-30
+Added Pin To Net: NetName=PIN28 Pin=U3-32
+Added Pin To Net: NetName=PIN29 Pin=U3-33
+Added Pin To Net: NetName=PIN30 Pin=U3-35
+Added Pin To Net: NetName=PIN31 Pin=U3-36
+Added Pin To Net: NetName=IO56 Pin=U7-1
+Added Pin To Net: NetName=IO84 Pin=U7-2
+Added Pin To Net: NetName=IO83 Pin=U7-3
+Added Pin To Net: NetName=IO82 Pin=U7-5
+Added Pin To Net: NetName=IO81 Pin=U7-6
+Added Pin To Net: NetName=IO80 Pin=U7-8
+Added Pin To Net: NetName=IO78 Pin=U7-9
+Added Pin To Net: NetName=IO76 Pin=U7-11
+Added Pin To Net: NetName=IO73 Pin=U7-12
+Added Pin To Net: NetName=IO72 Pin=U7-13
+Added Pin To Net: NetName=IO71 Pin=U7-14
+Added Pin To Net: NetName=IO70 Pin=U7-16
+Added Pin To Net: NetName=IO69 Pin=U7-17
+Added Pin To Net: NetName=IO68 Pin=U7-19
+Added Pin To Net: NetName=IO65 Pin=U7-20
+Added Pin To Net: NetName=IO64 Pin=U7-22
+Added Pin To Net: NetName=IO63 Pin=U7-23
+Added Pin To Net: NetName=PENIRQ Pin=U7-35
+Added Pin To Net: NetName=PIN19 Pin=U7-36
+Added Pin To Net: NetName=IO57 Pin=U7-48
+Change Net Name : Old Net Name=/CAS New Net Name=\CAS
+Change Net Name : Old Net Name=/RAS New Net Name=\RAS
+Change Net Name : Old Net Name=/WR New Net Name=\WR
+Change Net Name : Old Net Name=NetR8_1 New Net Name=NetR10_1
+Change Net Name : Old Net Name=NetR8_2 New Net Name=NetR10_2
+Change Net Name : Old Net Name=NetR9_1 New Net Name=NetR11_1
+Change Net Name : Old Net Name=NetR10_1 New Net Name=NetR12_1
+Change Net Name : Old Net Name=NetR11_2 New Net Name=NetR13_2
+Change Net Name : Old Net Name=NetR12_2 New Net Name=NetR14_2
+Change Net Name : Old Net Name=NetR13_2 New Net Name=NetR15_2
+Change Net Name : Old Net Name=NetR14_2 New Net Name=NetR16_2
+Change Net Name : Old Net Name=NetR15_1 New Net Name=NetR17_1
+Change Net Name : Old Net Name=NetR16_2 New Net Name=NetR18_2
+Change Net Name : Old Net Name=NetR17_1 New Net Name=NetR19_1
+Change Net Name : Old Net Name=NetR18_1 New Net Name=NetR20_1
+Change Net Name : Old Net Name=NetR19_1 New Net Name=NetR21_1
+Change Net Name : Old Net Name=NetR20_1 New Net Name=NetR22_1
+Change Net Name : Old Net Name=NetR21_1 New Net Name=NetR23_1
+Change Net Name : Old Net Name=NetR22_1 New Net Name=NetR24_1
+Change Net Name : Old Net Name=NetR23_1 New Net Name=NetR25_1
+Change Net Name : Old Net Name=NetR25_1 New Net Name=NetR27_1
+Change Net Name : Old Net Name=NetR26_1 New Net Name=NetR28_1
+Change Net Name : Old Net Name=NetR27_2 New Net Name=NetR29_2
+Change Net Name : Old Net Name=NetR28_2 New Net Name=NetR30_2
+Change Net Name : Old Net Name=NetR29_2 New Net Name=NetR31_2
+Change Net Name : Old Net Name=NetR30_2 New Net Name=NetR32_2
+Change Net Name : Old Net Name=NetR31_2 New Net Name=NetR33_2
+Change Net Name : Old Net Name=NetR32_2 New Net Name=NetR34_2
+Change Net Name : Old Net Name=NetR33_2 New Net Name=NetR35_2
+Change Net Name : Old Net Name=NetR34_2 New Net Name=NetR36_2
+Change Net Name : Old Net Name=NetR35_2 New Net Name=NetR37_2
+Change Net Name : Old Net Name=NetR36_1 New Net Name=NetR38_1
+Change Net Name : Old Net Name=NetR36_2 New Net Name=NetR38_2
+Change Net Name : Old Net Name=NetR37_2 New Net Name=NetR39_2
+Change Net Name : Old Net Name=NetR39_1 New Net Name=NetR41_1
+Change Net Name : Old Net Name=NetR39_2 New Net Name=NetR41_2
+Change Net Name : Old Net Name=NetR40_2 New Net Name=NetR42_2
+Change Net Name : Old Net Name=NetR42_2 New Net Name=NetR44_2
+Change Net Name : Old Net Name=NetR43_2 New Net Name=NetR45_2
+Change Net Name : Old Net Name=NetR44_2 New Net Name=NetR46_2
+Change Net Name : Old Net Name=NetR45_2 New Net Name=NetR47_2
+Change Net Name : Old Net Name=NetR46_1 New Net Name=NetR48_1
+Change Net Name : Old Net Name=NetR47_1 New Net Name=NetR49_1
+Change Net Name : Old Net Name=NetR54_2 New Net Name=NetR56_2
+Added Pin To Net: NetName=\TRG Pin=U1-37
+Added Net: Name=\TRG
+Added Pin To Net: NetName=\WEL/U Pin=U1-41
+Added Net: Name=\WEL/U
+Added Pin To Net: NetName=NetR5_1 Pin=R5-1
+Added Pin To Net: NetName=NetR5_1 Pin=U1-24
+Added Net: Name=NetR5_1
+Added Pin To Net: NetName=NetR6_1 Pin=R6-1
+Added Pin To Net: NetName=NetR6_1 Pin=U1-25
+Added Net: Name=NetR6_1
+Added Pin To Net: NetName=PIN36 Pin=J3-15
+Added Pin To Net: NetName=PIN36 Pin=U1-35
+Added Net: Name=PIN36
+Added Pin To Net: NetName=SCLK Pin=U1-36
+Added Net: Name=SCLK
+Added Member To Class: ClassName=fpga_sch Member=Component R28 Res3
+Added Member To Class: ClassName=fpga_sch Member=Component R29 Res3

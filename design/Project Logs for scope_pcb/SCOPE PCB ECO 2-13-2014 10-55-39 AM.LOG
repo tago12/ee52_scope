@@ -1,0 +1,106 @@
+Removed Pin From Net: NetName=VCC33 Pin=C66-1
+Removed Pin From Net: NetName=AGND Pin=C66-2
+Removed Pin From Net: NetName=VCC33 Pin=C67-1
+Removed Pin From Net: NetName=AGND Pin=C67-2
+Removed Pin From Net: NetName=DEV_OE Pin=J3-19
+Removed Pin From Net: NetName=DEV_CLRN Pin=J3-20
+Removed Pin From Net: NetName=NCEO Pin=J3-21
+Removed Pin From Net: NetName=VCCA Pin=R7-1
+Removed Pin From Net: NetName=NetJ1_10 Pin=R7-2
+Removed Pin From Net: NetName=VCCA Pin=R8-1
+Removed Pin From Net: NetName=NetJ1_5 Pin=R8-2
+Removed Pin From Net: NetName=PIN32 Pin=U1-29
+Removed Pin From Net: NetName=PIN33 Pin=U1-30
+Removed Pin From Net: NetName=PIN34 Pin=U1-32
+Removed Pin From Net: NetName=PIN35 Pin=U1-33
+Removed Pin From Net: NetName=PIN36 Pin=U1-35
+Removed Pin From Net: NetName=PIN15 Pin=U3-26
+Removed Pin From Net: NetName=PIN16 Pin=U3-27
+Removed Pin From Net: NetName=PIN17 Pin=U3-29
+Removed Pin From Net: NetName=PIN18 Pin=U3-30
+Removed Pin From Net: NetName=PIN28 Pin=U3-32
+Removed Pin From Net: NetName=PIN29 Pin=U3-33
+Removed Pin From Net: NetName=PIN30 Pin=U3-35
+Removed Pin From Net: NetName=PIN31 Pin=U3-36
+Removed Pin From Net: NetName=PIN19 Pin=U7-36
+Removed Pin From Net: NetName=PIN20 Pin=U7-37
+Removed Pin From Net: NetName=PIN21 Pin=U7-38
+Removed Pin From Net: NetName=PIN22 Pin=U7-40
+Removed Pin From Net: NetName=PIN23 Pin=U7-41
+Removed Pin From Net: NetName=PIN24 Pin=U7-43
+Removed Pin From Net: NetName=PIN25 Pin=U7-44
+Removed Pin From Net: NetName=PIN26 Pin=U7-46
+Removed Pin From Net: NetName=PIN27 Pin=U7-47
+Removed Pin From Net: NetName=PIN6 Pin=U10-30
+Removed Pin From Net: NetName=PIN7 Pin=U10-32
+Removed Pin From Net: NetName=PIN8 Pin=U10-33
+Removed Pin From Net: NetName=PIN9 Pin=U10-35
+Removed Pin From Net: NetName=PIN10 Pin=U10-36
+Removed Pin From Net: NetName=PIN11 Pin=U10-43
+Removed Pin From Net: NetName=PIN12 Pin=U10-44
+Removed Pin From Net: NetName=PIN13 Pin=U10-46
+Removed Pin From Net: NetName=PIN14 Pin=U10-47
+Removed Member From Class: ClassName=fpga_sch Member=R30
+Removed Member From Class: ClassName=fpga_sch Member=R35
+Removed Member From Class: ClassName=sram_rom Member=R35
+Removed Member From Class: ClassName=sram_rom Member=R36
+Removed Member From Class: ClassName=analog_frontend Member=R46
+Added Component: Designator=C66(CAPC1608L)
+Added Component: Designator=C67(CAPC1608L)
+Added Component: Designator=R7(J1-0603)
+Added Component: Designator=R8(J1-0603)
+Added Pin To Net: NetName=VCC33 Pin=C66-1
+Added Pin To Net: NetName=AGND Pin=C66-2
+Added Pin To Net: NetName=VCC33 Pin=C67-1
+Added Pin To Net: NetName=AGND Pin=C67-2
+Added Pin To Net: NetName=DEV_OE Pin=J3-20
+Added Pin To Net: NetName=DEV_CLRN Pin=J3-21
+Added Pin To Net: NetName=NCEO Pin=J3-22
+Added Pin To Net: NetName=VCCA Pin=R7-1
+Added Pin To Net: NetName=NetJ1_10 Pin=R7-2
+Added Pin To Net: NetName=VCCA Pin=R8-1
+Added Pin To Net: NetName=NetJ1_5 Pin=R8-2
+Added Pin To Net: NetName=PIN36 Pin=U1-29
+Added Pin To Net: NetName=PIN19 Pin=U3-26
+Added Pin To Net: NetName=PIN20 Pin=U3-27
+Added Pin To Net: NetName=PIN21 Pin=U3-29
+Added Pin To Net: NetName=PIN22 Pin=U3-30
+Added Pin To Net: NetName=PIN23 Pin=U3-32
+Added Pin To Net: NetName=PIN24 Pin=U3-33
+Added Pin To Net: NetName=PIN25 Pin=U3-35
+Added Pin To Net: NetName=PIN26 Pin=U3-36
+Added Pin To Net: NetName=PIN27 Pin=U7-36
+Added Pin To Net: NetName=PIN28 Pin=U7-37
+Added Pin To Net: NetName=PIN29 Pin=U7-38
+Added Pin To Net: NetName=PIN30 Pin=U7-40
+Added Pin To Net: NetName=PIN31 Pin=U7-41
+Added Pin To Net: NetName=PIN32 Pin=U7-43
+Added Pin To Net: NetName=PIN33 Pin=U7-44
+Added Pin To Net: NetName=PIN34 Pin=U7-46
+Added Pin To Net: NetName=PIN35 Pin=U7-47
+Added Pin To Net: NetName=PIN10 Pin=U10-30
+Added Pin To Net: NetName=PIN11 Pin=U10-32
+Added Pin To Net: NetName=PIN12 Pin=U10-33
+Added Pin To Net: NetName=PIN13 Pin=U10-35
+Added Pin To Net: NetName=PIN14 Pin=U10-36
+Added Pin To Net: NetName=PIN15 Pin=U10-43
+Added Pin To Net: NetName=PIN16 Pin=U10-44
+Added Pin To Net: NetName=PIN17 Pin=U10-46
+Added Pin To Net: NetName=PIN18 Pin=U10-47
+Added Pin To Net: NetName=PIN37 Pin=J3-16
+Added Pin To Net: NetName=PIN37 Pin=U1-30
+Added Net: Name=PIN37
+Added Pin To Net: NetName=PIN38 Pin=J3-17
+Added Pin To Net: NetName=PIN38 Pin=U1-32
+Added Net: Name=PIN38
+Added Pin To Net: NetName=PIN39 Pin=J3-18
+Added Pin To Net: NetName=PIN39 Pin=U1-33
+Added Net: Name=PIN39
+Added Pin To Net: NetName=PIN40 Pin=J3-19
+Added Pin To Net: NetName=PIN40 Pin=U1-35
+Added Net: Name=PIN40
+Added Member To Class: ClassName=fpga_sch Member=Component R7 Res3
+Added Member To Class: ClassName=fpga_sch Member=Component R8 Res3
+Added Member To Class: ClassName=sram_rom Member=Component R33 Res3
+Added Member To Class: ClassName=sram_rom Member=Component R34 Res3
+Added Member To Class: ClassName=analog_frontend Member=Component R42 Res3

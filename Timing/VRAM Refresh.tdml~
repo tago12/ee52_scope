@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE timing.diagram PUBLIC "-//TDML WorkingGroup//DTD XML-PCISTDML.DTD 1.1//EN" "xml-pcistdml.dtd">
+<timing.diagram default.time.units="1e-12" delay.rule="first" font.ptr="TT1" line.thickness="1" show.delays="1" show.holds="1" show.samples="1" show.setups="1" show.uncertainty="ALL">
+  <tdml.admin.info>
+    <tool.info id="TT2">
+      <tool.name id="TT3">TimingTool from www.timingtool.com</tool.name>
+      <tool.type id="TT4">Timing Diagram Editor</tool.type>
+    </tool.info>
+  </tdml.admin.info>
+  <sources>
+    <conn.source id="TT5">
+      <connection id="TT6" conn.type="O">
+        <conn.name id="TT7">CLK</conn.name>
+      </connection>
+      <connection id="TT18" conn.type="O">
+        <conn.name id="TT19"><not>RAS</not></conn.name>
+      </connection>
+      <connection id="TT23" conn.type="O">
+        <conn.name id="TT24"><not>CAS</not></conn.name>
+      </connection>
+      <connection id="TT28" conn.type="O">
+        <conn.name id="TT29"><not>WEL/U</not></conn.name>
+      </connection>
+    </conn.source>
+  </sources>
+  <signal id="TT9" clock="1" falling.slope.degrees="90" rising.slope.degrees="90" show="1" show.grid="0" show.uncertainty="ALL">
+    <conn.ptr conn.id="TT6">CLK</conn.ptr>
+    <clock.info>
+      <period>
+        <number id="TT11">26316</number>
+      </period>
+      <duty.cycle>
+        <number id="TT12">50</number>
+      </duty.cycle>
+      <time.offset>
+        <number id="TT13">0</number>
+      </time.offset>
+      <jitter.falling>
+        <number id="TT14">0</number>
+      </jitter.falling>
+      <jitter.rising>
+        <number id="TT15">0</number>
+      </jitter.rising>
+      <uncertainty.falling>
+        <number id="TT16">0</number>
+      </uncertainty.falling>
+      <uncertainty.rising>
+        <number id="TT17">0</number>
+      </uncertainty.rising>
+    </clock.info>
+    <waveform id="TT8" e.label.type="default" locked="0" show.uncertainty="ALL">
+      <e id="TT10" driven="1" s="0" show.uncertainty="ALL"/>
+    </waveform>
+  </signal>
+  <signal id="TT21" clock="0" falling.slope.degrees="60" rising.slope.degrees="60" show="1" show.grid="0" show.uncertainty="ALL">
+    <conn.ptr conn.id="TT18"><not>RAS</not></conn.ptr>
+    <waveform id="TT20" e.label.type="default" locked="0" show.uncertainty="ALL">
+      <e id="TT22" driven="1" s="X" show.uncertainty="ALL"/>
+      <e id="TT33" driven="1" s="X" show.uncertainty="ALL" te="3448"/>
+      <e id="TT34" driven="1" s="1" show.uncertainty="ALL" te="15270"/>
+      <e id="TT39" driven="1" s="X" show.uncertainty="ALL" te="86206"/>
+      <e id="TT40" driven="1" s="0" show.uncertainty="ALL" te="99014"/>
+      <e id="TT41" driven="1" s="X" show.uncertainty="ALL" te="264532"/>
+      <e id="TT42" driven="1" s="1" show.uncertainty="ALL" te="284236"/>
+    </waveform>
+  </signal>
+  <signal id="TT26" clock="0" falling.slope.degrees="60" rising.slope.degrees="60" show="1" show.grid="0" show.uncertainty="ALL">
+    <conn.ptr conn.id="TT23"><not>CAS</not></conn.ptr>
+    <waveform id="TT25" e.label.type="default" locked="0" show.uncertainty="ALL">
+      <e id="TT27" driven="1" s="X" show.uncertainty="ALL"/>
+      <e id="TT35" driven="1" s="X" show.uncertainty="ALL" te="22167"/>
+      <e id="TT36" driven="1" s="0" show.uncertainty="ALL" te="46798"/>
+    </waveform>
+  </signal>
+  <signal id="TT31" clock="0" falling.slope.degrees="60" rising.slope.degrees="60" show="1" show.grid="0" show.uncertainty="ALL">
+    <conn.ptr conn.id="TT28"><not>WEL/U</not></conn.ptr>
+    <waveform id="TT30" e.label.type="default" locked="0" show.uncertainty="ALL">
+      <e id="TT32" driven="1" s="X" show.uncertainty="ALL"/>
+      <e id="TT37" driven="1" s="X" show.uncertainty="ALL" te="12315"/>
+      <e id="TT38" driven="1" s="1" show.uncertainty="ALL" te="24137"/>
+    </waveform>
+  </signal>
+  <view.group>
+    <view begin.time="-300000" end.time="700000"/>
+  </view.group>
+  <font.list>
+    <font id="TT1" color="ff000080" face.name="Lucida Sans" point.size="11"/>
+  </font.list>
+  <user.defined>
+    <key>document.title</key>
+    <user.value>VRAM Refresh</user.value>
+  </user.defined>
+</timing.diagram>
