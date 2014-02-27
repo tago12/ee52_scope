@@ -103,8 +103,8 @@ applicable agreement for further details.
 	(port
 		(pt 168 96)
 		(output)
-		(text "WEL/U" (rect 0 0 37 14)(font "Arial" (font_size 8)))
-		(text "WEL/U" (rect 110 91 147 105)(font "Arial" (font_size 8)))
+		(text "WELU" (rect 0 0 34 14)(font "Arial" (font_size 8)))
+		(text "WELU" (rect 113 91 147 105)(font "Arial" (font_size 8)))
 		(line (pt 168 96)(pt 152 96))
 	)
 	(port

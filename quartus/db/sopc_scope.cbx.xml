@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="sopc_scope">
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_compare1:b2v_HSYNC_cmp|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_dfj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_compare3:b2v_SCLK_VSYNC_cmp0|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_lfj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_compare5:b2v_SCLK_HSYNC_cmp0|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_dfj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_counter0:b2v_DCLK_cnt|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_16i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|vram_ctrl:VRAM_controller|lpm_mux0:b2v_addr_mux|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_k6e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|vram_ctrl:VRAM_controller|vram_cnt:b2v_VRAM_addr_cnt|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_hjj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_compare0:b2v_VSYNC_cmp|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_lfj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_compare2:b2v_UREQ_cmp|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_6cj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_counter2:b2v_HSYNC_cnt|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_3uk.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_compare4:b2v_SCLK_VSYNC_cmp1|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_lcj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_compare6:b2v_SCLK_HSYNC_cmp1|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_dcj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_counter1:b2v_VSYNC_cnt|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_k7l.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

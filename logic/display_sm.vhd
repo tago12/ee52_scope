@@ -16,7 +16,7 @@
 --
 --  Revision History:
 --     13 Apr 04  Glen George       Initial template.
---     20 Feb 14  Glen George       Initial revision.
+--     20 Feb 14  Santiago Navonne  Initial revision.
 --
 ----------------------------------------------------------------------------
 
@@ -61,34 +61,34 @@ architecture  assign_statebits  of  VRAMCtrl  is
     -- define the actual states as constants
 
     -- bits are: RAS CAS TRG WE ASRC AROW UACK RDY ID[2..0]
-    constant  IDLE      : states := "111111000000";  -- waiting for events
+    constant  IDLE      : states := "11111100000";  -- waiting for events
 
-    constant  READ1     : states := "011111000000";  -- waiting for events
-    constant  READ2     : states := "010110000000";  -- waiting for events
-    constant  READ3     : states := "000110010000";  -- waiting for events
-    constant  READ4     : states := "001111000000";  -- waiting for events
-    constant  READ5     : states := "111111000001";  -- waiting for events
-    constant  READ6     : states := "111111000010";  -- waiting for events
+    constant  READ1     : states := "01111100000";  -- waiting for events
+    constant  READ2     : states := "01011000000";  -- waiting for events
+    constant  READ3     : states := "00011000000";  -- waiting for events
+    constant  READ4     : states := "00111101000";  -- waiting for events
+    constant  READ5     : states := "11111100001";  -- waiting for events
+    constant  READ6     : states := "11111100010";  -- waiting for events
 
-    constant  WRITE1    : states := "011111000001";  -- waiting for events
-    constant  WRITE2    : states := "011010000000";  -- waiting for events
-    constant  WRITE3    : states := "001010010000";  -- waiting for events
-    constant  WRITE4    : states := "111111000011";  -- waiting for events
-    constant  WRITE5    : states := "111111000100";  -- waiting for events
+    constant  WRITE1    : states := "01111100001";  -- waiting for events
+    constant  WRITE2    : states := "01101000000";  -- waiting for events
+    constant  WRITE3    : states := "00101001000";  -- waiting for events
+    constant  WRITE4    : states := "11111100011";  -- waiting for events
+    constant  WRITE5    : states := "11111100100";  -- waiting for events
 
-    constant  SERIAL1   : states := "110101000000";  -- waiting for events
-    constant  SERIAL2   : states := "010101000000";  -- waiting for events
-    constant  SERIAL3   : states := "011100000000";  -- waiting for events
-    constant  SERIAL4   : states := "001100000000";  -- waiting for events
-    constant  SERIAL5   : states := "111111100000";  -- waiting for events
-    constant  SERIAL6   : states := "111111000101";  -- waiting for events
+    constant  SERIAL1   : states := "11010100000";  -- waiting for events
+    constant  SERIAL2   : states := "01010100000";  -- waiting for events
+    constant  SERIAL3   : states := "01110000000";  -- waiting for events
+    constant  SERIAL4   : states := "00110000000";  -- waiting for events
+    constant  SERIAL5   : states := "11111110000";  -- waiting for events
+    constant  SERIAL6   : states := "11111100101";  -- waiting for events
 
-    constant  REFRESH1  : states := "101111000000";  -- waiting for events
-    constant  REFRESH2  : states := "001111000001";  -- waiting for events
-    constant  REFRESH3  : states := "001111000010";  -- waiting for events
-    constant  REFRESH4  : states := "001111000011";  -- waiting for events
-    constant  REFRESH5  : states := "111111000110";  -- waiting for events
-    constant  REFRESH6  : states := "111111000111";  -- waiting for events
+    constant  REFRESH1  : states := "10111100000";  -- waiting for events
+    constant  REFRESH2  : states := "00111100001";  -- waiting for events
+    constant  REFRESH3  : states := "00111100010";  -- waiting for events
+    constant  REFRESH4  : states := "00111100011";  -- waiting for events
+    constant  REFRESH5  : states := "11111100110";  -- waiting for events
+    constant  REFRESH6  : states := "11111100111";  -- waiting for events
 
     signal  CurrentState  :  states;    -- current state
     signal  NextState     :  states;    -- next state
@@ -121,7 +121,7 @@ begin
                 elsif  (cs = '0' and we = '1')  then
                     NextState <= READ1;        -- read request
                 elsif  (cs = '0' and we = '0')  then
-                    NextState <= READ1;        -- write request
+                    NextState <= WRITE1;        -- write request
                 else
                     NextState <= REFRESH1;     -- nothing to do; refresh
                 end if;
@@ -198,6 +198,9 @@ begin
 
             when  REFRESH6 =>         -- end refresh cycle
             	NextState <= IDLE;
+				
+				when  OTHERS   =>         -- default; needed for compilation
+				   NextState <= IDLE;
 
         end case;
 

@@ -42,7 +42,7 @@ USE lpm.all;
 ENTITY lpm_counter1 IS
 	PORT
 	(
-		aclr		: IN STD_LOGIC ;
+		aset		: IN STD_LOGIC ;
 		clock		: IN STD_LOGIC ;
 		q		: OUT STD_LOGIC_VECTOR (17 DOWNTO 0)
 	);
@@ -57,6 +57,7 @@ ARCHITECTURE SYN OF lpm_counter1 IS
 
 	COMPONENT lpm_counter
 	GENERIC (
+		lpm_avalue		: STRING;
 		lpm_direction		: STRING;
 		lpm_modulus		: NATURAL;
 		lpm_port_updown		: STRING;
@@ -64,7 +65,7 @@ ARCHITECTURE SYN OF lpm_counter1 IS
 		lpm_width		: NATURAL
 	);
 	PORT (
-			aclr	: IN STD_LOGIC ;
+			aset	: IN STD_LOGIC ;
 			clock	: IN STD_LOGIC ;
 			q	: OUT STD_LOGIC_VECTOR (17 DOWNTO 0)
 	);
@@ -75,6 +76,7 @@ BEGIN
 
 	LPM_COUNTER_component : LPM_COUNTER
 	GENERIC MAP (
+		lpm_avalue => "150149",
 		lpm_direction => "UP",
 		lpm_modulus => 150150,
 		lpm_port_updown => "PORT_UNUSED",
@@ -82,7 +84,7 @@ BEGIN
 		lpm_width => 18
 	)
 	PORT MAP (
-		aclr => aclr,
+		aset => aset,
 		clock => clock,
 		q => sub_wire0
 	);
@@ -94,10 +96,10 @@ END SYN;
 -- ============================================================
 -- CNX file retrieval info
 -- ============================================================
--- Retrieval info: PRIVATE: ACLR NUMERIC "1"
+-- Retrieval info: PRIVATE: ACLR NUMERIC "0"
 -- Retrieval info: PRIVATE: ALOAD NUMERIC "0"
--- Retrieval info: PRIVATE: ASET NUMERIC "0"
--- Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
+-- Retrieval info: PRIVATE: ASET NUMERIC "1"
+-- Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "0"
 -- Retrieval info: PRIVATE: CLK_EN NUMERIC "0"
 -- Retrieval info: PRIVATE: CNT_EN NUMERIC "0"
 -- Retrieval info: PRIVATE: CarryIn NUMERIC "0"
@@ -114,20 +116,21 @@ END SYN;
 -- Retrieval info: PRIVATE: nBit NUMERIC "18"
 -- Retrieval info: PRIVATE: new_diagram STRING "1"
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
+-- Retrieval info: CONSTANT: LPM_AVALUE STRING "150149"
 -- Retrieval info: CONSTANT: LPM_DIRECTION STRING "UP"
 -- Retrieval info: CONSTANT: LPM_MODULUS NUMERIC "150150"
 -- Retrieval info: CONSTANT: LPM_PORT_UPDOWN STRING "PORT_UNUSED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COUNTER"
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "18"
--- Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT NODEFVAL "aclr"
+-- Retrieval info: USED_PORT: aset 0 0 0 0 INPUT NODEFVAL "aset"
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL "clock"
 -- Retrieval info: USED_PORT: q 0 0 18 0 OUTPUT NODEFVAL "q[17..0]"
--- Retrieval info: CONNECT: @aclr 0 0 0 0 aclr 0 0 0 0
+-- Retrieval info: CONNECT: @aset 0 0 0 0 aset 0 0 0 0
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
 -- Retrieval info: CONNECT: q 0 0 18 0 @q 0 0 18 0
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_counter1.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_counter1.inc FALSE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_counter1.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_counter1.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_counter1.bsf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_counter1_inst.vhd FALSE
 -- Retrieval info: LIB_FILE: lpm

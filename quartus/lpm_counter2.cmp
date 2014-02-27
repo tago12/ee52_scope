@@ -16,7 +16,7 @@
 component lpm_counter2
 	PORT
 	(
-		aclr		: IN STD_LOGIC ;
+		aset		: IN STD_LOGIC ;
 		clock		: IN STD_LOGIC ;
 		q		: OUT STD_LOGIC_VECTOR (9 DOWNTO 0)
 	);

@@ -65,16 +65,16 @@
       <e id="TT40" driven="1" locked="1" s="0" show.uncertainty="ALL" te="32816" tl="32816"/>
       <e id="TT41" driven="1" locked="1" s="X" show.uncertainty="ALL" te="107264" tl="107264"/>
       <e id="TT42" driven="1" locked="1" s="1" show.uncertainty="ALL" te="111764" tl="111764"/>
-      <e id="TT43" driven="1" locked="1" s="X" show.uncertainty="ALL" te="159896" tl="159896"/>
+      <e id="TT43" driven="1" locked="1" s="1" show.uncertainty="ALL" te="159896" tl="159896"/>
     </waveform>
   </signal>
   <signal id="TT26" clock="0" falling.slope.degrees="60" rising.slope.degrees="60" show="1" show.grid="0" show.uncertainty="ALL">
     <conn.ptr conn.id="TT23"><not>CAS</not></conn.ptr>
     <waveform id="TT25" e.label.type="default" locked="0" show.uncertainty="ALL">
-      <e id="TT27" driven="1" s="X" show.uncertainty="ALL"/>
+      <e id="TT27" driven="1" s="1" show.uncertainty="ALL"/>
       <e id="TT35" driven="1" locked="1" s="X" show.uncertainty="ALL" te="2000" tl="2000"/>
       <e id="TT36" driven="1" locked="1" s="0" show.uncertainty="ALL" te="6500" tl="6500"/>
-      <e id="TT44" driven="1" locked="1" s="X" show.uncertainty="ALL" te="107264" tl="107264"/>
+      <e id="TT44" driven="1" locked="1" s="1" show.uncertainty="ALL" te="107264" tl="107264"/>
     </waveform>
   </signal>
   <signal id="TT31" clock="0" falling.slope.degrees="60" rising.slope.degrees="60" show="1" show.grid="0" show.uncertainty="ALL">

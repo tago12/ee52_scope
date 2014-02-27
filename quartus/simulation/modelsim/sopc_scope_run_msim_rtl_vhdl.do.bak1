@@ -1,0 +1,22 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/tago/Dropbox/OUT/EE 52/quartus/vram_cnt.vhd}
+vcom -93 -work work {C:/Users/tago/Dropbox/OUT/EE 52/quartus/display_ctrl.vhd}
+vcom -93 -work work {C:/Users/tago/Dropbox/OUT/EE 52/logic/display_sm.vhd}
+vcom -93 -work work {C:/Users/tago/Dropbox/OUT/EE 52/logic/lpm_mux0.vhd}
+vcom -93 -work work {C:/Users/tago/Dropbox/OUT/EE 52/quartus/lpm_counter0.vhd}
+vcom -93 -work work {C:/Users/tago/Dropbox/OUT/EE 52/quartus/lpm_counter1.vhd}
+vcom -93 -work work {C:/Users/tago/Dropbox/OUT/EE 52/quartus/lpm_counter2.vhd}
+vcom -93 -work work {C:/Users/tago/Dropbox/OUT/EE 52/quartus/lpm_compare0.vhd}
+vcom -93 -work work {C:/Users/tago/Dropbox/OUT/EE 52/quartus/lpm_compare1.vhd}
+vcom -93 -work work {C:/Users/tago/Dropbox/OUT/EE 52/quartus/lpm_compare2.vhd}
+vcom -93 -work work {C:/Users/tago/Dropbox/OUT/EE 52/quartus/lpm_compare3.vhd}
+vcom -93 -work work {C:/Users/tago/Dropbox/OUT/EE 52/quartus/lpm_compare4.vhd}
+vcom -93 -work work {C:/Users/tago/Dropbox/OUT/EE 52/quartus/lpm_compare5.vhd}
+vcom -93 -work work {C:/Users/tago/Dropbox/OUT/EE 52/quartus/lpm_compare6.vhd}
+

@@ -43,7 +43,7 @@ ENTITY lpm_compare0 IS
 	PORT
 	(
 		dataa		: IN STD_LOGIC_VECTOR (17 DOWNTO 0);
-		alb		: OUT STD_LOGIC 
+		ageb		: OUT STD_LOGIC 
 	);
 END lpm_compare0;
 
@@ -64,7 +64,7 @@ ARCHITECTURE SYN OF lpm_compare0 IS
 		lpm_width		: NATURAL
 	);
 	PORT (
-			alb	: OUT STD_LOGIC ;
+			ageb	: OUT STD_LOGIC ;
 			dataa	: IN STD_LOGIC_VECTOR (17 DOWNTO 0);
 			datab	: IN STD_LOGIC_VECTOR (17 DOWNTO 0)
 	);
@@ -73,7 +73,7 @@ ARCHITECTURE SYN OF lpm_compare0 IS
 BEGIN
 	sub_wire1_bv(17 DOWNTO 0) <= "000001010010000010";
 	sub_wire1    <= To_stdlogicvector(sub_wire1_bv);
-	alb    <= sub_wire0;
+	ageb    <= sub_wire0;
 
 	LPM_COMPARE_component : LPM_COMPARE
 	GENERIC MAP (
@@ -85,7 +85,7 @@ BEGIN
 	PORT MAP (
 		dataa => dataa,
 		datab => sub_wire1,
-		alb => sub_wire0
+		ageb => sub_wire0
 	);
 
 
@@ -96,10 +96,10 @@ END SYN;
 -- CNX file retrieval info
 -- ============================================================
 -- Retrieval info: PRIVATE: AeqB NUMERIC "0"
--- Retrieval info: PRIVATE: AgeB NUMERIC "0"
+-- Retrieval info: PRIVATE: AgeB NUMERIC "1"
 -- Retrieval info: PRIVATE: AgtB NUMERIC "0"
 -- Retrieval info: PRIVATE: AleB NUMERIC "0"
--- Retrieval info: PRIVATE: AltB NUMERIC "1"
+-- Retrieval info: PRIVATE: AltB NUMERIC "0"
 -- Retrieval info: PRIVATE: AneB NUMERIC "0"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone III"
 -- Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "0"
@@ -118,14 +118,14 @@ END SYN;
 -- Retrieval info: CONSTANT: LPM_REPRESENTATION STRING "UNSIGNED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COMPARE"
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "18"
--- Retrieval info: USED_PORT: alb 0 0 0 0 OUTPUT NODEFVAL "alb"
+-- Retrieval info: USED_PORT: ageb 0 0 0 0 OUTPUT NODEFVAL "ageb"
 -- Retrieval info: USED_PORT: dataa 0 0 18 0 INPUT NODEFVAL "dataa[17..0]"
 -- Retrieval info: CONNECT: @dataa 0 0 18 0 dataa 0 0 18 0
 -- Retrieval info: CONNECT: @datab 0 0 18 0 5250 0 0 18 0
--- Retrieval info: CONNECT: alb 0 0 0 0 @alb 0 0 0 0
+-- Retrieval info: CONNECT: ageb 0 0 0 0 @ageb 0 0 0 0
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare0.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare0.inc FALSE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare0.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare0.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare0.bsf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare0_inst.vhd FALSE
 -- Retrieval info: LIB_FILE: lpm

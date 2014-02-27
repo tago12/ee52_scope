@@ -67,6 +67,7 @@
       <e id="TT279" driven="1" s="1" show.uncertainty="ALL" te="52632" tl="52632"/>
       <e id="TT281" driven="1" s="1" show.uncertainty="ALL" te="78948" tl="78948"/>
       <e id="TT284" driven="1" s="1" show.uncertainty="ALL" te="105264" tl="105264"/>
+      <e id="TT41" driven="1" s="1" show.uncertainty="ALL" te="131580" tl="131580"/>
       <e id="TT40" driven="1" s="1" show.uncertainty="ALL" te="157896" tl="157896"/>
     </waveform>
   </signal>
@@ -74,8 +75,8 @@
     <conn.ptr conn.id="TT60">UACK</conn.ptr>
     <waveform id="TT62" e.label.type="default" locked="0" show.uncertainty="ALL">
       <e id="TT64" driven="1" s="0" show.uncertainty="ALL"/>
-      <e id="TT65" driven="1" locked="1" s="1" show.uncertainty="ALL" te="80948" tl="80948"/>
-      <e id="TT66" driven="1" locked="1" s="0" show.uncertainty="ALL" te="107264" tl="107264"/>
+      <e id="TT65" driven="1" locked="1" s="1" show.uncertainty="ALL" te="107264" tl="107264"/>
+      <e id="TT66" driven="1" locked="1" s="0" show.uncertainty="ALL" te="133580" tl="133580"/>
     </waveform>
   </signal>
   <signal id="TT21" clock="0" falling.slope.degrees="60" rising.slope.degrees="60" show="1" show.grid="0" show.uncertainty="ALL">
@@ -86,7 +87,7 @@
       <e id="TT47" driven="1" locked="1" s="0" show.uncertainty="ALL" te="32816" tl="32816"/>
       <e id="TT155" driven="1" locked="1" s="0" show.uncertainty="ALL" te="107264" tl="107264"/>
       <e id="TT156" driven="1" locked="1" s="1" show.uncertainty="ALL" te="111764" tl="111764"/>
-      <e id="TT157" driven="1" locked="1" s="X" show.uncertainty="ALL" te="159896" tl="159896"/>
+      <e id="TT157" driven="1" locked="1" s="1" show.uncertainty="ALL" te="159896" tl="159896"/>
     </waveform>
   </signal>
   <signal id="TT26" clock="0" falling.slope.degrees="60" rising.slope.degrees="60" show="1" show.grid="0" show.uncertainty="ALL">
@@ -95,7 +96,7 @@
       <e id="TT27" driven="1" s="1" show.uncertainty="ALL"/>
       <e id="TT48" driven="1" locked="1" s="1" show.uncertainty="ALL" te="80948" tl="80948"/>
       <e id="TT49" driven="1" locked="1" s="0" show.uncertainty="ALL" te="85448" tl="85448"/>
-      <e id="TT158" driven="1" locked="1" s="X" show.uncertainty="ALL" te="107264" tl="107264"/>
+      <e id="TT158" driven="1" locked="1" s="1" show.uncertainty="ALL" te="107264" tl="107264"/>
     </waveform>
   </signal>
   <signal id="TT84" clock="0" show="1" show.grid="0" show.uncertainty="ALL">
@@ -137,12 +138,12 @@
   <signal id="TT38" clock="0" falling.slope.degrees="60" rising.slope.degrees="60" show="1" show.grid="0" show.uncertainty="ALL">
     <conn.ptr conn.id="TT35"><not>TRG</not></conn.ptr>
     <waveform id="TT37" e.label.type="default" locked="0" show.uncertainty="ALL">
-      <e id="TT39" driven="1" s="X" show.uncertainty="ALL"/>
+      <e id="TT39" driven="1" s="1" show.uncertainty="ALL"/>
       <e id="TT55" driven="1" locked="1" s="X" show.uncertainty="ALL" te="2000" tl="2000"/>
       <e id="TT56" driven="1" locked="1" s="0" show.uncertainty="ALL" te="6500" tl="6500"/>
       <e id="TT57" driven="1" locked="1" s="X" show.uncertainty="ALL" te="54632" tl="54632"/>
       <e id="TT58" driven="1" locked="1" s="1" show.uncertainty="ALL" te="59132" tl="59132"/>
-      <e id="TT59" driven="1" locked="1" s="X" show.uncertainty="ALL" te="107264" tl="107264"/>
+      <e id="TT59" driven="1" locked="1" s="1" show.uncertainty="ALL" te="107264" tl="107264"/>
     </waveform>
   </signal>
   <edge.relationships>
@@ -275,11 +276,11 @@
       <relationship.label label.type="default"/>
     </relationship>
     <relationship id="TT306" containing.signal.ptr="TT63" show="1" slot="1" tdml.cc.ptr="TT71" type="delay" user.created="1">
-      <two.edge source.e="TT284" target.e="TT66"/>
+      <two.edge source.e="TT41" target.e="TT66"/>
       <relationship.label label.type="default"/>
     </relationship>
     <relationship id="TT308" containing.signal.ptr="TT63" show="1" slot="1" tdml.cc.ptr="TT71" type="delay" user.created="1">
-      <two.edge source.e="TT281" target.e="TT65"/>
+      <two.edge source.e="TT284" target.e="TT65"/>
       <relationship.label label.type="default"/>
     </relationship>
     <relationship id="TT132" containing.signal.ptr="TT104" show="1" slot="1" tdml.cc.ptr="TT71" type="delay" user.created="0">

@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 56 184 224 200)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "RESET" (rect 5 0 41 12)(font "Arial" ))
+	(text "RESET" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 56 168 224 184)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 27 12)(font "Arial" ))
+	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -343,8 +343,8 @@ applicable agreement for further details.
 	(port
 		(pt 168 96)
 		(output)
-		(text "WEL/U" (rect 0 0 37 14)(font "Arial" (font_size 8)))
-		(text "WEL/U" (rect 110 91 147 105)(font "Arial" (font_size 8)))
+		(text "WELU" (rect 0 0 34 14)(font "Arial" (font_size 8)))
+		(text "WELU" (rect 113 91 147 105)(font "Arial" (font_size 8)))
 		(line (pt 168 96)(pt 152 96))
 	)
 	(port
@@ -474,29 +474,5 @@ applicable agreement for further details.
 	(pt 264 176)
 	(pt 328 176)
 )
-(connector
-	(pt 216 352)
-	(pt 216 368)
-	(bus)
-)
-(connector
-	(text "ADDR[8..0]" (rect 226 336 283 348)(font "Arial" ))
-	(pt 304 352)
-	(pt 216 352)
-	(bus)
-)
-(connector
-	(text "ADDR[17..9]" (rect 226 352 289 364)(font "Arial" ))
-	(pt 304 368)
-	(pt 216 368)
-	(bus)
-)
-(connector
-	(text "ADDR[17..0]" (rect 200 440 212 503)(font "Arial" )(vertical))
-	(pt 216 368)
-	(pt 216 504)
-	(bus)
-)
 (junction (pt 248 192))
 (junction (pt 264 176))
-(junction (pt 216 368))
