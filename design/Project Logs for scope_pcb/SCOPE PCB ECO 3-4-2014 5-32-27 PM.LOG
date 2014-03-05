@@ -1,0 +1,8 @@
+Removed Member From Class: ClassName=user_input Member=C62
+Removed Member From Class: ClassName=user_input Member=C63
+Added Member To Class: ClassName=user_input Member=Component C66 Cap2
+Added Member To Class: ClassName=user_input Member=Component C67 Cap2
+Added Member To Class: ClassName=fpga_sch Member=Component R7 Res3
+Added Member To Class: ClassName=fpga_sch Member=Component R8 Res3
+Added Member To Class: ClassName=fpga_sch Member=Component R21 Res3
+Added Member To Class: ClassName=fpga_sch Member=Component R22 Res3

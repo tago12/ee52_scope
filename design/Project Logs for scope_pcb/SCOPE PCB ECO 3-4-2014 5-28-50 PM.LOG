@@ -1,0 +1,47 @@
+Removed Pin From Net: NetName=VCC33 Pin=C66-1
+Removed Pin From Net: NetName=AGND Pin=C66-2
+Removed Pin From Net: NetName=VCC33 Pin=C67-1
+Removed Pin From Net: NetName=AGND Pin=C67-2
+Removed Pin From Net: NetName=VCCA Pin=R7-1
+Removed Pin From Net: NetName=NetJ1_10 Pin=R7-2
+Removed Pin From Net: NetName=VCCA Pin=R8-1
+Removed Pin From Net: NetName=NetJ1_5 Pin=R8-2
+Removed Pin From Net: NetName=NetR21_1 Pin=R21-1
+Removed Pin From Net: NetName=VCC33 Pin=R21-2
+Removed Pin From Net: NetName=NetR22_1 Pin=R22-1
+Removed Pin From Net: NetName=AGND Pin=R22-2
+Removed Pin From Net: NetName=TRG Pin=R70-1
+Removed Pin From Net: NetName=TRG Pin=R71-1
+Added Component: Designator=C66(CAPC1608L)
+Added Component: Designator=C67(CAPC1608L)
+Added Component: Designator=R7(J1-0603)
+Added Component: Designator=R8(J1-0603)
+Added Component: Designator=R21(J1-0603)
+Added Component: Designator=R22(J1-0603)
+Added Pin To Net: NetName=VCC33 Pin=C66-1
+Added Pin To Net: NetName=AGND Pin=C66-2
+Added Pin To Net: NetName=VCC33 Pin=C67-1
+Added Pin To Net: NetName=AGND Pin=C67-2
+Added Pin To Net: NetName=VCCA Pin=R7-1
+Added Pin To Net: NetName=NetJ1_10 Pin=R7-2
+Added Pin To Net: NetName=VCCA Pin=R8-1
+Added Pin To Net: NetName=NetJ1_5 Pin=R8-2
+Added Pin To Net: NetName=NetR21_1 Pin=R21-1
+Added Pin To Net: NetName=VCC33 Pin=R21-2
+Added Pin To Net: NetName=NetR22_1 Pin=R22-1
+Added Pin To Net: NetName=AGND Pin=R22-2
+Added Pin To Net: NetName=TRG Pin=U1-37
+Added Pin To Net: NetName=CAS Pin=U1-38
+Added Pin To Net: NetName=RAS Pin=U1-40
+Added Pin To Net: NetName=WEL/U Pin=U1-41
+Change Net Name : Old Net Name=WEL/U New Net Name=WELU
+Added Pin To Net: NetName=NetR70_1 Pin=R70-1
+Added Pin To Net: NetName=NetR70_1 Pin=U20-41
+Added Net: Name=NetR70_1
+Added Pin To Net: NetName=NetR71_1 Pin=R71-1
+Added Pin To Net: NetName=NetR71_1 Pin=U21-41
+Added Net: Name=NetR71_1
+Added Member To Class: ClassName=fpga_sch Member=Component R7 Res3
+Added Member To Class: ClassName=fpga_sch Member=Component R8 Res3
+Added Member To Class: ClassName=fpga_sch Member=Component R21 Res3
+Added Member To Class: ClassName=fpga_sch Member=Component R22 Res3
