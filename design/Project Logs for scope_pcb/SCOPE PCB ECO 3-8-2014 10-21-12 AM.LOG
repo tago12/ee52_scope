@@ -1,0 +1,52 @@
+Removed Pin From Net: NetName=DATA2 Pin=J2-1
+Removed Pin From Net: NetName=DATA3 Pin=J2-2
+Removed Pin From Net: NetName=DATA4 Pin=J2-3
+Removed Pin From Net: NetName=DATA5 Pin=J2-4
+Removed Pin From Net: NetName=DATA6 Pin=J2-5
+Removed Pin From Net: NetName=DATA7 Pin=J2-6
+Removed Pin From Net: NetName=DEV_OE Pin=J3-20
+Removed Pin From Net: NetName=DEV_CLRN Pin=J3-21
+Removed Pin From Net: NetName=NCEO Pin=J3-22
+Removed Pin From Net: NetName=PIN12 Pin=U10-35
+Removed Pin From Net: NetName=PIN13 Pin=U10-36
+Removed Pin From Net: NetName=PIN14 Pin=U10-41
+Removed Pin From Net: NetName=PIN15 Pin=U10-43
+Removed Pin From Net: NetName=PIN16 Pin=U10-44
+Removed Pin From Net: NetName=PIN17 Pin=U10-46
+Removed Pin From Net: NetName=PIN18 Pin=U10-47
+Change Component Footprint: Designator=W1 Old Footprint=HDR1X2 New Footprint=SIP2
+Added Pin To Net: NetName=PIN22 Pin=J2-1
+Added Pin To Net: NetName=VCC5 Pin=J2-2
+Added Pin To Net: NetName=PIN22 Pin=J2-3
+Added Pin To Net: NetName=VCC33 Pin=J2-4
+Added Pin To Net: NetName=PIN22 Pin=J2-5
+Added Pin To Net: NetName=DATA2 Pin=J2-6
+Added Pin To Net: NetName=DATA3 Pin=J2-7
+Added Pin To Net: NetName=DATA4 Pin=J2-8
+Added Pin To Net: NetName=DATA5 Pin=J2-9
+Added Pin To Net: NetName=DATA6 Pin=J2-10
+Added Pin To Net: NetName=DATA7 Pin=J2-11
+Added Pin To Net: NetName=PIN22 Pin=J2-12
+Added Pin To Net: NetName=DEV_OE Pin=J3-16
+Added Pin To Net: NetName=DEV_CLRN Pin=J3-17
+Added Pin To Net: NetName=NCEO Pin=J3-18
+Added Pin To Net: NetName=PIN22 Pin=J3-19
+Added Pin To Net: NetName=PIN22 Pin=J3-20
+Added Pin To Net: NetName=VCC33 Pin=J3-21
+Added Pin To Net: NetName=VCC5 Pin=J3-22
+Added Pin To Net: NetName=PIN12 Pin=U10-30
+Added Pin To Net: NetName=PIN13 Pin=U10-32
+Added Pin To Net: NetName=PIN14 Pin=U10-33
+Added Pin To Net: NetName=PIN15 Pin=U10-35
+Added Pin To Net: NetName=PIN16 Pin=U10-36
+Added Pin To Net: NetName=PIN17 Pin=U10-41
+Added Pin To Net: NetName=PIN18 Pin=U10-43
+Added Pin To Net: NetName=PIN19 Pin=U10-44
+Added Pin To Net: NetName=PIN20 Pin=U10-46
+Added Pin To Net: NetName=PIN21 Pin=U10-47
+Added Member To Class: ClassName=sram_rom Member=Component C56 Cap2
+Added Room: Name=analog_frontend
+Added Room: Name=fpga_sch
+Added Room: Name=sram_rom
+Added Room: Name=user_input
+Added Room: Name=vram

@@ -1,0 +1,12 @@
+Change Component Footprint: Designator=C63 Old Footprint=C0805 New Footprint=C2413
+Change Component Footprint: Designator=C65 Old Footprint=C0805 New Footprint=C2413
+Change Component Footprint: Designator=C1 Old Footprint=RB7.6-15 New Footprint=CAPC3225M
+Added Pin To Net: NetName=VCC+12 Pin=C68-1
+Added Pin To Net: NetName=VCC+12 Pin=L1-1
+Added Pin To Net: NetName=VCC+12 Pin=R58-1
+Added Pin To Net: NetName=VCC+12 Pin=U19-5
+Added Room: Name=analog_frontend
+Added Room: Name=fpga_sch
+Added Room: Name=sram_rom
+Added Room: Name=user_input
+Added Room: Name=vram

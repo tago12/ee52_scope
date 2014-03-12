@@ -1,0 +1,67 @@
+Removed Pin From Net: NetName=PIN19 Pin=U3-26
+Removed Pin From Net: NetName=PIN20 Pin=U3-27
+Removed Pin From Net: NetName=PIN21 Pin=U3-29
+Removed Pin From Net: NetName=PIN23 Pin=U3-32
+Removed Pin From Net: NetName=PIN24 Pin=U3-33
+Removed Pin From Net: NetName=PIN25 Pin=U3-35
+Removed Pin From Net: NetName=PIN26 Pin=U3-36
+Removed Pin From Net: NetName=PIN27 Pin=U7-36
+Removed Pin From Net: NetName=PIN28 Pin=U7-38
+Removed Pin From Net: NetName=PIN29 Pin=U7-40
+Removed Pin From Net: NetName=PIN30 Pin=U7-41
+Removed Pin From Net: NetName=PIN31 Pin=U7-43
+Removed Pin From Net: NetName=PIN32 Pin=U7-44
+Removed Pin From Net: NetName=AGND Pin=U12-3
+Removed Pin From Net: NetName=AGND Pin=U13-3
+Removed Member From Class: ClassName=user_input Member=C62
+Removed Member From Class: ClassName=user_input Member=C63
+Change Component Footprint: Designator=D1 Old Footprint=SMB New Footprint=SOD123
+Change Component Footprint: Designator=D2 Old Footprint=SMB New Footprint=SOD123
+Change Component Comment : Designator=U11 Old Comment=TLV1117-ADJ New Comment=TLV1117-25
+Added Component: Designator=R72(J1-0603)
+Added Component: Designator=R73(J1-0603)
+Added Component: Designator=R74(J1-0603)
+Added Component: Designator=R75(J1-0603)
+Added Pin To Net: NetName=AGND Pin=J3-1
+Added Pin To Net: NetName=VCCINT Pin=R72-1
+Added Pin To Net: NetName=AGND Pin=R72-2
+Added Pin To Net: NetName=AGND Pin=R73-1
+Added Pin To Net: NetName=VCC33 Pin=R74-1
+Added Pin To Net: NetName=AGND Pin=R74-2
+Added Pin To Net: NetName=AGND Pin=R75-1
+Added Pin To Net: NetName=PIN23 Pin=U3-26
+Added Pin To Net: NetName=PIN24 Pin=U3-27
+Added Pin To Net: NetName=PIN25 Pin=U3-29
+Added Pin To Net: NetName=PIN26 Pin=U3-30
+Added Pin To Net: NetName=PIN27 Pin=U3-32
+Added Pin To Net: NetName=PIN28 Pin=U3-33
+Added Pin To Net: NetName=PIN29 Pin=U3-35
+Added Pin To Net: NetName=PIN30 Pin=U3-36
+Added Pin To Net: NetName=PIN31 Pin=U7-36
+Added Pin To Net: NetName=PIN32 Pin=U7-38
+Added Pin To Net: NetName=PIN33 Pin=U7-40
+Added Pin To Net: NetName=PIN34 Pin=U7-41
+Added Pin To Net: NetName=PIN35 Pin=U7-43
+Added Pin To Net: NetName=PIN36 Pin=U7-44
+Change Net Name : Old Net Name=AGND New Net Name=PIN22
+Added Pin To Net: NetName=NetR73_2 Pin=R73-2
+Added Pin To Net: NetName=NetR73_2 Pin=U12-3
+Added Net: Name=NetR73_2
+Added Pin To Net: NetName=NetR75_2 Pin=R75-2
+Added Pin To Net: NetName=NetR75_2 Pin=U13-3
+Added Net: Name=NetR75_2
+Added Member To Class: ClassName=user_input Member=Component C66 Cap2
+Added Member To Class: ClassName=user_input Member=Component C67 Cap2
+Added Member To Class: ClassName=fpga_sch Member=Component R7 Res3
+Added Member To Class: ClassName=fpga_sch Member=Component R8 Res3
+Added Member To Class: ClassName=fpga_sch Member=Component R21 Res3
+Added Member To Class: ClassName=fpga_sch Member=Component R22 Res3
+Added Member To Class: ClassName=fpga_sch Member=Component R72 Res3
+Added Member To Class: ClassName=fpga_sch Member=Component R73 Res3
+Added Member To Class: ClassName=fpga_sch Member=Component R74 Res3
+Added Member To Class: ClassName=fpga_sch Member=Component R75 Res3
+Added Room: Name=analog_frontend
+Added Room: Name=fpga_sch
+Added Room: Name=sram_rom
+Added Room: Name=user_input
+Added Room: Name=vram
