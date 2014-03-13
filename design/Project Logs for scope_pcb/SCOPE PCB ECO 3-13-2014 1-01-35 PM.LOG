@@ -1,0 +1,54 @@
+Removed Pin From Net: NetName=PIN0 Pin=J2-3
+Removed Pin From Net: NetName=PIN3 Pin=J2-4
+Removed Pin From Net: NetName=PIN0 Pin=J2-5
+Removed Pin From Net: NetName=DATA2 Pin=J2-6
+Removed Pin From Net: NetName=DATA3 Pin=J2-7
+Removed Pin From Net: NetName=DATA4 Pin=J2-8
+Removed Pin From Net: NetName=DATA5 Pin=J2-9
+Removed Pin From Net: NetName=DATA6 Pin=J2-10
+Removed Pin From Net: NetName=DATA7 Pin=J2-11
+Removed Pin From Net: NetName=PIN0 Pin=J2-12
+Removed Pin From Net: NetName=IO236 Pin=U10-13
+Removed Pin From Net: NetName=IO235 Pin=U10-14
+Removed Pin From Net: NetName=IO234 Pin=U10-16
+Removed Pin From Net: NetName=IO233 Pin=U10-17
+Removed Pin From Net: NetName=IO230 Pin=U10-19
+Removed Pin From Net: NetName=IO224 Pin=U10-24
+Removed Pin From Net: NetName=IO223 Pin=U10-25
+Removed Pin From Net: NetName=PIN12 Pin=U10-30
+Removed Pin From Net: NetName=PIN13 Pin=U10-32
+Removed Pin From Net: NetName=PIN14 Pin=U10-33
+Removed Pin From Net: NetName=PIN15 Pin=U10-35
+Removed Pin From Net: NetName=PIN16 Pin=U10-36
+Added Pin To Net: NetName=PIN3 Pin=J2-3
+Added Pin To Net: NetName=DATA2 Pin=J2-4
+Added Pin To Net: NetName=DATA3 Pin=J2-5
+Added Pin To Net: NetName=DATA4 Pin=J2-6
+Added Pin To Net: NetName=DATA5 Pin=J2-7
+Added Pin To Net: NetName=DATA6 Pin=J2-8
+Added Pin To Net: NetName=DATA7 Pin=J2-9
+Added Pin To Net: NetName=IO236 Pin=U10-9
+Added Pin To Net: NetName=IO235 Pin=U10-11
+Added Pin To Net: NetName=IO234 Pin=U10-13
+Added Pin To Net: NetName=IO233 Pin=U10-14
+Added Pin To Net: NetName=IO230 Pin=U10-16
+Added Pin To Net: NetName=IO224 Pin=U10-17
+Added Pin To Net: NetName=IO223 Pin=U10-19
+Added Pin To Net: NetName=IO217 Pin=U10-20
+Added Pin To Net: NetName=IO216 Pin=U10-24
+Added Pin To Net: NetName=IO214 Pin=U10-25
+Added Pin To Net: NetName=PIN12 Pin=U10-33
+Added Pin To Net: NetName=PIN13 Pin=U10-35
+Added Pin To Net: NetName=PIN14 Pin=U10-36
+Added Pin To Net: NetName=PIN15 Pin=U10-38
+Added Pin To Net: NetName=PIN16 Pin=U10-40
+Change Net Name : Old Net Name=PIN3 New Net Name=PIN2
+Added Pin To Net: NetName=PIN9 Pin=J2-10
+Added Pin To Net: NetName=PIN9 Pin=U10-29
+Added Net: Name=PIN9
+Added Pin To Net: NetName=PIN10 Pin=J2-11
+Added Pin To Net: NetName=PIN10 Pin=U10-30
+Added Net: Name=PIN10
+Added Pin To Net: NetName=PIN11 Pin=J2-12
+Added Pin To Net: NetName=PIN11 Pin=U10-32
+Added Net: Name=PIN11
