@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=NetC61_1 Pin=JP1-3
+Removed Pin From Net: NetName=NetC61_1 Pin=U16-17
+Change Component Comment : Designator=JP4 Old Comment=MSEL0 New Comment=AIN
+Change Component Comment : Designator=JP3 Old Comment=MSEL1 New Comment=AIN
+Change Component Comment : Designator=JP2 Old Comment=MSEL2 New Comment=AIN
+Added Pin To Net: NetName=NetJP1_3 Pin=JP1-3
+Added Pin To Net: NetName=NetJP1_3 Pin=U16-17
+Added Net: Name=NetJP1_3

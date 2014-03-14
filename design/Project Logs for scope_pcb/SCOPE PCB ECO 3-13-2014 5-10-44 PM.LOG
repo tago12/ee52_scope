@@ -1,0 +1,7 @@
+Added Pin To Net: NetName=VCCA25 Pin=J1-8
+Added Pin To Net: NetName=VCCA25 Pin=JP2-3
+Added Pin To Net: NetName=VCCA25 Pin=JP3-3
+Added Pin To Net: NetName=VCCA25 Pin=JP4-3
+Added Pin To Net: NetName=VCCA25 Pin=R7-1
+Added Pin To Net: NetName=VCCA25 Pin=R8-1
+Change Net Name : Old Net Name=VCCA25 New Net Name=VCC25
