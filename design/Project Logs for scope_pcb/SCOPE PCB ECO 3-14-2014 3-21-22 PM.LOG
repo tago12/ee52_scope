@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=PIN1 Pin=U5-2
+Removed Pin From Net: NetName=NetU5_8 Pin=W1-1
+Removed Pin From Net: NetName=NetS1_1 Pin=W1-2
+Change Component Comment : Designator=U5 Old Comment=MAX705 New Comment=MAX706AS
+Added Component: Designator=C95(CAPC1608L)
+Added Component: Designator=C96(CAPC1608L)
+Added Component: Designator=C97(CAPC1608L)
+Added Component: Designator=JP5(HDR1X3)
+Added Pin To Net: NetName=VCC25 Pin=C95-1
+Added Pin To Net: NetName=PIN0 Pin=C95-2
+Added Pin To Net: NetName=VCC25 Pin=C96-1
+Added Pin To Net: NetName=PIN0 Pin=C96-2
+Added Pin To Net: NetName=VCC25 Pin=C97-1
+Added Pin To Net: NetName=PIN0 Pin=C97-2
+Added Pin To Net: NetName=NetR40_1 Pin=JP5-1
+Added Pin To Net: NetName=NetC61_1 Pin=JP5-2
+Added Pin To Net: NetName=NetJP1_3 Pin=JP5-3
+Added Pin To Net: NetName=PIN2 Pin=U5-2
+Added Pin To Net: NetName=NetS1_1 Pin=W1-1
+Added Pin To Net: NetName=NetU5_8 Pin=W1-2
+Change Net Name : Old Net Name=NetR40_1 New Net Name=NetJP5_1
+Added Member To Class: ClassName=fpga_sch Member=Component C95 Cap2
+Added Member To Class: ClassName=fpga_sch Member=Component C96 Cap2
+Added Member To Class: ClassName=fpga_sch Member=Component C97 Cap2
+Added Member To Class: ClassName=analog_frontend Member=Component JP5 AIN
