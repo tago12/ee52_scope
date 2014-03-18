@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=PIN0 Pin=S1-2
+Removed Pin From Net: NetName=NetS1_1 Pin=W1-1
+Change Component DesignItemId : Designator=S1 Old DesignItemId=SW-PB New DesignItemId=SW-SPDT
+Change Component Footprint: Designator=S1 Old Footprint=GPTS203211B New Footprint=SPDT
+Change Component Comment : Designator=S1 Old Comment=SW-PB New Comment=SW-SPDT
+Added Pin To Net: NetName=PIN0 Pin=S1-3
+Added Pin To Net: NetName=NetS1_4 Pin=S1-4
+Added Pin To Net: NetName=NetS1_4 Pin=W1-1
+Added Net: Name=NetS1_4
+Added Member To Class: ClassName=fpga_sch Member=Component U1 74LVT16245
