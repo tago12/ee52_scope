@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------
-NCDrill File Report For: SCOPE.PcbDoc   3/18/2014  8:59:35 AM
+NCDrill File Report For: SCOPE.PcbDoc   3/18/2014  2:25:21 PM
 ---------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -8,7 +8,7 @@ EIA File   : SCOPE.DRL
 
 Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
 ---------------------------------------------------------------------------
-T1        15mil (0.381mm)          Round          365              69.93 Inch (1776.22 mm)
+T1        15mil (0.381mm)          Round          369              71.83 Inch (1824.43 mm)
 T2        28mil (0.7112mm)         Round          32               3.65 Inch (92.66 mm)
 T3        35mil (0.889mm)          Round          40               10.55 Inch (267.97 mm)
 T4        35.43mil (0.89992mm)     Round          61               13.97 Inch (354.81 mm)
@@ -23,6 +23,6 @@ T12       78.74mil (2mm)           Round          4                2.36 Inch (59
 T13       86mil (2.1844mm)         Round          2                0.40 Inch (10.16 mm)
 T14       125mil (3.175mm)         Round          4                13.33 Inch (338.62 mm)
 ---------------------------------------------------------------------------
-Totals                                            820              156.06 Inch (3964.04 mm)
+Totals                                            824              157.96 Inch (4012.24 mm)
 
 Total Processing Time (hh:mm:ss) : 00:00:01

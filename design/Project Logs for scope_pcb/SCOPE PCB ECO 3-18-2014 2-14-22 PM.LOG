@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=PIN1 Pin=R35-1
+Removed Member From Class: ClassName=sram_rom Member=R35
+Change Net Name : Old Net Name=PIN0 New Net Name=PIN30
+Change Net Name : Old Net Name=PIN1 New Net Name=VCC5
+Change Net Name : Old Net Name=PIN2 New Net Name=VCC33
+Added Pin To Net: NetName=WR Pin=U15-29
+Added Net: Name=WR
