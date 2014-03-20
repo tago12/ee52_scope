@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: SCOPE.GBR   3/18/2014  2:25:06 PM
+Gerber File Extension Report For: SCOPE.GBR   3/20/2014  12:54:22 AM
 ------------------------------------------------------------------------------------------
 
 
@@ -12,5 +12,4 @@ Layer Extension     Layer Description
 .GTS                Top Solder                              
 .GBS                Bottom Solder                           
 .GBO                Bottom Overlay                          
-.GM4                Mechanical 4                            
 ------------------------------------------------------------------------------------------

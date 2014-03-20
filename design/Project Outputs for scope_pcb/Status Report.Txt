@@ -10,4 +10,4 @@ From  : Project [scope_pcb.PrjPcb]
 Files Generated   : 4
 Documents Printed : 0
 
-Finished Output Generation At 2:25:22 PM On 3/18/2014
+Finished Output Generation At 12:54:47 AM On 3/20/2014

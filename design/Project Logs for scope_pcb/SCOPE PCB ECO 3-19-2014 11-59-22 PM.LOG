@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=NetC60_1 Pin=R39-1
+Removed Pin From Net: NetName=NetJP5_1 Pin=R40-1
+Removed Pin From Net: NetName=NetR41_2 Pin=R42-1
+Removed Pin From Net: NetName=AGND Pin=R45-1
+Removed Member From Class: ClassName=analog_frontend Member=R44
+Removed Member From Class: ClassName=analog_frontend Member=R45
+Added Pin To Net: NetName=NetJP5_1 Pin=R39-2
+Added Pin To Net: NetName=VCC-12 Pin=R43-1
+Added Pin To Net: NetName=AGND Pin=U17-5
+Added Pin To Net: NetName=NetJP5_1 Pin=U17-7
+Added Pin To Net: NetName=NetR39_1 Pin=R39-1
+Added Pin To Net: NetName=NetR39_1 Pin=R40-1
+Added Pin To Net: NetName=NetR39_1 Pin=R43-2
+Added Pin To Net: NetName=NetR39_1 Pin=U17-6
+Added Net: Name=NetR39_1
+Added Pin To Net: NetName=NetR42_1 Pin=R42-1
+Added Pin To Net: NetName=NetR42_1 Pin=U17-3
+Added Net: Name=NetR42_1
