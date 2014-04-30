@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project hello_world_2nd ****
+
+make all 
+Info: Building C:/Users/tago/Dropbox/OUT/EE52/software/hello_world_2nd_bsp/
+make --no-print-directory -C C:/Users/tago/Dropbox/OUT/EE52/software/hello_world_2nd_bsp/
+[BSP build complete]
+[hello_world_2nd build complete]
+
+**** Build Finished ****

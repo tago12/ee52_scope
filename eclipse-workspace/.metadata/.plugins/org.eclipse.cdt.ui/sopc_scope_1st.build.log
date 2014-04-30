@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project sopc_scope_1st ****
+
+make all 
+Info: Building C:/Users/tago/Dropbox/OUT/EE52/software/sopc_scope_1st_bsp/
+make --no-print-directory -C C:/Users/tago/Dropbox/OUT/EE52/software/sopc_scope_1st_bsp/
+[BSP build complete]
+[sopc_scope_1st build complete]
+
+**** Build Finished ****

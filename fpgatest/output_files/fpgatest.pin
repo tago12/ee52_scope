@@ -1,0 +1,310 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		2.5V
+ --					Bank 2:		2.5V
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:		2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+CHIP  "fpgatest"  ASSIGNED TO AN: EP3C25Q240C8
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCD_PLL3                    : 1         : power  :                   : 1.2V    :           :                
+GNDA3                        : 2         : gnd    :                   :         :           :                
+VCCA3                        : 3         : power  :                   : 2.5V    :           :                
+cnt15[0]                     : 4         : output : 2.5 V             :         : 1         : Y              
+GND6                         : 5         : output : 2.5 V             :         : 1         : Y              
+GND7                         : 6         : output : 2.5 V             :         : 1         : Y              
+VCCIO1                       : 7         : power  :                   : 2.5V    : 1         :                
+GND                          : 8         : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 9         :        :                   :         : 1         :                
+VCCINT                       : 10        : power  :                   : 1.2V    :           :                
+GND                          : 11        : gnd    :                   :         :           :                
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 12        : input  : 2.5 V             :         : 1         : N              
+cnt15[5]                     : 13        : output : 2.5 V             :         : 1         : N              
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 14        : input  : 2.5 V             :         : 1         : N              
+VCCIO1                       : 15        : power  :                   : 2.5V    : 1         :                
+GND                          : 16        : gnd    :                   :         :           :                
+nSTATUS                      : 17        :        :                   :         : 1         :                
+GND8                         : 18        : output : 2.5 V             :         : 1         : N              
+VCCINT                       : 19        : power  :                   : 1.2V    :           :                
+GND                          : 20        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 21        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 22        :        :                   :         : 1         :                
+~ALTERA_DCLK~                : 23        : output : 2.5 V             :         : 1         : N              
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 24        : input  : 2.5 V             :         : 1         : N              
+nCONFIG                      : 25        :        :                   :         : 1         :                
+TDI                          : 26        : input  :                   :         : 1         :                
+TCK                          : 27        : input  :                   :         : 1         :                
+TMS                          : 28        : input  :                   :         : 1         :                
+TDO                          : 29        : output :                   :         : 1         :                
+nCE                          : 30        :        :                   :         : 1         :                
+CLK                          : 31        : input  : 2.5 V             :         : 1         : Y              
+GND+                         : 32        :        :                   :         : 1         :                
+GND+                         : 33        :        :                   :         : 2         :                
+GND+                         : 34        :        :                   :         : 2         :                
+VCCIO2                       : 35        : power  :                   : 2.5V    : 2         :                
+GND                          : 36        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 37        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 38        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 39        :        :                   :         : 2         :                
+VCCINT                       : 40        : power  :                   : 1.2V    :           :                
+cnt15[7]                     : 41        : output : 2.5 V             :         : 2         : N              
+GND                          : 42        : gnd    :                   :         :           :                
+cnt[7]                       : 43        : output : 2.5 V             :         : 2         : Y              
+cnt[6]                       : 44        : output : 2.5 V             :         : 2         : Y              
+cnt[5]                       : 45        : output : 2.5 V             :         : 2         : Y              
+cnt[4]                       : 46        : output : 2.5 V             :         : 2         : Y              
+VCCIO2                       : 47        : power  :                   : 2.5V    : 2         :                
+GND                          : 48        : gnd    :                   :         :           :                
+cnt[3]                       : 49        : output : 2.5 V             :         : 2         : Y              
+cnt[2]                       : 50        : output : 2.5 V             :         : 2         : Y              
+cnt[1]                       : 51        : output : 2.5 V             :         : 2         : Y              
+cnt[0]                       : 52        : output : 2.5 V             :         : 2         : Y              
+VCCINT                       : 53        : power  :                   : 1.2V    :           :                
+GND                          : 54        : gnd    :                   :         :           :                
+GND                          : 55        : output : 2.5 V             :         : 2         : Y              
+GND3                         : 56        : output : 2.5 V             :         : 2         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 57        :        :                   :         : 2         :                
+VCCA1                        : 58        : power  :                   : 2.5V    :           :                
+GNDA1                        : 59        : gnd    :                   :         :           :                
+VCCD_PLL1                    : 60        : power  :                   : 1.2V    :           :                
+VCCINT                       : 61        : power  :                   : 1.2V    :           :                
+GND                          : 62        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 63        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 64        :        :                   :         : 3         :                
+cnt15[6]                     : 65        : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : 66        : power  :                   : 2.5V    : 3         :                
+GND                          : 67        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 68        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 69        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 70        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 71        :        :                   :         : 3         :                
+cnta[7]                      : 72        : output : 2.5 V             :         : 3         : Y              
+cnta[6]                      : 73        : output : 2.5 V             :         : 3         : Y              
+VCCINT                       : 74        : power  :                   : 1.2V    :           :                
+GND                          : 75        : gnd    :                   :         :           :                
+cnta[5]                      : 76        : output : 2.5 V             :         : 3         : Y              
+VCCIO3                       : 77        : power  :                   : 2.5V    : 3         :                
+cnta[4]                      : 78        : output : 2.5 V             :         : 3         : Y              
+GND                          : 79        : gnd    :                   :         :           :                
+cnta[3]                      : 80        : output : 2.5 V             :         : 3         : Y              
+cnta[2]                      : 81        : output : 2.5 V             :         : 3         : Y              
+cnta[1]                      : 82        : output : 2.5 V             :         : 3         : Y              
+cnta[0]                      : 83        : output : 2.5 V             :         : 3         : Y              
+cntb[7]                      : 84        : output : 2.5 V             :         : 3         : Y              
+VCCINT                       : 85        : power  :                   : 1.2V    :           :                
+GND                          : 86        : gnd    :                   :         :           :                
+cntb[6]                      : 87        : output : 2.5 V             :         : 3         : Y              
+cntb[5]                      : 88        : output : 2.5 V             :         : 3         : Y              
+GND+                         : 89        :        :                   :         : 3         :                
+GND+                         : 90        :        :                   :         : 3         :                
+GND+                         : 91        :        :                   :         : 4         :                
+GND+                         : 92        :        :                   :         : 4         :                
+cntb[4]                      : 93        : output : 2.5 V             :         : 4         : Y              
+cntb[3]                      : 94        : output : 2.5 V             :         : 4         : Y              
+cntb[2]                      : 95        : output : 2.5 V             :         : 4         : Y              
+VCCIO4                       : 96        : power  :                   : 2.5V    : 4         :                
+GND                          : 97        : gnd    :                   :         :           :                
+cntb[1]                      : 98        : output : 2.5 V             :         : 4         : Y              
+cntb[0]                      : 99        : output : 2.5 V             :         : 4         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 100       :        :                   :         : 4         :                
+VCCINT                       : 101       : power  :                   : 1.2V    :           :                
+GND                          : 102       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 103       :        :                   :         : 4         :                
+VCCIO4                       : 104       : power  :                   : 2.5V    : 4         :                
+GND                          : 105       : gnd    :                   :         :           :                
+cntc[7]                      : 106       : output : 2.5 V             :         : 4         : Y              
+cntc[6]                      : 107       : output : 2.5 V             :         : 4         : Y              
+cntc[5]                      : 108       : output : 2.5 V             :         : 4         : Y              
+cntc[4]                      : 109       : output : 2.5 V             :         : 4         : Y              
+cntc[3]                      : 110       : output : 2.5 V             :         : 4         : Y              
+cntc[2]                      : 111       : output : 2.5 V             :         : 4         : Y              
+cntc[1]                      : 112       : output : 2.5 V             :         : 4         : Y              
+cntc[0]                      : 113       : output : 2.5 V             :         : 4         : Y              
+cntd[7]                      : 114       : output : 2.5 V             :         : 4         : Y              
+VCCINT                       : 115       : power  :                   : 1.2V    :           :                
+GND                          : 116       : gnd    :                   :         :           :                
+cntd[6]                      : 117       : output : 2.5 V             :         : 4         : Y              
+cntd[5]                      : 118       : output : 2.5 V             :         : 4         : Y              
+cntd[4]                      : 119       : output : 2.5 V             :         : 4         : Y              
+cntd[3]                      : 120       : output : 2.5 V             :         : 4         : Y              
+VCCD_PLL4                    : 121       : power  :                   : 1.2V    :           :                
+GNDA4                        : 122       : gnd    :                   :         :           :                
+VCCA4                        : 123       : power  :                   : 2.5V    :           :                
+VCCIO5                       : 124       : power  :                   : 2.5V    : 5         :                
+GND                          : 125       : gnd    :                   :         :           :                
+cntd[2]                      : 126       : output : 2.5 V             :         : 5         : Y              
+cntd[1]                      : 127       : output : 2.5 V             :         : 5         : Y              
+cntd[0]                      : 128       : output : 2.5 V             :         : 5         : Y              
+VCCINT                       : 129       : power  :                   : 1.2V    :           :                
+GND                          : 130       : gnd    :                   :         :           :                
+cnt8[7]                      : 131       : output : 2.5 V             :         : 5         : Y              
+cnt8[6]                      : 132       : output : 2.5 V             :         : 5         : Y              
+cnt8[5]                      : 133       : output : 2.5 V             :         : 5         : Y              
+cnt8[4]                      : 134       : output : 2.5 V             :         : 5         : Y              
+cnt8[3]                      : 135       : output : 2.5 V             :         : 5         : Y              
+VCCIO5                       : 136       : power  :                   : 2.5V    : 5         :                
+cnt8[2]                      : 137       : output : 2.5 V             :         : 5         : Y              
+GND                          : 138       : gnd    :                   :         :           :                
+cnt8[1]                      : 139       : output : 2.5 V             :         : 5         : Y              
+VCCINT                       : 140       : power  :                   : 1.2V    :           :                
+GND                          : 141       : gnd    :                   :         :           :                
+cnt8[0]                      : 142       : output : 2.5 V             :         : 5         : Y              
+cnt9[7]                      : 143       : output : 2.5 V             :         : 5         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 144       :        :                   :         : 5         :                
+cnt14[0]                     : 145       : output : 2.5 V             :         : 5         : N              
+cnt9[6]                      : 146       : output : 2.5 V             :         : 5         : Y              
+cnt9[5]                      : 147       : output : 2.5 V             :         : 5         : Y              
+cnt9[4]                      : 148       : output : 2.5 V             :         : 5         : Y              
+GND+                         : 149       :        :                   :         : 5         :                
+GND+                         : 150       :        :                   :         : 5         :                
+GND+                         : 151       :        :                   :         : 6         :                
+GND+                         : 152       :        :                   :         : 6         :                
+CONF_DONE                    : 153       :        :                   :         : 6         :                
+VCCIO6                       : 154       : power  :                   : 2.5V    : 6         :                
+MSEL0                        : 155       :        :                   :         : 6         :                
+GND                          : 156       : gnd    :                   :         :           :                
+MSEL1                        : 157       :        :                   :         : 6         :                
+MSEL2                        : 158       :        :                   :         : 6         :                
+GND9                         : 159       : output : 2.5 V             :         : 6         : N              
+cnt9[3]                      : 160       : output : 2.5 V             :         : 6         : Y              
+cnt9[2]                      : 161       : output : 2.5 V             :         : 6         : Y              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : 162       : output : 2.5 V             :         : 6         : N              
+VCCINT                       : 163       : power  :                   : 1.2V    :           :                
+cnt14[1]                     : 164       : output : 2.5 V             :         : 6         : N              
+GND                          : 165       : gnd    :                   :         :           :                
+cnt9[1]                      : 166       : output : 2.5 V             :         : 6         : Y              
+cnt9[0]                      : 167       : output : 2.5 V             :         : 6         : Y              
+cnt10[7]                     : 168       : output : 2.5 V             :         : 6         : Y              
+cnt10[6]                     : 169       : output : 2.5 V             :         : 6         : Y              
+VCCIO6                       : 170       : power  :                   : 2.5V    : 6         :                
+cnt10[5]                     : 171       : output : 2.5 V             :         : 6         : Y              
+GND                          : 172       : gnd    :                   :         :           :                
+cnt10[4]                     : 173       : output : 2.5 V             :         : 6         : Y              
+VCCINT                       : 174       : power  :                   : 1.2V    :           :                
+GND                          : 175       : gnd    :                   :         :           :                
+cnt10[3]                     : 176       : output : 2.5 V             :         : 6         : Y              
+cnt10[2]                     : 177       : output : 2.5 V             :         : 6         : Y              
+VCCA2                        : 178       : power  :                   : 2.5V    :           :                
+GNDA2                        : 179       : gnd    :                   :         :           :                
+VCCD_PLL2                    : 180       : power  :                   : 1.2V    :           :                
+cnt10[1]                     : 181       : output : 2.5 V             :         : 7         : Y              
+cnt10[0]                     : 182       : output : 2.5 V             :         : 7         : Y              
+cnt11[7]                     : 183       : output : 2.5 V             :         : 7         : Y              
+cnt11[6]                     : 184       : output : 2.5 V             :         : 7         : Y              
+cnt11[5]                     : 185       : output : 2.5 V             :         : 7         : Y              
+cnt11[4]                     : 186       : output : 2.5 V             :         : 7         : Y              
+cnt11[3]                     : 187       : output : 2.5 V             :         : 7         : Y              
+cnt11[2]                     : 188       : output : 2.5 V             :         : 7         : Y              
+cnt11[1]                     : 189       : output : 2.5 V             :         : 7         : Y              
+VCCINT                       : 190       : power  :                   : 1.2V    :           :                
+GND                          : 191       : gnd    :                   :         :           :                
+VCCIO7                       : 192       : power  :                   : 2.5V    : 7         :                
+GND                          : 193       : gnd    :                   :         :           :                
+cnt11[0]                     : 194       : output : 2.5 V             :         : 7         : Y              
+cnt12[7]                     : 195       : output : 2.5 V             :         : 7         : Y              
+cnt12[6]                     : 196       : output : 2.5 V             :         : 7         : Y              
+cnt12[5]                     : 197       : output : 2.5 V             :         : 7         : Y              
+VCCINT                       : 198       : power  :                   : 1.2V    :           :                
+GND                          : 199       : gnd    :                   :         :           :                
+cnt12[4]                     : 200       : output : 2.5 V             :         : 7         : Y              
+cnt12[3]                     : 201       : output : 2.5 V             :         : 7         : Y              
+cnt12[2]                     : 202       : output : 2.5 V             :         : 7         : Y              
+cnt12[1]                     : 203       : output : 2.5 V             :         : 7         : Y              
+VCCINT                       : 204       : power  :                   : 1.2V    :           :                
+GND                          : 205       : gnd    :                   :         :           :                
+VCCIO7                       : 206       : power  :                   : 2.5V    : 7         :                
+cnt12[0]                     : 207       : output : 2.5 V             :         : 7         : Y              
+GND                          : 208       : gnd    :                   :         :           :                
+GND+                         : 209       :        :                   :         : 7         :                
+GND+                         : 210       :        :                   :         : 7         :                
+GND+                         : 211       :        :                   :         : 8         :                
+GND+                         : 212       :        :                   :         : 8         :                
+VCCIO8                       : 213       : power  :                   : 2.5V    : 8         :                
+GND4                         : 214       : output : 2.5 V             :         : 8         : Y              
+GND                          : 215       : gnd    :                   :         :           :                
+GND5                         : 216       : output : 2.5 V             :         : 8         : Y              
+cnt13[7]                     : 217       : output : 2.5 V             :         : 8         : Y              
+cnt14[7]                     : 218       : output : 2.5 V             :         : 8         : Y              
+cnt14[6]                     : 219       : output : 2.5 V             :         : 8         : Y              
+VCCINT                       : 220       : power  :                   : 1.2V    :           :                
+cnt14[5]                     : 221       : output : 2.5 V             :         : 8         : Y              
+GND                          : 222       : gnd    :                   :         :           :                
+cnt13[6]                     : 223       : output : 2.5 V             :         : 8         : Y              
+cnt13[5]                     : 224       : output : 2.5 V             :         : 8         : Y              
+VCCIO8                       : 225       : power  :                   : 2.5V    : 8         :                
+cnt14[4]                     : 226       : output : 2.5 V             :         : 8         : Y              
+GND                          : 227       : gnd    :                   :         :           :                
+VCCINT                       : 228       : power  :                   : 1.2V    :           :                
+GND                          : 229       : gnd    :                   :         :           :                
+cnt13[4]                     : 230       : output : 2.5 V             :         : 8         : Y              
+cnt14[3]                     : 231       : output : 2.5 V             :         : 8         : Y              
+cnt14[2]                     : 232       : output : 2.5 V             :         : 8         : Y              
+cnt13[3]                     : 233       : output : 2.5 V             :         : 8         : Y              
+cnt13[2]                     : 234       : output : 2.5 V             :         : 8         : Y              
+cnt13[1]                     : 235       : output : 2.5 V             :         : 8         : Y              
+cnt13[0]                     : 236       : output : 2.5 V             :         : 8         : Y              
+cnt15[4]                     : 237       : output : 2.5 V             :         : 8         : Y              
+cnt15[3]                     : 238       : output : 2.5 V             :         : 8         : Y              
+cnt15[2]                     : 239       : output : 2.5 V             :         : 8         : Y              
+cnt15[1]                     : 240       : output : 2.5 V             :         : 8         : Y              

@@ -1,0 +1,165 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# Date created = 09:00:19  April 19, 2014
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		fpgatest_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C25Q240C8
+set_global_assignment -name TOP_LEVEL_ENTITY fpgatest
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:00:19  APRIL 19, 2014"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name QIP_FILE lpm_counter0.qip
+set_global_assignment -name BDF_FILE fpgatest.bdf
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_43 -to cnt[7]
+set_location_assignment PIN_55 -to GND
+set_location_assignment PIN_44 -to cnt[6]
+set_location_assignment PIN_45 -to cnt[5]
+set_location_assignment PIN_46 -to cnt[4]
+set_location_assignment PIN_49 -to cnt[3]
+set_location_assignment PIN_50 -to cnt[2]
+set_location_assignment PIN_51 -to cnt[1]
+set_location_assignment PIN_52 -to cnt[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to cnt[7]
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_56 -to gnd3
+set_location_assignment PIN_131 -to cnt8[7]
+set_location_assignment PIN_132 -to cnt8[6]
+set_location_assignment PIN_133 -to cnt8[5]
+set_location_assignment PIN_134 -to cnt8[4]
+set_location_assignment PIN_135 -to cnt8[3]
+set_location_assignment PIN_137 -to cnt8[2]
+set_location_assignment PIN_139 -to cnt8[1]
+set_location_assignment PIN_142 -to cnt8[0]
+set_location_assignment PIN_143 -to cnt9[7]
+set_location_assignment PIN_146 -to cnt9[6]
+set_location_assignment PIN_147 -to cnt9[5]
+set_location_assignment PIN_148 -to cnt9[4]
+set_location_assignment PIN_160 -to cnt9[3]
+set_location_assignment PIN_161 -to cnt9[2]
+set_location_assignment PIN_166 -to cnt9[1]
+set_location_assignment PIN_167 -to cnt9[0]
+set_location_assignment PIN_168 -to cnt10[7]
+set_location_assignment PIN_169 -to cnt10[6]
+set_location_assignment PIN_171 -to cnt10[5]
+set_location_assignment PIN_173 -to cnt10[4]
+set_location_assignment PIN_176 -to cnt10[3]
+set_location_assignment PIN_177 -to cnt10[2]
+set_location_assignment PIN_181 -to cnt10[1]
+set_location_assignment PIN_182 -to cnt10[0]
+set_location_assignment PIN_183 -to cnt11[7]
+set_location_assignment PIN_184 -to cnt11[6]
+set_location_assignment PIN_185 -to cnt11[5]
+set_location_assignment PIN_186 -to cnt11[4]
+set_location_assignment PIN_187 -to cnt11[3]
+set_location_assignment PIN_188 -to cnt11[2]
+set_location_assignment PIN_189 -to cnt11[1]
+set_location_assignment PIN_194 -to cnt11[0]
+set_location_assignment PIN_195 -to cnt12[7]
+set_location_assignment PIN_196 -to cnt12[6]
+set_location_assignment PIN_197 -to cnt12[5]
+set_location_assignment PIN_200 -to cnt12[4]
+set_location_assignment PIN_201 -to cnt12[3]
+set_location_assignment PIN_202 -to cnt12[2]
+set_location_assignment PIN_203 -to cnt12[1]
+set_location_assignment PIN_207 -to cnt12[0]
+set_location_assignment PIN_214 -to gnd4
+set_location_assignment PIN_216 -to gnd5
+set_location_assignment PIN_217 -to cnt13[7]
+set_location_assignment PIN_218 -to cnt14[7]
+set_location_assignment PIN_219 -to cnt14[6]
+set_location_assignment PIN_221 -to cnt14[5]
+set_location_assignment PIN_223 -to cnt13[6]
+set_location_assignment PIN_224 -to cnt13[5]
+set_location_assignment PIN_226 -to cnt14[4]
+set_location_assignment PIN_230 -to cnt13[4]
+set_location_assignment PIN_231 -to cnt14[3]
+set_location_assignment PIN_232 -to cnt14[2]
+set_location_assignment PIN_233 -to cnt13[3]
+set_location_assignment PIN_234 -to cnt13[2]
+set_location_assignment PIN_235 -to cnt13[1]
+set_location_assignment PIN_236 -to cnt13[0]
+set_location_assignment PIN_5 -to gnd6
+set_location_assignment PIN_6 -to gnd7
+set_location_assignment PIN_4 -to cnt15[0]
+set_location_assignment PIN_240 -to cnt15[1]
+set_location_assignment PIN_239 -to cnt15[2]
+set_location_assignment PIN_238 -to cnt15[3]
+set_location_assignment PIN_237 -to cnt15[4]
+set_location_assignment PIN_31 -to CLK
+set_location_assignment PIN_72 -to cnta[7]
+set_location_assignment PIN_73 -to cnta[6]
+set_location_assignment PIN_76 -to cnta[5]
+set_location_assignment PIN_78 -to cnta[4]
+set_location_assignment PIN_80 -to cnta[3]
+set_location_assignment PIN_81 -to cnta[2]
+set_location_assignment PIN_82 -to cnta[1]
+set_location_assignment PIN_83 -to cnta[0]
+set_location_assignment PIN_84 -to cntb[7]
+set_location_assignment PIN_87 -to cntb[6]
+set_location_assignment PIN_88 -to cntb[5]
+set_location_assignment PIN_93 -to cntb[4]
+set_location_assignment PIN_94 -to cntb[3]
+set_location_assignment PIN_95 -to cntb[2]
+set_location_assignment PIN_98 -to cntb[1]
+set_location_assignment PIN_99 -to cntb[0]
+set_location_assignment PIN_106 -to cntc[7]
+set_location_assignment PIN_107 -to cntc[6]
+set_location_assignment PIN_108 -to cntc[5]
+set_location_assignment PIN_109 -to cntc[4]
+set_location_assignment PIN_110 -to cntc[3]
+set_location_assignment PIN_111 -to cntc[2]
+set_location_assignment PIN_112 -to cntc[1]
+set_location_assignment PIN_113 -to cntc[0]
+set_location_assignment PIN_114 -to cntd[7]
+set_location_assignment PIN_117 -to cntd[6]
+set_location_assignment PIN_118 -to cntd[5]
+set_location_assignment PIN_119 -to cntd[4]
+set_location_assignment PIN_120 -to cntd[3]
+set_location_assignment PIN_126 -to cntd[2]
+set_location_assignment PIN_127 -to cntd[1]
+set_location_assignment PIN_128 -to cntd[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
