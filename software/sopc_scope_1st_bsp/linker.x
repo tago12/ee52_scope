@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios' in SOPC Builder design 'sopc_scope_sys'
  * SOPC Builder design path: C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys.sopcinfo
  *
- * Generated: Thu Apr 24 13:05:23 PDT 2014
+ * Generated: Wed Apr 30 17:54:28 PDT 2014
  */
 
 /*
@@ -50,12 +50,16 @@
 
 MEMORY
 {
-    reset : ORIGIN = 0x10000, LENGTH = 32
-    temp_ram : ORIGIN = 0x10020, LENGTH = 40064
+    rom : ORIGIN = 0x80000, LENGTH = 524288
+    ram : ORIGIN = 0x120000, LENGTH = 131072
+    reset : ORIGIN = 0x150000, LENGTH = 32
+    temp_ram : ORIGIN = 0x150020, LENGTH = 40064
 }
 
 /* Define symbols for each memory base-address */
-__alt_mem_temp_ram = 0x10000;
+__alt_mem_rom = 0x80000;
+__alt_mem_ram = 0x120000;
+__alt_mem_temp_ram = 0x150000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",
@@ -307,7 +311,41 @@ SECTIONS
      *
      */
 
-    .temp_ram LOADADDR (.bss) + SIZEOF (.bss) : AT ( LOADADDR (.bss) + SIZEOF (.bss) )
+    .rom : AT ( LOADADDR (.bss) + SIZEOF (.bss) )
+    {
+        PROVIDE (_alt_partition_rom_start = ABSOLUTE(.));
+        *(.rom .rom. rom.*)
+        . = ALIGN(4);
+        PROVIDE (_alt_partition_rom_end = ABSOLUTE(.));
+    } > rom
+
+    PROVIDE (_alt_partition_rom_load_addr = LOADADDR(.rom));
+
+    /*
+     *
+     * This section's LMA is set to the .text region.
+     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
+     *
+     */
+
+    .ram : AT ( LOADADDR (.rom) + SIZEOF (.rom) )
+    {
+        PROVIDE (_alt_partition_ram_start = ABSOLUTE(.));
+        *(.ram .ram. ram.*)
+        . = ALIGN(4);
+        PROVIDE (_alt_partition_ram_end = ABSOLUTE(.));
+    } > ram
+
+    PROVIDE (_alt_partition_ram_load_addr = LOADADDR(.ram));
+
+    /*
+     *
+     * This section's LMA is set to the .text region.
+     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
+     *
+     */
+
+    .temp_ram LOADADDR (.ram) + SIZEOF (.ram) : AT ( LOADADDR (.ram) + SIZEOF (.ram) )
     {
         PROVIDE (_alt_partition_temp_ram_start = ABSOLUTE(.));
         *(.temp_ram .temp_ram. temp_ram.*)
@@ -367,7 +405,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x19ca0;
+__alt_data_end = 0x159ca0;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -383,4 +421,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x19ca0 );
+PROVIDE( __alt_heap_limit    = 0x159ca0 );

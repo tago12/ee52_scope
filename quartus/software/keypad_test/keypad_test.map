@@ -1,0 +1,972 @@
+Archive member included because of file (symbol)
+
+../keypad_test_bsp/\libhal_bsp.a(alt_iic.o)
+                              obj/default/keys.o (alt_ic_isr_register)
+../keypad_test_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_iic.o) (alt_iic_isr_register)
+../keypad_test_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_entry)
+../keypad_test_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq)
+../keypad_test_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_iic.o) (alt_irq_active)
+../keypad_test_bsp/\libhal_bsp.a(alt_load.o)
+                              ../keypad_test_bsp//obj/HAL/src/crt0.o (alt_load)
+../keypad_test_bsp/\libhal_bsp.a(alt_main.o)
+                              ../keypad_test_bsp//obj/HAL/src/crt0.o (alt_main)
+../keypad_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_read_fd)
+../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_read)
+../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_write)
+../keypad_test_bsp/\libhal_bsp.a(alt_close.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_main.o) (close)
+../keypad_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+../keypad_test_bsp/\libhal_bsp.a(alt_dev.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_list)
+../keypad_test_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_llist_insert)
+../keypad_test_bsp/\libhal_bsp.a(alt_do_ctors.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_main.o) (_do_ctors)
+../keypad_test_bsp/\libhal_bsp.a(alt_do_dtors.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_main.o) (_do_dtors)
+../keypad_test_bsp/\libhal_bsp.a(alt_errno.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_close.o) (alt_errno)
+../keypad_test_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+../keypad_test_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_main.o) (alt_io_redirect)
+../keypad_test_bsp/\libhal_bsp.a(alt_open.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_io_redirect.o) (open)
+../keypad_test_bsp/\libhal_bsp.a(alt_release_fd.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_close.o) (alt_release_fd)
+../keypad_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_qsys_irq_init)
+../keypad_test_bsp/\libhal_bsp.a(alt_find_dev.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_open.o) (alt_find_dev)
+../keypad_test_bsp/\libhal_bsp.a(alt_find_file.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_open.o) (alt_find_file)
+../keypad_test_bsp/\libhal_bsp.a(alt_get_fd.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_open.o) (alt_get_fd)
+../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o) (alt_icache_flush)
+c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-atexit.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_main.o) (atexit)
+c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-exit.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_main.o) (exit)
+c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_close.o) (errno)
+c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_find_dev.o) (memcmp)
+c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                              ../keypad_test_bsp/\libhal_bsp.a(alt_find_dev.o) (strlen)
+c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__atexit.o)
+                              c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-atexit.o) (__register_exitproc)
+c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__call_atexit.o)
+                              c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-exit.o) (__call_exitprocs)
+c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+                              c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__atexit.o) (_global_impure_ptr)
+../keypad_test_bsp/\libhal_bsp.a(alt_exit.o)
+                              c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_irq             0x100             ../keypad_test_bsp/\libhal_bsp.a(alt_irq_handler.o)
+errno               0x4               c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+_atexit0            0x8c              c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-atexit.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00080000         0x00080000
+ram              0x001a0000         0x00020000
+reset            0x001d0000         0x00000020
+onchip_memory2_0 0x001d0020         0x00009c80
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ../keypad_test_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/mainloop.o
+LOAD obj/default/keys.o
+LOAD c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libstdc++.a
+LOAD c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libm.a
+LOAD c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+START GROUP
+LOAD c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a
+LOAD c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+LOAD ../keypad_test_bsp/\libhal_bsp.a
+END GROUP
+LOAD c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+                0x00080000                __alt_mem_rom = 0x80000
+                0x001a0000                __alt_mem_ram = 0x1a0000
+                0x001d0000                __alt_mem_onchip_memory2_0 = 0x1d0000
+
+.entry          0x001d0000       0x20
+ *(.entry)
+ .entry         0x001d0000       0x20 ../keypad_test_bsp//obj/HAL/src/crt0.o
+                0x001d0000                __reset
+
+.exceptions     0x001d0020      0x198
+                0x001d0020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x001d0020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x001d0020        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                0x001d0020                alt_irq_entry
+ .exceptions.entry.label
+                0x001d0020        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                0x001d0020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x001d0020       0x54 ../keypad_test_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x001d0074       0x10 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x001d0084        0x4 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x001d0088        0x4 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x001d008c        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x001d008c        0x8 ../keypad_test_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x001d0094        0x4 ../keypad_test_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x001d0098        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x001d0098        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x001d0098       0x54 ../keypad_test_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x001d00ec       0xcc ../keypad_test_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x001d00ec                alt_irq_handler
+                0x001d01b8                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x001d0020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x001d01b8     0x1858
+                0x001d01b8                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x001d01b8       0x4c ../keypad_test_bsp//obj/HAL/src/crt0.o
+                0x001d01b8                _start
+ .text          0x001d0204      0x140 obj/default/mainloop.o
+                0x001d0204                main
+ .text          0x001d0344      0x10c obj/default/keys.o
+                0x001d0344                keys_init
+                0x001d039c                keys_handler
+                0x001d0428                getkey
+                0x001d0440                key_available
+ .text          0x001d0450      0x1d8 ../keypad_test_bsp/\libhal_bsp.a(alt_iic.o)
+                0x001d0450                alt_ic_isr_register
+                0x001d04a0                alt_ic_irq_enable
+                0x001d053c                alt_ic_irq_disable
+                0x001d05dc                alt_ic_irq_enabled
+ .text          0x001d0628       0xf0 ../keypad_test_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                0x001d0628                alt_iic_isr_register
+ .text          0x001d0718        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x001d0718        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x001d0718        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x001d0718       0xec ../keypad_test_bsp/\libhal_bsp.a(alt_load.o)
+                0x001d0784                alt_load
+ .text          0x001d0804       0x78 ../keypad_test_bsp/\libhal_bsp.a(alt_main.o)
+                0x001d0804                alt_main
+ .text          0x001d087c       0x9c ../keypad_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x001d08b4                alt_irq_init
+                0x001d08e8                alt_sys_init
+ .text          0x001d0918       0xc0 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                0x001d0918                altera_avalon_jtag_uart_read_fd
+                0x001d0978                altera_avalon_jtag_uart_write_fd
+ .text          0x001d09d8       0xf4 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x001d09d8                altera_avalon_jtag_uart_read
+ .text          0x001d0acc       0x98 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x001d0acc                altera_avalon_jtag_uart_write
+ .text          0x001d0b64      0x118 ../keypad_test_bsp/\libhal_bsp.a(alt_close.o)
+                0x001d0bb4                close
+ .text          0x001d0c7c       0x44 ../keypad_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x001d0c7c                alt_dcache_flush_all
+ .text          0x001d0cc0       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x001d0cec       0xf0 ../keypad_test_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                0x001d0d3c                alt_dev_llist_insert
+ .text          0x001d0ddc       0x5c ../keypad_test_bsp/\libhal_bsp.a(alt_do_ctors.o)
+                0x001d0ddc                _do_ctors
+ .text          0x001d0e38       0x5c ../keypad_test_bsp/\libhal_bsp.a(alt_do_dtors.o)
+                0x001d0e38                _do_dtors
+ .text          0x001d0e94        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x001d0e94        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x001d0e94       0x30 ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x001d0e94                alt_icache_flush_all
+ .text          0x001d0ec4      0x138 ../keypad_test_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                0x001d0f84                alt_io_redirect
+ .text          0x001d0ffc      0x270 ../keypad_test_bsp/\libhal_bsp.a(alt_open.o)
+                0x001d1118                open
+ .text          0x001d126c       0x60 ../keypad_test_bsp/\libhal_bsp.a(alt_release_fd.o)
+                0x001d126c                alt_release_fd
+ .text          0x001d12cc       0x20 ../keypad_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x001d12cc                altera_nios2_qsys_irq_init
+ .text          0x001d12ec       0x90 ../keypad_test_bsp/\libhal_bsp.a(alt_find_dev.o)
+                0x001d12ec                alt_find_dev
+ .text          0x001d137c      0x114 ../keypad_test_bsp/\libhal_bsp.a(alt_find_file.o)
+                0x001d137c                alt_find_file
+ .text          0x001d1490       0xb4 ../keypad_test_bsp/\libhal_bsp.a(alt_get_fd.o)
+                0x001d1490                alt_get_fd
+ .text          0x001d1544       0x8c ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                0x001d1544                alt_icache_flush
+ .text          0x001d15d0       0x14 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-atexit.o)
+                0x001d15d0                atexit
+ .text          0x001d15e4       0x20 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-exit.o)
+                0x001d15e4                exit
+ .text          0x001d1604        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .text          0x001d1604       0x48 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                0x001d1604                memcmp
+ .text          0x001d164c       0x28 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                0x001d164c                strlen
+ .text          0x001d1674      0x188 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__atexit.o)
+                0x001d1674                __register_exitproc
+ .text          0x001d17fc      0x1d8 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__call_atexit.o)
+                0x001d17fc                __call_exitprocs
+ .text          0x001d19d4        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .text          0x001d19d4       0x3c ../keypad_test_bsp/\libhal_bsp.a(alt_exit.o)
+                0x001d19d4                _exit
+ *(.gnu.warning.*)
+ *(.fini)
+                0x001d1a10                PROVIDE (__etext, ABSOLUTE (.))
+                0x001d1a10                PROVIDE (_etext, ABSOLUTE (.))
+                0x001d1a10                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x001d1a10                . = ALIGN (0x4)
+                0x001d1a10                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x001d1a10                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x001d1a10                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x001d1a10                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x001d1a10                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x001d1a10                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                0x001d1a10                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x001d1a10                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x001d1a10                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x001d1a10                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x001d1a10                . = ALIGN (0x4)
+
+.rodata         0x001d1a10       0x38
+                0x001d1a10                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x001d1a10                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x001d1a10       0x14 obj/default/mainloop.o
+ .rodata        0x001d1a24        0xc ../keypad_test_bsp/\libhal_bsp.a(alt_main.o)
+ .rodata        0x001d1a30        0xc ../keypad_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .rodata        0x001d1a3c        0xc ../keypad_test_bsp/\libhal_bsp.a(alt_dev.o)
+ *(.rodata1)
+                0x001d1a48                . = ALIGN (0x4)
+                0x001d1a48                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x001d1a10                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x001d1a48      0x2e4 load address 0x001d1d2c
+                0x001d1a48                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x001d1a48                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x001d1a48        0x0 ../keypad_test_bsp//obj/HAL/src/crt0.o
+ .data          0x001d1a48        0x0 obj/default/mainloop.o
+ .data          0x001d1a48        0x1 obj/default/keys.o
+ .data          0x001d1a49        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_iic.o)
+ .data          0x001d1a49        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x001d1a49        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x001d1a49        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x001d1a49        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x001d1a49        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x001d1a49        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_main.o)
+ *fill*         0x001d1a49        0x3 
+ .data          0x001d1a4c       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x001d1a78        0x0 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .data          0x001d1a78        0x0 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x001d1a78        0x0 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x001d1a78        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_close.o)
+ .data          0x001d1a78        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x001d1a78      0x1a8 ../keypad_test_bsp/\libhal_bsp.a(alt_dev.o)
+                0x001d1a78                alt_dev_null
+                0x001d1aa0                alt_fd_list
+ .data          0x001d1c20        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .data          0x001d1c20        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .data          0x001d1c20        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .data          0x001d1c20        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x001d1c20        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x001d1c20        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x001d1c20        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .data          0x001d1c20        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_open.o)
+ .data          0x001d1c20        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .data          0x001d1c20        0x0 ../keypad_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .data          0x001d1c20        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .data          0x001d1c20        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_find_file.o)
+ .data          0x001d1c20        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .data          0x001d1c20        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .data          0x001d1c20        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-atexit.o)
+ .data          0x001d1c20        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-exit.o)
+ .data          0x001d1c20        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .data          0x001d1c20        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .data          0x001d1c20        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .data          0x001d1c20        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__atexit.o)
+ .data          0x001d1c20        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__call_atexit.o)
+ .data          0x001d1c20       0xe0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .data          0x001d1d00        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_exit.o)
+                0x001d9d00                _gp = ABSOLUTE ((. + 0x8000))
+                0x001d9d00                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x001d1d00        0x6 obj/default/mainloop.o
+ *fill*         0x001d1d06        0x2 
+ .sdata         0x001d1d08        0x4 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x001d1d08                alt_priority_mask
+ .sdata         0x001d1d0c       0x14 ../keypad_test_bsp/\libhal_bsp.a(alt_dev.o)
+                0x001d1d0c                alt_fs_list
+                0x001d1d14                alt_dev_list
+                0x001d1d1c                alt_max_fd
+ .sdata         0x001d1d20        0x4 ../keypad_test_bsp/\libhal_bsp.a(alt_errno.o)
+                0x001d1d20                alt_errno
+ .sdata         0x001d1d24        0x8 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+                0x001d1d24                _global_impure_ptr
+                0x001d1d28                _impure_ptr
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x001d1d2c                . = ALIGN (0x4)
+                0x001d1d2c                _edata = ABSOLUTE (.)
+                0x001d1d2c                PROVIDE (edata, ABSOLUTE (.))
+                0x001d1d2c                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x001d1d2c                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x001d2010      0x2a0
+                0x001d2010                __bss_start = ABSOLUTE (.)
+                0x001d2010                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x001d2010                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x001d2010        0x4 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x001d2010                alt_irq_active
+ .sbss          0x001d2014        0xc ../keypad_test_bsp/\libhal_bsp.a(alt_main.o)
+                0x001d2014                alt_argc
+                0x001d2018                alt_argv
+                0x001d201c                alt_envp
+ .sbss          0x001d2020        0x4 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                0x001d2020                errno
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x001d2024                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x001d2024                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x001d2024        0x0 ../keypad_test_bsp//obj/HAL/src/crt0.o
+ .bss           0x001d2024      0x100 obj/default/mainloop.o
+ .bss           0x001d2124        0x0 obj/default/keys.o
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_iic.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_close.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_open.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_find_file.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .bss           0x001d2124        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-atexit.o)
+ .bss           0x001d2124        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-exit.o)
+ .bss           0x001d2124        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .bss           0x001d2124        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .bss           0x001d2124        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .bss           0x001d2124        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__atexit.o)
+ .bss           0x001d2124        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__call_atexit.o)
+ .bss           0x001d2124        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .bss           0x001d2124        0x0 ../keypad_test_bsp/\libhal_bsp.a(alt_exit.o)
+ *(COMMON)
+ COMMON         0x001d2124      0x100 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x001d2124                alt_irq
+ COMMON         0x001d2224       0x8c c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-atexit.o)
+                0x001d2224                _atexit0
+                0x001d22b0                . = ALIGN (0x4)
+                0x001d22b0                __bss_end = ABSOLUTE (.)
+
+.rom            0x00080000        0x0 load address 0x001d22b0
+                0x00080000                PROVIDE (_alt_partition_rom_start, ABSOLUTE (.))
+ *(.rom .rom. rom.*)
+                0x00080000                . = ALIGN (0x4)
+                0x00080000                PROVIDE (_alt_partition_rom_end, ABSOLUTE (.))
+                0x001d22b0                PROVIDE (_alt_partition_rom_load_addr, LOADADDR (.rom))
+
+.ram            0x001a0000        0x0 load address 0x001d22b0
+                0x001a0000                PROVIDE (_alt_partition_ram_start, ABSOLUTE (.))
+ *(.ram .ram. ram.*)
+                0x001a0000                . = ALIGN (0x4)
+                0x001a0000                PROVIDE (_alt_partition_ram_end, ABSOLUTE (.))
+                0x001d22b0                PROVIDE (_alt_partition_ram_load_addr, LOADADDR (.ram))
+
+.onchip_memory2_0
+                0x001d22b0        0x0
+                0x001d22b0                PROVIDE (_alt_partition_onchip_memory2_0_start, ABSOLUTE (.))
+ *(.onchip_memory2_0 .onchip_memory2_0. onchip_memory2_0.*)
+                0x001d22b0                . = ALIGN (0x4)
+                0x001d22b0                PROVIDE (_alt_partition_onchip_memory2_0_end, ABSOLUTE (.))
+                0x001d22b0                _end = ABSOLUTE (.)
+                0x001d22b0                end = ABSOLUTE (.)
+                0x001d22b0                __alt_stack_base = ABSOLUTE (.)
+                0x001d22b0                PROVIDE (_alt_partition_onchip_memory2_0_load_addr, LOADADDR (.onchip_memory2_0))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x23
+ *(.comment)
+ .comment       0x00000000       0x23 obj/default/mainloop.o
+                                 0x24 (size before relaxing)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_iic.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_close.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_dev.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_errno.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_open.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_find_file.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .comment       0x00000000       0x24 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-atexit.o)
+ .comment       0x00000000       0x24 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-exit.o)
+ .comment       0x00000000       0x24 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .comment       0x00000000       0x24 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .comment       0x00000000       0x24 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .comment       0x00000000       0x24 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__atexit.o)
+ .comment       0x00000000       0x24 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__call_atexit.o)
+ .comment       0x00000000       0x24 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .comment       0x00000000       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x510
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 ../keypad_test_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x00000028       0x20 obj/default/mainloop.o
+ .debug_aranges
+                0x00000048       0x20 obj/default/keys.o
+ .debug_aranges
+                0x00000068       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_aranges
+                0x00000088       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_aranges
+                0x000000a8       0x30 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x000000d8       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x000000f8       0x18 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_aranges
+                0x00000110       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x00000130       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x00000150       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000170       0x20 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_aranges
+                0x00000190       0x20 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_aranges
+                0x000001b0       0x20 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x000001d0       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_aranges
+                0x000001f0       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x00000210       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x00000230       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_aranges
+                0x00000250       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_aranges
+                0x00000270       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_aranges
+                0x00000290       0x18 ../keypad_test_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_aranges
+                0x000002a8       0x38 ../keypad_test_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x000002e0       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x00000300       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_aranges
+                0x00000320       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_aranges
+                0x00000340       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_aranges
+                0x00000360       0x20 ../keypad_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_aranges
+                0x00000380       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_aranges
+                0x000003a0       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_aranges
+                0x000003c0       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_aranges
+                0x000003e0       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_aranges
+                0x00000400       0x20 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-atexit.o)
+ .debug_aranges
+                0x00000420       0x20 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-exit.o)
+ .debug_aranges
+                0x00000440       0x18 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_aranges
+                0x00000458       0x20 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_aranges
+                0x00000478       0x20 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x00000498       0x20 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__atexit.o)
+ .debug_aranges
+                0x000004b8       0x20 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__call_atexit.o)
+ .debug_aranges
+                0x000004d8       0x18 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .debug_aranges
+                0x000004f0       0x20 ../keypad_test_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x55c0
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x74 ../keypad_test_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x00000074      0x129 obj/default/mainloop.o
+ .debug_info    0x0000019d       0x6c obj/default/keys.o
+ .debug_info    0x00000209      0x364 ../keypad_test_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_info    0x0000056d      0x1f6 ../keypad_test_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x00000763       0x7d ../keypad_test_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x000007e0      0x190 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x00000970       0x8a ../keypad_test_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x000009fa      0x135 ../keypad_test_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x00000b2f      0x139 ../keypad_test_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x00000c68      0x406 ../keypad_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x0000106e      0x3da ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_info    0x00001448      0x1bc ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x00001604      0x19f ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x000017a3      0x350 ../keypad_test_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_info    0x00001af3       0xa3 ../keypad_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x00001b96      0x4e3 ../keypad_test_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x00002079      0x1b9 ../keypad_test_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_info    0x00002232       0x8d ../keypad_test_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_info    0x000022bf       0x8d ../keypad_test_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_info    0x0000234c       0xa3 ../keypad_test_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x000023ef       0x83 ../keypad_test_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x00002472       0x90 ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x00002502      0x4f0 ../keypad_test_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_info    0x000029f2      0x3f0 ../keypad_test_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_info    0x00002de2      0x2dd ../keypad_test_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_info    0x000030bf       0x90 ../keypad_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_info    0x0000314f      0x30d ../keypad_test_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_info    0x0000345c      0x30c ../keypad_test_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_info    0x00003768      0x339 ../keypad_test_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_info    0x00003aa1       0xda ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_info    0x00003b7b      0x1eb c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-atexit.o)
+ .debug_info    0x00003d66       0xf8 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-exit.o)
+ .debug_info    0x00003e5e       0x84 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_info    0x00003ee2       0xf1 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_info    0x00003fd3       0xc6 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_info    0x00004099      0x6fc c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__atexit.o)
+ .debug_info    0x00004795      0x70e c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__call_atexit.o)
+ .debug_info    0x00004ea3      0x631 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .debug_info    0x000054d4       0xec ../keypad_test_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_abbrev   0x00000000     0x1f14
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x12 ../keypad_test_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x00000012       0xab obj/default/mainloop.o
+ .debug_abbrev  0x000000bd       0x14 obj/default/keys.o
+ .debug_abbrev  0x000000d1      0x16a ../keypad_test_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x0000023b      0x169 ../keypad_test_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x000003a4       0x12 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x000003b6      0x124 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x000004da       0x40 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x0000051a       0x9d ../keypad_test_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x000005b7       0xba ../keypad_test_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000671      0x155 ../keypad_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x000007c6       0xf7 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_abbrev  0x000008bd       0xd5 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_abbrev  0x00000992       0xd5 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x00000a67      0x11f ../keypad_test_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_abbrev  0x00000b86       0x5a ../keypad_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x00000be0       0xd9 ../keypad_test_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x00000cb9      0x114 ../keypad_test_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_abbrev  0x00000dcd       0x79 ../keypad_test_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_abbrev  0x00000e46       0x79 ../keypad_test_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_abbrev  0x00000ebf       0x5a ../keypad_test_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x00000f19       0x12 ../keypad_test_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x00000f2b       0x42 ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x00000f6d      0x114 ../keypad_test_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_abbrev  0x00001081      0x148 ../keypad_test_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_abbrev  0x000011c9       0xde ../keypad_test_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_abbrev  0x000012a7       0x42 ../keypad_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_abbrev  0x000012e9       0xf0 ../keypad_test_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_abbrev  0x000013d9       0xf0 ../keypad_test_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_abbrev  0x000014c9      0x10d ../keypad_test_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_abbrev  0x000015d6       0x8c ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_abbrev  0x00001662      0x115 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-atexit.o)
+ .debug_abbrev  0x00001777       0xa9 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-exit.o)
+ .debug_abbrev  0x00001820       0x37 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x00001857       0x7f c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x000018d6       0x7f c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_abbrev  0x00001955      0x1f5 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__atexit.o)
+ .debug_abbrev  0x00001b4a      0x1e9 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x00001d33      0x13b c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .debug_abbrev  0x00001e6e       0xa6 ../keypad_test_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_line     0x00000000     0x22c2
+ *(.debug_line)
+ .debug_line    0x00000000       0x72 ../keypad_test_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x00000072       0x70 obj/default/mainloop.o
+ .debug_line    0x000000e2       0x73 obj/default/keys.o
+ .debug_line    0x00000155       0xed ../keypad_test_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_line    0x00000242       0xdb ../keypad_test_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x0000031d       0x6b ../keypad_test_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x00000388       0xae ../keypad_test_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x00000436       0x50 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x00000486       0x92 ../keypad_test_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x00000518       0xa4 ../keypad_test_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x000005bc      0x126 ../keypad_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x000006e2      0x114 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_line    0x000007f6      0x101 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x000008f7       0xf8 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x000009ef      0x186 ../keypad_test_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_line    0x00000b75       0x61 ../keypad_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x00000bd6      0x119 ../keypad_test_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x00000cef       0xd0 ../keypad_test_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x00000dbf       0x59 ../keypad_test_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_line    0x00000e18       0x59 ../keypad_test_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_line    0x00000e71       0x51 ../keypad_test_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x00000ec2       0xab ../keypad_test_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x00000f6d       0x50 ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x00000fbd      0x154 ../keypad_test_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_line    0x00001111      0x125 ../keypad_test_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_line    0x00001236       0xae ../keypad_test_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x000012e4       0x51 ../keypad_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_line    0x00001335       0xb9 ../keypad_test_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x000013ee       0xd5 ../keypad_test_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_line    0x000014c3       0xd1 ../keypad_test_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_line    0x00001594       0x81 ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_line    0x00001615      0x16d c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-atexit.o)
+ .debug_line    0x00001782      0x16d c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-exit.o)
+ .debug_line    0x000018ef       0x5d c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_line    0x0000194c      0x17c c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_line    0x00001ac8      0x171 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_line    0x00001c39      0x24b c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__atexit.o)
+ .debug_line    0x00001e84      0x264 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__call_atexit.o)
+ .debug_line    0x000020e8      0x169 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .debug_line    0x00002251       0x71 ../keypad_test_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_frame    0x00000000      0x6d4
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x48 obj/default/mainloop.o
+ .debug_frame   0x00000048       0x80 ../keypad_test_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x000000c8       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x000000f4       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x00000120       0x48 ../keypad_test_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x00000168       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000194       0x64 ../keypad_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x000001f8       0x48 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_frame   0x00000240       0x2c ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_frame   0x0000026c       0x2c ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x00000298       0x48 ../keypad_test_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_frame   0x000002e0       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x0000030c       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x00000338       0x48 ../keypad_test_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_frame   0x00000380       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_frame   0x000003ac       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_frame   0x000003d8       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x00000404       0x48 ../keypad_test_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_frame   0x0000044c       0x64 ../keypad_test_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_frame   0x000004b0       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_frame   0x000004dc       0x2c ../keypad_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_frame   0x00000508       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_frame   0x00000534       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_frame   0x00000560       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_frame   0x0000058c       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_frame   0x000005b8       0x20 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-atexit.o)
+ .debug_frame   0x000005d8       0x28 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-exit.o)
+ .debug_frame   0x00000600       0x20 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_frame   0x00000620       0x20 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_frame   0x00000640       0x30 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__atexit.o)
+ .debug_frame   0x00000670       0x38 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x000006a8       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_str      0x00000000     0x11db
+ *(.debug_str)
+ .debug_str     0x00000000       0x95 obj/default/mainloop.o
+                                 0x9f (size before relaxing)
+ .debug_str     0x00000095      0x193 ../keypad_test_bsp/\libhal_bsp.a(alt_iic.o)
+                                0x1fb (size before relaxing)
+ .debug_str     0x00000228       0x4c ../keypad_test_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                                0x1a5 (size before relaxing)
+ .debug_str     0x00000274       0x3a ../keypad_test_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                                0x154 (size before relaxing)
+ .debug_str     0x000002ae       0x17 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                                0x103 (size before relaxing)
+ .debug_str     0x000002c5       0xe9 ../keypad_test_bsp/\libhal_bsp.a(alt_load.o)
+                                0x1cf (size before relaxing)
+ .debug_str     0x000003ae       0x70 ../keypad_test_bsp/\libhal_bsp.a(alt_main.o)
+                                0x15a (size before relaxing)
+ .debug_str     0x0000041e      0x157 ../keypad_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                0x28a (size before relaxing)
+ .debug_str     0x00000575       0x70 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                                0x292 (size before relaxing)
+ .debug_str     0x000005e5       0x48 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                                0x1dc (size before relaxing)
+ .debug_str     0x0000062d       0x4a ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                                0x1d2 (size before relaxing)
+ .debug_str     0x00000677       0x44 ../keypad_test_bsp/\libhal_bsp.a(alt_close.o)
+                                0x1c8 (size before relaxing)
+ .debug_str     0x000006bb       0x34 ../keypad_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                0x112 (size before relaxing)
+ .debug_str     0x000006ef      0x120 ../keypad_test_bsp/\libhal_bsp.a(alt_dev.o)
+                                0x2c2 (size before relaxing)
+ .debug_str     0x0000080f       0x4b ../keypad_test_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                                0x189 (size before relaxing)
+ .debug_str     0x0000085a       0x48 ../keypad_test_bsp/\libhal_bsp.a(alt_do_ctors.o)
+                                 0x99 (size before relaxing)
+ .debug_str     0x000008a2       0x4c ../keypad_test_bsp/\libhal_bsp.a(alt_do_dtors.o)
+                                 0x98 (size before relaxing)
+ .debug_str     0x000008ee       0x14 ../keypad_test_bsp/\libhal_bsp.a(alt_errno.o)
+                                0x102 (size before relaxing)
+ .debug_str     0x00000902       0x34 ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                0x112 (size before relaxing)
+ .debug_str     0x00000936       0x56 ../keypad_test_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                                0x2d3 (size before relaxing)
+ .debug_str     0x0000098c       0x2f ../keypad_test_bsp/\libhal_bsp.a(alt_open.o)
+                                0x208 (size before relaxing)
+ .debug_str     0x000009bb       0x28 ../keypad_test_bsp/\libhal_bsp.a(alt_release_fd.o)
+                                0x19c (size before relaxing)
+ .debug_str     0x000009e3       0x3b ../keypad_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                                0x119 (size before relaxing)
+ .debug_str     0x00000a1e       0x24 ../keypad_test_bsp/\libhal_bsp.a(alt_find_dev.o)
+                                0x1a9 (size before relaxing)
+ .debug_str     0x00000a42       0x26 ../keypad_test_bsp/\libhal_bsp.a(alt_find_file.o)
+                                0x1b7 (size before relaxing)
+ .debug_str     0x00000a68       0x30 ../keypad_test_bsp/\libhal_bsp.a(alt_get_fd.o)
+                                0x1d9 (size before relaxing)
+ .debug_str     0x00000a98       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                                0x118 (size before relaxing)
+ .debug_str     0x00000ac4      0x174 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-atexit.o)
+                                0x227 (size before relaxing)
+ .debug_str     0x00000c38       0x4a c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-exit.o)
+                                0x18d (size before relaxing)
+ .debug_str     0x00000c82       0xd1 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                                0x175 (size before relaxing)
+ .debug_str     0x00000d53       0xde c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                                0x17c (size before relaxing)
+ .debug_str     0x00000e31       0x42 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                                0x182 (size before relaxing)
+ .debug_str     0x00000e73      0x297 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__atexit.o)
+                                0x4a8 (size before relaxing)
+ .debug_str     0x0000110a       0x61 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__call_atexit.o)
+                                0x486 (size before relaxing)
+ .debug_str     0x0000116b       0x46 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+                                0x45b (size before relaxing)
+ .debug_str     0x000011b1       0x2a ../keypad_test_bsp/\libhal_bsp.a(alt_exit.o)
+                                0x10e (size before relaxing)
+
+.debug_loc      0x00000000      0xb42
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x58 obj/default/mainloop.o
+ .debug_loc     0x00000058       0xb0 ../keypad_test_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_loc     0x00000108       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_loc     0x00000134       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_loc     0x00000160       0x58 ../keypad_test_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_loc     0x000001b8       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_loc     0x000001e4       0x84 ../keypad_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x00000268       0x58 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_loc     0x000002c0       0x2c ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_loc     0x000002ec       0x2c ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_loc     0x00000318       0x58 ../keypad_test_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_loc     0x00000370       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_loc     0x0000039c       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_loc     0x000003c8       0x58 ../keypad_test_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_loc     0x00000420       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_loc     0x0000044c       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_loc     0x00000478       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_loc     0x000004a4       0x58 ../keypad_test_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_loc     0x000004fc       0x84 ../keypad_test_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_loc     0x00000580       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_loc     0x000005ac       0x2c ../keypad_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_loc     0x000005d8       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_loc     0x00000604       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_loc     0x00000630       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_loc     0x0000065c       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_loc     0x00000688       0x2c c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-atexit.o)
+ .debug_loc     0x000006b4       0x3e c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-exit.o)
+ .debug_loc     0x000006f2       0x6f c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_loc     0x00000761       0x29 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_loc     0x0000078a      0x1f4 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__atexit.o)
+ .debug_loc     0x0000097e      0x198 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__call_atexit.o)
+ .debug_loc     0x00000b16       0x2c ../keypad_test_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x00000000       0x30
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x00000000       0x30 ../keypad_test_bsp//obj/HAL/src/crt0.o
+                0x001d9ca0                __alt_data_end = 0x1d9ca0
+                0x001d9ca0                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x001d22b0                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x001d22b0                PROVIDE (__alt_heap_start, end)
+                0x001d9ca0                PROVIDE (__alt_heap_limit, 0x1d9ca0)
+OUTPUT(keypad_test.elf elf32-littlenios2)
+
+.debug_ranges   0x00000000       0xe8
+ .debug_ranges  0x00000000       0x20 ../keypad_test_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x00000020       0x30 ../keypad_test_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_ranges  0x00000050       0x28 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x00000078       0x10 ../keypad_test_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_ranges  0x00000088       0x18 ../keypad_test_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_ranges  0x000000a0       0x30 ../keypad_test_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_ranges  0x000000d0       0x18 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-__call_atexit.o)

@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios' in SOPC Builder design 'sopc_scope_sys'
  * SOPC Builder design path: C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys.sopcinfo
  *
- * Generated: Fri Apr 25 14:18:48 PDT 2014
+ * Generated: Sat May 10 17:29:37 PDT 2014
  */
 
 /*
@@ -62,7 +62,7 @@
 
 #define ALT_CPU_ARCHITECTURE "altera_nios2_qsys"
 #define ALT_CPU_BIG_ENDIAN 0
-#define ALT_CPU_BREAK_ADDR 0x00160820
+#define ALT_CPU_BREAK_ADDR 0x00140820
 #define ALT_CPU_CPU_FREQ 50000000u
 #define ALT_CPU_CPU_ID_SIZE 1
 #define ALT_CPU_CPU_ID_VALUE 0x00000000
@@ -71,7 +71,7 @@
 #define ALT_CPU_DCACHE_LINE_SIZE 32
 #define ALT_CPU_DCACHE_LINE_SIZE_LOG2 5
 #define ALT_CPU_DCACHE_SIZE 2048
-#define ALT_CPU_EXCEPTION_ADDR 0x00150020
+#define ALT_CPU_EXCEPTION_ADDR 0x00120020
 #define ALT_CPU_FLUSHDA_SUPPORTED
 #define ALT_CPU_FREQ 50000000
 #define ALT_CPU_HARDWARE_DIVIDE_PRESENT 0
@@ -87,7 +87,7 @@
 #define ALT_CPU_INST_ADDR_WIDTH 0x15
 #define ALT_CPU_NAME "nios"
 #define ALT_CPU_NUM_OF_SHADOW_REG_SETS 0
-#define ALT_CPU_RESET_ADDR 0x00150000
+#define ALT_CPU_RESET_ADDR 0x00120000
 
 
 /*
@@ -96,7 +96,7 @@
  */
 
 #define NIOS2_BIG_ENDIAN 0
-#define NIOS2_BREAK_ADDR 0x00160820
+#define NIOS2_BREAK_ADDR 0x00140820
 #define NIOS2_CPU_FREQ 50000000u
 #define NIOS2_CPU_ID_SIZE 1
 #define NIOS2_CPU_ID_VALUE 0x00000000
@@ -105,7 +105,7 @@
 #define NIOS2_DCACHE_LINE_SIZE 32
 #define NIOS2_DCACHE_LINE_SIZE_LOG2 5
 #define NIOS2_DCACHE_SIZE 2048
-#define NIOS2_EXCEPTION_ADDR 0x00150020
+#define NIOS2_EXCEPTION_ADDR 0x00120020
 #define NIOS2_FLUSHDA_SUPPORTED
 #define NIOS2_HARDWARE_DIVIDE_PRESENT 0
 #define NIOS2_HARDWARE_MULTIPLY_PRESENT 1
@@ -119,7 +119,7 @@
 #define NIOS2_INITDA_SUPPORTED
 #define NIOS2_INST_ADDR_WIDTH 0x15
 #define NIOS2_NUM_OF_SHADOW_REG_SETS 0
-#define NIOS2_RESET_ADDR 0x00150000
+#define NIOS2_RESET_ADDR 0x00120000
 
 
 /*
@@ -128,7 +128,7 @@
  */
 
 #define __ALTERA_AVALON_JTAG_UART
-#define __ALTERA_AVALON_ONCHIP_MEMORY2
+#define __ALTERA_AVALON_PIO
 #define __ALTERA_GENERIC_TRISTATE_CONTROLLER
 #define __ALTERA_NIOS2_QSYS
 
@@ -149,19 +149,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag"
-#define ALT_STDERR_BASE 0x161000
+#define ALT_STDERR_BASE 0x141040
 #define ALT_STDERR_DEV jtag
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag"
-#define ALT_STDIN_BASE 0x161000
+#define ALT_STDIN_BASE 0x141040
 #define ALT_STDIN_DEV jtag
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag"
-#define ALT_STDOUT_BASE 0x161000
+#define ALT_STDOUT_BASE 0x141040
 #define ALT_STDOUT_DEV jtag
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -185,7 +185,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag altera_avalon_jtag_uart
-#define JTAG_BASE 0x161000
+#define JTAG_BASE 0x141040
 #define JTAG_IRQ 0
 #define JTAG_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_NAME "/dev/jtag"
@@ -195,6 +195,33 @@
 #define JTAG_TYPE "altera_avalon_jtag_uart"
 #define JTAG_WRITE_DEPTH 64
 #define JTAG_WRITE_THRESHOLD 8
+
+
+/*
+ * pio_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_pio_0 altera_avalon_pio
+#define PIO_0_BASE 0x141020
+#define PIO_0_BIT_CLEARING_EDGE_REGISTER 1
+#define PIO_0_BIT_MODIFYING_OUTPUT_REGISTER 1
+#define PIO_0_CAPTURE 1
+#define PIO_0_DATA_WIDTH 6
+#define PIO_0_DO_TEST_BENCH_WIRING 0
+#define PIO_0_DRIVEN_SIM_VALUE 0
+#define PIO_0_EDGE_TYPE "FALLING"
+#define PIO_0_FREQ 50000000
+#define PIO_0_HAS_IN 1
+#define PIO_0_HAS_OUT 0
+#define PIO_0_HAS_TRI 0
+#define PIO_0_IRQ 1
+#define PIO_0_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define PIO_0_IRQ_TYPE "EDGE"
+#define PIO_0_NAME "/dev/pio_0"
+#define PIO_0_RESET_VALUE 0
+#define PIO_0_SPAN 32
+#define PIO_0_TYPE "altera_avalon_pio"
 
 
 /*
@@ -223,34 +250,5 @@
 #define ROM_NAME "/dev/rom"
 #define ROM_SPAN 524288
 #define ROM_TYPE "altera_generic_tristate_controller"
-
-
-/*
- * temp_ram configuration
- *
- */
-
-#define ALT_MODULE_CLASS_temp_ram altera_avalon_onchip_memory2
-#define TEMP_RAM_ALLOW_IN_SYSTEM_MEMORY_CONTENT_EDITOR 0
-#define TEMP_RAM_ALLOW_MRAM_SIM_CONTENTS_ONLY_FILE 0
-#define TEMP_RAM_BASE 0x150000
-#define TEMP_RAM_CONTENTS_INFO ""
-#define TEMP_RAM_DUAL_PORT 0
-#define TEMP_RAM_GUI_RAM_BLOCK_TYPE "AUTO"
-#define TEMP_RAM_INIT_CONTENTS_FILE "sopc_scope_sys_temp_ram"
-#define TEMP_RAM_INIT_MEM_CONTENT 0
-#define TEMP_RAM_INSTANCE_ID "NONE"
-#define TEMP_RAM_IRQ -1
-#define TEMP_RAM_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define TEMP_RAM_NAME "/dev/temp_ram"
-#define TEMP_RAM_NON_DEFAULT_INIT_FILE_ENABLED 0
-#define TEMP_RAM_RAM_BLOCK_TYPE "AUTO"
-#define TEMP_RAM_READ_DURING_WRITE_MODE "DONT_CARE"
-#define TEMP_RAM_SINGLE_CLOCK_OP 0
-#define TEMP_RAM_SIZE_MULTIPLE 1
-#define TEMP_RAM_SIZE_VALUE 40096
-#define TEMP_RAM_SPAN 40096
-#define TEMP_RAM_TYPE "altera_avalon_onchip_memory2"
-#define TEMP_RAM_WRITABLE 1
 
 #endif /* __SYSTEM_H_ */

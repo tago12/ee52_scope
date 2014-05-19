@@ -63,32 +63,32 @@ architecture  assign_statebits  of  VRAMCtrl  is
     -- bits are: RAS CAS TRG WE ASRC AROW UACK RDY ID[2..0]
     constant  IDLE      : states := "11111100000";  -- waiting for events
 
-    constant  READ1     : states := "01111100000";  -- waiting for events
-    constant  READ2     : states := "01011000000";  -- waiting for events
-    constant  READ3     : states := "00011000000";  -- waiting for events
-    constant  READ4     : states := "00111101000";  -- waiting for events
-    constant  READ5     : states := "11111100001";  -- waiting for events
-    constant  READ6     : states := "11111100010";  -- waiting for events
+    constant  READ1     : states := "01111100000";  -- read state 1
+    constant  READ2     : states := "01011000000";  -- read state 2
+    constant  READ3     : states := "00011000000";  -- read state 3
+    constant  READ4     : states := "00011101000";  -- read state 4
+    constant  READ5     : states := "11111100001";  -- read state 5
+    constant  READ6     : states := "11111100010";  -- read state 6
 
-    constant  WRITE1    : states := "01111100001";  -- waiting for events
-    constant  WRITE2    : states := "01101000000";  -- waiting for events
-    constant  WRITE3    : states := "00101001000";  -- waiting for events
-    constant  WRITE4    : states := "11111100011";  -- waiting for events
-    constant  WRITE5    : states := "11111100100";  -- waiting for events
+    constant  WRITE1    : states := "01111100001";  -- write state 1
+    constant  WRITE2    : states := "01101000000";  -- write state 2
+    constant  WRITE3    : states := "00101001000";  -- write state 3
+    constant  WRITE4    : states := "11111100011";  -- write state 4
+    constant  WRITE5    : states := "11111100100";  -- write state 5
 
-    constant  SERIAL1   : states := "11010100000";  -- waiting for events
-    constant  SERIAL2   : states := "01010100000";  -- waiting for events
-    constant  SERIAL3   : states := "01110000000";  -- waiting for events
-    constant  SERIAL4   : states := "00110000000";  -- waiting for events
-    constant  SERIAL5   : states := "11111110000";  -- waiting for events
-    constant  SERIAL6   : states := "11111100101";  -- waiting for events
+    constant  SERIAL1   : states := "11010100000";  -- serial transfer state 1
+    constant  SERIAL2   : states := "01010100000";  -- serial transfer state 2
+    constant  SERIAL3   : states := "01110000000";  -- serial transfer state 3
+    constant  SERIAL4   : states := "00110000000";  -- serial transfer state 4
+    constant  SERIAL5   : states := "11111110000";  -- serial transfer state 5
+    constant  SERIAL6   : states := "11111100101";  -- serial transfer state 6
 
-    constant  REFRESH1  : states := "10111100000";  -- waiting for events
-    constant  REFRESH2  : states := "00111100001";  -- waiting for events
-    constant  REFRESH3  : states := "00111100010";  -- waiting for events
-    constant  REFRESH4  : states := "00111100011";  -- waiting for events
-    constant  REFRESH5  : states := "11111100110";  -- waiting for events
-    constant  REFRESH6  : states := "11111100111";  -- waiting for events
+    constant  REFRESH1  : states := "10111100000";  -- refresh state 1
+    constant  REFRESH2  : states := "00111100001";  -- refresh state 2
+    constant  REFRESH3  : states := "00111100010";  -- refresh state 3
+    constant  REFRESH4  : states := "00111100011";  -- refresh state 4
+    constant  REFRESH5  : states := "11111100110";  -- refresh state 5
+    constant  REFRESH6  : states := "11111100111";  -- refresh state 6
 
     signal  CurrentState  :  states;    -- current state
     signal  NextState     :  states;    -- next state

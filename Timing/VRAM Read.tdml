@@ -152,7 +152,7 @@
       <e id="TT109" driven="1" locked="1" s="1" show.uncertainty="ALL" te="6500" tl="6500"/>
       <e id="TT110" driven="1" locked="1" s="X" show.uncertainty="ALL" te="54632" tl="54632"/>
       <e id="TT111" driven="1" locked="1" s="0" show.uncertainty="ALL" te="59132" tl="59132"/>
-      <e id="TT112" driven="1" locked="1" s="1" show.uncertainty="ALL" te="107264" tl="107264"/>
+      <e id="TT112" driven="1" locked="1" s="1" show.uncertainty="ALL" te="133580" tl="133580"/>
     </waveform>
   </signal>
   <signal id="TT38" clock="0" show="1" show.grid="0" show.uncertainty="ALL">
@@ -161,6 +161,7 @@
       <e id="TT39" driven="1" s="Z" show.uncertainty="ALL"/>
       <e id="TT253" driven="1" locked="1" s="X" show.uncertainty="ALL" te="100448" tl="100448"/>
       <e id="TT254" driven="1" locked="1" s="V" show.uncertainty="ALL" te="106948" tl="106948"/>
+      <e id="TT336" driven="1" locked="1" s="X" show.uncertainty="ALL" te="135580" tl="135580"/>
       <e id="TT265" driven="1" locked="1" s="Z" show.uncertainty="ALL" te="153080" tl="153080"/>
     </waveform>
     <width>
@@ -299,7 +300,7 @@
       <relationship.label label.type="default"/>
     </relationship>
     <relationship id="TT252" containing.signal.ptr="TT106" show="1" slot="1" tdml.cc.ptr="TT63" type="delay" user.created="0">
-      <two.edge source.e="TT240" target.e="TT112"/>
+      <two.edge source.e="TT243" target.e="TT112"/>
       <relationship.label label.type="default"/>
     </relationship>
     <relationship id="TT255" containing.signal.ptr="TT38" show="1" slot="2" tdml.cc.ptr="TT257" type="delay" user.created="1">
@@ -362,7 +363,7 @@
       <two.edge source.e="TT243" target.e="TT309"/>
       <relationship.label label.type="default"/>
     </relationship>
-    <relationship id="TT320" containing.signal.ptr="TT245" show="1" slot="1" tdml.cc.ptr="TT63" type="delay" user.created="0">
+    <relationship id="TT320" containing.signal.ptr="TT245" show="1" slot="2" tdml.cc.ptr="TT63" type="delay" user.created="0">
       <two.edge source.e="TT240" target.e="TT318"/>
       <relationship.label label.type="default"/>
     </relationship>
@@ -378,13 +379,25 @@
       <two.edge source.e="TT60" target.e="TT316"/>
       <relationship.label label.type="default"/>
     </relationship>
-    <relationship id="TT324" containing.signal.ptr="TT245" show="1" slot="1" tdml.cc.ptr="TT63" type="delay" user.created="0">
+    <relationship id="TT324" containing.signal.ptr="TT245" show="1" slot="2" tdml.cc.ptr="TT63" type="delay" user.created="0">
       <two.edge source.e="TT232" target.e="TT317"/>
+      <relationship.label label.type="default"/>
+    </relationship>
+    <relationship id="TT55" containing.signal.ptr="TT245" show="1" slot="1" tdml.cc.ptr="TT56" type="setup" user.created="0">
+      <two.edge source.e="TT317" target.e="TT91"/>
+      <relationship.label label.type="default"/>
+    </relationship>
+    <relationship id="TT335" containing.signal.ptr="TT31" show="1" slot="5" tdml.cc.ptr="TT326" type="hold" user.created="0">
+      <two.edge source.e="TT101" target.e="TT92"/>
+      <relationship.label label.type="default"/>
+    </relationship>
+    <relationship id="TT337" containing.signal.ptr="TT38" show="1" slot="1" tdml.cc.ptr="TT63" type="delay" user.created="0">
+      <two.edge source.e="TT112" target.e="TT336"/>
       <relationship.label label.type="default"/>
     </relationship>
   </edge.relationships>
   <view.group>
-    <view begin.time="-13288" end.time="196712"/>
+    <view begin.time="-40000" end.time="170000"/>
   </view.group>
   <cc.list>
     <title id="TT62">General Data</title>
@@ -586,6 +599,17 @@
         <unit id="TT228">s</unit>
       </tdml.value>
     </tdml.cc>
+    <tdml.cc id="TT326" show="1" static="1">
+      <parm id="P327">
+        <parm.symbol id="TT328">t<sub>RAL</sub></parm.symbol>
+        <parm.desc id="TT329">Column Address to RAS Lead Time</parm.desc>
+      </parm>
+      <tdml.value id="TT330" value.type="MIN">
+        <number id="TT331">30</number>
+        <order.of.mag id="TT332">n</order.of.mag>
+        <unit id="TT333">s</unit>
+      </tdml.value>
+    </tdml.cc>
     <tdml.cc id="TT150" show="1" static="1">
       <parm id="P151">
         <parm.symbol id="TT154">t<sub>RCH</sub></parm.symbol>
@@ -628,6 +652,17 @@
         <number id="TT299">30</number>
         <order.of.mag id="TT300">n</order.of.mag>
         <unit id="TT301">s</unit>
+      </tdml.value>
+    </tdml.cc>
+    <tdml.cc id="TT56" show="1" static="1">
+      <parm id="P57">
+        <parm.symbol id="TT58">t<sub>RAD</sub></parm.symbol>
+        <parm.desc id="TT59">RAS to Column Address Delay Time</parm.desc>
+      </parm>
+      <tdml.value id="TT61" value.type="MIN">
+        <number id="TT67">12</number>
+        <order.of.mag id="TT282">n</order.of.mag>
+        <unit id="TT310">s</unit>
       </tdml.value>
     </tdml.cc>
   </cc.list>

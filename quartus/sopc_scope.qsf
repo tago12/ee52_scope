@@ -74,25 +74,6 @@ set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
 set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
-set_global_assignment -name QIP_FILE sopc_scope_sys/synthesis/sopc_scope_sys.qip
-set_global_assignment -name BDF_FILE sopc_scope.bdf
-set_global_assignment -name VHDL_TEST_BENCH_FILE simulation/modelsim/vram_ctrl.vht
-set_global_assignment -name VHDL_TEST_BENCH_FILE simulation/modelsim/display_ctrl.vht
-set_global_assignment -name VHDL_FILE vram_ctrl.vhd
-set_global_assignment -name VHDL_FILE display_ctrl.vhd
-set_global_assignment -name VHDL_FILE ../logic/display_sm.vhd
-set_global_assignment -name QIP_FILE ../logic/lpm_mux0.qip
-set_global_assignment -name QIP_FILE lpm_counter0.qip
-set_global_assignment -name QIP_FILE lpm_counter1.qip
-set_global_assignment -name QIP_FILE lpm_counter2.qip
-set_global_assignment -name QIP_FILE lpm_compare0.qip
-set_global_assignment -name QIP_FILE lpm_compare1.qip
-set_global_assignment -name QIP_FILE lpm_compare2.qip
-set_global_assignment -name QIP_FILE lpm_compare3.qip
-set_global_assignment -name QIP_FILE lpm_compare4.qip
-set_global_assignment -name QIP_FILE lpm_compare5.qip
-set_global_assignment -name QIP_FILE lpm_compare6.qip
-set_global_assignment -name QIP_FILE vram_cnt.qip
 set_location_assignment PIN_31 -to CLK
 set_location_assignment PIN_83 -to HSYNC
 set_location_assignment PIN_82 -to VSYNC
@@ -144,7 +125,6 @@ set_location_assignment PIN_168 -to WE
 set_location_assignment PIN_207 -to DATA_DIR
 set_global_assignment -name ENABLE_SIGNALTAP ON
 set_global_assignment -name USE_SIGNALTAP_FILE ../software/hello_world_2nd/stp1.stp
-set_global_assignment -name SIGNALTAP_FILE ../software/hello_world_2nd/stp1.stp
 set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_PIN_TO_SLD_NODE_ENTITY_PORT acq_clk -to auto_stp_external_clock_0 -section_id auto_signaltap_0
@@ -307,5 +287,70 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=00
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=14164" -section_id auto_signaltap_0
 set_location_assignment PIN_216 -to U10_OE
 set_location_assignment PIN_214 -to U10_DIR
+set_location_assignment PIN_57 -to PUSH2
+set_location_assignment PIN_63 -to PUSH1
+set_location_assignment PIN_64 -to ROT1A
+set_location_assignment PIN_65 -to ROT1B
+set_location_assignment PIN_68 -to ROT2A
+set_location_assignment PIN_69 -to ROT2B
+set_location_assignment PIN_100 -to I2C_SCL
+set_location_assignment PIN_103 -to I2C_SDA
+set_location_assignment PIN_70 -to PENIRQ
+set_global_assignment -name VERILOG_FILE sopc_scope_sys/synthesis/submodules/timescale.v
+set_global_assignment -name QIP_FILE sopc_scope_sys/synthesis/sopc_scope_sys.qip
+set_global_assignment -name BDF_FILE sopc_scope.bdf
+set_global_assignment -name VHDL_TEST_BENCH_FILE simulation/modelsim/vram_ctrl.vht
+set_global_assignment -name VHDL_TEST_BENCH_FILE simulation/modelsim/display_ctrl.vht
+set_global_assignment -name VHDL_FILE vram_ctrl.vhd
+set_global_assignment -name VHDL_FILE display_ctrl.vhd
+set_global_assignment -name VHDL_FILE ../logic/display_sm.vhd
+set_global_assignment -name QIP_FILE ../logic/lpm_mux0.qip
+set_global_assignment -name QIP_FILE lpm_counter0.qip
+set_global_assignment -name QIP_FILE lpm_counter1.qip
+set_global_assignment -name QIP_FILE lpm_counter2.qip
+set_global_assignment -name QIP_FILE lpm_compare0.qip
+set_global_assignment -name QIP_FILE lpm_compare1.qip
+set_global_assignment -name QIP_FILE lpm_compare2.qip
+set_global_assignment -name QIP_FILE lpm_compare3.qip
+set_global_assignment -name QIP_FILE lpm_compare4.qip
+set_global_assignment -name QIP_FILE lpm_compare5.qip
+set_global_assignment -name QIP_FILE lpm_compare6.qip
+set_global_assignment -name QIP_FILE vram_cnt.qip
+set_global_assignment -name SIGNALTAP_FILE ../software/hello_world_2nd/stp1.stp
+set_global_assignment -name BDF_FILE decoder.bdf
+set_global_assignment -name QIP_FILE lpm_counter3.qip
+set_global_assignment -name QIP_FILE lpm_compare9.qip
+set_global_assignment -name BDF_FILE debouncer.bdf
+set_location_assignment PIN_114 -to DATA_BUS[8]
+set_location_assignment PIN_117 -to DATA_BUS[9]
+set_location_assignment PIN_118 -to DATA_BUS[10]
+set_location_assignment PIN_119 -to DATA_BUS[11]
+set_location_assignment PIN_120 -to DATA_BUS[12]
+set_location_assignment PIN_126 -to DATA_BUS[13]
+set_location_assignment PIN_127 -to DATA_BUS[14]
+set_location_assignment PIN_128 -to DATA_BUS[15]
+set_location_assignment PIN_131 -to DATA_BUS[16]
+set_location_assignment PIN_132 -to DATA_BUS[17]
+set_location_assignment PIN_133 -to DATA_BUS[18]
+set_location_assignment PIN_134 -to DATA_BUS[19]
+set_location_assignment PIN_135 -to DATA_BUS[20]
+set_location_assignment PIN_137 -to DATA_BUS[21]
+set_location_assignment PIN_139 -to DATA_BUS[22]
+set_location_assignment PIN_142 -to DATA_BUS[23]
+set_location_assignment PIN_73 -to RAS2
+set_location_assignment PIN_76 -to CAS3
+set_location_assignment PIN_55 -to TEMP_GND1
+set_location_assignment PIN_56 -to TEMP_GND2
+set_location_assignment PIN_44 -to VADDR_B[1]
+set_location_assignment PIN_43 -to VADDR_B[0]
+set_location_assignment PIN_45 -to VADDR_B[2]
+set_location_assignment PIN_46 -to VADDR_B[3]
+set_location_assignment PIN_49 -to VADDR_B[4]
+set_location_assignment PIN_50 -to VADDR_B[5]
+set_location_assignment PIN_51 -to VADDR_B[6]
+set_location_assignment PIN_52 -to VADDR_B[7]
+set_location_assignment PIN_80 -to VADDR_B[8]
+set_location_assignment PIN_78 -to vramcs
+set_location_assignment PIN_81 -to vramwelu
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp

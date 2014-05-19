@@ -1,0 +1,120 @@
+
+/* Includes */
+/*#include "system.h" /* Base addresses */
+#include "vram_test.h" /* File constants */
+
+/* Variables */
+    .section .data  /* No alignment necessary: variables are bytes */
+values: .skip VRAM_PERIOD   /* Array of random values being tested */
+
+/* Code */
+    .section .text
+
+/* keys_init */
+    .global main
+main:
+    /* set up things */
+    XOR     r8, r8, r8      /* r8 is array index */
+    MOVIA   r9, values      /* r9 is array base address */
+    MOVI    r10, LOOP_PERIOD/* r10 is length of array */
+    MOVHI   r11, %hi(VRAM_BASE)     /* r11 is base of VRAM */
+    ORI     r11, r11, %lo(VRAM_BASE)
+    XOR     r14, r14, r14   /* r14 is VRAM block index */
+    MOVHI   r15, %hi(VRAM_BLOCKS)/* r15 is number of blocks in VRAM */
+    ORI 	r15, r15, %lo(VRAM_BLOCKS)
+    XOR     r16, r16, r16   /* r16 is test id */
+
+fill_array:     /* fill the array with LOOP_PERIOD random values */
+    CALL    rand          /* generate random number */
+    ANDHI   r2, r2, CLEAR_TOP /* clear top bits */
+    STB     r2, (r9)      /* and store in array */
+    ADDI    r9, r9, WIDTH /* go to next position in memory */
+    ADDI    r8, r8, 1     /* and go to next element */
+    BLT     r8, r10, fill_array /* if we haven't reached end of array, repeat */
+    XOR     r8, r8, r8    /* else clear counter */
+    MOVIA   r9, values    /* and reset array base address */
+
+write_values:   /* write values from array to VRAM */
+    LDBIO   r12, (r9)     /* fetch byte from array */
+    STBIO   r12, (r11)    /* and write it to VRAM */
+    ADDI    r9, r9, WIDTH /* go to next position in array */
+    ADDI    r11, r11, WIDTH /* and in VRAM */
+    ADDI    r8, r8, 1     /* then go to next element */
+    BLT     r8, r10, write_values /* if we haven't reached end of array, repeat */
+    XOR     r8, r8, r8    /* else clear counter */
+    MOVIA   r9, values    /* and reset array base address */
+    SUBI    r11, r11, VRAM_PERIOD     /* and base of VRAM */
+
+read_values:    /* read values from VRAM and compare with array */
+    LDBIO   r12, (r9)     /* fetch byte from array */
+    LDBIO   r13, (r11)    /* fetch byte from VRAM */
+    BNE     r12, r13, error /* if the values don't match, we have an error */
+    ADDI    r9, r9, WIDTH /* go to next position in array */
+    ADDI    r11, r11, WIDTH /* and in VRAM */
+    ADDI    r8, r8, 1       /* then go to next element */
+    BLT     r8, r10, read_values /* if we haven't reached end of array, repeat */
+    XOR     r8, r8, r8    /* else clear counter */
+
+    ADDI    r14, r14, 1   /* go to next block in VRAM (index)*/
+    BLT     r14, r15, fill_array /* and if we haven't reach end, repeat */
+    ADDI    r16, r16, 1   /* increase id to indicate next test */
+
+fast_write:     /* back-to-back write values to VRAM */
+    MOVHI   r12, %hi(VRAM_BASE)  /* should execute at base of VRAM */
+    ORI     r12, r12, %lo(VRAM_BASE)
+    MOVHI   r8, %hi(VAL1)        /* load values to test into registers */
+    ORI 	r8, r8, %lo(VAL1)
+    MOVI    r9, %hi(VAL2)
+    ORI 	r9, r9, %lo(VAL2)
+    MOVI    r10, %hi(VAL3)
+    ORI 	r10, r10, %lo(VAL3)
+    MOVI    r11, %hi(VAL4)
+    ORI 	r11, r11, %lo(VAL4)
+
+    STBIO   r8, 0(r12)      /* save values to memory */
+    STBIO   r9, 1(r12)
+    STBIO   r10, 2(r12)
+    STBIO   r11, 3(r12)
+
+fast_read:      /* and read them back, quickly */
+    LDBIO   r13, 0(r12)     /* read values from memory */
+    LDBIO   r14, 1(r12)
+    LDBIO   r15, 2(r12)
+    LDBIO   r16, 3(r12)
+
+    BNE     r13, r8, error  /* compare them to the stored values */
+    BNE     r14, r9, error
+    BNE     r15, r10, error
+    BNE     r16, r11, error
+
+    XOR     r8, r8, r8      /* clear r8 for next test (index) */
+    ADDI    r16, r16, 1     /* increase id to indicate next test */
+    MOVIA   r9, values      /* load array base address */
+    MOVI    r10, LOOP_PERIOD/* load length of array */
+
+write_values_wait:   /* write values from array to VRAM again and wait */
+    LDBIO   r11, (r9) /* fetch byte from array */
+    STBIO   r11, (r12)/* and write it to VRAM */
+    ADDI    r9, r9, WIDTH /* go to next position in array */
+    ADDI    r12, r12, WIDTH /* and in VRAM */
+    ADDI    r8, r8, 1       /* then go to next element */
+    BLT     r8, r10, write_values_wait /* if we haven't reached end of array, repeat */
+
+    XOR     r8, r8, r8    /* else clear counter */
+    MOVHI   r4, %hi(WAIT_TIME) /* and wait for a while */
+    ORI     r4, r4, %lo(WAIT_TIME)
+    CALL    usleep        /* using usleep */
+
+read_values_wait:    /* read them back and compare */
+    LDBIO   r11, (r9)       /* fetch byte from array */
+    LDBIO   r13, (r12)      /* fetch byte from VRAM */
+    BNE     r11, r13, error /* if the values don't match, we have an error */
+    ADDI    r9, r9, WIDTH /* go to next position in array */
+    ADDI    r12, r12, WIDTH /* and in VRAM */
+    ADDI    r8, r8, 1       /* then go to next element */
+    BLT     r8, r10, read_values_wait /* if we haven't reached end of array, repeat */
+
+    RET
+
+error:          /* get here in case of error */
+    JMPI    error

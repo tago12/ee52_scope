@@ -10,15 +10,15 @@
 
 /*
    This file contains the constants for interfacing between the C code and
-   the assembly code/hardware for the Digital Oscilloscope project.  This is
-   a sample interface file to allow compilation of the .c files.
+   the assembly code/hardware for the Digital Oscilloscope project.
 
 
    Revision History:
       3/8/94   Glen George       Initial revision.
       3/13/94  Glen George       Updated comments.
       3/17/97  Glen George       Added constant MAX_SAMPLE_SIZE and removed
-	                         KEY_UNUSED.
+	                             KEY_UNUSED.
+      5/14/14  Santiago Navonne  Changed keypad codes.
 */
 
 
@@ -39,11 +39,11 @@
 /* constants */
 
 /* keypad constants */
-#define  KEY_MENU       0	/* <Menu>      */
-#define  KEY_UP         1	/* <Up>        */
-#define  KEY_DOWN       2	/* <Down>      */
-#define  KEY_LEFT       3	/* <Left>      */
-#define  KEY_RIGHT      4	/* <Right>     */
+#define  KEY_MENU       1	/* <Menu>      */
+#define  KEY_UP         2	/* <Up>        */
+#define  KEY_DOWN       3	/* <Down>      */
+#define  KEY_LEFT       4	/* <Left>      */
+#define  KEY_RIGHT      5	/* <Right>     */
 #define  KEY_ILLEGAL    6	/* illegal key */
 
 /* display constants */

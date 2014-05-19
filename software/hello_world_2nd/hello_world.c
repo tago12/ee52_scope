@@ -15,28 +15,64 @@
  */
 
 #include <stdio.h>
-#define BLOCK_SIZE 0x100
-#define BLOCK_NUM 0x20000 / BLOCK_SIZE
+#define BLOCK_SIZE 149
+#define RAM_BLOCK_NUM 0x20000 / BLOCK_SIZE
+#define ROM_BLOCK_NUM 0x80000 / BLOCK_SIZE
+
+#undef TEST_RAM
+#undef TEST_ROM
+#define KEYS_TEST
+
+extern int key_available();
+extern unsigned char getkey();
+extern void keys_init();
 
 int main()
 {
   int i, n;
-  char *array = (char *)0x120000;
-  printf("%d", (int)array[0]);
-  for (i = 0; i < BLOCK_NUM; i++)
+  char *array;
+
+#ifdef TEST_RAM
+  array = (char *)0x120000;
+  for (i = 0; i < RAM_BLOCK_NUM; i++)
   {
-	  for (n = 0; n < 256; n++)
+	  for (n = 0; n < BLOCK_SIZE; n++)
 	  {
 		  array[n] = (char)n;
 	  }
-	  for (n = 0; n < 256; n++)
+	  for (n = 0; n < BLOCK_SIZE; n++)
 	  {
 		  if (array[n] != (char)n)
-			  printf("failed block %x, byte %x\n", i, n);
+			  printf("RAM: failed block %x, byte %x\n", i, n);
 	  }
 	  array += BLOCK_SIZE;
   }
-  printf("Success!\n");
+  printf("RAM: Success!\n");
+
+#endif /* TEST_RAM */
+
+#ifdef TEST_ROM
+  array = (char *)0x80000;
+  for (i = 0; i < ROM_BLOCK_NUM; i++)
+    {
+  	  for (n = 0; n < BLOCK_SIZE; n++)
+  	  {
+  		  if (array[n] != (char)n)
+  			  printf("ROM: failed block %x, byte %x\n", i, n);
+  	  }
+  	  array += BLOCK_SIZE;
+    }
+  printf("ROM: Success!\n");
+#endif /* TEST_ROM */
+
+#ifdef KEYS_TEST
+  keys_init();
+  while (1)
+  {
+	  if (key_available())
+		  printf("Key pressed: %d\n", (int)getkey());
+  }
+#endif
 
 
   return 0;

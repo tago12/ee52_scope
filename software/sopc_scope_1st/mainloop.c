@@ -93,7 +93,8 @@ int  main()
     /* variables */
     enum keycode        key;		    /* an input key */
 
-    enum status         state = MENU_ON;    /* current program state */
+    enum status
+    state = MENU_ON;    /* current program state */
 
     unsigned char *sample;		    /* a captured trace */
 

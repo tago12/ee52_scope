@@ -28,22 +28,28 @@ module sopc_scope_sys_bridge (
     ,input  logic reset
     ,input  logic request
     ,output logic grant
-    ,input  logic[ 18 :0 ] tcs_addr_out
-    ,output  wire [ 18 :0 ] addr_out
-    ,input  logic[ 0 :0 ] tcs_rom_tcm_chipselect_n_out
-    ,output  wire [ 0 :0 ] rom_tcm_chipselect_n_out
-    ,input  logic[ 0 :0 ] tcs_ram_tcm_read_out
-    ,output  wire [ 0 :0 ] ram_tcm_read_out
-    ,input  logic[ 0 :0 ] tcs_ram_tcm_write_n_out
-    ,output  wire [ 0 :0 ] ram_tcm_write_n_out
-    ,output logic[ 7 :0 ] tcs_data_outen_in
-    ,input  logic[ 7 :0 ] tcs_data_outen
-    ,input  logic tcs_data_outen_outen
-    ,inout  wire [ 7 :0 ]  data_outen
-    ,input  logic[ 0 :0 ] tcs_rom_tcm_read_out
-    ,output  wire [ 0 :0 ] rom_tcm_read_out
+    ,output logic[ 0 :0 ] tcs_vram_tcm_waitrequest_in
+    ,input  logic[ 0 :0 ] vram_tcm_waitrequest_in
     ,input  logic[ 0 :0 ] tcs_ram_tcm_chipselect_n_out
     ,output  wire [ 0 :0 ] ram_tcm_chipselect_n_out
+    ,input  logic[ 0 :0 ] tcs_we
+    ,output  wire [ 0 :0 ] we
+    ,output logic[ 31 :0 ] tcs_data_in
+    ,input  logic[ 31 :0 ] tcs_data
+    ,input  logic tcs_data_outen
+    ,inout  wire [ 31 :0 ]  data
+    ,input  logic[ 0 :0 ] tcs_vram_tcm_chipselect_n_out
+    ,output  wire [ 0 :0 ] vram_tcm_chipselect_n_out
+    ,input  logic[ 0 :0 ] tcs_rom_tcm_read_out
+    ,output  wire [ 0 :0 ] rom_tcm_read_out
+    ,input  logic[ 18 :0 ] tcs_addr
+    ,output  wire [ 18 :0 ] addr
+    ,input  logic[ 0 :0 ] tcs_rom_tcm_chipselect_n_out
+    ,output  wire [ 0 :0 ] rom_tcm_chipselect_n_out
+    ,input  logic[ 19 :0 ] tcs_vram_tcm_address_out
+    ,output  wire [ 19 :0 ] vram_tcm_address_out
+    ,input  logic[ 0 :0 ] tcs_ram_tcm_read_out
+    ,output  wire [ 0 :0 ] ram_tcm_read_out
 		     
    );
    reg grant_reg;
@@ -58,133 +64,121 @@ module sopc_scope_sys_bridge (
    
 
 
- // ** Output Pin addr_out 
+ // ** Input Pin vram_tcm_waitrequest_in 
  
-    reg                       addr_outen_reg;     
+    reg [ 0 : 0 ] 	vram_tcm_waitrequest_in_reg;
+								    
+    always@(posedge clk) begin
+	 vram_tcm_waitrequest_in_reg <= vram_tcm_waitrequest_in;
+    end
+           
+ 
+    assign      tcs_vram_tcm_waitrequest_in[ 0 : 0 ] = vram_tcm_waitrequest_in_reg[ 0 : 0 ];
+         
+
+
+ // ** Output Pin ram_tcm_chipselect_n_out 
+ 
+    reg                       ram_tcm_chipselect_n_outen_reg;     
   
     always@(posedge clk) begin
 	 if( reset ) begin
-	   addr_outen_reg <= 'b0;
+	   ram_tcm_chipselect_n_outen_reg <= 'b0;
 	 end
 	 else begin
-	   addr_outen_reg <= 'b1;
+	   ram_tcm_chipselect_n_outen_reg <= 'b1;
 	 end
      end		     
    
  
-    reg [ 18 : 0 ] addr_out_reg;   
+    reg [ 0 : 0 ] ram_tcm_chipselect_n_out_reg;   
 
      always@(posedge clk) begin
-	 addr_out_reg   <= tcs_addr_out[ 18 : 0 ];
+	 ram_tcm_chipselect_n_out_reg   <= tcs_ram_tcm_chipselect_n_out[ 0 : 0 ];
       end
           
  
-    assign 	addr_out[ 18 : 0 ] = addr_outen_reg ? addr_out_reg : 'z ;
+    assign 	ram_tcm_chipselect_n_out[ 0 : 0 ] = ram_tcm_chipselect_n_outen_reg ? ram_tcm_chipselect_n_out_reg : 'z ;
         
 
 
- // ** Output Pin rom_tcm_chipselect_n_out 
+ // ** Output Pin we 
  
-    reg                       rom_tcm_chipselect_n_outen_reg;     
+    reg                       ween_reg;     
   
     always@(posedge clk) begin
 	 if( reset ) begin
-	   rom_tcm_chipselect_n_outen_reg <= 'b0;
+	   ween_reg <= 'b0;
 	 end
 	 else begin
-	   rom_tcm_chipselect_n_outen_reg <= 'b1;
+	   ween_reg <= 'b1;
 	 end
      end		     
    
  
-    reg [ 0 : 0 ] rom_tcm_chipselect_n_out_reg;   
+    reg [ 0 : 0 ] we_reg;   
 
      always@(posedge clk) begin
-	 rom_tcm_chipselect_n_out_reg   <= tcs_rom_tcm_chipselect_n_out[ 0 : 0 ];
+	 we_reg   <= tcs_we[ 0 : 0 ];
       end
           
  
-    assign 	rom_tcm_chipselect_n_out[ 0 : 0 ] = rom_tcm_chipselect_n_outen_reg ? rom_tcm_chipselect_n_out_reg : 'z ;
+    assign 	we[ 0 : 0 ] = ween_reg ? we_reg : 'z ;
         
 
 
- // ** Output Pin ram_tcm_read_out 
- 
-    reg                       ram_tcm_read_outen_reg;     
+ // ** Bidirectional Pin data 
+   
+    reg                       data_outen_reg;
   
     always@(posedge clk) begin
-	 if( reset ) begin
-	   ram_tcm_read_outen_reg <= 'b0;
-	 end
-	 else begin
-	   ram_tcm_read_outen_reg <= 'b1;
-	 end
-     end		     
-   
- 
-    reg [ 0 : 0 ] ram_tcm_read_out_reg;   
-
-     always@(posedge clk) begin
-	 ram_tcm_read_out_reg   <= tcs_ram_tcm_read_out[ 0 : 0 ];
-      end
-          
- 
-    assign 	ram_tcm_read_out[ 0 : 0 ] = ram_tcm_read_outen_reg ? ram_tcm_read_out_reg : 'z ;
-        
-
-
- // ** Output Pin ram_tcm_write_n_out 
- 
-    reg                       ram_tcm_write_n_outen_reg;     
-  
-    always@(posedge clk) begin
-	 if( reset ) begin
-	   ram_tcm_write_n_outen_reg <= 'b0;
-	 end
-	 else begin
-	   ram_tcm_write_n_outen_reg <= 'b1;
-	 end
-     end		     
-   
- 
-    reg [ 0 : 0 ] ram_tcm_write_n_out_reg;   
-
-     always@(posedge clk) begin
-	 ram_tcm_write_n_out_reg   <= tcs_ram_tcm_write_n_out[ 0 : 0 ];
-      end
-          
- 
-    assign 	ram_tcm_write_n_out[ 0 : 0 ] = ram_tcm_write_n_outen_reg ? ram_tcm_write_n_out_reg : 'z ;
-        
-
-
- // ** Bidirectional Pin data_outen 
-   
-    reg                       data_outen_outen_reg;
-  
-    always@(posedge clk) begin
-	 data_outen_outen_reg <= tcs_data_outen_outen;
+	 data_outen_reg <= tcs_data_outen;
      end
   
   
-    reg [ 7 : 0 ] data_outen_reg;   
+    reg [ 31 : 0 ] data_reg;   
 
      always@(posedge clk) begin
-	 data_outen_reg   <= tcs_data_outen[ 7 : 0 ];
+	 data_reg   <= tcs_data[ 31 : 0 ];
       end
          
   
-    assign 	data_outen[ 7 : 0 ] = data_outen_outen_reg ? data_outen_reg : 'z ;
+    assign 	data[ 31 : 0 ] = data_outen_reg ? data_reg : 'z ;
        
   
-    reg [ 7 : 0 ] 	data_outen_in_reg;
+    reg [ 31 : 0 ] 	data_in_reg;
 								    
     always@(posedge clk) begin
-	 data_outen_in_reg <= data_outen[ 7 : 0 ];
+	 data_in_reg <= data[ 31 : 0 ];
     end
     
   
-    assign      tcs_data_outen_in[ 7 : 0 ] = data_outen_in_reg[ 7 : 0 ];
+    assign      tcs_data_in[ 31 : 0 ] = data_in_reg[ 31 : 0 ];
+        
+
+
+ // ** Output Pin vram_tcm_chipselect_n_out 
+ 
+    reg                       vram_tcm_chipselect_n_outen_reg;     
+  
+    always@(posedge clk) begin
+	 if( reset ) begin
+	   vram_tcm_chipselect_n_outen_reg <= 'b0;
+	 end
+	 else begin
+	   vram_tcm_chipselect_n_outen_reg <= 'b1;
+	 end
+     end		     
+   
+ 
+    reg [ 0 : 0 ] vram_tcm_chipselect_n_out_reg;   
+
+     always@(posedge clk) begin
+	 vram_tcm_chipselect_n_out_reg   <= tcs_vram_tcm_chipselect_n_out[ 0 : 0 ];
+      end
+          
+ 
+    assign 	vram_tcm_chipselect_n_out[ 0 : 0 ] = vram_tcm_chipselect_n_outen_reg ? vram_tcm_chipselect_n_out_reg : 'z ;
         
 
 
@@ -213,28 +207,103 @@ module sopc_scope_sys_bridge (
         
 
 
- // ** Output Pin ram_tcm_chipselect_n_out 
+ // ** Output Pin addr 
  
-    reg                       ram_tcm_chipselect_n_outen_reg;     
+    reg                       addren_reg;     
   
     always@(posedge clk) begin
 	 if( reset ) begin
-	   ram_tcm_chipselect_n_outen_reg <= 'b0;
+	   addren_reg <= 'b0;
 	 end
 	 else begin
-	   ram_tcm_chipselect_n_outen_reg <= 'b1;
+	   addren_reg <= 'b1;
 	 end
      end		     
    
  
-    reg [ 0 : 0 ] ram_tcm_chipselect_n_out_reg;   
+    reg [ 18 : 0 ] addr_reg;   
 
      always@(posedge clk) begin
-	 ram_tcm_chipselect_n_out_reg   <= tcs_ram_tcm_chipselect_n_out[ 0 : 0 ];
+	 addr_reg   <= tcs_addr[ 18 : 0 ];
       end
           
  
-    assign 	ram_tcm_chipselect_n_out[ 0 : 0 ] = ram_tcm_chipselect_n_outen_reg ? ram_tcm_chipselect_n_out_reg : 'z ;
+    assign 	addr[ 18 : 0 ] = addren_reg ? addr_reg : 'z ;
+        
+
+
+ // ** Output Pin rom_tcm_chipselect_n_out 
+ 
+    reg                       rom_tcm_chipselect_n_outen_reg;     
+  
+    always@(posedge clk) begin
+	 if( reset ) begin
+	   rom_tcm_chipselect_n_outen_reg <= 'b0;
+	 end
+	 else begin
+	   rom_tcm_chipselect_n_outen_reg <= 'b1;
+	 end
+     end		     
+   
+ 
+    reg [ 0 : 0 ] rom_tcm_chipselect_n_out_reg;   
+
+     always@(posedge clk) begin
+	 rom_tcm_chipselect_n_out_reg   <= tcs_rom_tcm_chipselect_n_out[ 0 : 0 ];
+      end
+          
+ 
+    assign 	rom_tcm_chipselect_n_out[ 0 : 0 ] = rom_tcm_chipselect_n_outen_reg ? rom_tcm_chipselect_n_out_reg : 'z ;
+        
+
+
+ // ** Output Pin vram_tcm_address_out 
+ 
+    reg                       vram_tcm_address_outen_reg;     
+  
+    always@(posedge clk) begin
+	 if( reset ) begin
+	   vram_tcm_address_outen_reg <= 'b0;
+	 end
+	 else begin
+	   vram_tcm_address_outen_reg <= 'b1;
+	 end
+     end		     
+   
+ 
+    reg [ 19 : 0 ] vram_tcm_address_out_reg;   
+
+     always@(posedge clk) begin
+	 vram_tcm_address_out_reg   <= tcs_vram_tcm_address_out[ 19 : 0 ];
+      end
+          
+ 
+    assign 	vram_tcm_address_out[ 19 : 0 ] = vram_tcm_address_outen_reg ? vram_tcm_address_out_reg : 'z ;
+        
+
+
+ // ** Output Pin ram_tcm_read_out 
+ 
+    reg                       ram_tcm_read_outen_reg;     
+  
+    always@(posedge clk) begin
+	 if( reset ) begin
+	   ram_tcm_read_outen_reg <= 'b0;
+	 end
+	 else begin
+	   ram_tcm_read_outen_reg <= 'b1;
+	 end
+     end		     
+   
+ 
+    reg [ 0 : 0 ] ram_tcm_read_out_reg;   
+
+     always@(posedge clk) begin
+	 ram_tcm_read_out_reg   <= tcs_ram_tcm_read_out[ 0 : 0 ];
+      end
+          
+ 
+    assign 	ram_tcm_read_out[ 0 : 0 ] = ram_tcm_read_outen_reg ? ram_tcm_read_out_reg : 'z ;
         
 
 endmodule

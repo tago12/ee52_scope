@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios' in SOPC Builder design 'sopc_scope_sys'
 # SOPC Builder design path: C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys.sopcinfo
 #
-# Generated: Fri Apr 25 14:18:48 PDT 2014
+# Generated: Sat May 10 17:29:37 PDT 2014
 
 # DO NOT MODIFY THIS FILE
 #
@@ -51,6 +51,3 @@ memory 0x80000 0x100000 cache
 
 # ram
 memory 0x120000 0x140000 cache
-
-# temp_ram
-memory 0x150000 0x159ca0 cache

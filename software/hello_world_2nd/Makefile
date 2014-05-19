@@ -144,7 +144,7 @@ ELF := hello_world_2nd.elf
 # Paths to C, C++, and assembly source files.
 C_SRCS := hello_world.c
 CXX_SRCS :=
-ASM_SRCS :=
+ASM_SRCS := keys.S
 
 
 # Path to root of object file tree.

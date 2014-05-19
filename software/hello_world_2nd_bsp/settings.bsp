@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Apr 25, 2014 9:48:08 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1398487688896</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>May 10, 2014 5:29:35 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1399768175254</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\tago\Dropbox\OUT\EE52\software\hello_world_2nd_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\tago\Dropbox\OUT\EE52\quartus\sopc_scope_sys.sopcinfo</SopcDesignFile>
@@ -146,7 +146,7 @@
                 <SettingName>hal.linker.exception_stack_memory_region_name</SettingName>
                 <Identifier>NONE</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>temp_ram</Value>
+                <Value>ram</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>none</DestinationFile>
                 <Description>Name of the existing memory region that will be divided up to create the 'exception_stack' memory region. The selected region name will be adjusted automatically when the BSP is generated to create the 'exception_stack' memory region.</Description>
@@ -182,7 +182,7 @@
                 <SettingName>hal.linker.interrupt_stack_memory_region_name</SettingName>
                 <Identifier>NONE</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>temp_ram</Value>
+                <Value>ram</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>none</DestinationFile>
                 <Description>Name of the existing memory region that will be divided up to create the 'interrupt_stack' memory region. The selected region name will be adjusted automatically when the BSP is generated to create the 'interrupt_stack' memory region.</Description>
@@ -875,39 +875,39 @@
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>temp_ram</slaveDescriptor>
-                <addressRange>0x00150000 - 0x00159C9F</addressRange>
-                <addressSpan>40096</addressSpan>
-                <attributes>memory</attributes>
+                <slaveDescriptor>pio_0</slaveDescriptor>
+                <addressRange>0x00141020 - 0x0014103F</addressRange>
+                <addressSpan>32</addressSpan>
+                <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag</slaveDescriptor>
-                <addressRange>0x00161000 - 0x00161007</addressRange>
+                <addressRange>0x00141040 - 0x00141047</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <LinkerSection>
                 <sectionName>.text</sectionName>
-                <regionName>temp_ram</regionName>
+                <regionName>ram</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.rodata</sectionName>
-                <regionName>temp_ram</regionName>
+                <regionName>ram</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.rwdata</sectionName>
-                <regionName>temp_ram</regionName>
+                <regionName>ram</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.bss</sectionName>
-                <regionName>temp_ram</regionName>
+                <regionName>ram</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.heap</sectionName>
-                <regionName>temp_ram</regionName>
+                <regionName>ram</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.stack</sectionName>
-                <regionName>temp_ram</regionName>
+                <regionName>ram</regionName>
         </LinkerSection>
 </sch:Settings>
