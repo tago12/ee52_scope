@@ -76,19 +76,19 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : 5         :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : 6         :        :                   :         : 1         :                
 VCCIO1                       : 7         : power  :                   : 3.3V    : 1         :                
 GND                          : 8         : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 9         :        :                   :         : 1         :                
+SIG[0]                       : 9         : input  : 3.3-V LVTTL       :         : 1         : Y              
 VCCINT                       : 10        : power  :                   : 1.2V    :           :                
 GND                          : 11        : gnd    :                   :         :           :                
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 12        : input  : 3.3-V LVTTL       :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : 13        :        :                   :         : 1         :                
+SIG[1]                       : 13        : input  : 3.3-V LVTTL       :         : 1         : Y              
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 14        : input  : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : 15        : power  :                   : 3.3V    : 1         :                
 GND                          : 16        : gnd    :                   :         :           :                
 nSTATUS                      : 17        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 18        :        :                   :         : 1         :                
+SIG[2]                       : 18        : input  : 3.3-V LVTTL       :         : 1         : Y              
 VCCINT                       : 19        : power  :                   : 1.2V    :           :                
 GND                          : 20        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 21        :        :                   :         : 1         :                
+SIG[3]                       : 21        : input  : 3.3-V LVTTL       :         : 1         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 22        :        :                   :         : 1         :                
 ~ALTERA_DCLK~                : 23        : output : 3.3-V LVTTL       :         : 1         : N              
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 24        : input  : 3.3-V LVTTL       :         : 1         : N              
@@ -104,22 +104,22 @@ auto_stp_external_clock_1    : 33        : input  : 3.3-V LVTTL       :         
 GND+                         : 34        :        :                   :         : 2         :                
 VCCIO2                       : 35        : power  :                   : 3.3V    : 2         :                
 GND                          : 36        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 37        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 38        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 39        :        :                   :         : 2         :                
+SIG[4]                       : 37        : input  : 3.3-V LVTTL       :         : 2         : Y              
+SIG[5]                       : 38        : input  : 3.3-V LVTTL       :         : 2         : Y              
+SIG[6]                       : 39        : input  : 3.3-V LVTTL       :         : 2         : Y              
 VCCINT                       : 40        : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 41        :        :                   :         : 2         :                
+SIG[7]                       : 41        : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND                          : 42        : gnd    :                   :         :           :                
-VADDR_B[0]                   : 43        : output : 3.3-V LVTTL       :         : 2         : Y              
-VADDR_B[1]                   : 44        : output : 3.3-V LVTTL       :         : 2         : Y              
-VADDR_B[2]                   : 45        : output : 3.3-V LVTTL       :         : 2         : Y              
-VADDR_B[3]                   : 46        : output : 3.3-V LVTTL       :         : 2         : Y              
+debug_sig[7]                 : 43        : output : 3.3-V LVTTL       :         : 2         : Y              
+debug_sig[6]                 : 44        : output : 3.3-V LVTTL       :         : 2         : Y              
+debug_sig[5]                 : 45        : output : 3.3-V LVTTL       :         : 2         : Y              
+debug_sig[4]                 : 46        : output : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO2                       : 47        : power  :                   : 3.3V    : 2         :                
 GND                          : 48        : gnd    :                   :         :           :                
-VADDR_B[4]                   : 49        : output : 3.3-V LVTTL       :         : 2         : Y              
-VADDR_B[5]                   : 50        : output : 3.3-V LVTTL       :         : 2         : Y              
-VADDR_B[6]                   : 51        : output : 3.3-V LVTTL       :         : 2         : Y              
-VADDR_B[7]                   : 52        : output : 3.3-V LVTTL       :         : 2         : Y              
+debug_sig[3]                 : 49        : output : 3.3-V LVTTL       :         : 2         : Y              
+debug_sig[2]                 : 50        : output : 3.3-V LVTTL       :         : 2         : Y              
+debug_sig[1]                 : 51        : output : 3.3-V LVTTL       :         : 2         : Y              
+debug_sig[0]                 : 52        : output : 3.3-V LVTTL       :         : 2         : Y              
 VCCINT                       : 53        : power  :                   : 1.2V    :           :                
 GND                          : 54        : gnd    :                   :         :           :                
 TEMP_GND1                    : 55        : output : 3.3-V LVTTL       :         : 2         : Y              
@@ -139,19 +139,19 @@ ROT2A                        : 68        : input  : 3.3-V LVTTL       :         
 ROT2B                        : 69        : input  : 3.3-V LVTTL       :         : 3         : Y              
 PENIRQ                       : 70        : input  : 3.3-V LVTTL       :         : 3         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 71        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 72        :        :                   :         : 3         :                
-RAS2                         : 73        : output : 3.3-V LVTTL       :         : 3         : Y              
+ACLK                         : 72        : output : 3.3-V LVTTL       :         : 3         : Y              
+debug_fifoclk                : 73        : output : 3.3-V LVTTL       :         : 3         : Y              
 VCCINT                       : 74        : power  :                   : 1.2V    :           :                
 GND                          : 75        : gnd    :                   :         :           :                
-CAS3                         : 76        : output : 3.3-V LVTTL       :         : 3         : Y              
+debug_fifowe                 : 76        : output : 3.3-V LVTTL       :         : 3         : Y              
 VCCIO3                       : 77        : power  :                   : 3.3V    : 3         :                
-vramcs                       : 78        : output : 3.3-V LVTTL       :         : 3         : Y              
+debug_lt                     : 78        : output : 3.3-V LVTTL       :         : 3         : Y              
 GND                          : 79        : gnd    :                   :         :           :                
-VADDR_B[8]                   : 80        : output : 3.3-V LVTTL       :         : 3         : Y              
-vramwelu                     : 81        : output : 3.3-V LVTTL       :         : 3         : Y              
+debug_fiforead               : 80        : output : 3.3-V LVTTL       :         : 3         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 81        :        :                   :         : 3         :                
 VSYNC                        : 82        : output : 3.3-V LVTTL       :         : 3         : Y              
 HSYNC                        : 83        : output : 3.3-V LVTTL       :         : 3         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : 84        :        :                   :         : 3         :                
+DISP                         : 84        : output : 3.3-V LVTTL       :         : 3         : Y              
 VCCINT                       : 85        : power  :                   : 1.2V    :           :                
 GND                          : 86        : gnd    :                   :         :           :                
 DCLK                         : 87        : output : 3.3-V LVTTL       :         : 3         : Y              

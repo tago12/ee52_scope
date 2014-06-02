@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Sun May 18 15:01:22 2014
+Analysis & Synthesis Status : Successful - Sun Jun 01 23:54:35 2014
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : sopc_scope
 Top-level Entity Name : sopc_scope
 Family : Cyclone III
-Total logic elements : 6,542
-    Total combinational functions : 5,026
-    Dedicated logic registers : 4,085
-Total registers : 4085
-Total pins : 94
+Total logic elements : 7,743
+    Total combinational functions : 6,086
+    Dedicated logic registers : 4,691
+Total registers : 4691
+Total pins : 103
 Total virtual pins : 0
-Total memory bits : 71,414
+Total memory bits : 75,513
 Embedded Multiplier 9-bit elements : 4
 Total PLLs : 0

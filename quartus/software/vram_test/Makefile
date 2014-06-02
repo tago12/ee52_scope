@@ -144,7 +144,7 @@ ELF := vram_test.elf
 # Paths to C, C++, and assembly source files.
 C_SRCS :=
 CXX_SRCS :=
-ASM_SRCS := vram_test.S
+ASM_SRCS := vram_test.s
 
 
 # Path to root of object file tree.

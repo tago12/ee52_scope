@@ -19,6 +19,7 @@
       3/17/97  Glen George       Added constant MAX_SAMPLE_SIZE and removed
 	                             KEY_UNUSED.
       5/14/14  Santiago Navonne  Changed keypad codes.
+      6/01/14  Santiago Navonne  Changed scope and sampling parameters.
 */
 
 
@@ -47,19 +48,19 @@
 #define  KEY_ILLEGAL    6	/* illegal key */
 
 /* display constants */
-#define  SIZE_X         480	/* size in the x dimension */
-#define  SIZE_Y		128     /* size in the y dimension */
-#define  PIXEL_WHITE      0     /* pixel off */
-#define  PIXEL_BLACK      1     /* pixel on */
+#define  SIZE_X         480	  /* size in the x dimension */
+#define  SIZE_Y		      128   /* size in the y dimension */
+#define  PIXEL_WHITE    0     /* pixel off */
+#define  PIXEL_BLACK    1     /* pixel on */
 
 /* scope parameters */
-#define  MIN_DELAY	   0    /* minimum trigger delay */
-#define  MAX_DELAY     50000    /* maximum trigger delay */
-#define  MIN_LEVEL         0    /* minimum trigger level (in mV) */
-#define  MAX_LEVEL      5000    /* maximum trigger level (in mV) */
+#define  MIN_DELAY	    0         /* minimum trigger delay */
+#define  MAX_DELAY      0xFFFFFFFE/* maximum trigger delay */
+#define  MIN_LEVEL      -10000    /* minimum trigger level (in mV) */
+#define  MAX_LEVEL      10000     /* maximum trigger level (in mV) */
 
 /* sampling parameters */
-#define  MAX_SAMPLE_SIZE   2400 /* maximum size of a sample (in samples) */
+#define  MAX_SAMPLE_SIZE   512    /* maximum size of a sample (in samples) */
 
 
 #endif

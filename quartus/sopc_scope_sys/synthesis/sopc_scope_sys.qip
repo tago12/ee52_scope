@@ -2,7 +2,7 @@ set_global_assignment -entity "sopc_scope_sys" -library "sopc_scope_sys" -name I
 set_global_assignment -entity "sopc_scope_sys" -library "sopc_scope_sys" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "sopc_scope_sys" -library "sopc_scope_sys" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "sopc_scope_sys" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../sopc_scope_sys.sopcinfo"]
-set_global_assignment -entity "sopc_scope_sys" -library "sopc_scope_sys" -name SLD_INFO "QSYS_NAME sopc_scope_sys HAS_SOPCINFO 1 GENERATION_ID 1400404571"
+set_global_assignment -entity "sopc_scope_sys" -library "sopc_scope_sys" -name SLD_INFO "QSYS_NAME sopc_scope_sys HAS_SOPCINFO 1 GENERATION_ID 1401657706"
 set_global_assignment -library "sopc_scope_sys" -name MISC_FILE [file join $::quartus(qip_path) "../../sopc_scope_sys.cmp"]
 set_global_assignment -library "sopc_scope_sys" -name SLD_FILE [file join $::quartus(qip_path) "sopc_scope_sys.regmap"]
 set_global_assignment -library "sopc_scope_sys" -name SLD_FILE [file join $::quartus(qip_path) "sopc_scope_sys.debuginfo"]
@@ -41,6 +41,11 @@ set_global_assignment -library "sopc_scope_sys" -name SYSTEMVERILOG_FILE [file j
 set_global_assignment -library "sopc_scope_sys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
 set_global_assignment -library "sopc_scope_sys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
 set_global_assignment -library "sopc_scope_sys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "sopc_scope_sys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sopc_scope_sys_fifo_full.v"]
+set_global_assignment -library "sopc_scope_sys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sopc_scope_sys_trig_ctrl.v"]
+set_global_assignment -library "sopc_scope_sys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sopc_scope_sys_fifo_data.v"]
+set_global_assignment -library "sopc_scope_sys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sopc_scope_sys_trig_level.v"]
+set_global_assignment -library "sopc_scope_sys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sopc_scope_sys_trig_period.v"]
 set_global_assignment -library "sopc_scope_sys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sopc_scope_sys_vram.v"]
 set_global_assignment -library "sopc_scope_sys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_tristate_controller_aggregator.sv"]
 set_global_assignment -library "sopc_scope_sys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_tristate_controller_translator.sv"]
@@ -147,6 +152,21 @@ set_global_assignment -entity "altera_merlin_slave_translator" -library "sopc_sc
 set_global_assignment -entity "altera_merlin_master_translator" -library "sopc_scope_sys" -name IP_TOOL_NAME "altera_merlin_master_translator"
 set_global_assignment -entity "altera_merlin_master_translator" -library "sopc_scope_sys" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "altera_merlin_master_translator" -library "sopc_scope_sys" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "sopc_scope_sys_fifo_full" -library "sopc_scope_sys" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "sopc_scope_sys_fifo_full" -library "sopc_scope_sys" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "sopc_scope_sys_fifo_full" -library "sopc_scope_sys" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "sopc_scope_sys_trig_ctrl" -library "sopc_scope_sys" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "sopc_scope_sys_trig_ctrl" -library "sopc_scope_sys" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "sopc_scope_sys_trig_ctrl" -library "sopc_scope_sys" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "sopc_scope_sys_fifo_data" -library "sopc_scope_sys" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "sopc_scope_sys_fifo_data" -library "sopc_scope_sys" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "sopc_scope_sys_fifo_data" -library "sopc_scope_sys" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "sopc_scope_sys_trig_level" -library "sopc_scope_sys" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "sopc_scope_sys_trig_level" -library "sopc_scope_sys" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "sopc_scope_sys_trig_level" -library "sopc_scope_sys" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "sopc_scope_sys_trig_period" -library "sopc_scope_sys" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "sopc_scope_sys_trig_period" -library "sopc_scope_sys" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "sopc_scope_sys_trig_period" -library "sopc_scope_sys" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "sopc_scope_sys_vram" -library "sopc_scope_sys" -name IP_TOOL_NAME "altera_generic_tristate_controller"
 set_global_assignment -entity "sopc_scope_sys_vram" -library "sopc_scope_sys" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "sopc_scope_sys_vram" -library "sopc_scope_sys" -name IP_TOOL_ENV "Qsys"

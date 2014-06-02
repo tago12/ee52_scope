@@ -37,6 +37,7 @@ keys_init:
     LDW     ra, 0(sp)              /* pop return address */
     ADDI    sp, sp, WORD_SIZE
 
+	MOVI    r9, ENABLE_ALL         /*  the ENABLE_ALL value */
     STBIO   r9, INTMASK_OF(r8)     /* enable (unmask) interrupts */
 
     RET                            /* and finally return */
