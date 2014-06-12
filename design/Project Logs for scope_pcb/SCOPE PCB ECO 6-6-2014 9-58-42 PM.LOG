@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=SCL Pin=R1-2
+Added Component: Designator=R1(RESC1608N)
+Added Pin To Net: NetName=VCC33 Pin=R1-1
+Added Pin To Net: NetName=PENIRQ Pin=R1-2
+Added Pin To Net: NetName=SCL Pin=R1-2
+Change Net Name : Old Net Name=SIG0 New Net Name=SIG7
+Change Net Name : Old Net Name=SIG1 New Net Name=SIG6
+Change Net Name : Old Net Name=SIG2 New Net Name=SIG5
+Change Net Name : Old Net Name=SIG3 New Net Name=SIG4
+Change Net Name : Old Net Name=SIG4 New Net Name=SIG3
+Change Net Name : Old Net Name=SIG5 New Net Name=SIG2
+Change Net Name : Old Net Name=SIG6 New Net Name=SIG1
+Change Net Name : Old Net Name=SIG7 New Net Name=SIG0
+Added Member To Class: ClassName=user_input Member=Component R1 Res3

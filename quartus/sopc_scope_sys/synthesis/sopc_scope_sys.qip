@@ -2,7 +2,7 @@ set_global_assignment -entity "sopc_scope_sys" -library "sopc_scope_sys" -name I
 set_global_assignment -entity "sopc_scope_sys" -library "sopc_scope_sys" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "sopc_scope_sys" -library "sopc_scope_sys" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "sopc_scope_sys" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../sopc_scope_sys.sopcinfo"]
-set_global_assignment -entity "sopc_scope_sys" -library "sopc_scope_sys" -name SLD_INFO "QSYS_NAME sopc_scope_sys HAS_SOPCINFO 1 GENERATION_ID 1401657706"
+set_global_assignment -entity "sopc_scope_sys" -library "sopc_scope_sys" -name SLD_INFO "QSYS_NAME sopc_scope_sys HAS_SOPCINFO 1 GENERATION_ID 1402589312"
 set_global_assignment -library "sopc_scope_sys" -name MISC_FILE [file join $::quartus(qip_path) "../../sopc_scope_sys.cmp"]
 set_global_assignment -library "sopc_scope_sys" -name SLD_FILE [file join $::quartus(qip_path) "sopc_scope_sys.regmap"]
 set_global_assignment -library "sopc_scope_sys" -name SLD_FILE [file join $::quartus(qip_path) "sopc_scope_sys.debuginfo"]
@@ -49,12 +49,6 @@ set_global_assignment -library "sopc_scope_sys" -name VERILOG_FILE [file join $:
 set_global_assignment -library "sopc_scope_sys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sopc_scope_sys_vram.v"]
 set_global_assignment -library "sopc_scope_sys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_tristate_controller_aggregator.sv"]
 set_global_assignment -library "sopc_scope_sys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_tristate_controller_translator.sv"]
-set_global_assignment -library "sopc_scope_sys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sopc_scope_sys_penirq.v"]
-set_global_assignment -library "sopc_scope_sys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/i2c_opencores.v"]
-set_global_assignment -library "sopc_scope_sys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/i2c_master_top.v"]
-set_global_assignment -library "sopc_scope_sys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/i2c_master_defines.v"]
-set_global_assignment -library "sopc_scope_sys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/i2c_master_byte_ctrl.v"]
-set_global_assignment -library "sopc_scope_sys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/i2c_master_bit_ctrl.v"]
 set_global_assignment -library "sopc_scope_sys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sopc_scope_sys_pio_0.v"]
 set_global_assignment -library "sopc_scope_sys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sopc_scope_sys_rom.v"]
 set_global_assignment -library "sopc_scope_sys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/sopc_scope_sys_bridge.sv"]
@@ -176,9 +170,6 @@ set_global_assignment -entity "altera_tristate_controller_aggregator" -library "
 set_global_assignment -entity "altera_tristate_controller_translator" -library "sopc_scope_sys" -name IP_TOOL_NAME "altera_tristate_controller_translator"
 set_global_assignment -entity "altera_tristate_controller_translator" -library "sopc_scope_sys" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "altera_tristate_controller_translator" -library "sopc_scope_sys" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "sopc_scope_sys_penirq" -library "sopc_scope_sys" -name IP_TOOL_NAME "altera_avalon_pio"
-set_global_assignment -entity "sopc_scope_sys_penirq" -library "sopc_scope_sys" -name IP_TOOL_VERSION "13.1"
-set_global_assignment -entity "sopc_scope_sys_penirq" -library "sopc_scope_sys" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "sopc_scope_sys_pio_0" -library "sopc_scope_sys" -name IP_TOOL_NAME "altera_avalon_pio"
 set_global_assignment -entity "sopc_scope_sys_pio_0" -library "sopc_scope_sys" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "sopc_scope_sys_pio_0" -library "sopc_scope_sys" -name IP_TOOL_ENV "Qsys"

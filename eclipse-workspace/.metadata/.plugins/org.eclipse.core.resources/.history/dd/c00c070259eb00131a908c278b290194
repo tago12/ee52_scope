@@ -1,0 +1,26 @@
+/****************************************************************************/
+/*                                                                          */
+/*                                  KEYS.H                                  */
+/*                          Key Handlers Definitions                        */
+/*                               Include File                               */
+/*                       Digital Oscilloscope Project                       */
+/*                                 EE/CS 52                                 */
+/*                             Santiago Navonne                             */
+/*                                                                          */
+/****************************************************************************/
+
+/*
+   This file contains the constants for the key press and rotary encoder 
+   handler routines. The file includes interrupt masks used to determine the
+   source of interrupts; offsets of the PIO registers.
+
+
+   Revision History:
+      5/7/14  Santiago Navonne  Initial revision.
+      5/14/14 Santiago Navonne  Added additional documentation.
+*/
+      
+/* TODO */
+#define    ROW_SIZE     512
+#define    REMAINDER 	(ROW_SIZE-SIZE_X)*WORD_SIZE
+#define    ROW_ADDR_SHIFT 9

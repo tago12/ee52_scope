@@ -155,7 +155,7 @@ ACDS_VERSION := 13.1
 SIM_OPTIMIZE ?= 0
 
 # The CPU reset address as needed by elf2flash
-RESET_ADDRESS ?= 0x00320000
+RESET_ADDRESS ?= 0x00180000
 
 #-------------------------------------
 # Pre-Initialized Memory Descriptions
@@ -169,8 +169,8 @@ DAT_FILES += $(HDL_SIM_DIR)/$(MEM_0).dat
 HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_0).dat
 SYM_FILES += $(HDL_SIM_DIR)/$(MEM_0).sym
 HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_0).sym
-$(MEM_0)_START := 0x00320000
-$(MEM_0)_END := 0x0033ffff
+$(MEM_0)_START := 0x00220000
+$(MEM_0)_END := 0x0023ffff
 $(MEM_0)_HIERARCHICAL_PATH := ram
 $(MEM_0)_WIDTH := 8
 $(MEM_0)_ENDIANNESS := --little-endian-mem
@@ -187,8 +187,8 @@ DAT_FILES += $(HDL_SIM_DIR)/$(MEM_1).dat
 HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_1).dat
 SYM_FILES += $(HDL_SIM_DIR)/$(MEM_1).sym
 HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_1).sym
-$(MEM_1)_START := 0x00280000
-$(MEM_1)_END := 0x002fffff
+$(MEM_1)_START := 0x00180000
+$(MEM_1)_END := 0x001fffff
 $(MEM_1)_HIERARCHICAL_PATH := rom
 $(MEM_1)_WIDTH := 8
 $(MEM_1)_ENDIANNESS := --little-endian-mem
@@ -205,8 +205,8 @@ DAT_FILES += $(HDL_SIM_DIR)/$(MEM_2).dat
 HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_2).dat
 SYM_FILES += $(HDL_SIM_DIR)/$(MEM_2).sym
 HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_2).sym
-$(MEM_2)_START := 0x00100000
-$(MEM_2)_END := 0x001fffff
+$(MEM_2)_START := 0x00000000
+$(MEM_2)_END := 0x000fffff
 $(MEM_2)_HIERARCHICAL_PATH := vram
 $(MEM_2)_WIDTH := 32
 $(MEM_2)_ENDIANNESS := --little-endian-mem

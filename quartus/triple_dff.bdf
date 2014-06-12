@@ -19,6 +19,9 @@ Altera or its authorized distributors.  Please refer to the
 applicable agreement for further details.
 */
 (header "graphic" (version "1.4"))
+(properties
+	(page_setup "orientation\n1\npaper_size\n2\npaper_source\n12\nmargin\n1.000:1.000:1.000:1.000\n")
+)
 (pin
 	(input)
 	(rect -152 152 16 168)
@@ -39,7 +42,7 @@ applicable agreement for further details.
 	(input)
 	(rect -152 136 16 152)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "data_in[7..0]" (rect 5 0 67 12)(font "Arial" ))
+	(text "data_in[7..0]" (rect 5 0 66 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -70,7 +73,7 @@ applicable agreement for further details.
 (symbol
 	(rect 112 72 288 248)
 	(text "LPM_DFF" (rect 19 0 88 16)(font "Arial" (font_size 10)))
-	(text "inst8" (rect 3 165 26 177)(font "Arial" ))
+	(text "FF7" (rect 3 165 23 177)(font "Arial" ))
 	(port
 		(pt 88 176)
 		(input)
@@ -201,7 +204,7 @@ applicable agreement for further details.
 (symbol
 	(rect 400 80 576 256)
 	(text "LPM_DFF" (rect 19 0 88 16)(font "Arial" (font_size 10)))
-	(text "inst9" (rect 3 165 26 177)(font "Arial" ))
+	(text "FF8" (rect 3 165 23 177)(font "Arial" ))
 	(port
 		(pt 88 176)
 		(input)
@@ -332,7 +335,7 @@ applicable agreement for further details.
 (symbol
 	(rect 672 88 848 264)
 	(text "LPM_DFF" (rect 19 0 88 16)(font "Arial" (font_size 10)))
-	(text "inst10" (rect 3 165 32 177)(font "Arial" ))
+	(text "FF9" (rect 3 165 23 177)(font "Arial" ))
 	(port
 		(pt 88 176)
 		(input)

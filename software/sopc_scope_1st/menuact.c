@@ -83,6 +83,10 @@
 				 are more than two now).
       5/9/06   Glen George       Added accessor function (get_trigger_mode)
                                  to be able to get the current trigger mode.
+      6/6/14   Santiago Navonne  Added fastest sweep rate and changed their
+                                 values to reflect actual possible rates.
+      6/11/14  Santiago Navonne  Modified delay set function to support faster
+                                 sweep rates.
 */
 
 
@@ -119,8 +123,9 @@ static long int	           delay;	 /* current trigger delay */
 
 /* sweep rate information */
 static const struct sweep_info  sweep_rates[] =
-    { { 10000000L, " 100 ns" },
-      {  5000000L, " 200 ns" },
+    { { 19000000L, " 52 ns " },
+      {  9500000L, " 104 ns" },
+      {  4750000L, " 208 ns" },
       {  2000000L, " 500 ns" },
       {  1000000L, " 1 \004s  " },
       {   500000L, " 2 \004s  " },
@@ -1478,7 +1483,7 @@ static void  adjust_trg_delay(int old_sweep, int new_sweep)
    Global Variables: delay - determines the value displayed.
 
    Author:           Glen George
-   Last Modified:    May 3, 2006
+   Last Modified:    June 11, 2014
 
 */
 
@@ -1489,16 +1494,17 @@ void  display_trg_delay(int x_pos, int y_pos, int style)
     long int  units_adj;		 /* adjustment to get to microseconds */
 
     long int  d;                         /* delay in appropriate units */
-
+    float     temp_d; 					 /* delay in float to avoid overflows */
 
     /* compute the delay in the appropriate units */
-    /* have to watch out for overflow, so be careful */
+    /* have to watch out for overflow, so use float temp */
     if (sweep_rates[sweep].sample_rate > 1000000L)  {
-        /* have a fast sweep rate, could overflow */
-        /* first compute in units of 100 ns */
-        d = delay * (10000000L / sweep_rates[sweep].sample_rate);
-	/* now convert to nanoseconds */
-	d *= 100L;
+        /* have a fast sweep rate  */
+        /* first compute with float to avoid overflow */
+    	temp_d = delay * (1000000000L / sweep_rates[sweep].sample_rate);
+
+	/* now convert to int */
+	d = (int) temp_d;
 	/* need to divide by 1000 to get to microseconds */
 	units_adj = 1000;
     }

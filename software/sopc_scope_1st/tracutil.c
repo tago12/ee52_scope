@@ -84,6 +84,8 @@
                                  setting are ignored.
       6/3/08   Glen George       Fixed problems with non-power of 2 display
 				 sizes not working.
+	  6/3/14   Santiago Navonne  Changed UI display colors; changed plot_trace
+                                 to clear just trace instead of whole display.
 */
 
 
@@ -108,6 +110,8 @@ static int  trace_status;	/* ready to start another trace */
 static int  sampling;           /* currently sampling data */
 
 static int  sample_size; 	/* number of data points in a sample */
+
+static int old_sample[SIZE_X]; /* sample currently being displayed */
 
 static enum scale_type  cur_scale;	/* current display scale type */
 
@@ -508,7 +512,7 @@ void  set_trace_size(int size)
    		     saved_axis_y - used to restore trace data under y-axis.
 
    Author:           Glen George
-   Last Modified:    May 9, 2006
+   Last Modified:   June 03, 2014
 
 */
 
@@ -544,10 +548,10 @@ void  set_display_scale(enum scale_type scale)
 	        /* check if this point is on or off (need to look at bits) */
 		if ((saved_axis_x[j + Y_TICK_CNT][i / 8] & (0x80 >> (i % 8))) == 0)
 		    /* saved pixel is off */
-		    plot_pixel(i, p, PIXEL_WHITE);
+		    plot_pixel(i, p, PIXEL_CLEAR);
 		else
 		    /* saved pixel is on */
-		    plot_pixel(i, p, PIXEL_BLACK);
+		    plot_pixel(i, p, PIXEL_TRACE);
 	    }
 	}
 
@@ -567,10 +571,10 @@ void  set_display_scale(enum scale_type scale)
 	        /* check if this point is on or off (need to look at bits) */
 		if ((saved_axis_y[j + X_TICK_CNT][i / 8] & (0x80 >> (i % 8))) == 0)
 		    /* saved pixel is off */
-		    plot_pixel(p, i, PIXEL_WHITE);
+		    plot_pixel(p, i, PIXEL_CLEAR);
 		else
 		    /* saved pixel is on */
-		    plot_pixel(p, i, PIXEL_BLACK);
+		    plot_pixel(p, i, PIXEL_TRACE);
 	    }
 	}
     }
@@ -732,7 +736,7 @@ void  clear_saved_areas()
    Global Variables: saved_menu - used to restore trace data under the menu.
 
    Author:           Glen George
-   Last Modified:    Mar. 13, 1994
+   Last Modified:    June 03, 2014
 
 */
 
@@ -759,10 +763,10 @@ void  restore_menu_trace()
 	    /* check if this point is on or off (need to look at bits) */
 	    if ((saved_menu[y - MENU_UL_Y][bit_offset] & bit_position) == 0)
 	        /* saved pixel is off */
-		plot_pixel(x, y, PIXEL_WHITE);
+		plot_pixel(x, y, PIXEL_CLEAR);
 	    else
 	        /* saved pixel is on */
-		plot_pixel(x, y, PIXEL_BLACK);
+		plot_pixel(x, y, PIXEL_TRACE);
 
 	    /* move to the next bit position */
 	    bit_position >>= 1;
@@ -874,7 +878,7 @@ void  set_save_area(int pos_x, int pos_y, int size_x, int size_y)
 		     saved_end_y - gives ending y position of saved area.
 
    Author:           Glen George
-   Last Modified:    Mar. 13, 1994
+   Last Modified:    June 03, 2014
 
 */
 
@@ -901,10 +905,10 @@ void  restore_trace()
 	    /* check if this point is on or off (need to look at bits) */
 	    if ((saved_area[y - saved_pos_y][bit_offset] & bit_position) == 0)
 	        /* saved pixel is off */
-		plot_pixel(x, y, PIXEL_WHITE);
+		plot_pixel(x, y, PIXEL_CLEAR);
 	    else
 	        /* saved pixel is on */
-		plot_pixel(x, y, PIXEL_BLACK);
+		plot_pixel(x, y, PIXEL_TRACE);
 
 	    /* move to the next bit position */
 	    bit_position >>= 1;
@@ -977,16 +981,15 @@ void  do_trace()
 }
 
 
-
-
 /*
    plot_trace
 
    Description:      This function plots the passed trace.  The trace is
                      assumed to contain sample_size points of sampled data.
-		     Any points falling within any of the save areas are also
-		     saved by this routine.  The data is also scaled to be
-		     within the range of the entire screen.
+		             Any points falling within any of the save areas are also
+		             saved by this routine.  The data is also scaled to be
+		             within the range of the entire screen.
+
 
    Arguments:        sample (unsigned char far *) - sample to plot.
    Return Value:     None.
@@ -1013,7 +1016,7 @@ void  do_trace()
 		     saved_end_y  - determines location of saved area.
 
    Author:           Glen George
-   Last Modified:    May 9, 2006
+   Last Modified:    June 03, 2014
 
 */
 
@@ -1031,10 +1034,6 @@ void  plot_trace(unsigned char *sample)
     int  j;
 
 
-
-    /* first, clear the display to get rid of old plots */
-    clear_display();
-
     /* clear the saved areas too */
     clear_saved_areas();
 
@@ -1048,8 +1047,14 @@ void  plot_trace(unsigned char *sample)
         /* determine y position of point (note: screen coordinates invert) */
 	y = (PLOT_SIZE_Y - 1) - ((sample[i] * (PLOT_SIZE_Y - 1)) / 255);
 
+	/* clear previous point on trace */
+	plot_pixel(i, old_sample[i], PIXEL_CLEAR);
+
         /* plot this point */
-	plot_pixel(x, y, PIXEL_BLACK);
+	plot_pixel(x, y, PIXEL_TRACE);
+
+	/* and save new value */
+	old_sample[i] = y;
 
 
 	/* check if the point is in a save area */

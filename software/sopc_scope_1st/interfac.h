@@ -20,6 +20,7 @@
 	                             KEY_UNUSED.
       5/14/14  Santiago Navonne  Changed keypad codes.
       6/01/14  Santiago Navonne  Changed scope and sampling parameters.
+      6/03/14  Santiago Navonne  Changed and added display parameters.
 */
 
 
@@ -49,15 +50,20 @@
 
 /* display constants */
 #define  SIZE_X         480	  /* size in the x dimension */
-#define  SIZE_Y		      128   /* size in the y dimension */
-#define  PIXEL_WHITE    0     /* pixel off */
-#define  PIXEL_BLACK    1     /* pixel on */
+#define  SIZE_Y		      272   /* size in the y dimension */
+#define  PIXEL_CLEAR    0x00000000 /* pixel off is black */
+#define  PIXEL_LINE     0x001B3830 /* lines are gray */
+#define  PIXEL_TEXT_H   0x00FFFFFF /* highlighted text is white */
+#define  PIXEL_TRACE    0x0000A000 /* trace is green */
+#define  PIXEL_TEXT_N   0x001B3830 /* normal text is gray */
+#define  PIXEL_CURSOR   0x00A00000 /* cursor is red */
+#define  NO_TRACE       0xFFFFFFFF /* no trace found */
 
 /* scope parameters */
 #define  MIN_DELAY	    0         /* minimum trigger delay */
 #define  MAX_DELAY      0xFFFFFFFE/* maximum trigger delay */
-#define  MIN_LEVEL      -10000    /* minimum trigger level (in mV) */
-#define  MAX_LEVEL      10000     /* maximum trigger level (in mV) */
+#define  MIN_LEVEL      -12000    /* minimum trigger level (in mV) */
+#define  MAX_LEVEL      12000     /* maximum trigger level (in mV) */
 
 /* sampling parameters */
 #define  MAX_SAMPLE_SIZE   512    /* maximum size of a sample (in samples) */

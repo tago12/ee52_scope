@@ -142,17 +142,18 @@ ACDS_VERSION := 13.1
 ELF := sopc_scope_1st.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS += char58.c
 C_SRCS += keyproc.c
 C_SRCS += lcdout.c
 C_SRCS += mainloop.c
 C_SRCS += menu.c
 C_SRCS += menuact.c
-C_SRCS += stubfncs.c
 C_SRCS += testcode.c
 C_SRCS += tracutil.c
+C_SRCS += char57.c
 CXX_SRCS :=
-ASM_SRCS := keys.S
+ASM_SRCS += keys.S
+ASM_SRCS += display.S
+ASM_SRCS += trigger.S
 
 
 # Path to root of object file tree.

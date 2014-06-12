@@ -9,9 +9,9 @@
 /****************************************************************************/
 
 /*
-   Key, rotary encoder, and touch screen control routines for the EE/CS 52
-   Digital Oscilloscope project. Function definitions are included in this file,
-   and are laid out as follows:
+   Key and rotary encoder control routines for the EE/CS 52 Digital Oscilloscope
+   project. Function definitions are included in this file, and are laid out
+   as follows:
     - keys_init: Initializes the key handler's shared variables, and enables
                  interrupts from the required sources, effectively preparing
                  the user input section for use;
@@ -19,7 +19,6 @@
     - getkey: Returns the currently pending user action, blocking if none is
               available.
     - key_available: Checks whether a user action is currently pending.
-    - TODO: add touchscreen functions
 
 
    Revision History:
@@ -28,6 +27,7 @@
 */
 
 /* Includes */
+#include "general.h"  /* General constants */
 #include "system.h"   /* Base addresses */
 #include "interfac.h" /* Software interface definitions */
 #include "keys.h"     /* Local constants */

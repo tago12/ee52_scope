@@ -9,9 +9,9 @@
 /****************************************************************************/
 
 /*
-   Key, rotary encoder, and touch screen control routines for the EE/CS 52
-   Digital Oscilloscope project. Function definitions are included in this file,
-   and are laid out as follows:
+   Key and rotary encoder control routines for the EE/CS 52 Digital Oscilloscope
+   project. Function definitions are included in this file, and are laid out
+   as follows:
     - keys_init: Initializes the key handler's shared variables, and enables
                  interrupts from the required sources, effectively preparing
                  the user input section for use;
@@ -19,15 +19,16 @@
     - getkey: Returns the currently pending user action, blocking if none is
               available.
     - key_available: Checks whether a user action is currently pending.
-    - TODO: add touchscreen functions
 
 
    Revision History:
       5/7/14  Santiago Navonne  Initial revision.
       5/14/14 Santiago Navonne  Added additional documentation.
+      6/7/14  Santiago Navonne  Changed up/down rotation direction.
 */
 
 /* Includes */
+#include "general.h"  /* General constants */
 #include "system.h"   /* Base addresses */
 #include "interfac.h" /* Software interface definitions */
 #include "keys.h"     /* Local constants */
@@ -86,10 +87,10 @@ curr_key: .byte 0   /* Current pending key; 0 if no key available */
     .global keys_init
 keys_init:
     ADDI    sp, sp, NEG_WORD_SIZE  /* push return address */
-    STW     ra, 0(sp)
+    STW     ra, (sp)
 
     MOVIA   r9, curr_key           /* no key (r0) available at start */
-    STB     r0, 0(r9)              /* so store it into variable curr_key */
+    STB     r0, (r9)               /* so store it into variable curr_key */
 
 	MOVHI   r8, %hi(PIO_0_BASE)    /* write to the PIO registers */
     ORI 	r8, r8, %lo(PIO_0_BASE)
@@ -101,11 +102,11 @@ keys_init:
     MOVIA   r6, keys_handler       /* third arg is int handler */
     MOV     r7, r0                 /* fourth arg is data struct (null) */
     ADDI    sp, sp, NEG_WORD_SIZE  /* fifth arg goes on stack */
-    STW     r0, 0(sp)              /*  and is ignored (so 0) */
+    STW     r0, (sp)               /*  and is ignored (so 0) */
     CALL    alt_ic_isr_register    /* finally, call setup function */
     ADDI    sp, sp, WORD_SIZE      /* clean up stack after call */
 
-    LDW     ra, 0(sp)              /* pop return address */
+    LDW     ra, (sp)               /* pop return address */
     ADDI    sp, sp, WORD_SIZE
 
     STBIO   r9, INTMASK_OF(r8)     /* enable (unmask) interrupts */
@@ -175,7 +176,7 @@ keys_init:
     .global keys_handler
 keys_handler:
     ADDI    sp, sp, NEG_WORD_SIZE   /* save r8 */
-    STW     r8, 0(sp)
+    STW     r8, (sp)
 
     MOVHI   et, %hi(PIO_0_BASE)  /* fetch PIO edge capture register */
     ORI 	et, et, %lo(PIO_0_BASE)
@@ -204,11 +205,11 @@ keys_handler_push2:               /* handle pushbutton 2 ints */
     JMPI    keys_handler_done
 
 keys_handler_rot1r:               /* handle rotary enc 1 right ints */
-    MOVI    et, KEY_UP            /*  translates into up key */
+    MOVI    et, KEY_DOWN          /*  translates into down key */
     JMPI    keys_handler_done
 
-keys_handler_rot1l:               /* handle rotary enc 2 left ints */
-    MOVI    et, KEY_DOWN          /*  translates into down key */
+keys_handler_rot1l:               /* handle rotary enc 1 left ints */
+    MOVI    et, KEY_UP            /*  translates into up key */
     JMPI    keys_handler_done
 
 keys_handler_rot2r:               /* handle rotary enc 2 right ints */
@@ -221,11 +222,11 @@ keys_handler_rot2l:               /* handle rotary enc 2 left ints */
 
 keys_handler_done:                /* handling completed */
 	MOVIA   r8, curr_key          /* save to curr_key */
-    STB     et, 0(r8)             /*  the processed key */
+    STB     et, (r8)              /*  the processed key */
 
-    LDW     r8, 0(sp)             /* restore r8 */
+    LDW     r8, (sp)              /* restore r8 */
     ADDI    sp, sp, WORD_SIZE
-    RET                           /* use eret to return from int handler */
+    RET                           /* all done */
 
 
 
@@ -279,10 +280,10 @@ keys_handler_done:                /* handling completed */
     .global getkey
 getkey:
     MOVIA   r8, curr_key      /* return current pending key */
-    LDB     r2, 0(r8)
+    LDB     r2, (r8)
     BEQ     r0, r2, getkey    /* if there is no key (curr_key == r0), block */
 
-	STB     r0, 0(r8) 	      /* clear current key */
+	STB     r0, (r8) 	      /* clear current key */
     RET                       /* return with current pending key in r2 */
 
 
@@ -333,7 +334,7 @@ getkey:
     .globl key_available
 key_available:
     MOVIA   r8, curr_key       /* return current pending key */
-    LDB     r2, 0(r8)          /* will be zero (FALSE) if no key is pending */
+    LDB     r2, (r8)           /* will be zero (FALSE) if no key is pending */
 
     RET                        /* return with boolean in r2 */
 

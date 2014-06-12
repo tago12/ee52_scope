@@ -1,59 +1,64 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="sopc_scope">
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:DISP1|lpm_compare3:b2v_SCLK_VSYNC_cmp0|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_lfj.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sld_signaltap:auto_signaltap_1|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux" CBX_FILE_NAME="mux_jrc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:inst|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_dc_data_module:sopc_scope_sys_nios_dc_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_boc1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:inst|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_register_bank_a_module:sopc_scope_sys_nios_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_urg1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|debouncer:inst8|lpm_compare9:inst2|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_mfj.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:inst|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_mult_cell:the_sopc_scope_sys_nios_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_80u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_ao01.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:inst7|lpm_counter_trig_delay:inst30|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_tsi.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|debouncer:inst9|lpm_compare9:inst2|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_mfj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_mult_cell:the_sopc_scope_sys_nios_mult_cell|altera_mult_add:the_altmult_add_part_2" CBX_FILE_NAME="altera_mult_add_a0u2.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:TRIG2|lpm_add_sub0:ADD1|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_msh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:DISP1|lpm_compare0:b2v_VSYNC_cmp|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_lfj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:TRIG2|lpm_compare_timeout:inst8|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_efj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:DISP1|lpm_compare4:b2v_SCLK_VSYNC_cmp1|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_lcj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:DISP1|lpm_counter1:b2v_VSYNC_cnt|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_k7l.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_advance_pointer_counter" CBX_FILE_NAME="cntr_5fi.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:inst|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_nios2_oci:the_sopc_scope_sys_nios_nios2_oci|sopc_scope_sys_nios_nios2_ocimem:the_sopc_scope_sys_nios_nios2_ocimem|sopc_scope_sys_nios_ociram_sp_ram_module:sopc_scope_sys_nios_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_8691.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:inst|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_register_bank_b_module:sopc_scope_sys_nios_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_vrg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|vram_ctrl:VRAM1|lpm_mux0:b2v_addr_mux|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_k6e.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sld_signaltap:auto_signaltap_1|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_advance_pointer_counter" CBX_FILE_NAME="cntr_5fi.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|debouncer:inst8|lpm_counter3:inst|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_2ti.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_counter0:b2v_DCLK_cnt|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_16i.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:inst|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_dc_tag_module:sopc_scope_sys_nios_dc_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_i2h1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:inst|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_dc_victim_module:sopc_scope_sys_nios_dc_victim|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_i2d1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:inst|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_mult_cell:the_sopc_scope_sys_nios_mult_cell|altera_mult_add:the_altmult_add_part_1" CBX_FILE_NAME="altera_mult_add_80u2.v"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|vram_ctrl:VRAM_controller|lpm_mux0:b2v_addr_mux|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_k6e.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|debouncer:inst9|lpm_counter3:inst|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_2ti.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_compare2:b2v_UREQ_cmp|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_6cj.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:inst|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_mult_cell:the_sopc_scope_sys_nios_mult_cell|altera_mult_add:the_altmult_add_part_2" CBX_FILE_NAME="altera_mult_add_a0u2.v"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:inst7|lpm_compare10:inst22|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_amg.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:inst7|lpm_counter_trig:inst23|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_68i.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_compare6:b2v_SCLK_HSYNC_cmp1|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_dcj.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_9t14.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:inst|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_ic_tag_module:sopc_scope_sys_nios_ic_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_fqh1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:inst7|lpm_add_sub0:inst5|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_msh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:CPU1|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_aq21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|debouncer:DBC1|lpm_counter3:CT3|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_2ti.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:DISP1|lpm_compare1:b2v_HSYNC_cmp|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_dfj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:DISP1|lpm_compare5:b2v_SCLK_HSYNC_cmp0|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_dfj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:CPU1|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_r:the_sopc_scope_sys_jtag_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_aq21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|debouncer:DBC2|lpm_counter3:CT3|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_2ti.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:DISP1|lpm_counter2:b2v_HSYNC_cnt|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_3uk.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_ic_data_module:sopc_scope_sys_nios_ic_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_3id1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:DISP1|lpm_compare6:b2v_SCLK_HSYNC_cmp1|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_dcj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|serialflash:SR1|altserial_flash_loader:altserial_flash_loader_component|alt_sfl_enhanced:\ENHANCED_PGM:sfl_inst_enhanced|lpm_counter:bit_counter" CBX_FILE_NAME="cntr_dei.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_mult_cell:the_sopc_scope_sys_nios_mult_cell|altera_mult_add:the_altmult_add_part_2|altera_mult_add_a0u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_av01.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|vram_ctrl:VRAM1|vram_cnt:b2v_VRAM_addr_cnt|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_hjj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|serialflash:SR1|altserial_flash_loader:altserial_flash_loader_component|alt_sfl_enhanced:\ENHANCED_PGM:sfl_inst_enhanced|lpm_shiftreg:crc_shifter|altshift_taps:dffs_rtl_0" CBX_FILE_NAME="shift_taps_1nq.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux" CBX_FILE_NAME="mux_jrc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:\adv_point_3_and_more:advance_pointer_counter" CBX_FILE_NAME="cntr_afi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sld_signaltap:auto_signaltap_1|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_pp14.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:inst7|lpm_compare_trig:inst11|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_5vg.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:inst7|lpm_compare_trig_delay:inst31|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_3mg.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_compare3:b2v_SCLK_VSYNC_cmp0|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_lfj.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:inst|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_aq21.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:inst7|lpm_compare11:inst24|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_3mg.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|vram_ctrl:VRAM_controller|vram_cnt:b2v_VRAM_addr_cnt|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_hjj.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_compare0:b2v_VSYNC_cmp|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_lfj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_bht_module:sopc_scope_sys_nios_bht|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_udh1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_dc_tag_module:sopc_scope_sys_nios_dc_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_i2h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_dc_victim_module:sopc_scope_sys_nios_dc_victim|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_i2d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_mult_cell:the_sopc_scope_sys_nios_mult_cell|altera_mult_add:the_altmult_add_part_1" CBX_FILE_NAME="altera_mult_add_80u2.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:TRIG2|lpm_compare10:CMP1|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_amg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|debouncer:DBC1|lpm_compare9:CMP4|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_mfj.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:read_pointer_counter" CBX_FILE_NAME="cntr_95j.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:inst|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_r:the_sopc_scope_sys_jtag_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_aq21.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_compare4:b2v_SCLK_VSYNC_cmp1|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_lcj.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_counter1:b2v_VSYNC_cnt|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_k7l.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|lpm_add_sub:Add17" CBX_FILE_NAME="add_sub_hui.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_ic_tag_module:sopc_scope_sys_nios_ic_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_fqh1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:TRIG2|lpm_counter_timeout:inst5|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_qsi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|debouncer:DBC2|lpm_compare9:CMP4|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_mfj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|serialflash:SR1|altserial_flash_loader:altserial_flash_loader_component|alt_sfl_enhanced:\ENHANCED_PGM:sfl_inst_enhanced|lpm_shiftreg:data_reg|altshift_taps:dffs_rtl_0" CBX_FILE_NAME="shift_taps_vmq.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|serialflash:SR1|altserial_flash_loader:altserial_flash_loader_component|alt_sfl_enhanced:\ENHANCED_PGM:sfl_inst_enhanced|lpm_shiftreg:data_speed_reg|altshift_taps:dffs_rtl_0" CBX_FILE_NAME="shift_taps_nmq.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sld_signaltap:auto_signaltap_1|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:read_pointer_counter" CBX_FILE_NAME="cntr_95j.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:inst|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_ic_data_module:sopc_scope_sys_nios_ic_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_3id1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:inst|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_mult_cell:the_sopc_scope_sys_nios_mult_cell|altera_mult_add:the_altmult_add_part_2|altera_mult_add_a0u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_av01.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:inst7|trig_fifo:inst27|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_39j1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_compare1:b2v_HSYNC_cmp|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_dfj.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_compare5:b2v_SCLK_HSYNC_cmp0|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_dfj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_dc_data_module:sopc_scope_sys_nios_dc_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_boc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_register_bank_a_module:sopc_scope_sys_nios_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_urg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:TRIG2|lpm_compare11:CMP4|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_3mg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:TRIG2|lpm_compare_trig_delay:CMP3|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_3mg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:DISP1|lpm_counter0:b2v_DCLK_cnt|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_16i.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder" CBX_FILE_NAME="decode_4uf.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_read_pointer_counter" CBX_FILE_NAME="cntr_p1j.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:inst|sopc_scope_sys_nios:nios|lpm_add_sub:Add24" CBX_FILE_NAME="add_sub_hui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:inst|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_bht_module:sopc_scope_sys_nios_bht|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_udh1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:display_controller|lpm_counter2:b2v_HSYNC_cnt|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_3uk.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_mult_cell:the_sopc_scope_sys_nios_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_80u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_ao01.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:TRIG2|lpm_compare_trig:CMP2|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_5vg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:TRIG2|lpm_counter_trig_delay:CT2|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_tsi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:TRIG2|trig_fifo:FIFO1|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_39j1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|display_ctrl:DISP1|lpm_compare2:b2v_UREQ_cmp|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_6cj.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sld_signaltap:auto_signaltap_1|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder" CBX_FILE_NAME="decode_4uf.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sld_signaltap:auto_signaltap_1|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_read_pointer_counter" CBX_FILE_NAME="cntr_p1j.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:inst|sopc_scope_sys_nios:nios|altshift_taps:E_iw_rtl_0" CBX_FILE_NAME="shift_taps_l4n.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_nios2_oci:the_sopc_scope_sys_nios_nios2_oci|sopc_scope_sys_nios_nios2_ocimem:the_sopc_scope_sys_nios_nios2_ocimem|sopc_scope_sys_nios_ociram_sp_ram_module:sopc_scope_sys_nios_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_8691.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_register_bank_b_module:sopc_scope_sys_nios_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_vrg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|triggering:TRIG2|lpm_counter_trig:CT1|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_68i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sopc_scope|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_9t14.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

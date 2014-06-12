@@ -35,12 +35,14 @@
 				 references (no longer used).
       5/27/08  Glen George       Changed code to only check for sample done if
 				 it is currently sampling.
+	  6/03/14  Santiago Navonne  Added initialization code.
+	  6/11/14  Santiago Navonne  Added sleep time between draws.
 */
 
 
 
 /* library include files */
-  /* none */
+#include  "unistd.h"
 
 /* local include files */
 #include  "interfac.h"
@@ -65,7 +67,8 @@ static enum keycode  key_lookup(void);      /* translate key values into keycode
                      Oscilloscope.  It loops getting keys from the keypad,
                      processing those keys as is appropriate.  It also handles
                      starting scope sample collection and updating the LCD
-		     screen.
+		             screen. Additionally, it initializes the triggering logic
+		             and key interface.
 
    Arguments:        None.
    Return Value:     (int) - return code, always 0 (never returns).
@@ -84,12 +87,16 @@ static enum keycode  key_lookup(void);      /* translate key values into keycode
    Global Variables: None.
 
    Author:           Glen George
-   Last Modified:    May 27, 2008
+   Last Modified:    June 11, 2014
 
 */
 
 int  main()
 {
+    /* initialize keys, triggering */
+	  keys_init();
+	  trigger_init();
+    
     /* variables */
     enum keycode        key;		    /* an input key */
 
@@ -132,6 +139,10 @@ int  main()
 
 	    /* have a trace - output it */
 	    plot_trace(sample);
+
+	    /* sleep for some time to reduce blinking of display */
+	    /*usleep(DRAW_INTERVAL);
+
 	    /* done processing this trace */
 	    trace_done();
 	}

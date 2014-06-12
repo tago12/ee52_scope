@@ -1,0 +1,46 @@
+/* in tracutil.c */
+
+/*
+   plot_cursor
+
+   Description:      TODO This function draws a vertical line from the passed
+                     position for the passed length.  The line is always drawn
+                     with the color PIXEL_BLACK.  The position (0,0) is the
+         upper left corner of the screen.
+
+   Arguments:        TODO start_x (int) - starting x coordinate of the line.
+           start_y (int) - starting y coordinate of the line.
+         length (int)  - length of the line (positive for a line
+                 going "down" and negative for a line
+             going "up").
+   Return Value:     None.
+
+   Input:            None.
+   Output:           TODO A vertical line is drawn at the specified position.
+
+   Error Handling:   TODO No error checking is done on the coordinates.
+
+   Algorithms:       None.
+   Data Structures:  None.
+
+   Global Variables: None.
+
+   Author:           Santiago Navonne
+   Last Modified:    TODO
+
+*/
+
+int plot_cursor(int x_coord, int draw)
+{
+    /* variables */
+    int  y;   /* y position while looking for the point */
+    /* colors used to draw or clear a trace cursor */
+    int draw_color = draw ? PIXEL_CURSOR : PIXEL_TRACE;
+
+    /* change color of pixel, whose y coordinate is in old_sample */
+    plot_pixel(x_coord, old_sample[x_coord], draw_color);
+
+    /* no pixel found; report so */
+    return NO_TRACE;
+
+}

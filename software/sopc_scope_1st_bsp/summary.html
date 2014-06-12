@@ -22,10 +22,10 @@
 <td width="20%" bgcolor="#77BBFF">BSP Version:</td><td>default</td>
 </tr>
 <tr mode="wrap">
-<td width="20%" bgcolor="#77BBFF">BSP Generated On:</td><td>May 8, 2014 1:26:20 PM</td>
+<td width="20%" bgcolor="#77BBFF">BSP Generated On:</td><td>Jun 11, 2014 3:29:39 PM</td>
 </tr>
 <tr mode="wrap">
-<td width="20%" bgcolor="#77BBFF">BSP Generated Timestamp:</td><td>1399580780478</td>
+<td width="20%" bgcolor="#77BBFF">BSP Generated Timestamp:</td><td>1402525779309</td>
 </tr>
 <tr mode="wrap">
 <td width="20%" bgcolor="#77BBFF">BSP Generated Location:</td><td>C:\Users\tago\Dropbox\OUT\EE52\software\sopc_scope_1st_bsp</td>
@@ -38,19 +38,37 @@
 <th align="left" width="20%">Slave Descriptor</th><th align="left" width="40%">Address Range</th><th align="left" width="20%">Size</th><th align="left" width="20%">Attributes</th>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>jtag</td><td>0x00161040 - 0x00161047</td><td>8</td><td class="listing">printable</td>
+<td>jtag</td><td>0x00241180 - 0x00241187</td><td>8</td><td class="listing">printable</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>pio_0</td><td>0x00161020 - 0x0016103F</td><td>32</td><td class="listing">&nbsp;</td>
+<td>trig_period</td><td>0x00241160 - 0x0024116F</td><td>16</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>temp_ram</td><td>0x00150000 - 0x00159C9F</td><td>40096</td><td class="listing">memory</td>
+<td>trig_level</td><td>0x00241150 - 0x0024115F</td><td>16</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>ram</td><td>0x00120000 - 0x0013FFFF</td><td>131072</td><td class="listing">memory</td>
+<td>fifo_data</td><td>0x00241140 - 0x0024114F</td><td>16</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>rom</td><td>0x00080000 - 0x000FFFFF</td><td>524288</td><td class="listing">memory</td>
+<td>fifo_full</td><td>0x00241130 - 0x0024113F</td><td>16</td><td class="listing">&nbsp;</td>
+</tr>
+<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
+<td>trig_delay</td><td>0x00241120 - 0x0024112F</td><td>16</td><td class="listing">&nbsp;</td>
+</tr>
+<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
+<td>pio_0</td><td>0x002410A0 - 0x002410BF</td><td>32</td><td class="listing">&nbsp;</td>
+</tr>
+<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
+<td>trig_ctrl</td><td>0x00241060 - 0x0024107F</td><td>32</td><td class="listing">&nbsp;</td>
+</tr>
+<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
+<td>ram</td><td>0x00220000 - 0x0023FFFF</td><td>131072</td><td class="listing">memory</td>
+</tr>
+<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
+<td>rom</td><td>0x00180000 - 0x001FFFFF</td><td>524288</td><td class="listing">memory</td>
+</tr>
+<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
+<td>vram</td><td>0x00000000 - 0x000FFFFF</td><td>1048576</td><td class="listing">memory</td>
 </tr>
 </table>
 <br>
@@ -69,22 +87,22 @@
 <th align="left" width="50%">Section</th><th align="left" width="50%">Region</th>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>.text</td><td>temp_ram</td>
+<td>.text</td><td>rom</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>.rodata</td><td>temp_ram</td>
+<td>.rodata</td><td>rom</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>.rwdata</td><td>temp_ram</td>
+<td>.rwdata</td><td>ram</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>.bss</td><td>temp_ram</td>
+<td>.bss</td><td>ram</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>.heap</td><td>temp_ram</td>
+<td>.heap</td><td>ram</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>.stack</td><td>temp_ram</td>
+<td>.stack</td><td>ram</td>
 </tr>
 </table>
 <h3>Settings</h3>
@@ -693,7 +711,7 @@
 <td width="20%">Default Value:</td><td>none</td>
 </tr>
 <tr>
-<td width="20%">Value:</td><td>temp_ram</td>
+<td width="20%">Value:</td><td>vram</td>
 </tr>
 <tr>
 <td width="20%">Type:</td><td>UnquotedString</td>
@@ -747,7 +765,7 @@
 <td width="20%">Default Value:</td><td>none</td>
 </tr>
 <tr>
-<td width="20%">Value:</td><td>temp_ram</td>
+<td width="20%">Value:</td><td>vram</td>
 </tr>
 <tr>
 <td width="20%">Type:</td><td>UnquotedString</td>

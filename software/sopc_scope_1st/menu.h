@@ -19,6 +19,7 @@
       3/13/94  Glen George       Updated comments.
       3/13/94  Glen George       Added definitions for SELECTED,
       				 OPTION_NORMAL, and OPTION_SELECTED.
+      6/03/14  Santiago Navonne  Changed selected menu and option style to HIGHLIGHTED.
 */
 
 
@@ -48,13 +49,13 @@
 
 /* menu position */
 #define  MENU_X    (LCD_WIDTH - MENU_WIDTH - 1)  /* x position (in characters) */
-#define  MENU_Y    0			         /* y position (in characters) */
+#define  MENU_Y    0			                       /* y position (in characters) */
 #define  MENU_UL_X (MENU_X * HORIZ_SIZE)         /* x position (in pixels) */
 #define  MENU_UL_Y (MENU_Y * VERT_SIZE)          /* y position (in pixels) */
 
 /* menu colors */
-#define  SELECTED         REVERSE	/* color for a selected menu entry */
-#define  OPTION_SELECTED  NORMAL        /* color for a selected menu entry option */
+#define  SELECTED         HIGHLIGHTED	  /* color for a selected menu entry */
+#define  OPTION_SELECTED  HIGHLIGHTED   /* color for a selected menu entry option */
 #define  OPTION_NORMAL    NORMAL        /* color for an unselected menu entry option */
 
 /* number of menu entries */
@@ -88,7 +89,7 @@ void  refresh_menu(void);	   /* refresh the menu */
 /* menu update functions */
 void  reset_menu(void);		   /* reset the menu to first entry */
 void  next_entry(void);		   /* go to the next menu entry */
-void  previous_entry(void);	   /* go to the previous menu entry */
+void  previous_entry(void);	  /* go to the previous menu entry */
 
 /* menu entry functions */
 void  menu_entry_left(void);	   /* do the <Left> key for the menu entry */

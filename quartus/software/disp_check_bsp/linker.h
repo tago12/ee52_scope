@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios' in SOPC Builder design 'sopc_scope_sys'
  * SOPC Builder design path: C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys.sopcinfo
  *
- * Generated: Sat May 24 12:57:01 PDT 2014
+ * Generated: Tue Jun 10 00:06:29 PDT 2014
  */
 
 /*
@@ -65,13 +65,13 @@
  *
  */
 
-#define RAM_REGION_BASE 0x320020
+#define RAM_REGION_BASE 0x220020
 #define RAM_REGION_SPAN 131040
-#define RESET_REGION_BASE 0x320000
+#define RESET_REGION_BASE 0x220000
 #define RESET_REGION_SPAN 32
-#define ROM_REGION_BASE 0x280000
+#define ROM_REGION_BASE 0x180000
 #define ROM_REGION_SPAN 524288
-#define VRAM_REGION_BASE 0x100000
+#define VRAM_REGION_BASE 0x0
 #define VRAM_REGION_SPAN 1048576
 
 

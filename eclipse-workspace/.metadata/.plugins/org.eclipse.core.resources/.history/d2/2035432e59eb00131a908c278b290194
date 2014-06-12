@@ -1,0 +1,45 @@
+#include "general.h"
+#include "system.h"
+#include "interfac.h"
+#include "display.h"
+
+
+    .section .text  /* Code starts here */
+
+    .global clear_display
+clear_display:
+	MOVHI 	r8, %hi(VRAM_BASE)
+	ORI 	r8, r8, %lo(VRAM_BASE)
+	MOVI 	r9, SIZE_X
+	MOVI 	r10, SIZE_Y
+	MOV     r11, r0
+	MOV 	r12, r0
+
+row_loop:
+    STWIO   r0, (r8)
+    ADDI 	r8, r8, WORD_SIZE
+    ADDI 	r11, r11, 1
+    BLT 	r11, r9, row_loop
+
+next_row:
+	ADDI 	r8, r8, REMAINDER
+	MOV 	r11, r0
+	ADDI    r12, r12, 1
+	BLT 	r12, r10, row_loop
+
+    RET
+
+
+    .global plot_pixel
+plot_pixel:
+	MOVHI 	r8, %hi(VRAM_BASE)
+	ORI 	r8, r8, %lo(VRAM_BASE)
+	MOVI    r9, ROW_ADDR_SHIFT
+	SLL     r9, r5, r9
+	MOVI 	r10, COL_ADDR_SHIFT
+	SLL     r10, r4, r10
+	OR      r8, r8, r9
+	OR      r8, r8, r4
+	STWIO   r6, (r8)
+
+    RET

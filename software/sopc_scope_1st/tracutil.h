@@ -75,6 +75,9 @@
 #define  SAVE_SIZE_X	120	/* maximum width */
 #define  SAVE_SIZE_Y	16	/* maximum height */
 
+/* sleep time between samples, designed to reduce blinking */
+#define  DRAW_INTERVAL  50000
+
 
 
 

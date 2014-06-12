@@ -322,20 +322,8 @@ set_location_assignment PIN_37 -to SIG[4]
 set_location_assignment PIN_38 -to SIG[5]
 set_location_assignment PIN_39 -to SIG[6]
 set_location_assignment PIN_41 -to SIG[7]
-set_location_assignment PIN_52 -to debug_sig[0]
-set_location_assignment PIN_51 -to debug_sig[1]
-set_location_assignment PIN_50 -to debug_sig[2]
-set_location_assignment PIN_49 -to debug_sig[3]
-set_location_assignment PIN_46 -to debug_sig[4]
-set_location_assignment PIN_45 -to debug_sig[5]
-set_location_assignment PIN_44 -to debug_sig[6]
-set_location_assignment PIN_43 -to debug_sig[7]
 set_location_assignment PIN_9 -to SIG[0]
 set_location_assignment PIN_72 -to ACLK
-set_location_assignment PIN_76 -to debug_fifowe
-set_location_assignment PIN_73 -to debug_fifoclk
-set_location_assignment PIN_80 -to debug_fiforead
-set_location_assignment PIN_78 -to debug_lt
 set_global_assignment -name BSF_FILE triple_dff.bsf
 set_global_assignment -name BSF_FILE triggering.bsf
 set_global_assignment -name VHDL_FILE trig_fifo.vhd
@@ -379,5 +367,9 @@ set_global_assignment -name QIP_FILE output_files/altpll0.qip
 set_global_assignment -name QIP_FILE lpm_add_sub0.qip
 set_global_assignment -name QIP_FILE output_files/altpll1.qip
 set_global_assignment -name BDF_FILE triple_dff.bdf
+set_global_assignment -name QIP_FILE output_files/lpm_counter_debug.qip
+set_global_assignment -name QIP_FILE serialflash.qip
+set_global_assignment -name QIP_FILE lpm_counter_timeout.qip
+set_global_assignment -name QIP_FILE lpm_compare_timeout.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp

@@ -18,6 +18,7 @@
       3/13/94  Glen George       Updated comments.
       3/17/97  Glen George       Added enumerated type char_style and updated
                                     function prototypes.
+      6/3/14   Santiago Navonne  Added highlighted character style.
 */
 
 
@@ -50,8 +51,9 @@
 /* structures, unions, and typedefs */
 
 /* character output styles */
-enum  char_style  {  NORMAL,    /* "normal video" */
-                     REVERSE	/* "reverse video" */
+enum  char_style  {  NORMAL,     /* "normal video" */
+                     REVERSE,	   /* "reverse video" */
+                     HIGHLIGHTED /* highlighted text */
 	          };
 
 
@@ -66,6 +68,8 @@ void  plot_vline(int, int, int);		  /* draw a vertical line */
 
 void  plot_char(int, int, char, enum char_style); /* output a character */
 void  plot_string(int, int, const char *, enum char_style);  /* output a string */
+
+int   plot_cursor(int, int);          /* draws the cursor on the trace */
 
 
 #endif

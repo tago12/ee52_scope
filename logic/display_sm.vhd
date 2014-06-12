@@ -5,7 +5,8 @@
 --  Implementation of the VRAM Controller for the SoPC Oscilloscope project.
 --  The state machine generates the necessary timing signals for the VRAM
 --  based on the needs of the CPU and display controller. Additionally,
---  it refreshes the VRAM as necessary.
+--  it refreshes the VRAM as necessary whenever no other cycle is being
+--  performed.
 --  The inputs to the system determine what action needs to be performed:
 --  cs+we requests a read or a write, while ureq requests a SAM row update.
 --  The system then outputs the necessary timing signals, and a rdy/uack

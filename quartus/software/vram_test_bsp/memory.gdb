@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios' in SOPC Builder design 'sopc_scope_sys'
 # SOPC Builder design path: C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys.sopcinfo
 #
-# Generated: Sat May 17 13:49:18 PDT 2014
+# Generated: Tue Jun 10 14:12:56 PDT 2014
 
 # DO NOT MODIFY THIS FILE
 #
@@ -47,10 +47,10 @@
 # by allowing GDB to cache memory contents on the host.
 
 # vram
-memory 0x100000 0x200000 cache
+memory 0x0 0x100000 cache
 
 # rom
-memory 0x280000 0x300000 cache
+memory 0x180000 0x200000 cache
 
 # ram
-memory 0x320000 0x340000 cache
+memory 0x220000 0x240000 cache

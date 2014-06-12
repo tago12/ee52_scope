@@ -1,13 +1,13 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="58368186d0021e4b5bb7"/>
+    <hash md5_digest_80b="9c2c51c2e5829f6005ea"/>
   </project>
   <file_info>
-    <file device="EP3C25Q240C8" path="sopc_scope_time_limited.sof" usercode="0xFFFFFFFF"/>
+    <file device="EP3C25Q240C8" path="sopc_scope.sof" usercode="0xFFFFFFFF"/>
   </file_info>
-  <hub_info hub_ir_width="10" ir_width="10" node_addr_width="3" node_count="5"/>
+  <hub_info hub_ir_width="12" ir_width="12" node_addr_width="3" node_count="5"/>
   <node_info>
-    <node hpath="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_nios2_oci:the_sopc_scope_sys_nios_nios2_oci|sopc_scope_sys_nios_jtag_debug_module_wrapper:the_sopc_scope_sys_nios_jtag_debug_module_wrapper|sld_virtual_jtag_basic:sopc_scope_sys_nios_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst" instance_id="0" mfg_id="70" node_id="34" sld_node_info="0x19104600" version="3">
+    <node hpath="sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_nios2_oci:the_sopc_scope_sys_nios_nios2_oci|sopc_scope_sys_nios_jtag_debug_module_wrapper:the_sopc_scope_sys_nios_jtag_debug_module_wrapper|sld_virtual_jtag_basic:sopc_scope_sys_nios_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst" instance_id="0" mfg_id="70" node_id="34" sld_node_info="0x19104600" version="3">
       <parameters>
         <parameter name="sld_mfg_id" type="dec" value="70"/>
         <parameter name="sld_type_id" type="dec" value="34"/>
@@ -18,33 +18,33 @@
         <parameter name="SLD_NODE_INFO" type="dec" value="420496896"/>
       </parameters>
       <inputs>
-        <port name="usr_tdo" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_nios2_oci:the_sopc_scope_sys_nios_nios2_oci|sopc_scope_sys_nios_jtag_debug_module_wrapper:the_sopc_scope_sys_nios_jtag_debug_module_wrapper|sld_virtual_jtag_basic:sopc_scope_sys_nios_jtag_debug_module_phy|tdo"/>
-        <port name="usr_ir_out[0]" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_nios2_oci:the_sopc_scope_sys_nios_nios2_oci|sopc_scope_sys_nios_jtag_debug_module_wrapper:the_sopc_scope_sys_nios_jtag_debug_module_wrapper|sld_virtual_jtag_basic:sopc_scope_sys_nios_jtag_debug_module_phy|ir_out[0]"/>
-        <port name="usr_ir_out[1]" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_nios2_oci:the_sopc_scope_sys_nios_nios2_oci|sopc_scope_sys_nios_jtag_debug_module_wrapper:the_sopc_scope_sys_nios_jtag_debug_module_wrapper|sld_virtual_jtag_basic:sopc_scope_sys_nios_jtag_debug_module_phy|ir_out[1]"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_" source="sopc_scope_sys:inst|sopc_scope_sys_nios:nios|jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_"/>
+        <port name="usr_tdo" source="sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_nios2_oci:the_sopc_scope_sys_nios_nios2_oci|sopc_scope_sys_nios_jtag_debug_module_wrapper:the_sopc_scope_sys_nios_jtag_debug_module_wrapper|sld_virtual_jtag_basic:sopc_scope_sys_nios_jtag_debug_module_phy|tdo"/>
+        <port name="usr_ir_out[0]" source="sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_nios2_oci:the_sopc_scope_sys_nios_nios2_oci|sopc_scope_sys_nios_jtag_debug_module_wrapper:the_sopc_scope_sys_nios_jtag_debug_module_wrapper|sld_virtual_jtag_basic:sopc_scope_sys_nios_jtag_debug_module_phy|ir_out[0]"/>
+        <port name="usr_ir_out[1]" source="sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_nios2_oci:the_sopc_scope_sys_nios_nios2_oci|sopc_scope_sys_nios_jtag_debug_module_wrapper:the_sopc_scope_sys_nios_jtag_debug_module_wrapper|sld_virtual_jtag_basic:sopc_scope_sys_nios_jtag_debug_module_phy|ir_out[1]"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_" source="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_"/>
       </inputs>
       <outputs>
         <port name="usr_tck"/>
@@ -76,12 +76,12 @@
         <port name="usr_jtag_state_pir"/>
         <port name="usr_jtag_state_e2ir"/>
         <port name="usr_jtag_state_uir"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdo"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_0_"/>
-        <port name="jtag.bp.inst_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_1_"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdo"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_0_"/>
+        <port name="jtag.bp.CPU1_nios_the_sopc_scope_sys_nios_nios2_oci_the_sopc_scope_sys_nios_jtag_debug_module_wrapper_sopc_scope_sys_nios_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_1_"/>
       </outputs>
     </node>
-    <node hpath="sopc_scope_sys:inst|sopc_scope_sys_jtag:jtag|alt_jtag_atlantic:sopc_scope_sys_jtag_alt_jtag_atlantic" instance_id="0" mfg_id="110" node_id="128" sld_node_info="0xC006E00" version="1">
+    <node hpath="sopc_scope_sys:CPU1|sopc_scope_sys_jtag:jtag|alt_jtag_atlantic:sopc_scope_sys_jtag_alt_jtag_atlantic" instance_id="0" mfg_id="110" node_id="128" sld_node_info="0xC006E00" version="1">
       <parameters>
         <parameter name="INSTANCE_ID" type="dec" value="0"/>
         <parameter name="SLD_NODE_INFO" type="ubin" value="00001100000000000110111000000000"/>
@@ -94,31 +94,31 @@
         <parameter name="SCAN_LENGTH" type="dec" value="11"/>
       </parameters>
       <inputs>
-        <port name="clk" source="sopc_scope_sys:inst|sopc_scope_sys_jtag:jtag|clk"/>
-        <port name="rst_n" source="sopc_scope_sys:inst|sopc_scope_sys_jtag:jtag|rst_n"/>
-        <port name="r_val" source="sopc_scope_sys:inst|sopc_scope_sys_jtag:jtag|r_val"/>
-        <port name="r_dat[0]" source="sopc_scope_sys:inst|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|r_dat[0]"/>
-        <port name="r_dat[1]" source="sopc_scope_sys:inst|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|r_dat[1]"/>
-        <port name="r_dat[2]" source="sopc_scope_sys:inst|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|r_dat[2]"/>
-        <port name="r_dat[3]" source="sopc_scope_sys:inst|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|r_dat[3]"/>
-        <port name="r_dat[4]" source="sopc_scope_sys:inst|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|r_dat[4]"/>
-        <port name="r_dat[5]" source="sopc_scope_sys:inst|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|r_dat[5]"/>
-        <port name="r_dat[6]" source="sopc_scope_sys:inst|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|r_dat[6]"/>
-        <port name="r_dat[7]" source="sopc_scope_sys:inst|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|r_dat[7]"/>
-        <port name="t_dav" source="sopc_scope_sys:inst|sopc_scope_sys_jtag:jtag|t_dav"/>
-        <port name="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_raw_tck" source="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_raw_tck"/>
-        <port name="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_tck" source="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_tck"/>
-        <port name="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_tdi" source="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_tdi"/>
-        <port name="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_rti" source="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_rti"/>
-        <port name="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_shift" source="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_shift"/>
-        <port name="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_update" source="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_update"/>
-        <port name="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_usr1" source="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_usr1"/>
-        <port name="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_clr" source="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_clr"/>
-        <port name="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_ena" source="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_ena"/>
-        <port name="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_ir_in_0_" source="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_ir_in_0_"/>
-        <port name="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_jtag_state_cdr" source="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_jtag_state_cdr"/>
-        <port name="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_jtag_state_sdr" source="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_jtag_state_sdr"/>
-        <port name="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_jtag_state_udr" source="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_jtag_state_udr"/>
+        <port name="clk" source="sopc_scope_sys:CPU1|sopc_scope_sys_jtag:jtag|clk"/>
+        <port name="rst_n" source="sopc_scope_sys:CPU1|sopc_scope_sys_jtag:jtag|rst_n"/>
+        <port name="r_val" source="sopc_scope_sys:CPU1|sopc_scope_sys_jtag:jtag|r_val"/>
+        <port name="r_dat[0]" source="sopc_scope_sys:CPU1|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|r_dat[0]"/>
+        <port name="r_dat[1]" source="sopc_scope_sys:CPU1|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|r_dat[1]"/>
+        <port name="r_dat[2]" source="sopc_scope_sys:CPU1|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|r_dat[2]"/>
+        <port name="r_dat[3]" source="sopc_scope_sys:CPU1|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|r_dat[3]"/>
+        <port name="r_dat[4]" source="sopc_scope_sys:CPU1|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|r_dat[4]"/>
+        <port name="r_dat[5]" source="sopc_scope_sys:CPU1|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|r_dat[5]"/>
+        <port name="r_dat[6]" source="sopc_scope_sys:CPU1|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|r_dat[6]"/>
+        <port name="r_dat[7]" source="sopc_scope_sys:CPU1|sopc_scope_sys_jtag:jtag|sopc_scope_sys_jtag_scfifo_w:the_sopc_scope_sys_jtag_scfifo_w|r_dat[7]"/>
+        <port name="t_dav" source="sopc_scope_sys:CPU1|sopc_scope_sys_jtag:jtag|t_dav"/>
+        <port name="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_raw_tck" source="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_raw_tck"/>
+        <port name="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_tck" source="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_tck"/>
+        <port name="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_tdi" source="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_tdi"/>
+        <port name="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_rti" source="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_rti"/>
+        <port name="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_shift" source="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_shift"/>
+        <port name="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_update" source="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_update"/>
+        <port name="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_usr1" source="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_usr1"/>
+        <port name="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_clr" source="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_clr"/>
+        <port name="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_ena" source="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_ena"/>
+        <port name="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_ir_in_0_" source="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_ir_in_0_"/>
+        <port name="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_jtag_state_cdr" source="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_jtag_state_cdr"/>
+        <port name="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_jtag_state_sdr" source="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_jtag_state_sdr"/>
+        <port name="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_jtag_state_udr" source="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_jtag_state_udr"/>
       </inputs>
       <outputs>
         <port name="r_ena"/>
@@ -135,12 +135,76 @@
         <port name="t_dat[7]"/>
         <port name="t_pause"/>
         <port name="t_pause"/>
-        <port name="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_tdo"/>
-        <port name="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_irq"/>
-        <port name="jtag.bp.inst_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_ir_out_0_"/>
+        <port name="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_tdo"/>
+        <port name="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_irq"/>
+        <port name="jtag.bp.CPU1_jtag_sopc_scope_sys_jtag_alt_jtag_atlantic_ir_out_0_"/>
       </outputs>
     </node>
-    <node hpath="pzdyqx:nabboc" instance_id="0" mfg_id="110" node_id="1" sld_node_info="0x86E00" version="0"/>
+    <node hpath="serialflash:SR1|altserial_flash_loader:altserial_flash_loader_component|alt_sfl_enhanced:\ENHANCED_PGM:sfl_inst_enhanced" instance_id="0" mfg_id="110" node_id="4" sld_node_info="0x18206E00" version="3">
+      <parameters>
+        <parameter name="QUAD_SPI_SUPPORT" type="dec" value="0"/>
+        <parameter name="OPCODE_REG_WIDTH" type="dec" value="8"/>
+        <parameter name="RSTATUS_REG_WIDTH" type="dec" value="16"/>
+        <parameter name="RDI_REG_WIDTH" type="dec" value="32"/>
+        <parameter name="RSIID_REG_WIDTH" type="dec" value="40"/>
+        <parameter name="DATA_REG_WIDTH" type="dec" value="2080"/>
+        <parameter name="COUNTER_WIDTH" type="dec" value="12"/>
+        <parameter name="SLD_NODE_INFO" type="dec" value="404778496"/>
+        <parameter name="AAI_WRITE_WIDTH" type="dec" value="48"/>
+        <parameter name="AAI_DATA_WIDTH" type="dec" value="24"/>
+        <parameter name="DATA_EN4B_REG_WIDTH" type="dec" value="2088"/>
+        <parameter name="DATA_SPEED_REG_WIDTH" type="dec" value="2108"/>
+        <parameter name="DATA_SPEED_WRITE_WIDTH" type="dec" value="2096"/>
+        <parameter name="DATA_SPEED_EN4B_WRITE_WIDTH" type="dec" value="2104"/>
+        <parameter name="CRC_START_COUNT" type="dec" value="33"/>
+        <parameter name="CRC_EN4B_START_COUNT" type="dec" value="41"/>
+        <parameter name="CRC_END_COUNT" type="dec" value="2081"/>
+        <parameter name="CRC_EN4B_END_COUNT" type="dec" value="2089"/>
+        <parameter name="CRC_DATA_WIDTH" type="dec" value="16"/>
+        <parameter name="CRC_STORAGE_WIDTH" type="dec" value="8192"/>
+      </parameters>
+      <inputs>
+        <port name="data1out" source="serialflash:SR1|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_0_" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_0_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_1_" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_1_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_2_" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_2_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_3_" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_3_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_4_" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_4_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_5_" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_5_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_6_" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_6_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_7_" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_7_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_8_" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_8_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_9_" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_9_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_10_" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_10_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_11_" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_in_11_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_tdi" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_tdi"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_raw_tck" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_raw_tck"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_usr1" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_usr1"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_jtag_state_sdrs" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_jtag_state_sdrs"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_jtag_state_sdr" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_jtag_state_sdr"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_jtag_state_udr" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_jtag_state_udr"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_jtag_state_rti" source="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_jtag_state_rti"/>
+      </inputs>
+      <outputs>
+        <port name="dclkin"/>
+        <port name="scein"/>
+        <port name="sdoin"/>
+        <port name="asmi_access_request"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_out_0_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_out_1_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_out_2_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_out_3_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_out_4_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_out_5_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_out_6_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_out_7_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_out_8_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_out_9_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_out_10_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_ir_out_11_"/>
+        <port name="jtag.bp.SR1_altserial_flash_loader_component__ENHANCED_PGM_sfl_inst_enhanced_tdo"/>
+      </outputs>
+    </node>
     <node hpath="sld_signaltap:auto_signaltap_0" instance_id="0" mfg_id="110" node_id="0" sld_node_info="0x30006E00" version="6">
       <parameters>
         <parameter name="lpm_type" type="string" value="sld_signaltap"/>
@@ -257,9 +321,15 @@
     </node>
   </node_info>
   <sld_infos>
+    <sld_info hpath="sopc_scope_sys:CPU1" name="CPU1">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME sopc_scope_sys HAS_SOPCINFO 1 GENERATION_ID 1402589312"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
     <sld_info hpath="sopc_scope_sys:inst" name="inst">
       <assignment_values>
-        <assignment_value text="QSYS_NAME sopc_scope_sys HAS_SOPCINFO 1 GENERATION_ID 1401657706"/>
+        <assignment_value text="QSYS_NAME sopc_scope_sys HAS_SOPCINFO 1 GENERATION_ID 1402589312"/>
       </assignment_values>
       <parameters/>
     </sld_info>

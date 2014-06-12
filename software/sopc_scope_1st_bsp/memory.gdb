@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios' in SOPC Builder design 'sopc_scope_sys'
 # SOPC Builder design path: C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys.sopcinfo
 #
-# Generated: Wed Apr 30 17:54:28 PDT 2014
+# Generated: Tue Jun 03 12:44:11 PDT 2014
 
 # DO NOT MODIFY THIS FILE
 #
@@ -46,11 +46,11 @@
 # The cache attribute is specified which improves GDB performance
 # by allowing GDB to cache memory contents on the host.
 
+# vram
+memory 0x0 0x100000 cache
+
 # rom
-memory 0x80000 0x100000 cache
+memory 0x180000 0x200000 cache
 
 # ram
-memory 0x120000 0x140000 cache
-
-# temp_ram
-memory 0x150000 0x159ca0 cache
+memory 0x220000 0x240000 cache

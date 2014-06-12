@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios' in SOPC Builder design 'sopc_scope_sys'
  * SOPC Builder design path: C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys.sopcinfo
  *
- * Generated: Wed Apr 30 17:54:28 PDT 2014
+ * Generated: Wed Jun 11 15:29:39 PDT 2014
  */
 
 /*
@@ -50,16 +50,16 @@
 
 MEMORY
 {
-    rom : ORIGIN = 0x80000, LENGTH = 524288
-    ram : ORIGIN = 0x120000, LENGTH = 131072
-    reset : ORIGIN = 0x150000, LENGTH = 32
-    temp_ram : ORIGIN = 0x150020, LENGTH = 40064
+    vram : ORIGIN = 0x0, LENGTH = 1048576
+    reset : ORIGIN = 0x180000, LENGTH = 32
+    rom : ORIGIN = 0x180020, LENGTH = 524256
+    ram : ORIGIN = 0x220000, LENGTH = 131072
 }
 
 /* Define symbols for each memory base-address */
-__alt_mem_rom = 0x80000;
-__alt_mem_ram = 0x120000;
-__alt_mem_temp_ram = 0x150000;
+__alt_mem_vram = 0x0;
+__alt_mem_rom = 0x180000;
+__alt_mem_ram = 0x220000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",
@@ -115,7 +115,7 @@ SECTIONS
         KEEP (*(.exceptions.exit));
         KEEP (*(.exceptions));
         PROVIDE (__ram_exceptions_end = ABSOLUTE(.));
-    } > temp_ram
+    } > rom
 
     PROVIDE (__flash_exceptions_start = LOADADDR(.exceptions));
 
@@ -211,7 +211,7 @@ SECTIONS
         PROVIDE (__DTOR_END__ = ABSOLUTE(.));
         KEEP (*(.jcr))
         . = ALIGN(4);
-    } > temp_ram = 0x3a880100 /* NOP instruction (always in big-endian byte ordering) */
+    } > rom = 0x3a880100 /* NOP instruction (always in big-endian byte ordering) */
 
     .rodata :
     {
@@ -221,7 +221,7 @@ SECTIONS
         *(.rodata1)
         . = ALIGN(4);
         PROVIDE (__ram_rodata_end = ABSOLUTE(.));
-    } > temp_ram
+    } > rom
 
     PROVIDE (__flash_rodata_start = LOADADDR(.rodata));
 
@@ -230,13 +230,9 @@ SECTIONS
      * This section's LMA is set to the .text region.
      * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
      *
-     * .rwdata region equals the .text region, and is set to be loaded into .text region.
-     * This requires two copies of .rwdata in the .text region. One read writable at VMA.
-     * and one read-only at LMA. crt0 will copy from LMA to VMA on reset
-     *
      */
 
-    .rwdata LOADADDR (.rodata) + SIZEOF (.rodata) : AT ( LOADADDR (.rodata) + SIZEOF (.rodata)+ SIZEOF (.rwdata) )
+    .rwdata : AT ( LOADADDR (.rodata) + SIZEOF (.rodata) )
     {
         PROVIDE (__ram_rwdata_start = ABSOLUTE(.));
         . = ALIGN(4);
@@ -255,18 +251,11 @@ SECTIONS
         _edata = ABSOLUTE(.);
         PROVIDE (edata = ABSOLUTE(.));
         PROVIDE (__ram_rwdata_end = ABSOLUTE(.));
-    } > temp_ram
+    } > ram
 
     PROVIDE (__flash_rwdata_start = LOADADDR(.rwdata));
 
-    /*
-     *
-     * This section's LMA is set to the .text region.
-     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
-     *
-     */
-
-    .bss LOADADDR (.rwdata) + SIZEOF (.rwdata) : AT ( LOADADDR (.rwdata) + SIZEOF (.rwdata) )
+    .bss :
     {
         __bss_start = ABSOLUTE(.);
         PROVIDE (__sbss_start = ABSOLUTE(.));
@@ -286,7 +275,7 @@ SECTIONS
 
         . = ALIGN(4);
         __bss_end = ABSOLUTE(.);
-    } > temp_ram
+    } > ram
 
     /*
      *
@@ -311,7 +300,24 @@ SECTIONS
      *
      */
 
-    .rom : AT ( LOADADDR (.bss) + SIZEOF (.bss) )
+    .vram : AT ( LOADADDR (.rwdata) + SIZEOF (.rwdata) )
+    {
+        PROVIDE (_alt_partition_vram_start = ABSOLUTE(.));
+        *(.vram .vram. vram.*)
+        . = ALIGN(4);
+        PROVIDE (_alt_partition_vram_end = ABSOLUTE(.));
+    } > vram
+
+    PROVIDE (_alt_partition_vram_load_addr = LOADADDR(.vram));
+
+    /*
+     *
+     * This section's LMA is set to the .text region.
+     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
+     *
+     */
+
+    .rom LOADADDR (.vram) + SIZEOF (.vram) : AT ( LOADADDR (.vram) + SIZEOF (.vram) )
     {
         PROVIDE (_alt_partition_rom_start = ABSOLUTE(.));
         *(.rom .rom. rom.*)
@@ -334,29 +340,12 @@ SECTIONS
         *(.ram .ram. ram.*)
         . = ALIGN(4);
         PROVIDE (_alt_partition_ram_end = ABSOLUTE(.));
-    } > ram
-
-    PROVIDE (_alt_partition_ram_load_addr = LOADADDR(.ram));
-
-    /*
-     *
-     * This section's LMA is set to the .text region.
-     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
-     *
-     */
-
-    .temp_ram LOADADDR (.ram) + SIZEOF (.ram) : AT ( LOADADDR (.ram) + SIZEOF (.ram) )
-    {
-        PROVIDE (_alt_partition_temp_ram_start = ABSOLUTE(.));
-        *(.temp_ram .temp_ram. temp_ram.*)
-        . = ALIGN(4);
-        PROVIDE (_alt_partition_temp_ram_end = ABSOLUTE(.));
         _end = ABSOLUTE(.);
         end = ABSOLUTE(.);
         __alt_stack_base = ABSOLUTE(.);
-    } > temp_ram
+    } > ram
 
-    PROVIDE (_alt_partition_temp_ram_load_addr = LOADADDR(.temp_ram));
+    PROVIDE (_alt_partition_ram_load_addr = LOADADDR(.ram));
 
     /*
      * Stabs debugging sections.
@@ -405,7 +394,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x159ca0;
+__alt_data_end = 0x240000;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -421,4 +410,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x159ca0 );
+PROVIDE( __alt_heap_limit    = 0x240000 );

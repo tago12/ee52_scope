@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios' in SOPC Builder design 'sopc_scope_sys'
  * SOPC Builder design path: C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys.sopcinfo
  *
- * Generated: Sat May 24 12:57:01 PDT 2014
+ * Generated: Tue Jun 10 00:06:29 PDT 2014
  */
 
 /*
@@ -50,16 +50,16 @@
 
 MEMORY
 {
-    vram : ORIGIN = 0x100000, LENGTH = 1048576
-    rom : ORIGIN = 0x280000, LENGTH = 524288
-    reset : ORIGIN = 0x320000, LENGTH = 32
-    ram : ORIGIN = 0x320020, LENGTH = 131040
+    vram : ORIGIN = 0x0, LENGTH = 1048576
+    rom : ORIGIN = 0x180000, LENGTH = 524288
+    reset : ORIGIN = 0x220000, LENGTH = 32
+    ram : ORIGIN = 0x220020, LENGTH = 131040
 }
 
 /* Define symbols for each memory base-address */
-__alt_mem_vram = 0x100000;
-__alt_mem_rom = 0x280000;
-__alt_mem_ram = 0x320000;
+__alt_mem_vram = 0x0;
+__alt_mem_rom = 0x180000;
+__alt_mem_ram = 0x220000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",
@@ -95,7 +95,7 @@ SECTIONS
      *
      */
 
-    .exceptions 0x320020 : AT ( 0x320020 )
+    .exceptions 0x220020 : AT ( 0x220020 )
     {
         PROVIDE (__ram_exceptions_start = ABSOLUTE(.));
         . = ALIGN(0x20);
@@ -426,7 +426,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x340000;
+__alt_data_end = 0x240000;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -442,4 +442,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x340000 );
+PROVIDE( __alt_heap_limit    = 0x240000 );

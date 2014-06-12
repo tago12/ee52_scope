@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios' in SOPC Builder design 'sopc_scope_sys'
  * SOPC Builder design path: C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys.sopcinfo
  *
- * Generated: Sat May 17 13:49:18 PDT 2014
+ * Generated: Tue Jun 10 14:12:56 PDT 2014
  */
 
 /*
@@ -50,16 +50,16 @@
 
 MEMORY
 {
-    vram : ORIGIN = 0x100000, LENGTH = 1048576
-    rom : ORIGIN = 0x280000, LENGTH = 524288
-    reset : ORIGIN = 0x320000, LENGTH = 32
-    ram : ORIGIN = 0x320020, LENGTH = 131040
+    vram : ORIGIN = 0x0, LENGTH = 1048576
+    reset : ORIGIN = 0x180000, LENGTH = 32
+    rom : ORIGIN = 0x180020, LENGTH = 524256
+    ram : ORIGIN = 0x220000, LENGTH = 131072
 }
 
 /* Define symbols for each memory base-address */
-__alt_mem_vram = 0x100000;
-__alt_mem_rom = 0x280000;
-__alt_mem_ram = 0x320000;
+__alt_mem_vram = 0x0;
+__alt_mem_rom = 0x180000;
+__alt_mem_ram = 0x220000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",
@@ -95,7 +95,7 @@ SECTIONS
      *
      */
 
-    .exceptions 0x320020 : AT ( 0x320020 )
+    .exceptions 0x180020 : AT ( 0x180020 )
     {
         PROVIDE (__ram_exceptions_start = ABSOLUTE(.));
         . = ALIGN(0x20);
@@ -122,7 +122,7 @@ SECTIONS
         KEEP (*(.exceptions.exit));
         KEEP (*(.exceptions));
         PROVIDE (__ram_exceptions_end = ABSOLUTE(.));
-    } > ram
+    } > rom
 
     PROVIDE (__flash_exceptions_start = LOADADDR(.exceptions));
 
@@ -225,7 +225,7 @@ SECTIONS
         PROVIDE (__DTOR_END__ = ABSOLUTE(.));
         KEEP (*(.jcr))
         . = ALIGN(4);
-    } > ram = 0x3a880100 /* NOP instruction (always in big-endian byte ordering) */
+    } > rom = 0x3a880100 /* NOP instruction (always in big-endian byte ordering) */
 
     /*
      *
@@ -242,7 +242,7 @@ SECTIONS
         *(.rodata1)
         . = ALIGN(4);
         PROVIDE (__ram_rodata_end = ABSOLUTE(.));
-    } > ram
+    } > rom
 
     PROVIDE (__flash_rodata_start = LOADADDR(.rodata));
 
@@ -251,13 +251,9 @@ SECTIONS
      * This section's LMA is set to the .text region.
      * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
      *
-     * .rwdata region equals the .text region, and is set to be loaded into .text region.
-     * This requires two copies of .rwdata in the .text region. One read writable at VMA.
-     * and one read-only at LMA. crt0 will copy from LMA to VMA on reset
-     *
      */
 
-    .rwdata LOADADDR (.rodata) + SIZEOF (.rodata) : AT ( LOADADDR (.rodata) + SIZEOF (.rodata)+ SIZEOF (.rwdata) )
+    .rwdata : AT ( LOADADDR (.rodata) + SIZEOF (.rodata) )
     {
         PROVIDE (__ram_rwdata_start = ABSOLUTE(.));
         . = ALIGN(4);
@@ -280,14 +276,7 @@ SECTIONS
 
     PROVIDE (__flash_rwdata_start = LOADADDR(.rwdata));
 
-    /*
-     *
-     * This section's LMA is set to the .text region.
-     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
-     *
-     */
-
-    .bss LOADADDR (.rwdata) + SIZEOF (.rwdata) : AT ( LOADADDR (.rwdata) + SIZEOF (.rwdata) )
+    .bss :
     {
         __bss_start = ABSOLUTE(.);
         PROVIDE (__sbss_start = ABSOLUTE(.));
@@ -332,7 +321,7 @@ SECTIONS
      *
      */
 
-    .vram : AT ( LOADADDR (.bss) + SIZEOF (.bss) )
+    .vram : AT ( LOADADDR (.rwdata) + SIZEOF (.rwdata) )
     {
         PROVIDE (_alt_partition_vram_start = ABSOLUTE(.));
         *(.vram .vram. vram.*)
@@ -349,7 +338,7 @@ SECTIONS
      *
      */
 
-    .rom : AT ( LOADADDR (.vram) + SIZEOF (.vram) )
+    .rom LOADADDR (.vram) + SIZEOF (.vram) : AT ( LOADADDR (.vram) + SIZEOF (.vram) )
     {
         PROVIDE (_alt_partition_rom_start = ABSOLUTE(.));
         *(.rom .rom. rom.*)
@@ -366,7 +355,7 @@ SECTIONS
      *
      */
 
-    .ram LOADADDR (.rom) + SIZEOF (.rom) : AT ( LOADADDR (.rom) + SIZEOF (.rom) )
+    .ram : AT ( LOADADDR (.rom) + SIZEOF (.rom) )
     {
         PROVIDE (_alt_partition_ram_start = ABSOLUTE(.));
         *(.ram .ram. ram.*)
@@ -426,7 +415,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x340000;
+__alt_data_end = 0x240000;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -442,4 +431,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x340000 );
+PROVIDE( __alt_heap_limit    = 0x240000 );

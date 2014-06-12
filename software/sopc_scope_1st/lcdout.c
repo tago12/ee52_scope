@@ -15,6 +15,7 @@
       plot_hline   - draw a horizontal line
       plot_string  - output a string
       plot_vline   - draw a vertical line
+      plot_cursor  - plot the cursor
 
    The local functions included are:
       none
@@ -33,6 +34,8 @@
       5/27/98  Glen George       Change plot_char() to explicitly declare the
 			         size of the external array to avoid linker
 			         errors.
+	    6/3/14   Santiago Navonne  Changed UI display colors, added support for
+               highlighted characters.
 */
 
 
@@ -45,6 +48,8 @@
 #include  "scopedef.h"
 #include  "lcdout.h"
 
+
+extern int pixel_color(int, int);
 
 
 
@@ -64,7 +69,7 @@
    Return Value:     None.
 
    Input:            None.
-   Output:           A portion of the screen is cleared (set to PIXEL_WHITE).
+   Output:           A portion of the screen is cleared (set to PIXEL_CLEAR).
 
    Error Handling:   No error checking is done on the coordinates.
 
@@ -74,7 +79,7 @@
    Global Variables: None.
 
    Author:           Glen George
-   Last Modified:    Mar. 8, 1994
+   Last Modified:    June 03, 2014
 
 */
 
@@ -91,7 +96,7 @@ void  clear_region(int x_ul, int y_ul, int x_size, int y_size)
         for (y = y_ul; y < (y_ul + y_size); y++)  {
 
 	    /* clear this pixel */
-	    plot_pixel(x, y, PIXEL_WHITE);
+	    plot_pixel(x, y, PIXEL_CLEAR);
         }
     }
 
@@ -109,7 +114,7 @@ void  clear_region(int x_ul, int y_ul, int x_size, int y_size)
 
    Description:      This function draws a horizontal line from the passed
                      position for the passed length.  The line is always drawn
-                     with the color PIXEL_BLACK.  The position (0,0) is the
+                     with the color PIXEL_LINE.  The position (0,0) is the
 		     upper left corner of the screen.
 
    Arguments:        start_x (int) - starting x coordinate of the line.
@@ -130,7 +135,7 @@ void  clear_region(int x_ul, int y_ul, int x_size, int y_size)
    Global Variables: None.
 
    Author:           Glen George
-   Last Modified:    Mar. 7, 1994
+   Last Modified:    June 03, 2014
 
 */
 
@@ -162,7 +167,7 @@ void  plot_hline(int start_x, int start_y, int length)
     /* loop, outputting points for the line (always draw to the "right") */
     for (x = init_x; x < end_x; x++)
         /* plot a point of the line */
-	plot_pixel(x, start_y, PIXEL_BLACK);
+	plot_pixel(x, start_y, PIXEL_LINE);
 
 
     /* done plotting the line - return */
@@ -178,7 +183,7 @@ void  plot_hline(int start_x, int start_y, int length)
 
    Description:      This function draws a vertical line from the passed
                      position for the passed length.  The line is always drawn
-                     with the color PIXEL_BLACK.  The position (0,0) is the
+                     with the color PIXEL_LINE.  The position (0,0) is the
 		     upper left corner of the screen.
 
    Arguments:        start_x (int) - starting x coordinate of the line.
@@ -199,7 +204,7 @@ void  plot_hline(int start_x, int start_y, int length)
    Global Variables: None.
 
    Author:           Glen George
-   Last Modified:    Mar. 7, 1994
+   Last Modified:    June 03, 2014
 
 */
 
@@ -231,7 +236,7 @@ void  plot_vline(int start_x, int start_y, int length)
     /* loop, outputting points for the line (always draw "down") */
     for (y = init_y; y < end_y; y++)
         /* plot a point of the line */
-	plot_pixel(start_x, y, PIXEL_BLACK);
+	plot_pixel(start_x, y, PIXEL_LINE);
 
 
     /* done plotting the line - return */
@@ -249,8 +254,8 @@ void  plot_vline(int start_x, int start_y, int length)
                      screen at passed location.  The passed location is given
                      as a character position with (0,0) being the upper left
 		     corner of the screen.  The character can be drawn in
-		     "normal video" (black on white) or "reverse video" (white
-		     on black).
+		     "normal video" (gray on black), "reverse video" (black
+		     on gray), or highlighted (white on black).
 
    Arguments:        pos_x (int)             - x coordinate (in character
    				               cells) of the character.
@@ -274,7 +279,7 @@ void  plot_vline(int start_x, int start_y, int length)
    Global Variables: None.
 
    Author:           Glen George
-   Last Modified:    May 27, 2008
+   Last Modified:    June 03, 2014
 
 */
 
@@ -292,6 +297,8 @@ void  plot_char(int pos_x, int pos_y, char c, enum char_style style)
 
     int  x;		/* x pixel position for the character */
     int  y;		/* y pixel position for the character */
+
+    int color = PIXEL_TEXT_N; /* pixel drawing color */
 
 
 
@@ -315,6 +322,8 @@ void  plot_char(int pos_x, int pos_y, char c, enum char_style style)
 	if (style == REVERSE)
 	    /* invert the bits for "reverse video" */
 	    bits = ~bits;
+  if (style == HIGHLIGHTED)
+      color = PIXEL_TEXT_H;
 
         /* get the bits "in position" (high bit is output first */
 	bits <<= (8 - HORIZ_SIZE);
@@ -325,11 +334,11 @@ void  plot_char(int pos_x, int pos_y, char c, enum char_style style)
 
             /* output this pixel in the appropriate color */
 	    if ((bits & 0x80) == 0)
-	        /* blank pixel - output in PIXEL_WHITE */
-		plot_pixel(x + col, y, PIXEL_WHITE);
+	        /* blank pixel - output in PIXEL_CLEAR */
+		plot_pixel(x + col, y, PIXEL_CLEAR);
 	    else
-	        /* black pixel - output in PIXEL_BLACK */
-		plot_pixel(x + col, y, PIXEL_BLACK);
+	        /* black pixel - output in PIXEL_TEXT */
+		plot_pixel(x + col, y, color);
 
 	    /* shift the next bit into position */
 	    bits <<= 1;

@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios' in SOPC Builder design 'sopc_scope_sys'
  * SOPC Builder design path: C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys.sopcinfo
  *
- * Generated: Sat May 17 13:49:18 PDT 2014
+ * Generated: Tue Jun 10 14:12:56 PDT 2014
  */
 
 /*
@@ -62,7 +62,7 @@
 
 #define ALT_CPU_ARCHITECTURE "altera_nios2_qsys"
 #define ALT_CPU_BIG_ENDIAN 0
-#define ALT_CPU_BREAK_ADDR 0x00360820
+#define ALT_CPU_BREAK_ADDR 0x00240820
 #define ALT_CPU_CPU_FREQ 50000000u
 #define ALT_CPU_CPU_ID_SIZE 1
 #define ALT_CPU_CPU_ID_VALUE 0x00000000
@@ -71,10 +71,10 @@
 #define ALT_CPU_DCACHE_LINE_SIZE 32
 #define ALT_CPU_DCACHE_LINE_SIZE_LOG2 5
 #define ALT_CPU_DCACHE_SIZE 2048
-#define ALT_CPU_EXCEPTION_ADDR 0x00320020
+#define ALT_CPU_EXCEPTION_ADDR 0x00180020
 #define ALT_CPU_FLUSHDA_SUPPORTED
 #define ALT_CPU_FREQ 50000000
-#define ALT_CPU_HARDWARE_DIVIDE_PRESENT 0
+#define ALT_CPU_HARDWARE_DIVIDE_PRESENT 1
 #define ALT_CPU_HARDWARE_MULTIPLY_PRESENT 1
 #define ALT_CPU_HARDWARE_MULX_PRESENT 0
 #define ALT_CPU_HAS_DEBUG_CORE 1
@@ -87,7 +87,7 @@
 #define ALT_CPU_INST_ADDR_WIDTH 0x16
 #define ALT_CPU_NAME "nios"
 #define ALT_CPU_NUM_OF_SHADOW_REG_SETS 0
-#define ALT_CPU_RESET_ADDR 0x00320000
+#define ALT_CPU_RESET_ADDR 0x00180000
 
 
 /*
@@ -96,7 +96,7 @@
  */
 
 #define NIOS2_BIG_ENDIAN 0
-#define NIOS2_BREAK_ADDR 0x00360820
+#define NIOS2_BREAK_ADDR 0x00240820
 #define NIOS2_CPU_FREQ 50000000u
 #define NIOS2_CPU_ID_SIZE 1
 #define NIOS2_CPU_ID_VALUE 0x00000000
@@ -105,9 +105,9 @@
 #define NIOS2_DCACHE_LINE_SIZE 32
 #define NIOS2_DCACHE_LINE_SIZE_LOG2 5
 #define NIOS2_DCACHE_SIZE 2048
-#define NIOS2_EXCEPTION_ADDR 0x00320020
+#define NIOS2_EXCEPTION_ADDR 0x00180020
 #define NIOS2_FLUSHDA_SUPPORTED
-#define NIOS2_HARDWARE_DIVIDE_PRESENT 0
+#define NIOS2_HARDWARE_DIVIDE_PRESENT 1
 #define NIOS2_HARDWARE_MULTIPLY_PRESENT 1
 #define NIOS2_HARDWARE_MULX_PRESENT 0
 #define NIOS2_HAS_DEBUG_CORE 1
@@ -119,7 +119,7 @@
 #define NIOS2_INITDA_SUPPORTED
 #define NIOS2_INST_ADDR_WIDTH 0x16
 #define NIOS2_NUM_OF_SHADOW_REG_SETS 0
-#define NIOS2_RESET_ADDR 0x00320000
+#define NIOS2_RESET_ADDR 0x00180000
 
 
 /*
@@ -150,24 +150,78 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag"
-#define ALT_STDERR_BASE 0x3610a0
+#define ALT_STDERR_BASE 0x241180
 #define ALT_STDERR_DEV jtag
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag"
-#define ALT_STDIN_BASE 0x3610a0
+#define ALT_STDIN_BASE 0x241180
 #define ALT_STDIN_DEV jtag
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag"
-#define ALT_STDOUT_BASE 0x3610a0
+#define ALT_STDOUT_BASE 0x241180
 #define ALT_STDOUT_DEV jtag
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
 #define ALT_STDOUT_TYPE "altera_avalon_jtag_uart"
 #define ALT_SYSTEM_NAME "sopc_scope_sys"
+
+
+/*
+ * fifo_data configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_fifo_data altera_avalon_pio
+#define FIFO_DATA_BASE 0x241140
+#define FIFO_DATA_BIT_CLEARING_EDGE_REGISTER 0
+#define FIFO_DATA_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define FIFO_DATA_CAPTURE 0
+#define FIFO_DATA_DATA_WIDTH 8
+#define FIFO_DATA_DO_TEST_BENCH_WIRING 0
+#define FIFO_DATA_DRIVEN_SIM_VALUE 0
+#define FIFO_DATA_EDGE_TYPE "NONE"
+#define FIFO_DATA_FREQ 50000000
+#define FIFO_DATA_HAS_IN 1
+#define FIFO_DATA_HAS_OUT 0
+#define FIFO_DATA_HAS_TRI 0
+#define FIFO_DATA_IRQ -1
+#define FIFO_DATA_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define FIFO_DATA_IRQ_TYPE "NONE"
+#define FIFO_DATA_NAME "/dev/fifo_data"
+#define FIFO_DATA_RESET_VALUE 0
+#define FIFO_DATA_SPAN 16
+#define FIFO_DATA_TYPE "altera_avalon_pio"
+
+
+/*
+ * fifo_full configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_fifo_full altera_avalon_pio
+#define FIFO_FULL_BASE 0x241130
+#define FIFO_FULL_BIT_CLEARING_EDGE_REGISTER 0
+#define FIFO_FULL_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define FIFO_FULL_CAPTURE 1
+#define FIFO_FULL_DATA_WIDTH 1
+#define FIFO_FULL_DO_TEST_BENCH_WIRING 0
+#define FIFO_FULL_DRIVEN_SIM_VALUE 0
+#define FIFO_FULL_EDGE_TYPE "RISING"
+#define FIFO_FULL_FREQ 50000000
+#define FIFO_FULL_HAS_IN 1
+#define FIFO_FULL_HAS_OUT 0
+#define FIFO_FULL_HAS_TRI 0
+#define FIFO_FULL_IRQ 4
+#define FIFO_FULL_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define FIFO_FULL_IRQ_TYPE "EDGE"
+#define FIFO_FULL_NAME "/dev/fifo_full"
+#define FIFO_FULL_RESET_VALUE 0
+#define FIFO_FULL_SPAN 16
+#define FIFO_FULL_TYPE "altera_avalon_pio"
 
 
 /*
@@ -186,7 +240,7 @@
  */
 
 #define ALT_MODULE_CLASS_i2c_ctrl i2c_opencores
-#define I2C_CTRL_BASE 0x361040
+#define I2C_CTRL_BASE 0x241080
 #define I2C_CTRL_IRQ 2
 #define I2C_CTRL_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define I2C_CTRL_NAME "/dev/i2c_ctrl"
@@ -200,7 +254,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag altera_avalon_jtag_uart
-#define JTAG_BASE 0x3610a0
+#define JTAG_BASE 0x241180
 #define JTAG_IRQ 0
 #define JTAG_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_NAME "/dev/jtag"
@@ -218,7 +272,7 @@
  */
 
 #define ALT_MODULE_CLASS_penirq altera_avalon_pio
-#define PENIRQ_BASE 0x361090
+#define PENIRQ_BASE 0x241170
 #define PENIRQ_BIT_CLEARING_EDGE_REGISTER 0
 #define PENIRQ_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define PENIRQ_CAPTURE 1
@@ -245,7 +299,7 @@
  */
 
 #define ALT_MODULE_CLASS_pio_0 altera_avalon_pio
-#define PIO_0_BASE 0x361060
+#define PIO_0_BASE 0x2410a0
 #define PIO_0_BIT_CLEARING_EDGE_REGISTER 1
 #define PIO_0_BIT_MODIFYING_OUTPUT_REGISTER 1
 #define PIO_0_CAPTURE 1
@@ -272,7 +326,7 @@
  */
 
 #define ALT_MODULE_CLASS_ram altera_generic_tristate_controller
-#define RAM_BASE 0x320000
+#define RAM_BASE 0x220000
 #define RAM_IRQ -1
 #define RAM_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define RAM_NAME "/dev/ram"
@@ -286,7 +340,7 @@
  */
 
 #define ALT_MODULE_CLASS_rom altera_generic_tristate_controller
-#define ROM_BASE 0x280000
+#define ROM_BASE 0x180000
 #define ROM_IRQ -1
 #define ROM_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define ROM_NAME "/dev/rom"
@@ -295,12 +349,120 @@
 
 
 /*
+ * trig_ctrl configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_trig_ctrl altera_avalon_pio
+#define TRIG_CTRL_BASE 0x241060
+#define TRIG_CTRL_BIT_CLEARING_EDGE_REGISTER 0
+#define TRIG_CTRL_BIT_MODIFYING_OUTPUT_REGISTER 1
+#define TRIG_CTRL_CAPTURE 0
+#define TRIG_CTRL_DATA_WIDTH 5
+#define TRIG_CTRL_DO_TEST_BENCH_WIRING 0
+#define TRIG_CTRL_DRIVEN_SIM_VALUE 0
+#define TRIG_CTRL_EDGE_TYPE "NONE"
+#define TRIG_CTRL_FREQ 50000000
+#define TRIG_CTRL_HAS_IN 0
+#define TRIG_CTRL_HAS_OUT 1
+#define TRIG_CTRL_HAS_TRI 0
+#define TRIG_CTRL_IRQ -1
+#define TRIG_CTRL_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define TRIG_CTRL_IRQ_TYPE "NONE"
+#define TRIG_CTRL_NAME "/dev/trig_ctrl"
+#define TRIG_CTRL_RESET_VALUE 3
+#define TRIG_CTRL_SPAN 32
+#define TRIG_CTRL_TYPE "altera_avalon_pio"
+
+
+/*
+ * trig_delay configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_trig_delay altera_avalon_pio
+#define TRIG_DELAY_BASE 0x241120
+#define TRIG_DELAY_BIT_CLEARING_EDGE_REGISTER 0
+#define TRIG_DELAY_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define TRIG_DELAY_CAPTURE 0
+#define TRIG_DELAY_DATA_WIDTH 32
+#define TRIG_DELAY_DO_TEST_BENCH_WIRING 0
+#define TRIG_DELAY_DRIVEN_SIM_VALUE 0
+#define TRIG_DELAY_EDGE_TYPE "NONE"
+#define TRIG_DELAY_FREQ 50000000
+#define TRIG_DELAY_HAS_IN 0
+#define TRIG_DELAY_HAS_OUT 1
+#define TRIG_DELAY_HAS_TRI 0
+#define TRIG_DELAY_IRQ -1
+#define TRIG_DELAY_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define TRIG_DELAY_IRQ_TYPE "NONE"
+#define TRIG_DELAY_NAME "/dev/trig_delay"
+#define TRIG_DELAY_RESET_VALUE 1
+#define TRIG_DELAY_SPAN 16
+#define TRIG_DELAY_TYPE "altera_avalon_pio"
+
+
+/*
+ * trig_level configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_trig_level altera_avalon_pio
+#define TRIG_LEVEL_BASE 0x241150
+#define TRIG_LEVEL_BIT_CLEARING_EDGE_REGISTER 0
+#define TRIG_LEVEL_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define TRIG_LEVEL_CAPTURE 0
+#define TRIG_LEVEL_DATA_WIDTH 8
+#define TRIG_LEVEL_DO_TEST_BENCH_WIRING 0
+#define TRIG_LEVEL_DRIVEN_SIM_VALUE 0
+#define TRIG_LEVEL_EDGE_TYPE "NONE"
+#define TRIG_LEVEL_FREQ 50000000
+#define TRIG_LEVEL_HAS_IN 0
+#define TRIG_LEVEL_HAS_OUT 1
+#define TRIG_LEVEL_HAS_TRI 0
+#define TRIG_LEVEL_IRQ -1
+#define TRIG_LEVEL_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define TRIG_LEVEL_IRQ_TYPE "NONE"
+#define TRIG_LEVEL_NAME "/dev/trig_level"
+#define TRIG_LEVEL_RESET_VALUE 0
+#define TRIG_LEVEL_SPAN 16
+#define TRIG_LEVEL_TYPE "altera_avalon_pio"
+
+
+/*
+ * trig_period configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_trig_period altera_avalon_pio
+#define TRIG_PERIOD_BASE 0x241160
+#define TRIG_PERIOD_BIT_CLEARING_EDGE_REGISTER 0
+#define TRIG_PERIOD_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define TRIG_PERIOD_CAPTURE 0
+#define TRIG_PERIOD_DATA_WIDTH 32
+#define TRIG_PERIOD_DO_TEST_BENCH_WIRING 0
+#define TRIG_PERIOD_DRIVEN_SIM_VALUE 0
+#define TRIG_PERIOD_EDGE_TYPE "NONE"
+#define TRIG_PERIOD_FREQ 50000000
+#define TRIG_PERIOD_HAS_IN 0
+#define TRIG_PERIOD_HAS_OUT 1
+#define TRIG_PERIOD_HAS_TRI 0
+#define TRIG_PERIOD_IRQ -1
+#define TRIG_PERIOD_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define TRIG_PERIOD_IRQ_TYPE "NONE"
+#define TRIG_PERIOD_NAME "/dev/trig_period"
+#define TRIG_PERIOD_RESET_VALUE 1
+#define TRIG_PERIOD_SPAN 16
+#define TRIG_PERIOD_TYPE "altera_avalon_pio"
+
+
+/*
  * vram configuration
  *
  */
 
 #define ALT_MODULE_CLASS_vram altera_generic_tristate_controller
-#define VRAM_BASE 0x100000
+#define VRAM_BASE 0x0
 #define VRAM_IRQ -1
 #define VRAM_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define VRAM_NAME "/dev/vram"
