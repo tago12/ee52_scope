@@ -1,0 +1,126 @@
+\relax 
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Hardware}{3}}
+\newlabel{sec:overview}{{2.1}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}System Overview }{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Highest level block diagram of the SoPC Oscilloscope system. The diagram is described in Section\nobreakspace  {}2.1\hbox {}.\relax }}{6}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:main_blocks}{{1}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Front side of the system's Printed Circuit Board (PCB). The color each section is highlighted in identifies the corresponding block.\relax }}{7}}
+\newlabel{fig:pcb}{{2}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Back side of the system's Printed Circuit Board (PCB). Note that this side is only used for routing and placement of passive parts, such as resistors and capacitors.\relax }}{8}}
+\newlabel{fig:pcb_back}{{3}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Memory map of the system within the NIOS processor, with associated chip select lines and addresses.\relax }}{9}}
+\newlabel{fig:memory_map}{{4}{9}}
+\newlabel{sec:fpga}{{2.2}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}FPGA }{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Schematic of the FPGA and related components. Also included are the buffers and power supply. The document is described in Section\nobreakspace  {}2.2\hbox {}.\relax }}{12}}
+\newlabel{fig:fpga_schematic}{{5}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Main block diagram of the FPGA's internal design. The document is described in Section\nobreakspace  {}2.2\hbox {}.\relax }}{13}}
+\newlabel{fig:quartus_main}{{6}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}NIOS Processor}{14}}
+\newlabel{tab:qsys}{{\caption@xref {tab:qsys}{ on input line 155}}{15}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Central Processing Unit and related devices configured within the QSys part of the FPGA design.\relax }}{15}}
+\newlabel{sec:trigger}{{2.2.2}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Triggering and FIFO }{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Block diagram of the triggering logic within the FPGA. The document is described in Section\nobreakspace  {}2.2.2\hbox {}.\relax }}{21}}
+\newlabel{fig:triggering_bdf}{{7}{21}}
+\newlabel{sec:debouncer}{{2.2.3}{22}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Debouncer }{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Block diagram of the push-button debouncer component within the FPGA. The document is described in Section\nobreakspace  {}2.2.3\hbox {}.\relax }}{23}}
+\newlabel{fig:debouncer_bdf}{{8}{23}}
+\newlabel{sec:decoder}{{2.2.4}{24}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4}Decoder }{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Block diagram of the rotary encoder decoder component within the FPGA. The document is described in Section\nobreakspace  {}2.2\hbox {}.\relax }}{25}}
+\newlabel{fig:decoder_bdf}{{9}{25}}
+\newlabel{sec:vram_ctrl}{{2.2.5}{26}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.5}VRAM Controller }{26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces High level, summarizing block diagram of the VRAM and display interface. The VRAM controller listens to the CPU's generic memory controller commands, and generates the necessary timing lines for the VRAM device. The display controller periodically updates the serial row on the VRAM device, outputting new data to the display, while simultaneously generating the necessary timing signals.\relax }}{32}}
+\newlabel{fig:vram_disp_blocks}{{10}{32}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Block diagram of the VRAM controller component within the FPGA. The document is described in Section\nobreakspace  {}2.2.5\hbox {}.\relax }}{33}}
+\newlabel{fig:vram_bdf}{{11}{33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Timing diagram of the read cycle of the VRAM device, described in Section\nobreakspace  {}\G@refundefinedtrue \text  {\normalfont  \bfseries  ??}\GenericWarning  {               }{LaTeX Warning: Reference `vram_ctrl' on page 34 undefined}.\relax }}{34}}
+\newlabel{fig:vram_read}{{12}{34}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Table of constraints of the read cycle of the VRAM device, shown in Figure\nobreakspace  {}12\hbox {} and described in Section\nobreakspace  {}2.2.5\hbox {}.\relax }}{35}}
+\newlabel{tab:vram_read}{{2}{35}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Timing diagram of the write cycle of the VRAM device, described in Section\nobreakspace  {}2.2.5\hbox {}.\relax }}{37}}
+\newlabel{fig:vram_write}{{13}{37}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Table of constraints of the write cycle of the VRAM device, shown in Figure\nobreakspace  {}13\hbox {} and described in Section\nobreakspace  {}2.2.5\hbox {}.\relax }}{38}}
+\newlabel{tab:vram_write}{{3}{38}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Timing diagram of the serial row transfer cycle of the VRAM device, described in Section\nobreakspace  {}2.2.5\hbox {}.\relax }}{40}}
+\newlabel{fig:vram_serial}{{14}{40}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Table of constraints of the serial row transfer cycle of the VRAM device, shown in Figure\nobreakspace  {}14\hbox {} and described in Section\nobreakspace  {}2.2.5\hbox {}.\relax }}{41}}
+\newlabel{tab:vram_serial}{{4}{41}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Timing diagram of the refresh cycle of the VRAM device, described in Section\nobreakspace  {}2.2.5\hbox {}.\relax }}{43}}
+\newlabel{fig:vram_refresh}{{15}{43}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Table of constraints of the refresh cycle of the VRAM device, shown in Figure\nobreakspace  {}15\hbox {} and described in Section\nobreakspace  {}2.2.5\hbox {}.\relax }}{44}}
+\newlabel{tab:vram_refresh}{{5}{44}}
+\newlabel{sec:disp_ctrl}{{2.2.6}{45}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.6}Display Controller }{45}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Block diagram of the display controller component within the FPGA. The document is described in Section\nobreakspace  {}2.2.6\hbox {}.\relax }}{47}}
+\newlabel{fig:disp_bdf}{{16}{47}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Summary of the display's frame cycle structure. Source: HX8257 LCD driver datasheet.\relax }}{48}}
+\newlabel{fig:disp_timing_datasheet}{{17}{48}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Timing diagram of the display cycle, described in Section\nobreakspace  {}2.2.6\hbox {}.\relax }}{49}}
+\newlabel{fig:disp_timing}{{18}{49}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Table of constraints of a display cycle, shown in Figure\nobreakspace  {}18\hbox {} and described in Section\nobreakspace  {}2.2.6\hbox {}.\relax }}{52}}
+\newlabel{tab:disp_timing}{{6}{52}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Reset Logic}{54}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Clock Logic}{54}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}JTAG Interface}{54}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Power Supply}{54}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.7}Buffers}{56}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8}Memory}{58}}
+\newlabel{sec:ram}{{2.8.1}{58}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.8.1}RAM }{58}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Schematic of the RAM and ROM memory devices. Further details are provided in Sections\nobreakspace  {}2.8.1\hbox {} and 2.8.2\hbox {}.\relax }}{59}}
+\newlabel{fig:ram_rom}{{19}{59}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Timing diagram of the read cycle of the RAM device, described in Section\nobreakspace  {}2.8.1\hbox {}.\relax }}{60}}
+\newlabel{fig:ram_timing_read}{{20}{60}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Table of constraints of a display cycle, shown in Figure\nobreakspace  {}20\hbox {} and described in Section\nobreakspace  {}2.8.1\hbox {}.\relax }}{61}}
+\newlabel{tab:ram_timing_read}{{7}{61}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Timing diagram of the write cycle of the RAM device, described in Section\nobreakspace  {}2.8.2\hbox {}.\relax }}{62}}
+\newlabel{fig:ram_timing_write}{{21}{62}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Table of constraints of the write cycle of the RAM device, shown in Figure\nobreakspace  {}21\hbox {} and described in Section\nobreakspace  {}2.8.1\hbox {}.\relax }}{63}}
+\newlabel{tab:ram_timing_write}{{8}{63}}
+\newlabel{sec:rom}{{2.8.2}{64}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.8.2}ROM }{64}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Timing diagram of the read cycle of the ROM device, described in Section\nobreakspace  {}2.8.2\hbox {}.\relax }}{65}}
+\newlabel{fig:rom_timing_read}{{22}{65}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Table of constraints of a display cycle, shown in Figure\nobreakspace  {}22\hbox {} and described in Section\nobreakspace  {}2.8.2\hbox {}.\relax }}{66}}
+\newlabel{tab:rom_timing_read}{{9}{66}}
+\newlabel{sec:vram}{{2.8.3}{67}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.8.3}VRAM }{67}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Schematic of the VRAM memory devices and display interface. Also shown is the section of the power supply used to power the display's LEDs. Further details are provided in Section\nobreakspace  {}2.8.3\hbox {}.\relax }}{68}}
+\newlabel{fig:vram_disp}{{23}{68}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.9}Display}{69}}
+\newlabel{sec:touch_ctrl}{{2.10}{69}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.10}Touch Screen Controller }{69}}
+\newlabel{sec:rotary_encoders}{{2.11}{70}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.11}Rotary Encoders }{70}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Schematic of the user input section of the system. This includes the rotary encoders, described in Section\nobreakspace  {}2.11\hbox {}, and the touch screen controller, described in Section\nobreakspace  {}2.10\hbox {}.\relax }}{71}}
+\newlabel{fig:user_input}{{24}{71}}
+\newlabel{sec:analog_interface}{{2.12}{72}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.12}Analog Interface }{72}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Schematic of the system's analog interface, described in Section\nobreakspace  {}2.12\hbox {}. This includes the analog front-end and the analog-to-digital converter (ADC).\relax }}{73}}
+\newlabel{fig:analog_interface}{{25}{73}}
+\newlabel{sec:analog_frontend}{{2.12.1}{74}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.12.1}Analog Front-End }{74}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Symbol schematic of the operational amplifier scaling and shifting circuit used in the system's analog front-end, and described in Section\nobreakspace  {}2.12.1\hbox {}.\relax }}{75}}
+\newlabel{fig:op_amp}{{26}{75}}
+\newlabel{sec:analog_adc}{{2.12.2}{76}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.12.2}Analog to Digital Converter }{76}}
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Timing diagram of an ADC sampling clock, described in Section\nobreakspace  {}2.12.2\hbox {}.\relax }}{77}}
+\newlabel{fig:adc_timing}{{27}{77}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Table of constraint for the ADC sampling clock cycle, shown in Figure\nobreakspace  {}27\hbox {} and described in Section\nobreakspace  {}2.12.2\hbox {}.\relax }}{78}}
+\newlabel{tab:adc_timing}{{10}{78}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.13}Revision History}{79}}
+\newlabel{tab:rev_history}{{\caption@xref {tab:rev_history}{ on input line 671}}{79}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Revision history.\relax }}{79}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Software}{80}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}System Overview}{80}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Block 1 TODO}{80}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Block 2 TODO}{80}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}...}{80}}
+\newlabel{original}{{3.4}{80}}
+\newlabel{code}{{3.4}{80}}

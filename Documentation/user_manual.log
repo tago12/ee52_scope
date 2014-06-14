@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  11 JUN 2014 16:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 JUN 2014 00:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -302,33 +302,33 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 18.
+LaTeX Font Info:    Try loading font information for U+msa on input line 21.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 18.
+LaTeX Font Info:    Try loading font information for U+msb on input line 21.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (6.41429pt too wide) in paragraph at lines 21--22
+Overfull \hbox (6.41429pt too wide) in paragraph at lines 25--26
 \OT1/cmr/m/n/10.95 This guide de-scribes the char-ac-ter-is-tics and op-er-a-ti
 on of the EE/CS 52 System-on-Programmable-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
 
-Underfull \hbox (badness 4995) in paragraph at lines 39--39
+Underfull \hbox (badness 4995) in paragraph at lines 43--43
 []\OT1/cmr/m/n/10.95 Captured data points per
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
@@ -336,28 +336,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 File: img/user_board_layout.png Graphic file (type png)
 
 <use img/user_board_layout.png>
-Package pdftex.def Info: img/user_board_layout.png used on input line 47.
+Package pdftex.def Info: img/user_board_layout.png used on input line 51.
 (pdftex.def)             Requested size: 452.96796pt x 274.01622pt.
- [1
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[1
 
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<img/user_screen_layout.png, id=12, 495.451pt x 495.451pt>
-File: img/user_screen_layout.png Graphic file (type png)
+<img/user_screen_layout.jpg, id=12, 2601.72pt x 1943.26pt>
+File: img/user_screen_layout.jpg Graphic file (type jpg)
 
-<use img/user_screen_layout.png>
-Package pdftex.def Info: img/user_screen_layout.png used on input line 55.
-(pdftex.def)             Requested size: 452.96796pt x 452.9779pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-
- []
-
-[2 <./img/user_board_layout.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
-
- []
-
+<use img/user_screen_layout.jpg>
+Package pdftex.def Info: img/user_screen_layout.jpg used on input line 59.
+(pdftex.def)             Requested size: 452.96796pt x 338.32614pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
@@ -368,7 +362,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
-
+[2 <./img/user_board_layout.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
@@ -378,7 +372,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
-
+[3 <./img/user_screen_layout.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
@@ -393,9 +387,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
-[]\OT1/cmr/m/n/10.95 Counter-
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
  []
 
 
@@ -404,29 +403,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--93
  []
 
 
-Overfull \hbox (38.27612pt too wide) in paragraph at lines 86--95
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]\OT1/cmr/m/n/10.95 Counter-
+ []
+
+
+Overfull \hbox (38.27612pt too wide) in paragraph at lines 90--99
  [] 
  []
 
-[4] [5 <./img/user_screen_layout.png>] (./user_manual.aux) ) 
+[4] (./user_manual.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4660 strings out of 493315
- 71566 string characters out of 6137904
+ 4661 strings out of 493315
+ 71570 string characters out of 6137904
  158595 words of memory out of 5000000
  8051 multiletter control sequences out of 15000+600000
  12714 words of font info for 49 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  47i,9n,46p,692b,294s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive
-/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/20
-13/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/201
-3/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on user_manual.pdf (5 pages, 7827504 bytes).
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on user_manual.pdf (4 pages, 9822078 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 41 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

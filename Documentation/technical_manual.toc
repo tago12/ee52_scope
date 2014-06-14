@@ -1,0 +1,31 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}Hardware}{3}
+\contentsline {subsection}{\numberline {2.1}System Overview }{3}
+\contentsline {subsection}{\numberline {2.2}FPGA }{10}
+\contentsline {subsubsection}{\numberline {2.2.1}NIOS Processor}{14}
+\contentsline {subsubsection}{\numberline {2.2.2}Triggering and FIFO }{16}
+\contentsline {subsubsection}{\numberline {2.2.3}Debouncer }{22}
+\contentsline {subsubsection}{\numberline {2.2.4}Decoder }{24}
+\contentsline {subsubsection}{\numberline {2.2.5}VRAM Controller }{26}
+\contentsline {subsubsection}{\numberline {2.2.6}Display Controller }{45}
+\contentsline {subsection}{\numberline {2.3}Reset Logic}{54}
+\contentsline {subsection}{\numberline {2.4}Clock Logic}{54}
+\contentsline {subsection}{\numberline {2.5}JTAG Interface}{54}
+\contentsline {subsection}{\numberline {2.6}Power Supply}{54}
+\contentsline {subsection}{\numberline {2.7}Buffers}{56}
+\contentsline {subsection}{\numberline {2.8}Memory}{58}
+\contentsline {subsubsection}{\numberline {2.8.1}RAM }{58}
+\contentsline {subsubsection}{\numberline {2.8.2}ROM }{64}
+\contentsline {subsubsection}{\numberline {2.8.3}VRAM }{67}
+\contentsline {subsection}{\numberline {2.9}Display}{69}
+\contentsline {subsection}{\numberline {2.10}Touch Screen Controller }{69}
+\contentsline {subsection}{\numberline {2.11}Rotary Encoders }{70}
+\contentsline {subsection}{\numberline {2.12}Analog Interface }{72}
+\contentsline {subsubsection}{\numberline {2.12.1}Analog Front-End }{74}
+\contentsline {subsubsection}{\numberline {2.12.2}Analog to Digital Converter }{76}
+\contentsline {subsection}{\numberline {2.13}Revision History}{79}
+\contentsline {section}{\numberline {3}Software}{80}
+\contentsline {subsection}{\numberline {3.1}System Overview}{80}
+\contentsline {subsection}{\numberline {3.2}Block 1 TODO}{80}
+\contentsline {subsection}{\numberline {3.3}Block 2 TODO}{80}
+\contentsline {subsection}{\numberline {3.4}...}{80}

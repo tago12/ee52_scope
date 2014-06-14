@@ -9,12 +9,16 @@
 \begin{document}
 \pagenumbering{gobble}
 
+\pagestyle{plain}
+\pagenumbering{arabic}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Heading 
 	\title{EE/CS 52 SoPC Digital Oscilloscope}
 	\subtitle{User Manual}
 	\author{Santiago Navonne} 
 	\date{Spring 2014} 
 	\maketitle
+
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Body
 	\section{Introduction}
@@ -34,7 +38,7 @@
 		Sampling Resolution & 8 bits \\
 		Input Voltage Range & -10.0 V to +10.0 V \\
 		Trigger Level Resolution & 7 bits \\
-		Trigge Slope & Positive or negative \\
+		Trigger Slope & Positive or negative \\
 		Trigger Delay & Up to 4,294,967,295 sample times (i.e. 430 s at 100 ns sample rate) \\
 		Captured data points per sample & 480
 		\end{tabular}
@@ -43,7 +47,7 @@
 	\section{Layouts}
 	Users only need to interact with three sections of the printed circuit board: the power connector, the probe connector, and the rotary encoders. All three sections are highlighted in Figure~\ref{fig:user_board_layout}. \\
 
-	\begin{figure}[h!]
+	\begin{figure}[h]
 	\includegraphics[width=\textwidth]{img/user_board_layout.png}
                 	\caption{Position of user interface elements on printed circuit board.}
                	\label{fig:user_board_layout}
@@ -52,7 +56,7 @@
 	The user interface displayed on the LCD is shown in Figure~\ref{fig:user_screen_layout}, and presents three different parts: the most recent trace with the associated grid or axes selected through the menu is displayed in the background, the trace shown in green, with the cursor in red when enabled, and the scale in gray; the cursor's text displaying the currently measured value is shown in the top-left corner; and the menu, when displayed by pressing the push-button on either rotary encoder, appears in the top right corner.
 
 	\begin{figure}[t]
-	\includegraphics[width=\textwidth]{img/user_screen_layout.png}
+	\includegraphics[width=\textwidth]{img/user_screen_layout.jpg}
                 	\caption{Position of user interface elements on display.}
                	\label{fig:user_screen_layout}
 	\end{figure}
@@ -79,8 +83,8 @@ The \textit{Slope} menu entry is either Slope + or Slope - and determines whethe
 
 The \textit{Delay} menu entry determines the trigger delay. It sets the time after the trigger event at which the trace will start. It may be set to any value from the minimum delay to the maximum delay times the sample rate and it is displayed as a time.\\
 
-	\section*{User Input}
-	The user input section consists of two rotary encoders located in the lower-left corner of the printed circuit board, as shown in Figure~\ref{fig:user_board_layout}. The functon of these knobs are summarized in the table below.
+	\section{User Input}
+	The user input section consists of two rotary encoders located in the lower-left corner of the printed circuit board, as shown in Figure~\ref{fig:user_board_layout}. The function of these knobs are summarized in the table below.
 
 	\begin{center}
     		\begin{tabular}{ p{3cm} p{3cm} p{10cm} }

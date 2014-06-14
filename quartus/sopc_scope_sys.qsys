@@ -132,27 +132,19 @@
          type = "int";
       }
    }
-   element fifo_full.s1
-   {
-      datum baseAddress
-      {
-         value = "2363696";
-         type = "String";
-      }
-   }
-   element trig_period.s1
-   {
-      datum baseAddress
-      {
-         value = "2363744";
-         type = "String";
-      }
-   }
    element penirq.s1
    {
       datum baseAddress
       {
          value = "2363760";
+         type = "String";
+      }
+   }
+   element pio_0.s1
+   {
+      datum baseAddress
+      {
+         value = "2363552";
          type = "String";
       }
    }
@@ -172,6 +164,22 @@
          type = "String";
       }
    }
+   element fifo_full.s1
+   {
+      datum baseAddress
+      {
+         value = "2363696";
+         type = "String";
+      }
+   }
+   element trig_period.s1
+   {
+      datum baseAddress
+      {
+         value = "2363744";
+         type = "String";
+      }
+   }
    element fifo_data.s1
    {
       datum baseAddress
@@ -185,14 +193,6 @@
       datum baseAddress
       {
          value = "2363680";
-         type = "String";
-      }
-   }
-   element pio_0.s1
-   {
-      datum baseAddress
-      {
-         value = "2363552";
          type = "String";
       }
    }

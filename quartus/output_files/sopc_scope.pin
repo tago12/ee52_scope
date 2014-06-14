@@ -167,10 +167,10 @@ VCCIO4                       : 96        : power  :                   : 3.3V    
 GND                          : 97        : gnd    :                   :         :           :                
 RAS                          : 98        : output : 3.3-V LVTTL       :         : 4         : Y              
 VADDR[8]                     : 99        : output : 3.3-V LVTTL       :         : 4         : Y              
-I2C_SCL                      : 100       : output : 3.3-V LVTTL       :         : 4         : Y              
+I2C_SCL                      : 100       : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 VCCINT                       : 101       : power  :                   : 1.2V    :           :                
 GND                          : 102       : gnd    :                   :         :           :                
-I2C_SDA                      : 103       : output : 3.3-V LVTTL       :         : 4         : Y              
+I2C_SDA                      : 103       : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : 104       : power  :                   : 3.3V    : 4         :                
 GND                          : 105       : gnd    :                   :         :           :                
 VADDR[0]                     : 106       : output : 3.3-V LVTTL       :         : 4         : Y              

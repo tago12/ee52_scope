@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sopc_scope
-Thu Jun 12 09:11:07 2014
+Thu Jun 12 21:34:35 2014
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -203,8 +203,8 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 195. Parameter Settings for User Entity Instance: triggering:TRIG2|triple_dff:TDFF2|LPM_DFF:FF9
 196. Parameter Settings for User Entity Instance: triggering:TRIG2|triple_dff:TDFF2|LPM_DFF:FF8
 197. Parameter Settings for User Entity Instance: triggering:TRIG2|triple_dff:TDFF2|LPM_DFF:FF7
-198. Parameter Settings for User Entity Instance: triggering:TRIG2|lpm_compare_timeout:inst8|lpm_compare:LPM_COMPARE_component
-199. Parameter Settings for User Entity Instance: triggering:TRIG2|lpm_counter_timeout:inst5|lpm_counter:LPM_COUNTER_component
+198. Parameter Settings for User Entity Instance: triggering:TRIG2|lpm_compare_timeout:CMP12|lpm_compare:LPM_COMPARE_component
+199. Parameter Settings for User Entity Instance: triggering:TRIG2|lpm_counter_timeout:CT8|lpm_counter:LPM_COUNTER_component
 200. Parameter Settings for User Entity Instance: triggering:TRIG2|triple_dff:TDFF1|LPM_DFF:FF9
 201. Parameter Settings for User Entity Instance: triggering:TRIG2|triple_dff:TDFF1|LPM_DFF:FF8
 202. Parameter Settings for User Entity Instance: triggering:TRIG2|triple_dff:TDFF1|LPM_DFF:FF7
@@ -321,13 +321,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jun 12 09:11:06 2014      ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 12 21:34:33 2014      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; sopc_scope                                 ;
 ; Top-level Entity Name              ; sopc_scope                                 ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 7,436                                      ;
-;     Total combinational functions  ; 5,606                                      ;
+; Total logic elements               ; 7,438                                      ;
+;     Total combinational functions  ; 5,608                                      ;
 ;     Dedicated logic registers      ; 4,614                                      ;
 ; Total registers                    ; 4614                                       ;
 ; Total pins                         ; 93                                         ;
@@ -433,12 +433,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 2           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.2%      ;
+;     Processor 2            ; < 0.1%      ;
 +----------------------------+-------------+
 
 
@@ -496,17 +496,11 @@ applicable agreement for further details.
 ; sopc_scope_sys/synthesis/submodules/sopc_scope_sys_ram.v                                                                          ; yes             ; User Verilog HDL File              ; C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys/synthesis/submodules/sopc_scope_sys_ram.v                                   ; sopc_scope_sys ;
 ; sopc_scope_sys/synthesis/submodules/sopc_scope_sys_jtag.v                                                                         ; yes             ; User Verilog HDL File              ; C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys/synthesis/submodules/sopc_scope_sys_jtag.v                                  ; sopc_scope_sys ;
 ; sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios.v                                                                         ; yes             ; Encrypted User Verilog HDL File    ; C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios.v                                  ; sopc_scope_sys ;
-; sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_bht_ram.mif                                                               ; yes             ; User Memory Initialization File    ; C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_bht_ram.mif                        ; sopc_scope_sys ;
-; sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_dc_tag_ram.mif                                                            ; yes             ; User Memory Initialization File    ; C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_dc_tag_ram.mif                     ; sopc_scope_sys ;
-; sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_ic_tag_ram.mif                                                            ; yes             ; User Memory Initialization File    ; C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_ic_tag_ram.mif                     ; sopc_scope_sys ;
 ; sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_jtag_debug_module_sysclk.v                                                ; yes             ; User Verilog HDL File              ; C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_jtag_debug_module_sysclk.v         ; sopc_scope_sys ;
 ; sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_jtag_debug_module_tck.v                                                   ; yes             ; User Verilog HDL File              ; C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_jtag_debug_module_tck.v            ; sopc_scope_sys ;
 ; sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_jtag_debug_module_wrapper.v                                               ; yes             ; User Verilog HDL File              ; C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_jtag_debug_module_wrapper.v        ; sopc_scope_sys ;
 ; sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_mult_cell.v                                                               ; yes             ; User Verilog HDL File              ; C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_mult_cell.v                        ; sopc_scope_sys ;
-; sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_ociram_default_contents.mif                                               ; yes             ; User Memory Initialization File    ; C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_ociram_default_contents.mif        ; sopc_scope_sys ;
 ; sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_oci_test_bench.v                                                          ; yes             ; User Verilog HDL File              ; C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_oci_test_bench.v                   ; sopc_scope_sys ;
-; sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_rf_ram_a.mif                                                              ; yes             ; User Memory Initialization File    ; C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_rf_ram_a.mif                       ; sopc_scope_sys ;
-; sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_rf_ram_b.mif                                                              ; yes             ; User Memory Initialization File    ; C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_rf_ram_b.mif                       ; sopc_scope_sys ;
 ; sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_test_bench.v                                                              ; yes             ; User Verilog HDL File              ; C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope_sys/synthesis/submodules/sopc_scope_sys_nios_test_bench.v                       ; sopc_scope_sys ;
 ; sopc_scope.bdf                                                                                                                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/tago/Dropbox/OUT/EE52/quartus/sopc_scope.bdf                                                                             ;                ;
 ; vram_ctrl.vhd                                                                                                                     ; yes             ; User VHDL File                     ; C:/Users/tago/Dropbox/OUT/EE52/quartus/vram_ctrl.vhd                                                                              ;                ;
@@ -710,16 +704,16 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 7,436     ;
+; Estimated Total logic elements              ; 7,438     ;
 ;                                             ;           ;
-; Total combinational functions               ; 5606      ;
+; Total combinational functions               ; 5608      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 2699      ;
-;     -- 3 input functions                    ; 1663      ;
-;     -- <=2 input functions                  ; 1244      ;
+;     -- 4 input functions                    ; 2700      ;
+;     -- 3 input functions                    ; 1665      ;
+;     -- <=2 input functions                  ; 1243      ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 4990      ;
+;     -- normal mode                          ; 4992      ;
 ;     -- arithmetic mode                      ; 616       ;
 ;                                             ;           ;
 ; Total registers                             ; 4614      ;
@@ -731,7 +725,7 @@ applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 4         ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 2874      ;
-; Total fan-out                               ; 39900     ;
+; Total fan-out                               ; 39910     ;
 ; Average fan-out                             ; 3.71      ;
 +---------------------------------------------+-----------+
 
@@ -741,7 +735,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+
 ; Compilation Hierarchy Node                                                                                     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                                         ; Library Name   ;
 +----------------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+
-; |sopc_scope                                                                                                    ; 5606 (3)          ; 4614 (0)     ; 87828       ; 4            ; 0       ; 2         ; 93   ; 0            ; |sopc_scope                                                                                                                                                                                                                                                                                                                                                                 ; work           ;
+; |sopc_scope                                                                                                    ; 5608 (3)          ; 4614 (0)     ; 87828       ; 4            ; 0       ; 2         ; 93   ; 0            ; |sopc_scope                                                                                                                                                                                                                                                                                                                                                                 ; work           ;
 ;    |debouncer:DBC1|                                                                                            ; 25 (0)            ; 19 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|debouncer:DBC1                                                                                                                                                                                                                                                                                                                                                  ; work           ;
 ;       |lpm_compare9:CMP4|                                                                                      ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|debouncer:DBC1|lpm_compare9:CMP4                                                                                                                                                                                                                                                                                                                                ; work           ;
 ;          |lpm_compare:LPM_COMPARE_component|                                                                   ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|debouncer:DBC1|lpm_compare9:CMP4|lpm_compare:LPM_COMPARE_component                                                                                                                                                                                                                                                                                              ; work           ;
@@ -821,8 +815,8 @@ applicable agreement for further details.
 ;             |lpm_shiftreg:rdi_reg|                                                                             ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|serialflash:SR1|altserial_flash_loader:altserial_flash_loader_component|alt_sfl_enhanced:\ENHANCED_PGM:sfl_inst_enhanced|lpm_shiftreg:rdi_reg                                                                                                                                                                                                                   ; work           ;
 ;             |lpm_shiftreg:rsiid_reg|                                                                           ; 0 (0)             ; 40 (40)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|serialflash:SR1|altserial_flash_loader:altserial_flash_loader_component|alt_sfl_enhanced:\ENHANCED_PGM:sfl_inst_enhanced|lpm_shiftreg:rsiid_reg                                                                                                                                                                                                                 ; work           ;
 ;             |lpm_shiftreg:rstatus_reg|                                                                         ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|serialflash:SR1|altserial_flash_loader:altserial_flash_loader_component|alt_sfl_enhanced:\ENHANCED_PGM:sfl_inst_enhanced|lpm_shiftreg:rstatus_reg                                                                                                                                                                                                               ; work           ;
-;    |sld_hub:auto_hub|                                                                                          ; 320 (1)           ; 209 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                                                ; work           ;
-;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                           ; 319 (275)         ; 209 (180)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                                                   ; work           ;
+;    |sld_hub:auto_hub|                                                                                          ; 322 (1)           ; 209 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                                                ; work           ;
+;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                           ; 321 (277)         ; 209 (180)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                                                   ; work           ;
 ;          |sld_rom_sr:hub_info_reg|                                                                             ; 27 (27)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                                                                                                                                                                                                                           ; work           ;
 ;          |sld_shadow_jsm:shadow_jsm|                                                                           ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_shadow_jsm:shadow_jsm                                                                                                                                                                                                                                                                         ; work           ;
 ;    |sld_signaltap:auto_signaltap_0|                                                                            ; 464 (1)           ; 922 (108)    ; 6912        ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|sld_signaltap:auto_signaltap_0                                                                                                                                                                                                                                                                                                                                  ; work           ;
@@ -1147,18 +1141,18 @@ applicable agreement for further details.
 ;       |lpm_compare11:CMP4|                                                                                     ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_compare11:CMP4                                                                                                                                                                                                                                                                                                                             ; work           ;
 ;          |lpm_compare:LPM_COMPARE_component|                                                                   ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_compare11:CMP4|lpm_compare:LPM_COMPARE_component                                                                                                                                                                                                                                                                                           ; work           ;
 ;             |cmpr_3mg:auto_generated|                                                                          ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_compare11:CMP4|lpm_compare:LPM_COMPARE_component|cmpr_3mg:auto_generated                                                                                                                                                                                                                                                                   ; work           ;
-;       |lpm_compare_timeout:inst8|                                                                              ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_compare_timeout:inst8                                                                                                                                                                                                                                                                                                                      ; work           ;
-;          |lpm_compare:LPM_COMPARE_component|                                                                   ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_compare_timeout:inst8|lpm_compare:LPM_COMPARE_component                                                                                                                                                                                                                                                                                    ; work           ;
-;             |cmpr_efj:auto_generated|                                                                          ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_compare_timeout:inst8|lpm_compare:LPM_COMPARE_component|cmpr_efj:auto_generated                                                                                                                                                                                                                                                            ; work           ;
+;       |lpm_compare_timeout:CMP12|                                                                              ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_compare_timeout:CMP12                                                                                                                                                                                                                                                                                                                      ; work           ;
+;          |lpm_compare:LPM_COMPARE_component|                                                                   ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_compare_timeout:CMP12|lpm_compare:LPM_COMPARE_component                                                                                                                                                                                                                                                                                    ; work           ;
+;             |cmpr_efj:auto_generated|                                                                          ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_compare_timeout:CMP12|lpm_compare:LPM_COMPARE_component|cmpr_efj:auto_generated                                                                                                                                                                                                                                                            ; work           ;
 ;       |lpm_compare_trig:CMP2|                                                                                  ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_compare_trig:CMP2                                                                                                                                                                                                                                                                                                                          ; work           ;
 ;          |lpm_compare:LPM_COMPARE_component|                                                                   ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_compare_trig:CMP2|lpm_compare:LPM_COMPARE_component                                                                                                                                                                                                                                                                                        ; work           ;
 ;             |cmpr_5vg:auto_generated|                                                                          ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_compare_trig:CMP2|lpm_compare:LPM_COMPARE_component|cmpr_5vg:auto_generated                                                                                                                                                                                                                                                                ; work           ;
 ;       |lpm_compare_trig_delay:CMP3|                                                                            ; 21 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_compare_trig_delay:CMP3                                                                                                                                                                                                                                                                                                                    ; work           ;
 ;          |lpm_compare:LPM_COMPARE_component|                                                                   ; 21 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_compare_trig_delay:CMP3|lpm_compare:LPM_COMPARE_component                                                                                                                                                                                                                                                                                  ; work           ;
 ;             |cmpr_3mg:auto_generated|                                                                          ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_compare_trig_delay:CMP3|lpm_compare:LPM_COMPARE_component|cmpr_3mg:auto_generated                                                                                                                                                                                                                                                          ; work           ;
-;       |lpm_counter_timeout:inst5|                                                                              ; 21 (0)            ; 20 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_counter_timeout:inst5                                                                                                                                                                                                                                                                                                                      ; work           ;
-;          |lpm_counter:LPM_COUNTER_component|                                                                   ; 21 (0)            ; 20 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_counter_timeout:inst5|lpm_counter:LPM_COUNTER_component                                                                                                                                                                                                                                                                                    ; work           ;
-;             |cntr_qsi:auto_generated|                                                                          ; 21 (21)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_counter_timeout:inst5|lpm_counter:LPM_COUNTER_component|cntr_qsi:auto_generated                                                                                                                                                                                                                                                            ; work           ;
+;       |lpm_counter_timeout:CT8|                                                                                ; 21 (0)            ; 20 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_counter_timeout:CT8                                                                                                                                                                                                                                                                                                                        ; work           ;
+;          |lpm_counter:LPM_COUNTER_component|                                                                   ; 21 (0)            ; 20 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_counter_timeout:CT8|lpm_counter:LPM_COUNTER_component                                                                                                                                                                                                                                                                                      ; work           ;
+;             |cntr_qsi:auto_generated|                                                                          ; 21 (21)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_counter_timeout:CT8|lpm_counter:LPM_COUNTER_component|cntr_qsi:auto_generated                                                                                                                                                                                                                                                              ; work           ;
 ;       |lpm_counter_trig:CT1|                                                                                   ; 32 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_counter_trig:CT1                                                                                                                                                                                                                                                                                                                           ; work           ;
 ;          |lpm_counter:LPM_COUNTER_component|                                                                   ; 32 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_counter_trig:CT1|lpm_counter:LPM_COUNTER_component                                                                                                                                                                                                                                                                                         ; work           ;
 ;             |cntr_68i:auto_generated|                                                                          ; 32 (32)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sopc_scope|triggering:TRIG2|lpm_counter_trig:CT1|lpm_counter:LPM_COUNTER_component|cntr_68i:auto_generated                                                                                                                                                                                                                                                                 ; work           ;
@@ -1387,11 +1381,11 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; Altera ; LPM_COMPARE                             ; 13.1    ; N/A          ; N/A          ; |sopc_scope|triggering:TRIG2|lpm_compare_trig:CMP2                                                                                                                                 ; C:/Users/tago/Dropbox/OUT/EE52/logic/lpm_compare_trig.vhd                                        ;
 ; Altera ; LPM_COMPARE                             ; 13.1    ; N/A          ; N/A          ; |sopc_scope|triggering:TRIG2|lpm_compare_trig_delay:CMP3                                                                                                                           ; C:/Users/tago/Dropbox/OUT/EE52/quartus/lpm_compare_trig_delay.vhd                                ;
 ; Altera ; LPM_COMPARE                             ; 13.1    ; N/A          ; N/A          ; |sopc_scope|triggering:TRIG2|lpm_compare11:CMP4                                                                                                                                    ; C:/Users/tago/Dropbox/OUT/EE52/quartus/lpm_compare11.vhd                                         ;
+; Altera ; LPM_COMPARE                             ; 13.1    ; N/A          ; N/A          ; |sopc_scope|triggering:TRIG2|lpm_compare_timeout:CMP12                                                                                                                             ; C:/Users/tago/Dropbox/OUT/EE52/quartus/lpm_compare_timeout.vhd                                   ;
 ; Altera ; LPM_COUNTER                             ; 13.1    ; N/A          ; N/A          ; |sopc_scope|triggering:TRIG2|lpm_counter_trig:CT1                                                                                                                                  ; C:/Users/tago/Dropbox/OUT/EE52/quartus/lpm_counter_trig.vhd                                      ;
 ; Altera ; LPM_COUNTER                             ; 13.1    ; N/A          ; N/A          ; |sopc_scope|triggering:TRIG2|lpm_counter_trig_delay:CT2                                                                                                                            ; C:/Users/tago/Dropbox/OUT/EE52/quartus/lpm_counter_trig_delay.vhd                                ;
+; Altera ; LPM_COUNTER                             ; 13.1    ; N/A          ; N/A          ; |sopc_scope|triggering:TRIG2|lpm_counter_timeout:CT8                                                                                                                               ; C:/Users/tago/Dropbox/OUT/EE52/quartus/lpm_counter_timeout.vhd                                   ;
 ; Altera ; FIFO                                    ; 13.1    ; N/A          ; N/A          ; |sopc_scope|triggering:TRIG2|trig_fifo:FIFO1                                                                                                                                       ; C:/Users/tago/Dropbox/OUT/EE52/quartus/trig_fifo.vhd                                             ;
-; Altera ; LPM_COUNTER                             ; 13.1    ; N/A          ; N/A          ; |sopc_scope|triggering:TRIG2|lpm_counter_timeout:inst5                                                                                                                             ; C:/Users/tago/Dropbox/OUT/EE52/quartus/lpm_counter_timeout.vhd                                   ;
-; Altera ; LPM_COMPARE                             ; 13.1    ; N/A          ; N/A          ; |sopc_scope|triggering:TRIG2|lpm_compare_timeout:inst8                                                                                                                             ; C:/Users/tago/Dropbox/OUT/EE52/quartus/lpm_compare_timeout.vhd                                   ;
 ; Altera ; LPM_MUX                                 ; 13.1    ; N/A          ; N/A          ; |sopc_scope|vram_ctrl:VRAM1|lpm_mux0:b2v_addr_mux                                                                                                                                  ; C:/Users/tago/Dropbox/OUT/EE52/logic/lpm_mux0.vhd                                                ;
 ; Altera ; LPM_COUNTER                             ; 13.1    ; N/A          ; N/A          ; |sopc_scope|vram_ctrl:VRAM1|vram_cnt:b2v_VRAM_addr_cnt                                                                                                                             ; C:/Users/tago/Dropbox/OUT/EE52/quartus/vram_cnt.vhd                                              ;
 +--------+-----------------------------------------+---------+--------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
@@ -2695,7 +2689,7 @@ Encoding Type:  One-Hot
 ; 7:1                ; 12 bits   ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; Yes        ; |sopc_scope|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[3][3]                                                                                                                                                                                                                          ;
 ; 7:1                ; 12 bits   ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; Yes        ; |sopc_scope|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[4][8]                                                                                                                                                                                                                          ;
 ; 7:1                ; 12 bits   ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; Yes        ; |sopc_scope|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[5][8]                                                                                                                                                                                                                          ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 56 LEs               ; 32 LEs                 ; Yes        ; |sopc_scope|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[0]                                                                                                                                                                                                                            ;
+; 34:1               ; 4 bits    ; 88 LEs        ; 64 LEs               ; 24 LEs                 ; Yes        ; |sopc_scope|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[0]                                                                                                                                                                                                                            ;
 ; 52:1               ; 4 bits    ; 136 LEs       ; 92 LEs               ; 44 LEs                 ; Yes        ; |sopc_scope|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[0]                                                                                                                                                                                                            ;
 ; 14:1               ; 12 bits   ; 108 LEs       ; 48 LEs               ; 60 LEs                 ; Yes        ; |sopc_scope|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[10]                                                                                                                                                                                                                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -6592,7 +6586,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: triggering:TRIG2|lpm_compare_timeout:inst8|lpm_compare:LPM_COMPARE_component ;
+; Parameter Settings for User Entity Instance: triggering:TRIG2|lpm_compare_timeout:CMP12|lpm_compare:LPM_COMPARE_component ;
 +------------------------+-------------+------------------------------------------------------------------------------------+
 ; Parameter Name         ; Value       ; Type                                                                               ;
 +------------------------+-------------+------------------------------------------------------------------------------------+
@@ -6615,30 +6609,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: triggering:TRIG2|lpm_counter_timeout:inst5|lpm_counter:LPM_COUNTER_component ;
-+------------------------+-------------+------------------------------------------------------------------------------------+
-; Parameter Name         ; Value       ; Type                                                                               ;
-+------------------------+-------------+------------------------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                                         ;
-; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                                       ;
-; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                                       ;
-; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                                     ;
-; LPM_WIDTH              ; 20          ; Signed Integer                                                                     ;
-; LPM_DIRECTION          ; UP          ; Untyped                                                                            ;
-; LPM_MODULUS            ; 0           ; Untyped                                                                            ;
-; LPM_AVALUE             ; UNUSED      ; Untyped                                                                            ;
-; LPM_SVALUE             ; UNUSED      ; Untyped                                                                            ;
-; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                                            ;
-; DEVICE_FAMILY          ; Cyclone III ; Untyped                                                                            ;
-; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                            ;
-; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                                 ;
-; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                                                 ;
-; CARRY_CNT_EN           ; SMART       ; Untyped                                                                            ;
-; LABWIDE_SCLR           ; ON          ; Untyped                                                                            ;
-; USE_NEW_VERSION        ; TRUE        ; Untyped                                                                            ;
-; CBXI_PARAMETER         ; cntr_qsi    ; Untyped                                                                            ;
-+------------------------+-------------+------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: triggering:TRIG2|lpm_counter_timeout:CT8|lpm_counter:LPM_COUNTER_component ;
++------------------------+-------------+----------------------------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                                             ;
++------------------------+-------------+----------------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                                   ;
+; LPM_WIDTH              ; 20          ; Signed Integer                                                                   ;
+; LPM_DIRECTION          ; UP          ; Untyped                                                                          ;
+; LPM_MODULUS            ; 0           ; Untyped                                                                          ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                                          ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                                                          ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                                          ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                               ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                                               ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                                          ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                                          ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                                          ;
+; CBXI_PARAMETER         ; cntr_qsi    ; Untyped                                                                          ;
++------------------------+-------------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -8269,8 +8263,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------+--------------+
 ; Partition Name   ; Elapsed Time ;
 +------------------+--------------+
-; Top              ; 00:00:34     ;
-; sld_hub:auto_hub ; 00:00:01     ;
+; Top              ; 00:01:32     ;
+; sld_hub:auto_hub ; 00:00:05     ;
 +------------------+--------------+
 
 
@@ -8408,7 +8402,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Jun 12 09:09:37 2014
+    Info: Processing started: Thu Jun 12 21:31:05 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sopc_scope -c sopc_scope
 Warning (125092): Tcl Script File output_files/altpll0.qip not found
     Info (125063): set_global_assignment -name QIP_FILE output_files/altpll0.qip
@@ -8680,8 +8674,6 @@ Warning (10037): Verilog HDL or VHDL warning at sopc_scope_sys_nios.v(2122): con
 Warning (10037): Verilog HDL or VHDL warning at sopc_scope_sys_nios.v(2278): conditional expression evaluates to a constant
 Warning (10037): Verilog HDL or VHDL warning at sopc_scope_sys_nios.v(3102): conditional expression evaluates to a constant
 Info (12127): Elaborating entity "sopc_scope" for the top level hierarchy
-Warning (275043): Pin "I2C_SDA" is missing source
-Warning (275043): Pin "I2C_SCL" is missing source
 Warning (275009): Pin "PENIRQ" not connected
 Info (12128): Elaborating entity "display_ctrl" for hierarchy "display_ctrl:DISP1"
 Info (12128): Elaborating entity "lpm_counter0" for hierarchy "display_ctrl:DISP1|lpm_counter0:b2v_DCLK_cnt"
@@ -9654,7 +9646,6 @@ Info (12128): Elaborating entity "sopc_scope_sys_nios_nios2_oci_compute_input_tm
 Info (12128): Elaborating entity "sopc_scope_sys_nios_nios2_oci_fifo_wrptr_inc" for hierarchy "sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_nios2_oci:the_sopc_scope_sys_nios_nios2_oci|sopc_scope_sys_nios_nios2_oci_fifo:the_sopc_scope_sys_nios_nios2_oci_fifo|sopc_scope_sys_nios_nios2_oci_fifo_wrptr_inc:the_sopc_scope_sys_nios_nios2_oci_fifo_wrptr_inc"
 Info (12128): Elaborating entity "sopc_scope_sys_nios_nios2_oci_fifo_cnt_inc" for hierarchy "sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_nios2_oci:the_sopc_scope_sys_nios_nios2_oci|sopc_scope_sys_nios_nios2_oci_fifo:the_sopc_scope_sys_nios_nios2_oci_fifo|sopc_scope_sys_nios_nios2_oci_fifo_cnt_inc:the_sopc_scope_sys_nios_nios2_oci_fifo_cnt_inc"
 Info (12128): Elaborating entity "sopc_scope_sys_nios_oci_test_bench" for hierarchy "sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_nios2_oci:the_sopc_scope_sys_nios_nios2_oci|sopc_scope_sys_nios_nios2_oci_fifo:the_sopc_scope_sys_nios_nios2_oci_fifo|sopc_scope_sys_nios_oci_test_bench:the_sopc_scope_sys_nios_oci_test_bench"
-Warning (12158): Entity "sopc_scope_sys_nios_oci_test_bench" contains only dangling pins
 Info (12128): Elaborating entity "sopc_scope_sys_nios_nios2_oci_pib" for hierarchy "sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_nios2_oci:the_sopc_scope_sys_nios_nios2_oci|sopc_scope_sys_nios_nios2_oci_pib:the_sopc_scope_sys_nios_nios2_oci_pib"
 Info (12128): Elaborating entity "sopc_scope_sys_nios_nios2_oci_im" for hierarchy "sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_nios2_oci:the_sopc_scope_sys_nios_nios2_oci|sopc_scope_sys_nios_nios2_oci_im:the_sopc_scope_sys_nios_nios2_oci_im"
 Info (12128): Elaborating entity "sopc_scope_sys_nios_jtag_debug_module_wrapper" for hierarchy "sopc_scope_sys:CPU1|sopc_scope_sys_nios:nios|sopc_scope_sys_nios_nios2_oci:the_sopc_scope_sys_nios_nios2_oci|sopc_scope_sys_nios_jtag_debug_module_wrapper:the_sopc_scope_sys_nios_jtag_debug_module_wrapper"
@@ -9922,28 +9913,28 @@ Info (12128): Elaborating entity "LPM_DFF" for hierarchy "triggering:TRIG2|tripl
 Info (12130): Elaborated megafunction instantiation "triggering:TRIG2|triple_dff:TDFF2|LPM_DFF:FF9"
 Info (12133): Instantiated megafunction "triggering:TRIG2|triple_dff:TDFF2|LPM_DFF:FF9" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "8"
-Info (12128): Elaborating entity "lpm_compare_timeout" for hierarchy "triggering:TRIG2|lpm_compare_timeout:inst8"
-Info (12128): Elaborating entity "lpm_compare" for hierarchy "triggering:TRIG2|lpm_compare_timeout:inst8|lpm_compare:LPM_COMPARE_component"
-Info (12130): Elaborated megafunction instantiation "triggering:TRIG2|lpm_compare_timeout:inst8|lpm_compare:LPM_COMPARE_component"
-Info (12133): Instantiated megafunction "triggering:TRIG2|lpm_compare_timeout:inst8|lpm_compare:LPM_COMPARE_component" with the following parameter:
+Info (12128): Elaborating entity "lpm_compare_timeout" for hierarchy "triggering:TRIG2|lpm_compare_timeout:CMP12"
+Info (12128): Elaborating entity "lpm_compare" for hierarchy "triggering:TRIG2|lpm_compare_timeout:CMP12|lpm_compare:LPM_COMPARE_component"
+Info (12130): Elaborated megafunction instantiation "triggering:TRIG2|lpm_compare_timeout:CMP12|lpm_compare:LPM_COMPARE_component"
+Info (12133): Instantiated megafunction "triggering:TRIG2|lpm_compare_timeout:CMP12|lpm_compare:LPM_COMPARE_component" with the following parameter:
     Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=YES"
     Info (12134): Parameter "lpm_representation" = "UNSIGNED"
     Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
     Info (12134): Parameter "lpm_width" = "20"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_efj.tdf
     Info (12023): Found entity 1: cmpr_efj
-Info (12128): Elaborating entity "cmpr_efj" for hierarchy "triggering:TRIG2|lpm_compare_timeout:inst8|lpm_compare:LPM_COMPARE_component|cmpr_efj:auto_generated"
-Info (12128): Elaborating entity "lpm_counter_timeout" for hierarchy "triggering:TRIG2|lpm_counter_timeout:inst5"
-Info (12128): Elaborating entity "lpm_counter" for hierarchy "triggering:TRIG2|lpm_counter_timeout:inst5|lpm_counter:LPM_COUNTER_component"
-Info (12130): Elaborated megafunction instantiation "triggering:TRIG2|lpm_counter_timeout:inst5|lpm_counter:LPM_COUNTER_component"
-Info (12133): Instantiated megafunction "triggering:TRIG2|lpm_counter_timeout:inst5|lpm_counter:LPM_COUNTER_component" with the following parameter:
+Info (12128): Elaborating entity "cmpr_efj" for hierarchy "triggering:TRIG2|lpm_compare_timeout:CMP12|lpm_compare:LPM_COMPARE_component|cmpr_efj:auto_generated"
+Info (12128): Elaborating entity "lpm_counter_timeout" for hierarchy "triggering:TRIG2|lpm_counter_timeout:CT8"
+Info (12128): Elaborating entity "lpm_counter" for hierarchy "triggering:TRIG2|lpm_counter_timeout:CT8|lpm_counter:LPM_COUNTER_component"
+Info (12130): Elaborated megafunction instantiation "triggering:TRIG2|lpm_counter_timeout:CT8|lpm_counter:LPM_COUNTER_component"
+Info (12133): Instantiated megafunction "triggering:TRIG2|lpm_counter_timeout:CT8|lpm_counter:LPM_COUNTER_component" with the following parameter:
     Info (12134): Parameter "lpm_direction" = "UP"
     Info (12134): Parameter "lpm_port_updown" = "PORT_UNUSED"
     Info (12134): Parameter "lpm_type" = "LPM_COUNTER"
     Info (12134): Parameter "lpm_width" = "20"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_qsi.tdf
     Info (12023): Found entity 1: cntr_qsi
-Info (12128): Elaborating entity "cntr_qsi" for hierarchy "triggering:TRIG2|lpm_counter_timeout:inst5|lpm_counter:LPM_COUNTER_component|cntr_qsi:auto_generated"
+Info (12128): Elaborating entity "cntr_qsi" for hierarchy "triggering:TRIG2|lpm_counter_timeout:CT8|lpm_counter:LPM_COUNTER_component|cntr_qsi:auto_generated"
 Info (12128): Elaborating entity "debouncer" for hierarchy "debouncer:DBC1"
 Info (12128): Elaborating entity "lpm_compare9" for hierarchy "debouncer:DBC1|lpm_compare9:CMP4"
 Info (12128): Elaborating entity "lpm_compare" for hierarchy "debouncer:DBC1|lpm_compare9:CMP4|lpm_compare:LPM_COMPARE_component"
@@ -10151,6 +10142,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/mult
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (17010): WYSIWYG ASMI primitives converted to equivalent logic
     Info (17011): WYSIWYG SPI primitive "serialflash:SR1|altserial_flash_loader:altserial_flash_loader_component|data_from_flash" converted to equivalent logic
+Warning (13039): The following bidir pins have no drivers
+    Warning (13040): Bidir "I2C_SDA" has no driver
+    Warning (13040): Bidir "I2C_SCL" has no driver
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "sopc_scope_sys:CPU1|sopc_scope_sys_bridge:bridge|we[0]" to the node "vram_ctrl:VRAM1|VRAMCtrl:b2v_VRAM_ctrl|Selector4" into an OR gate
 Info (13000): Registers with preset signals will power-up high
@@ -10159,8 +10153,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "U10_DIR" is stuck at GND
     Warning (13410): Pin "U10_OE" is stuck at GND
     Warning (13410): Pin "DISP" is stuck at VCC
-    Warning (13410): Pin "I2C_SDA" is stuck at GND
-    Warning (13410): Pin "I2C_SCL" is stuck at GND
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 196 registers lost all their fanouts during netlist optimizations.
 Info (13000): Registers with preset signals will power-up high
@@ -10175,18 +10167,18 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "PENIRQ"
-Info (21057): Implemented 8282 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 8284 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
-    Info (21059): Implemented 50 output pins
-    Info (21060): Implemented 24 bidirectional pins
-    Info (21061): Implemented 7873 logic cells
+    Info (21059): Implemented 48 output pins
+    Info (21060): Implemented 26 bidirectional pins
+    Info (21061): Implemented 7875 logic cells
     Info (21064): Implemented 307 RAM segments
     Info (21062): Implemented 4 DSP elements
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 73 warnings
-    Info: Peak virtual memory: 825 megabytes
-    Info: Processing ended: Thu Jun 12 09:11:07 2014
-    Info: Elapsed time: 00:01:30
-    Info: Total CPU time (on all processors): 00:01:16
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 71 warnings
+    Info: Peak virtual memory: 835 megabytes
+    Info: Processing ended: Thu Jun 12 21:34:36 2014
+    Info: Elapsed time: 00:03:31
+    Info: Total CPU time (on all processors): 00:03:15
 
 
 +------------------------------------------+

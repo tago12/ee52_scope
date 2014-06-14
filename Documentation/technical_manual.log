@@ -1,0 +1,1791 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 JUN 2014 00:33
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**technical_manual.tex
+(./technical_manual.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/koma-script/scrartcl.cls
+Document Class: scrartcl 2012/07/29 v3.11b KOMA-Script document class (article)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2012/07/29 v3.11b KOMA-Script package (KOMA-Script-dependent 
+basics and keyval usage)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2012/07/29 v3.11b KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2012/06/15 v3.12 KOMA-Script package (loading files)
+
+Package scrlfile, 2012/06/15 v3.12 KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
+
+))) (/usr/local/texlive/2013/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2012/04/04 v3.10b KOMA-Script package (handling toc-files)
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 115.
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 116.
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 117.
+Class scrartcl Info: File `scrsize11pt.clo' used instead of
+(scrartcl)           file `scrsize11.clo' to setup font sizes on input line 126
+7.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+File: scrsize11pt.clo 2012/07/29 v3.11b KOMA-Script font size class option (11p
+t)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2012/07/29 v3.11b KOMA-Script package (type area)
+
+Package typearea, 2012/07/29 v3.11b KOMA-Script package (type area)
+                  Copyright (C) Frank Neukam, 1992-1994
+                  Copyright (C) Markus Kohm, 1994-
+
+\ta@bcor=\skip41
+\ta@div=\count79
+\ta@hblk=\skip42
+\ta@vblk=\skip43
+\ta@temp=\skip44
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 17.3562pt
+(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -25.16531pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.60002pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 1213.
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\abovecaptionskip=\skip45
+\belowcaptionskip=\skip46
+\c@pti@nb@sid@b@x=\box26
+\c@figure=\count86
+\c@table=\count87
+\bibindent=\dimen102
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip47
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen103
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks16
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks17
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks18
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip50
+\thm@postskip=\skip51
+\thm@headsep=\skip52
+\dth@everypar=\toks25
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/preprint/fullpage.sty
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip53
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count100
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen114
+\captionmargin@=\dimen115
+\captionwidth=\dimen116
+\caption@tempdima=\dimen117
+\caption@indent=\dimen118
+\caption@parindent=\dimen119
+\caption@hangindent=\dimen120
+)
+Package caption Info: KOMA-Script document class.
+\c@ContinuedFloat=\count101
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count102
+\c@subtable=\count103
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2012/08/31 v0.4t Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count104
+\calc@Bcount=\count105
+\calc@Adimen=\dimen121
+\calc@Bdimen=\dimen122
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count106
+\calc@Cskip=\skip56
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2012/08/31 v0.4t Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box29
+\AM@toc@title=\toks26
+\c@AM@survey=\count107
+\AM@templatesizebox=\box30
+)
+(./technical_manual.aux)
+\openout1 = `technical_manual.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+
+(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count108
+\scratchdimen=\dimen123
+\scratchbox=\box31
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen124
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
+\everyMPtoPDFconversion=\toks28
+) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box32
+LaTeX Font Info:    Try loading font information for U+msa on input line 20.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 20.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./technical_manual.toc)
+\tf@toc=\write3
+\openout3 = `technical_manual.toc'.
+
+ [2]
+Overfull \hbox (22.596pt too wide) in paragraph at lines 29--30
+\OT1/cmr/m/n/10.95 This doc-u-ment de-scribes the sys-tem work-ings and de-tail
+s of the EE/CS 52 System-on-Programmable-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+<img/block_diagram.pdf, id=12, 794.97pt x 614.295pt>
+File: img/block_diagram.pdf Graphic file (type pdf)
+
+<use img/block_diagram.pdf>
+Package pdftex.def Info: img/block_diagram.pdf used on input line 43.
+(pdftex.def)             Requested size: 825.12991pt x 637.62381pt.
+
+
+LaTeX Warning: Float too large for page by 95.61195pt on input line 46.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+[3
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+
+LaTeX Warning: Reference `fib:pcb_back' on page 4 undefined on input line 64.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+<img/pcb.pdf, id=17, 770.88pt x 589.20125pt>
+File: img/pcb.pdf Graphic file (type pdf)
+ <use img/pcb.pdf>
+Package pdftex.def Info: img/pcb.pdf used on input line 68.
+(pdftex.def)             Requested size: 796.67715pt x 608.91591pt.
+
+
+LaTeX Warning: Float too large for page by 67.15921pt on input line 72.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/pcb_back.pdf, id=18, 770.88pt x 589.20125pt>
+File: img/pcb_back.pdf Graphic file (type pdf)
+ <use img/pcb_back.pdf>
+Package pdftex.def Info: img/pcb_back.pdf used on input line 76.
+(pdftex.def)             Requested size: 796.67715pt x 608.91591pt.
+
+
+LaTeX Warning: Float too large for page by 67.15921pt on input line 80.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4] <img/memory_map.png, id=24, 372.64218pt x 372.64218pt>
+File: img/memory_map.png Graphic file (type png)
+
+<use img/memory_map.png>
+Package pdftex.def Info: img/memory_map.png used on input line 85.
+(pdftex.def)             Requested size: 452.96796pt x 452.98521pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5] [6 <./img/block_diagram.pdf, page is rotated 90 degrees>] [7 <./img/pcb.pdf
+>] [8 <./img/pcb_back.pdf>] [9 <./img/memory_map.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+<img/fpga_sch.pdf, id=73, 794.97pt x 614.295pt>
+File: img/fpga_sch.pdf Graphic file (type pdf)
+ <use img/fpga_sch.pdf>
+Package pdftex.def Info: img/fpga_sch.pdf used on input line 97.
+(pdftex.def)             Requested size: 739.77165pt x 571.66338pt.
+
+
+LaTeX Warning: Float too large for page by 67.15921pt on input line 100.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+<img/quartus_main.pdf, id=74, 794.97pt x 614.295pt>
+File: img/quartus_main.pdf Graphic file (type pdf)
+ <use img/quartus_main.pdf>
+Package pdftex.def Info: img/quartus_main.pdf used on input line 108.
+(pdftex.def)             Requested size: 853.58267pt x 659.60437pt.
+
+
+LaTeX Warning: Float too large for page by 67.15921pt on input line 112.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ []
+
+[10
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+[11] [12 <./img/fpga_sch.pdf>] [13 <./img/quartus_main.pdf, page is rotated 90 
+degrees>]
+
+Package caption Warning: \label without proper \caption on input line 154.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:qsys' on page 14 undefined on input line 129.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 142--142
+[]\OT1/cmr/m/n/10.95 Tri-State Con-duit Pin
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+[]\OT1/cmr/m/n/10.95 Tri-State Con-duit
+ []
+
+
+Overfull \hbox (38.27612pt too wide) in paragraph at lines 133--154
+ [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 43.293pt on input line 157.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
+
+ []
+
+[14
+
+] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+
+ []
+
+<img/triggering.pdf, id=118, 794.97pt x 614.295pt>
+File: img/triggering.pdf Graphic file (type pdf)
+ <use img/triggering.pdf>
+Package pdftex.def Info: img/triggering.pdf used on input line 168.
+(pdftex.def)             Requested size: 853.58267pt x 659.60437pt.
+
+
+LaTeX Warning: Float too large for page by 67.15921pt on input line 172.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
+
+ []
+
+[16
+
+] <scoptrig.pdf, id=124, page=1, 614.295pt x 794.97pt>
+File: scoptrig.pdf Graphic file (type pdf)
+
+<use scoptrig.pdf, page 1>
+Package pdftex.def Info: scoptrig.pdf, page1 used on input line 178.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: scoptrig.pdf Graphic file (type pdf)
+ <use scoptrig.pdf, page 1>
+Package pdftex.def Info: scoptrig.pdf, page1 used on input line 178.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: scoptrig.pdf Graphic file (type pdf)
+
+<use scoptrig.pdf, page 1>
+Package pdftex.def Info: scoptrig.pdf, page1 used on input line 178.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: scoptrig.pdf Graphic file (type pdf)
+ <use scoptrig.pdf, page 1>
+Package pdftex.def Info: scoptrig.pdf, page1 used on input line 178.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: scoptrig.pdf Graphic file (type pdf)
+
+<use scoptrig.pdf, page 1>
+Package pdftex.def Info: scoptrig.pdf, page1 used on input line 178.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [17 <./scoptrig.pdf>]
+<scoptrig.pdf, id=155, page=2, 614.295pt x 794.97pt>
+File: scoptrig.pdf Graphic file (type pdf)
+
+<use scoptrig.pdf, page 2>
+Package pdftex.def Info: scoptrig.pdf, page2 used on input line 178.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: scoptrig.pdf Graphic file (type pdf)
+ <use scoptrig.pdf, page 2>
+Package pdftex.def Info: scoptrig.pdf, page2 used on input line 178.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: scoptrig.pdf Graphic file (type pdf)
+
+<use scoptrig.pdf, page 2>
+Package pdftex.def Info: scoptrig.pdf, page2 used on input line 178.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [18 <./scoptrig.pdf>]
+<scoptrig.pdf, id=165, page=3, 614.295pt x 794.97pt>
+File: scoptrig.pdf Graphic file (type pdf)
+
+<use scoptrig.pdf, page 3>
+Package pdftex.def Info: scoptrig.pdf, page3 used on input line 178.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: scoptrig.pdf Graphic file (type pdf)
+ <use scoptrig.pdf, page 3>
+Package pdftex.def Info: scoptrig.pdf, page3 used on input line 178.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: scoptrig.pdf Graphic file (type pdf)
+
+<use scoptrig.pdf, page 3>
+Package pdftex.def Info: scoptrig.pdf, page3 used on input line 178.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [19 <./scoptrig.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
+
+ []
+
+[20] [21 <./img/triggering.pdf, page is rotated 90 degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
+
+ []
+
+<img/debouncer.pdf, id=186, 794.97pt x 614.295pt>
+File: img/debouncer.pdf Graphic file (type pdf)
+ <use img/debouncer.pdf>
+Package pdftex.def Info: img/debouncer.pdf used on input line 195.
+(pdftex.def)             Requested size: 853.58267pt x 659.60437pt.
+
+
+LaTeX Warning: Float too large for page by 67.15921pt on input line 199.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
+
+ []
+
+[22
+
+] [23 <./img/debouncer.pdf, page is rotated 90 degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
+
+ []
+
+<img/decoder.pdf, id=199, 794.97pt x 614.295pt>
+File: img/decoder.pdf Graphic file (type pdf)
+ <use img/decoder.pdf>
+Package pdftex.def Info: img/decoder.pdf used on input line 212.
+(pdftex.def)             Requested size: 853.58267pt x 659.60437pt.
+
+
+LaTeX Warning: Float too large for page by 67.15921pt on input line 216.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+[24
+
+] [25 <./img/decoder.pdf, page is rotated 90 degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+ []
+
+<img/vram_blocks.png, id=217, 1789.7453pt x 785.05058pt>
+File: img/vram_blocks.png Graphic file (type png)
+
+<use img/vram_blocks.png>
+Package pdftex.def Info: img/vram_blocks.png used on input line 230.
+(pdftex.def)             Requested size: 597.50787pt x 262.08617pt.
+
+
+LaTeX Warning: Float too large for page by 22.60095pt on input line 233.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/vram_ctrl.pdf, id=218, 794.97pt x 614.295pt>
+File: img/vram_ctrl.pdf Graphic file (type pdf)
+ <use img/vram_ctrl.pdf>
+Package pdftex.def Info: img/vram_ctrl.pdf used on input line 237.
+(pdftex.def)             Requested size: 853.58267pt x 659.60437pt.
+
+
+LaTeX Warning: Float too large for page by 67.15921pt on input line 241.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+
+ []
+
+[26
+
+] <display_sm.pdf, id=224, page=1, 614.295pt x 794.97pt>
+File: display_sm.pdf Graphic file (type pdf)
+
+<use display_sm.pdf, page 1>
+Package pdftex.def Info: display_sm.pdf, page1 used on input line 249.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: display_sm.pdf Graphic file (type pdf)
+ <use display_sm.pdf, page 1>
+Package pdftex.def Info: display_sm.pdf, page1 used on input line 249.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: display_sm.pdf Graphic file (type pdf)
+
+<use display_sm.pdf, page 1>
+Package pdftex.def Info: display_sm.pdf, page1 used on input line 249.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: display_sm.pdf Graphic file (type pdf)
+ <use display_sm.pdf, page 1>
+Package pdftex.def Info: display_sm.pdf, page1 used on input line 249.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: display_sm.pdf Graphic file (type pdf)
+
+<use display_sm.pdf, page 1>
+Package pdftex.def Info: display_sm.pdf, page1 used on input line 249.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [27 <./display_sm.pdf>]
+<display_sm.pdf, id=254, page=2, 614.295pt x 794.97pt>
+File: display_sm.pdf Graphic file (type pdf)
+
+<use display_sm.pdf, page 2>
+Package pdftex.def Info: display_sm.pdf, page2 used on input line 249.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: display_sm.pdf Graphic file (type pdf)
+ <use display_sm.pdf, page 2>
+Package pdftex.def Info: display_sm.pdf, page2 used on input line 249.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: display_sm.pdf Graphic file (type pdf)
+
+<use display_sm.pdf, page 2>
+Package pdftex.def Info: display_sm.pdf, page2 used on input line 249.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [28 <./display_sm.pdf>]
+<display_sm.pdf, id=264, page=3, 614.295pt x 794.97pt>
+File: display_sm.pdf Graphic file (type pdf)
+
+<use display_sm.pdf, page 3>
+Package pdftex.def Info: display_sm.pdf, page3 used on input line 249.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: display_sm.pdf Graphic file (type pdf)
+ <use display_sm.pdf, page 3>
+Package pdftex.def Info: display_sm.pdf, page3 used on input line 249.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: display_sm.pdf Graphic file (type pdf)
+
+<use display_sm.pdf, page 3>
+Package pdftex.def Info: display_sm.pdf, page3 used on input line 249.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [29 <./display_sm.pdf>]
+<display_sm.pdf, id=268, page=4, 614.295pt x 794.97pt>
+File: display_sm.pdf Graphic file (type pdf)
+
+<use display_sm.pdf, page 4>
+Package pdftex.def Info: display_sm.pdf, page4 used on input line 249.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: display_sm.pdf Graphic file (type pdf)
+ <use display_sm.pdf, page 4>
+Package pdftex.def Info: display_sm.pdf, page4 used on input line 249.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: display_sm.pdf Graphic file (type pdf)
+
+<use display_sm.pdf, page 4>
+Package pdftex.def Info: display_sm.pdf, page4 used on input line 249.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [30 <./display_sm.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+
+ []
+
+<img/vram_read.png, id=272, 803.0pt x 554.07pt>
+File: img/vram_read.png Graphic file (type png)
+ <use img/vram_read.png>
+Package pdftex.def Info: img/vram_read.png used on input line 257.
+(pdftex.def)             Requested size: 569.05511pt x 392.67383pt.
+
+
+LaTeX Warning: Reference `vram_ctrl' on page 31 undefined on input line 259.
+
+
+LaTeX Warning: Reference `vram_ctrl' on page 31 undefined on input line 259.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[31] [32 <./img/vram_blocks.png>] [33 <./img/vram_ctrl.pdf, page is rotated 90 
+degrees>] [34 <./img/vram_read.png>]
+<img/vram_read_table.pdf, id=292, 614.295pt x 794.97pt>
+File: img/vram_read_table.pdf Graphic file (type pdf)
+
+<use img/vram_read_table.pdf>
+Package pdftex.def Info: img/vram_read_table.pdf used on input line 267.
+(pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
+
+
+LaTeX Warning: Float too large for page by 63.86354pt on input line 271.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[35 <./img/vram_read_table.pdf>]
+<img/vram_read_table.pdf, id=310, page=2, 614.295pt x 794.97pt>
+File: img/vram_read_table.pdf Graphic file (type pdf)
+
+<use img/vram_read_table.pdf, page 2>
+Package pdftex.def Info: img/vram_read_table.pdf, page2 used on input line 275.
+
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: img/vram_read_table.pdf Graphic file (type pdf)
+ <use img/vram_read_table.pdf, page 2>
+Package pdftex.def Info: img/vram_read_table.pdf, page2 used on input line 275.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/vram_read_table.pdf Graphic file (type pdf)
+
+<use img/vram_read_table.pdf, page 2>
+Package pdftex.def Info: img/vram_read_table.pdf, page2 used on input line 275.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/vram_read_table.pdf Graphic file (type pdf)
+ <use img/vram_read_table.pdf, page 2>
+Package pdftex.def Info: img/vram_read_table.pdf, page2 used on input line 275.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/vram_read_table.pdf Graphic file (type pdf)
+
+<use img/vram_read_table.pdf, page 2>
+Package pdftex.def Info: img/vram_read_table.pdf, page2 used on input line 275.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [36
+
+
+ <./img/vram_read_table.pdf>]
+<img/vram_write.png, id=325, 803.0pt x 623.32875pt>
+File: img/vram_write.png Graphic file (type png)
+ <use img/vram_write.png>
+Package pdftex.def Info: img/vram_write.png used on input line 281.
+(pdftex.def)             Requested size: 711.3189pt x 552.20233pt.
+
+
+LaTeX Warning: Float too large for page by 53.55919pt on input line 285.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[37 <./img/vram_write.png>]
+<img/vram_write_table.pdf, id=330, 614.295pt x 794.97pt>
+File: img/vram_write_table.pdf Graphic file (type pdf)
+
+<use img/vram_write_table.pdf>
+Package pdftex.def Info: img/vram_write_table.pdf used on input line 291.
+(pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
+
+
+LaTeX Warning: Float too large for page by 63.86354pt on input line 295.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[38 <./img/vram_write_table.pdf>]
+<img/vram_write_table.pdf, id=347, page=2, 614.295pt x 794.97pt>
+File: img/vram_write_table.pdf Graphic file (type pdf)
+
+<use img/vram_write_table.pdf, page 2>
+Package pdftex.def Info: img/vram_write_table.pdf, page2 used on input line 299
+.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: img/vram_write_table.pdf Graphic file (type pdf)
+ <use img/vram_write_table.pdf, page 2>
+Package pdftex.def Info: img/vram_write_table.pdf, page2 used on input line 299
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/vram_write_table.pdf Graphic file (type pdf)
+
+<use img/vram_write_table.pdf, page 2>
+Package pdftex.def Info: img/vram_write_table.pdf, page2 used on input line 299
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/vram_write_table.pdf Graphic file (type pdf)
+ <use img/vram_write_table.pdf, page 2>
+Package pdftex.def Info: img/vram_write_table.pdf, page2 used on input line 299
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/vram_write_table.pdf Graphic file (type pdf)
+
+<use img/vram_write_table.pdf, page 2>
+Package pdftex.def Info: img/vram_write_table.pdf, page2 used on input line 299
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [39
+
+
+
+ <./img/vram_write_table.pdf>]
+<img/vram_serial.png, id=362, 803.0pt x 440.64626pt>
+File: img/vram_serial.png Graphic file (type png)
+ <use img/vram_serial.png>
+Package pdftex.def Info: img/vram_serial.png used on input line 305.
+(pdftex.def)             Requested size: 711.3189pt x 390.36525pt.
+
+
+LaTeX Warning: Float too large for page by 67.1592pt on input line 309.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[40 <./img/vram_serial.png>]
+<img/vram_serial_table.pdf, id=366, 614.295pt x 794.97pt>
+File: img/vram_serial_table.pdf Graphic file (type pdf)
+
+<use img/vram_serial_table.pdf>
+Package pdftex.def Info: img/vram_serial_table.pdf used on input line 315.
+(pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
+
+
+LaTeX Warning: Float too large for page by 63.86354pt on input line 319.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[41 <./img/vram_serial_table.pdf>]
+<img/vram_serial_table.pdf, id=383, page=2, 614.295pt x 794.97pt>
+File: img/vram_serial_table.pdf Graphic file (type pdf)
+
+<use img/vram_serial_table.pdf, page 2>
+Package pdftex.def Info: img/vram_serial_table.pdf, page2 used on input line 32
+3.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: img/vram_serial_table.pdf Graphic file (type pdf)
+
+<use img/vram_serial_table.pdf, page 2>
+Package pdftex.def Info: img/vram_serial_table.pdf, page2 used on input line 32
+3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/vram_serial_table.pdf Graphic file (type pdf)
+
+<use img/vram_serial_table.pdf, page 2>
+Package pdftex.def Info: img/vram_serial_table.pdf, page2 used on input line 32
+3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/vram_serial_table.pdf Graphic file (type pdf)
+
+<use img/vram_serial_table.pdf, page 2>
+Package pdftex.def Info: img/vram_serial_table.pdf, page2 used on input line 32
+3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/vram_serial_table.pdf Graphic file (type pdf)
+
+<use img/vram_serial_table.pdf, page 2>
+Package pdftex.def Info: img/vram_serial_table.pdf, page2 used on input line 32
+3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [42
+
+
+
+ <./img/vram_serial_table.pdf>]
+<img/vram_refresh.png, id=398, 803.0pt x 429.605pt>
+File: img/vram_refresh.png Graphic file (type png)
+ <use img/vram_refresh.png>
+Package pdftex.def Info: img/vram_refresh.png used on input line 329.
+(pdftex.def)             Requested size: 711.3189pt x 380.58388pt.
+
+
+LaTeX Warning: Float too large for page by 53.55919pt on input line 333.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[43 <./img/vram_refresh.png>]
+<img/vram_refresh_table.pdf, id=403, 614.295pt x 794.97pt>
+File: img/vram_refresh_table.pdf Graphic file (type pdf)
+
+<use img/vram_refresh_table.pdf>
+Package pdftex.def Info: img/vram_refresh_table.pdf used on input line 339.
+(pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
+
+
+LaTeX Warning: Float too large for page by 63.86354pt on input line 343.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[44 <./img/vram_refresh_table.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
+
+ []
+
+<img/display_ctrl.pdf, id=418, 794.97pt x 614.295pt>
+File: img/display_ctrl.pdf Graphic file (type pdf)
+
+<use img/display_ctrl.pdf>
+Package pdftex.def Info: img/display_ctrl.pdf used on input line 352.
+(pdftex.def)             Requested size: 853.58267pt x 659.60437pt.
+
+
+LaTeX Warning: Float too large for page by 67.15921pt on input line 356.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
+
+ []
+
+[45
+
+
+
+] <img/display_datasheet_diagram.pdf, id=422, 614.295pt x 794.97pt>
+File: img/display_datasheet_diagram.pdf Graphic file (type pdf)
+
+<use img/display_datasheet_diagram.pdf>
+Package pdftex.def Info: img/display_datasheet_diagram.pdf used on input line 3
+73.
+(pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
+
+
+LaTeX Warning: Float too large for page by 63.86354pt on input line 377.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/display1.png, id=423, 803.0pt x 440.64626pt>
+File: img/display1.png Graphic file (type png)
+ <use img/display1.png>
+Package pdftex.def Info: img/display1.png used on input line 381.
+(pdftex.def)             Requested size: 711.3189pt x 390.36525pt.
+
+
+LaTeX Warning: Float too large for page by 53.55919pt on input line 385.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[46] [47 <./img/display_ctrl.pdf, page is rotated 90 degrees>] [48 <./img/displ
+ay_datasheet_diagram.pdf>] [49 <./img/display1.png>]
+<img/display2.png, id=474, 803.0pt x 440.64626pt>
+File: img/display2.png Graphic file (type png)
+ <use img/display2.png>
+Package pdftex.def Info: img/display2.png used on input line 389.
+(pdftex.def)             Requested size: 711.3189pt x 390.36525pt.
+
+[50
+
+]
+Overfull \vbox (52.91196pt too high) has occurred while \output is active []
+
+
+[51 <./img/display2.png>]
+<img/display_table.pdf, id=481, 614.295pt x 794.97pt>
+File: img/display_table.pdf Graphic file (type pdf)
+
+<use img/display_table.pdf>
+Package pdftex.def Info: img/display_table.pdf used on input line 395.
+(pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
+
+
+LaTeX Warning: Float too large for page by 63.86354pt on input line 399.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[52 <./img/display_table.pdf>]
+<img/display_table.pdf, id=498, page=2, 614.295pt x 794.97pt>
+File: img/display_table.pdf Graphic file (type pdf)
+
+<use img/display_table.pdf, page 2>
+Package pdftex.def Info: img/display_table.pdf, page2 used on input line 403.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: img/display_table.pdf Graphic file (type pdf)
+ <use img/display_table.pdf, page 2>
+Package pdftex.def Info: img/display_table.pdf, page2 used on input line 403.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/display_table.pdf Graphic file (type pdf)
+
+<use img/display_table.pdf, page 2>
+Package pdftex.def Info: img/display_table.pdf, page2 used on input line 403.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/display_table.pdf Graphic file (type pdf)
+ <use img/display_table.pdf, page 2>
+Package pdftex.def Info: img/display_table.pdf, page2 used on input line 403.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/display_table.pdf Graphic file (type pdf)
+
+<use img/display_table.pdf, page 2>
+Package pdftex.def Info: img/display_table.pdf, page2 used on input line 403.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [53
+
+
+ <./img/display_table.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 408--409
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
+
+ []
+
+[54
+
+] [55]
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--431
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--441
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 442--443
+
+ []
+
+[56
+
+] [57]
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
+
+ []
+
+<img/sram_rom.pdf, id=527, 794.97pt x 614.295pt>
+File: img/sram_rom.pdf Graphic file (type pdf)
+ <use img/sram_rom.pdf>
+Package pdftex.def Info: img/sram_rom.pdf used on input line 456.
+(pdftex.def)             Requested size: 739.77165pt x 571.66338pt.
+
+
+LaTeX Warning: Float too large for page by 67.15921pt on input line 459.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 461--462
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
+
+ []
+
+<img/ram_read.png, id=528, 803.0pt x 397.485pt>
+File: img/ram_read.png Graphic file (type png)
+ <use img/ram_read.png>
+Package pdftex.def Info: img/ram_read.png used on input line 469.
+(pdftex.def)             Requested size: 711.3189pt x 352.12901pt.
+
+
+LaTeX Warning: Float too large for page by 53.55919pt on input line 473.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[58
+
+] [59 <./img/sram_rom.pdf, page is rotated 90 degrees>] [60 <./img/ram_read.png
+>] <img/ram_read_table.pdf, id=544, 614.295pt x 794.97pt>
+File: img/ram_read_table.pdf Graphic file (type pdf)
+
+<use img/ram_read_table.pdf>
+Package pdftex.def Info: img/ram_read_table.pdf used on input line 479.
+(pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
+
+
+LaTeX Warning: Float too large for page by 63.86354pt on input line 483.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[61 <./img/ram_read_table.pdf>]
+<img/ram_write.png, id=560, 803.0pt x 464.73625pt>
+File: img/ram_write.png Graphic file (type png)
+ <use img/ram_write.png>
+Package pdftex.def Info: img/ram_write.png used on input line 489.
+(pdftex.def)             Requested size: 711.3189pt x 411.70639pt.
+
+
+LaTeX Warning: Float too large for page by 53.55919pt on input line 493.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[62 <./img/ram_write.png>]
+<img/ram_write_table.pdf, id=564, 614.295pt x 794.97pt>
+File: img/ram_write_table.pdf Graphic file (type pdf)
+
+<use img/ram_write_table.pdf>
+Package pdftex.def Info: img/ram_write_table.pdf used on input line 499.
+(pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
+
+
+LaTeX Warning: Float too large for page by 63.86354pt on input line 503.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[63 <./img/ram_write_table.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 508--509
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 512--513
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--515
+
+ []
+
+<img/rom_read.png, id=579, 803.0pt x 351.3125pt>
+File: img/rom_read.png Graphic file (type png)
+ <use img/rom_read.png>
+Package pdftex.def Info: img/rom_read.png used on input line 518.
+(pdftex.def)             Requested size: 711.3189pt x 311.22513pt.
+
+
+LaTeX Warning: Float too large for page by 53.55919pt on input line 522.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[64
+
+
+
+
+] [65 <./img/rom_read.png>]
+<img/rom_read_table.pdf, id=586, 614.295pt x 794.97pt>
+File: img/rom_read_table.pdf Graphic file (type pdf)
+
+<use img/rom_read_table.pdf>
+Package pdftex.def Info: img/rom_read_table.pdf used on input line 528.
+(pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
+
+
+LaTeX Warning: Float too large for page by 63.86354pt on input line 532.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[66 <./img/rom_read_table.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 537--538
+
+ []
+
+<img/vram_disp.pdf, id=601, 794.97pt x 614.295pt>
+File: img/vram_disp.pdf Graphic file (type pdf)
+ <use img/vram_disp.pdf>
+Package pdftex.def Info: img/vram_disp.pdf used on input line 541.
+(pdftex.def)             Requested size: 739.77165pt x 571.66338pt.
+
+
+LaTeX Warning: Float too large for page by 80.75922pt on input line 544.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--547
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 552--553
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 554--555
+
+ []
+
+[67
+
+
+] [68 <./img/vram_disp.pdf, page is rotated 90 degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 559--560
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
+
+ []
+
+Missing character: There is no Î in font cmr10!
+Missing character: There is no © in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--564
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 568--569
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 570--571
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--573
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 574--575
+
+ []
+
+[69
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 579--580
+
+ []
+
+<img/user_input.pdf, id=619, 794.97pt x 614.295pt>
+File: img/user_input.pdf Graphic file (type pdf)
+ <use img/user_input.pdf>
+Package pdftex.def Info: img/user_input.pdf used on input line 583.
+(pdftex.def)             Requested size: 739.77165pt x 571.66338pt.
+
+
+LaTeX Warning: Float too large for page by 67.15921pt on input line 586.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 588--589
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 590--591
+
+ []
+
+[70
+
+] [71 <./img/user_input.pdf, page is rotated 90 degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 595--596
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 597--598
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 599--600
+
+ []
+
+<img/analog_interface.pdf, id=632, 794.97pt x 614.295pt>
+File: img/analog_interface.pdf Graphic file (type pdf)
+
+<use img/analog_interface.pdf>
+Package pdftex.def Info: img/analog_interface.pdf used on input line 603.
+(pdftex.def)             Requested size: 739.77165pt x 571.66338pt.
+
+
+LaTeX Warning: Float too large for page by 67.15921pt on input line 606.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 608--609
+
+ []
+
+[72
+
+] [73 <./img/analog_interface.pdf, page is rotated 90 degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 613--614
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 615--616
+
+ []
+
+<img/op_amp.pdf, id=646, 794.97pt x 614.295pt>
+File: img/op_amp.pdf Graphic file (type pdf)
+ <use img/op_amp.pdf>
+Package pdftex.def Info: img/op_amp.pdf used on input line 619.
+(pdftex.def)             Requested size: 739.77165pt x 571.66338pt.
+
+
+LaTeX Warning: Float too large for page by 67.15921pt on input line 622.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[74
+
+] [75 <./img/op_amp.pdf, page is rotated 90 degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 627--628
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--630
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--632
+
+ []
+
+<img/adc.png, id=660, 803.0pt x 246.9225pt>
+File: img/adc.png Graphic file (type png)
+ <use img/adc.png>
+Package pdftex.def Info: img/adc.png used on input line 635.
+(pdftex.def)             Requested size: 711.3189pt x 218.7468pt.
+
+
+LaTeX Warning: Float too large for page by 53.55919pt on input line 639.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[76
+
+] [77 <./img/adc.png>] <img/adc_table.pdf, id=667, 614.295pt x 794.97pt>
+File: img/adc_table.pdf Graphic file (type pdf)
+
+<use img/adc_table.pdf>
+Package pdftex.def Info: img/adc_table.pdf used on input line 645.
+(pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
+
+
+LaTeX Warning: Float too large for page by 63.86354pt on input line 649.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[78 <./img/adc_table.pdf>]
+
+Package caption Warning: \label without proper \caption on input line 670.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:rev_history' on page 79 undefined on input line 6
+54.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 654--655
+
+ []
+
+
+Overfull \hbox (4.43752pt too wide) in paragraph at lines 660--660
+[]\OT1/cmr/bx/n/10.95 Revision| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 663--663
+[]\OT1/cmr/m/n/10.95 User In-put
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+[]\OT1/cmr/m/n/10.95 FPGA
+ []
+
+
+Underfull \hbox (badness 5446) in paragraph at lines 668--668
+[]\OT1/cmr/m/n/10.95 Analog In-ter-
+ []
+
+[79
+
+
+]
+
+LaTeX Warning: Reference `fig:orig_schem_1' on page 80 undefined on input line 
+697.
+
+
+LaTeX Warning: Reference `fig:orig_schem_2' on page 80 undefined on input line 
+697.
+
+
+LaTeX Warning: Reference `fig:orig_schem_3' on page 80 undefined on input line 
+697.
+
+
+LaTeX Warning: Reference `fig:orig_schem_4' on page 80 undefined on input line 
+697.
+
+
+LaTeX Warning: Reference `fig:orig_schem_5' on page 80 undefined on input line 
+697.
+
+
+LaTeX Warning: Reference `fig:orig_pcb_1' on page 80 undefined on input line 69
+7.
+
+
+LaTeX Warning: Reference `fig:orig_pcb_2' on page 80 undefined on input line 69
+7.
+
+
+LaTeX Warning: Reference `sec:ram_rom' on page 80 undefined on input line 697.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--698
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--700
+
+ []
+
+Missing character: There is no Î in font cmr10!
+Missing character: There is no © in font cmr10!
+Missing character: There is no Î in font cmr10!
+Missing character: There is no © in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 701--702
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 703--704
+
+ []
+
+
+LaTeX Warning: Reference `tab:code_toc' on page 80 undefined on input line 710.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 709--711
+
+ []
+
+[80
+
+] (./technical_manual.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6229 strings out of 493315
+ 96160 string characters out of 6137904
+ 189929 words of memory out of 5000000
+ 9546 multiletter control sequences out of 15000+600000
+ 13022 words of font info for 50 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 47i,18n,51p,1603b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on technical_manual.pdf (80 pages, 2255369 bytes).
+PDF statistics:
+ 719 PDF objects out of 1000 (max. 8388607)
+ 496 compressed objects within 5 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 301 words of extra memory for PDF output out of 10000 (max. 10000000)
+

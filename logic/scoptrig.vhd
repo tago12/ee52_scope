@@ -18,6 +18,7 @@
 --      4 Nov 05  Glen George       Updated comments.
 --     17 Nov 07  Glen George       Updated comments.
 --     13 Feb 10  Glen George       Added more example architectures.
+--     01 Mar 14  Santiago Navonne  Removed unnecessary architectures.
 --
 ----------------------------------------------------------------------------
 
