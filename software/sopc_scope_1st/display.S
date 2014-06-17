@@ -130,7 +130,7 @@ next_row:                      /* move to next row */
  *
  *  Revision History:
  *      6/03/14   Santiago Navonne     Initial revision.
- * TODO REMOVE?
+ *
  */
     .global clear_trace_old
 clear_trace_old:                   /* clear all trace pixels on display */

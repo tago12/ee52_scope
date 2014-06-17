@@ -55,7 +55,9 @@ sample: .skip FIFO_SIZE   /* Sample buffer */
  *                     clock. The return value is how many samples will be acquired,
  *                     which is always the size of the FIFO.
  *                     If an argument of 0 is passed, the function has no effect, and
- *                     returns 0.
+ *                     returns 0. The argument must however by less than or equal to
+ *                     the system clock divided by two; no error checking is performed
+ *                     on this.
  *
  *  Operation:         The procedure starts by error checking the value of the argument,
  *                     simply returning 0 if it is invalid. Then, it computes the
@@ -67,7 +69,9 @@ sample: .skip FIFO_SIZE   /* Sample buffer */
  *                     r2 as constant return value.
  *                          
  *  Arguments:         samples_per_sec - positive integer indicating the sample rate
- *                                       in samples per second (r4).
+ *                                       in samples per second (r4). The value must
+ *                                       be less than or equal to the system clock
+ *                                       divided by two.
  *
  *  Return Value:      sample_num - positive integer, number of samples that will be
  *                                  acquired at the desired rate (r2).
@@ -83,10 +87,14 @@ sample: .skip FIFO_SIZE   /* Sample buffer */
  *  Output:            None.
  *
  *  Error Handling:    If the argument is zero, the function has no effect, and returns 0.
+ *                     No error checking is performed on the upper bound of the sampling
+ *                     rate.
  *
  *  Limitations:       Resulting sample clock is an integer multiple of the system clock;
  *                     corresponding rate will be greater than or equal to the requested
  *                     rate, with a difference in period less than the system clock's.
+ *                     Number of samples acquired must be <= FIFO_SIZE per hardware
+ *                     limitations (size of FIFO).
  *
  *  Algorithms:        Division is performed using a repeated subtraction algorithm since
  *                     hardware division cannot be assumed to be available. This algorithm

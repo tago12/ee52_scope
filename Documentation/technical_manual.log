@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 JUN 2014 00:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  16 JUN 2014 20:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -277,34 +277,40 @@ File: pppdftex.def 2012/08/31 v0.4t Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count107
 \AM@templatesizebox=\box30
 )
+(/usr/local/texlive/2013/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count108
+\c@@ppsavesec=\count109
+\c@@ppsaveapp=\count110
+)
 (./technical_manual.aux)
 \openout1 = `technical_manual.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
+\scratchcounter=\count111
 \scratchdimen=\dimen123
 \scratchbox=\box31
-\nofMPsegments=\count109
-\nofMParguments=\count110
+\nofMPsegments=\count112
+\nofMParguments=\count113
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count111
+\MPscratchCnt=\count114
 \MPscratchDim=\dimen124
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
 \everyMPtoPDFconversion=\toks28
 ) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -353,12 +359,12 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box32
-LaTeX Font Info:    Try loading font information for U+msa on input line 20.
+LaTeX Font Info:    Try loading font information for U+msa on input line 24.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 20.
+LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -370,18 +376,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout3 = `technical_manual.toc'.
 
  [2]
-Overfull \hbox (22.596pt too wide) in paragraph at lines 29--30
+Overfull \hbox (22.596pt too wide) in paragraph at lines 33--34
 \OT1/cmr/m/n/10.95 This doc-u-ment de-scribes the sys-tem work-ings and de-tail
 s of the EE/CS 52 System-on-Programmable-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
@@ -389,24 +395,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 File: img/block_diagram.pdf Graphic file (type pdf)
 
 <use img/block_diagram.pdf>
-Package pdftex.def Info: img/block_diagram.pdf used on input line 43.
+Package pdftex.def Info: img/block_diagram.pdf used on input line 47.
 (pdftex.def)             Requested size: 825.12991pt x 637.62381pt.
 
 
-LaTeX Warning: Float too large for page by 95.61195pt on input line 46.
+LaTeX Warning: Float too large for page by 95.61195pt on input line 50.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-
- []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 52--53
@@ -418,19 +414,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
-[3
 
-]
 Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
+[3
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
-
-
+] [4 <./img/block_diagram.pdf, page is rotated 90 degrees>]
 Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
@@ -441,110 +432,102 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
  []
 
 
-LaTeX Warning: Reference `fib:pcb_back' on page 4 undefined on input line 64.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
-<img/pcb.pdf, id=17, 770.88pt x 589.20125pt>
-File: img/pcb.pdf Graphic file (type pdf)
- <use img/pcb.pdf>
-Package pdftex.def Info: img/pcb.pdf used on input line 68.
-(pdftex.def)             Requested size: 796.67715pt x 608.91591pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
 
 
-LaTeX Warning: Float too large for page by 67.15921pt on input line 72.
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+<img/pcb.png, id=32, 771.1209pt x 589.36185pt>
+File: img/pcb.png Graphic file (type png)
+ <use img/pcb.png>
+Package pdftex.def Info: img/pcb.png used on input line 74.
+(pdftex.def)             Requested size: 796.67715pt x 608.938pt.
+
+
+LaTeX Warning: Float too large for page by 67.15921pt on input line 78.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/pcb_back.pdf, id=18, 770.88pt x 589.20125pt>
+<img/pcb_back.pdf, id=33, 770.88pt x 589.20125pt>
 File: img/pcb_back.pdf Graphic file (type pdf)
  <use img/pcb_back.pdf>
-Package pdftex.def Info: img/pcb_back.pdf used on input line 76.
+Package pdftex.def Info: img/pcb_back.pdf used on input line 82.
 (pdftex.def)             Requested size: 796.67715pt x 608.91591pt.
 
 
-LaTeX Warning: Float too large for page by 67.15921pt on input line 80.
+LaTeX Warning: Float too large for page by 67.15921pt on input line 86.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4] <img/memory_map.png, id=24, 372.64218pt x 372.64218pt>
+[5
+
+] <img/memory_map.png, id=38, 372.64218pt x 372.64218pt>
 File: img/memory_map.png Graphic file (type png)
 
 <use img/memory_map.png>
-Package pdftex.def Info: img/memory_map.png used on input line 85.
+Package pdftex.def Info: img/memory_map.png used on input line 91.
 (pdftex.def)             Requested size: 452.96796pt x 452.98521pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5] [6 <./img/block_diagram.pdf, page is rotated 90 degrees>] [7 <./img/pcb.pdf
->] [8 <./img/pcb_back.pdf>] [9 <./img/memory_map.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-
- []
-
-<img/fpga_sch.pdf, id=73, 794.97pt x 614.295pt>
+[6] [7 <./img/pcb.png>] [8 <./img/pcb_back.pdf>] [9 <./img/memory_map.png>]
+<img/fpga_sch.pdf, id=63, 794.97pt x 614.295pt>
 File: img/fpga_sch.pdf Graphic file (type pdf)
  <use img/fpga_sch.pdf>
-Package pdftex.def Info: img/fpga_sch.pdf used on input line 97.
+Package pdftex.def Info: img/fpga_sch.pdf used on input line 103.
 (pdftex.def)             Requested size: 739.77165pt x 571.66338pt.
 
 
-LaTeX Warning: Float too large for page by 67.15921pt on input line 100.
+LaTeX Warning: Float too large for page by 67.15921pt on input line 106.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
-<img/quartus_main.pdf, id=74, 794.97pt x 614.295pt>
+<img/quartus_main.pdf, id=64, 794.97pt x 614.295pt>
 File: img/quartus_main.pdf Graphic file (type pdf)
  <use img/quartus_main.pdf>
-Package pdftex.def Info: img/quartus_main.pdf used on input line 108.
+Package pdftex.def Info: img/quartus_main.pdf used on input line 114.
 (pdftex.def)             Requested size: 853.58267pt x 659.60437pt.
 
 
-LaTeX Warning: Float too large for page by 67.15921pt on input line 112.
+LaTeX Warning: Float too large for page by 67.15921pt on input line 118.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
-
- []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
-[10
 
-]
 Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
@@ -554,318 +537,243 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
-[11] [12 <./img/fpga_sch.pdf>] [13 <./img/quartus_main.pdf, page is rotated 90 
-degrees>]
 
-Package caption Warning: \label without proper \caption on input line 154.
-See the caption package documentation for explanation.
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
+ []
 
-LaTeX Warning: Reference `tab:qsys' on page 14 undefined on input line 129.
+[10
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+]
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+[11] [12 <./img/fpga_sch.pdf>] [13 <./img/quartus_main.pdf, page is rotated 90 
+degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 148--148
 []\OT1/cmr/m/n/10.95 Tri-State Con-duit Pin
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
 []\OT1/cmr/m/n/10.95 Tri-State Con-duit
  []
 
 
-Overfull \hbox (38.27612pt too wide) in paragraph at lines 133--154
+Overfull \hbox (38.27612pt too wide) in paragraph at lines 139--160
  [] 
  []
 
 
-LaTeX Warning: Float too large for page by 43.293pt on input line 157.
+LaTeX Warning: Float too large for page by 43.293pt on input line 163.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
 [14
 
 ] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
-<img/triggering.pdf, id=118, 794.97pt x 614.295pt>
+<img/triggering.pdf, id=109, 794.97pt x 614.295pt>
 File: img/triggering.pdf Graphic file (type pdf)
  <use img/triggering.pdf>
-Package pdftex.def Info: img/triggering.pdf used on input line 168.
+Package pdftex.def Info: img/triggering.pdf used on input line 174.
 (pdftex.def)             Requested size: 853.58267pt x 659.60437pt.
 
 
-LaTeX Warning: Float too large for page by 67.15921pt on input line 172.
+LaTeX Warning: Float too large for page by 67.15921pt on input line 178.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
-
- []
-
-[16
-
-] <scoptrig.pdf, id=124, page=1, 614.295pt x 794.97pt>
-File: scoptrig.pdf Graphic file (type pdf)
-
-<use scoptrig.pdf, page 1>
-Package pdftex.def Info: scoptrig.pdf, page1 used on input line 178.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: scoptrig.pdf Graphic file (type pdf)
- <use scoptrig.pdf, page 1>
-Package pdftex.def Info: scoptrig.pdf, page1 used on input line 178.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: scoptrig.pdf Graphic file (type pdf)
-
-<use scoptrig.pdf, page 1>
-Package pdftex.def Info: scoptrig.pdf, page1 used on input line 178.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: scoptrig.pdf Graphic file (type pdf)
- <use scoptrig.pdf, page 1>
-Package pdftex.def Info: scoptrig.pdf, page1 used on input line 178.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: scoptrig.pdf Graphic file (type pdf)
-
-<use scoptrig.pdf, page 1>
-Package pdftex.def Info: scoptrig.pdf, page1 used on input line 178.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [17 <./scoptrig.pdf>]
-<scoptrig.pdf, id=155, page=2, 614.295pt x 794.97pt>
-File: scoptrig.pdf Graphic file (type pdf)
-
-<use scoptrig.pdf, page 2>
-Package pdftex.def Info: scoptrig.pdf, page2 used on input line 178.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: scoptrig.pdf Graphic file (type pdf)
- <use scoptrig.pdf, page 2>
-Package pdftex.def Info: scoptrig.pdf, page2 used on input line 178.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: scoptrig.pdf Graphic file (type pdf)
-
-<use scoptrig.pdf, page 2>
-Package pdftex.def Info: scoptrig.pdf, page2 used on input line 178.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [18 <./scoptrig.pdf>]
-<scoptrig.pdf, id=165, page=3, 614.295pt x 794.97pt>
-File: scoptrig.pdf Graphic file (type pdf)
-
-<use scoptrig.pdf, page 3>
-Package pdftex.def Info: scoptrig.pdf, page3 used on input line 178.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: scoptrig.pdf Graphic file (type pdf)
- <use scoptrig.pdf, page 3>
-Package pdftex.def Info: scoptrig.pdf, page3 used on input line 178.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: scoptrig.pdf Graphic file (type pdf)
-
-<use scoptrig.pdf, page 3>
-Package pdftex.def Info: scoptrig.pdf, page3 used on input line 178.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [19 <./scoptrig.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
-
- []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
+[16
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+] <img/scoptrig.pdf, id=115, page=1, 614.295pt x 794.97pt>
+File: img/scoptrig.pdf Graphic file (type pdf)
 
- []
+<use img/scoptrig.pdf, page 1>
+Package pdftex.def Info: img/scoptrig.pdf, page1 used on input line 184.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: img/scoptrig.pdf Graphic file (type pdf)
+ <use img/scoptrig.pdf, page 1>
+Package pdftex.def Info: img/scoptrig.pdf, page1 used on input line 184.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scoptrig.pdf Graphic file (type pdf)
 
+<use img/scoptrig.pdf, page 1>
+Package pdftex.def Info: img/scoptrig.pdf, page1 used on input line 184.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scoptrig.pdf Graphic file (type pdf)
+ <use img/scoptrig.pdf, page 1>
+Package pdftex.def Info: img/scoptrig.pdf, page1 used on input line 184.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scoptrig.pdf Graphic file (type pdf)
 
+<use img/scoptrig.pdf, page 1>
+Package pdftex.def Info: img/scoptrig.pdf, page1 used on input line 184.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [17 <./img/scoptrig.pdf>]
+<img/scoptrig.pdf, id=145, page=2, 614.295pt x 794.97pt>
+File: img/scoptrig.pdf Graphic file (type pdf)
+
+<use img/scoptrig.pdf, page 2>
+Package pdftex.def Info: img/scoptrig.pdf, page2 used on input line 184.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scoptrig.pdf Graphic file (type pdf)
+ <use img/scoptrig.pdf, page 2>
+Package pdftex.def Info: img/scoptrig.pdf, page2 used on input line 184.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scoptrig.pdf Graphic file (type pdf)
+
+<use img/scoptrig.pdf, page 2>
+Package pdftex.def Info: img/scoptrig.pdf, page2 used on input line 184.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [18 <./img/scoptrig.pdf>]
+<img/scoptrig.pdf, id=155, page=3, 614.295pt x 794.97pt>
+File: img/scoptrig.pdf Graphic file (type pdf)
+
+<use img/scoptrig.pdf, page 3>
+Package pdftex.def Info: img/scoptrig.pdf, page3 used on input line 184.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scoptrig.pdf Graphic file (type pdf)
+ <use img/scoptrig.pdf, page 3>
+Package pdftex.def Info: img/scoptrig.pdf, page3 used on input line 184.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scoptrig.pdf Graphic file (type pdf)
+
+<use img/scoptrig.pdf, page 3>
+Package pdftex.def Info: img/scoptrig.pdf, page3 used on input line 184.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [19 <./img/scoptrig.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-[20] [21 <./img/triggering.pdf, page is rotated 90 degrees>]
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
-<img/debouncer.pdf, id=186, 794.97pt x 614.295pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+[20] [21 <./img/triggering.pdf, page is rotated 90 degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+<img/debouncer.pdf, id=177, 794.97pt x 614.295pt>
 File: img/debouncer.pdf Graphic file (type pdf)
  <use img/debouncer.pdf>
-Package pdftex.def Info: img/debouncer.pdf used on input line 195.
+Package pdftex.def Info: img/debouncer.pdf used on input line 201.
 (pdftex.def)             Requested size: 853.58267pt x 659.60437pt.
 
 
-LaTeX Warning: Float too large for page by 67.15921pt on input line 199.
+LaTeX Warning: Float too large for page by 67.15921pt on input line 205.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
 [22
 
 ] [23 <./img/debouncer.pdf, page is rotated 90 degrees>]
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
-<img/decoder.pdf, id=199, 794.97pt x 614.295pt>
+<img/decoder.pdf, id=190, 794.97pt x 614.295pt>
 File: img/decoder.pdf Graphic file (type pdf)
  <use img/decoder.pdf>
-Package pdftex.def Info: img/decoder.pdf used on input line 212.
+Package pdftex.def Info: img/decoder.pdf used on input line 218.
 (pdftex.def)             Requested size: 853.58267pt x 659.60437pt.
 
 
-LaTeX Warning: Float too large for page by 67.15921pt on input line 216.
+LaTeX Warning: Float too large for page by 67.15921pt on input line 222.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
 [24
 
 ] [25 <./img/decoder.pdf, page is rotated 90 degrees>]
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
-<img/vram_blocks.png, id=217, 1789.7453pt x 785.05058pt>
+<img/vram_blocks.png, id=208, 1789.7453pt x 785.05058pt>
 File: img/vram_blocks.png Graphic file (type png)
 
 <use img/vram_blocks.png>
-Package pdftex.def Info: img/vram_blocks.png used on input line 230.
+Package pdftex.def Info: img/vram_blocks.png used on input line 236.
 (pdftex.def)             Requested size: 597.50787pt x 262.08617pt.
 
 
-LaTeX Warning: Float too large for page by 22.60095pt on input line 233.
+LaTeX Warning: Float too large for page by 22.60095pt on input line 239.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/vram_ctrl.pdf, id=218, 794.97pt x 614.295pt>
+<img/vram_ctrl.pdf, id=209, 794.97pt x 614.295pt>
 File: img/vram_ctrl.pdf Graphic file (type pdf)
  <use img/vram_ctrl.pdf>
-Package pdftex.def Info: img/vram_ctrl.pdf used on input line 237.
+Package pdftex.def Info: img/vram_ctrl.pdf used on input line 243.
 (pdftex.def)             Requested size: 853.58267pt x 659.60437pt.
 
 
-LaTeX Warning: Float too large for page by 67.15921pt on input line 241.
+LaTeX Warning: Float too large for page by 67.15921pt on input line 247.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
-
- []
-
-[26
-
-] <display_sm.pdf, id=224, page=1, 614.295pt x 794.97pt>
-File: display_sm.pdf Graphic file (type pdf)
-
-<use display_sm.pdf, page 1>
-Package pdftex.def Info: display_sm.pdf, page1 used on input line 249.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: display_sm.pdf Graphic file (type pdf)
- <use display_sm.pdf, page 1>
-Package pdftex.def Info: display_sm.pdf, page1 used on input line 249.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: display_sm.pdf Graphic file (type pdf)
-
-<use display_sm.pdf, page 1>
-Package pdftex.def Info: display_sm.pdf, page1 used on input line 249.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: display_sm.pdf Graphic file (type pdf)
- <use display_sm.pdf, page 1>
-Package pdftex.def Info: display_sm.pdf, page1 used on input line 249.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: display_sm.pdf Graphic file (type pdf)
-
-<use display_sm.pdf, page 1>
-Package pdftex.def Info: display_sm.pdf, page1 used on input line 249.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [27 <./display_sm.pdf>]
-<display_sm.pdf, id=254, page=2, 614.295pt x 794.97pt>
-File: display_sm.pdf Graphic file (type pdf)
-
-<use display_sm.pdf, page 2>
-Package pdftex.def Info: display_sm.pdf, page2 used on input line 249.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: display_sm.pdf Graphic file (type pdf)
- <use display_sm.pdf, page 2>
-Package pdftex.def Info: display_sm.pdf, page2 used on input line 249.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: display_sm.pdf Graphic file (type pdf)
-
-<use display_sm.pdf, page 2>
-Package pdftex.def Info: display_sm.pdf, page2 used on input line 249.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [28 <./display_sm.pdf>]
-<display_sm.pdf, id=264, page=3, 614.295pt x 794.97pt>
-File: display_sm.pdf Graphic file (type pdf)
-
-<use display_sm.pdf, page 3>
-Package pdftex.def Info: display_sm.pdf, page3 used on input line 249.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: display_sm.pdf Graphic file (type pdf)
- <use display_sm.pdf, page 3>
-Package pdftex.def Info: display_sm.pdf, page3 used on input line 249.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: display_sm.pdf Graphic file (type pdf)
-
-<use display_sm.pdf, page 3>
-Package pdftex.def Info: display_sm.pdf, page3 used on input line 249.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [29 <./display_sm.pdf>]
-<display_sm.pdf, id=268, page=4, 614.295pt x 794.97pt>
-File: display_sm.pdf Graphic file (type pdf)
-
-<use display_sm.pdf, page 4>
-Package pdftex.def Info: display_sm.pdf, page4 used on input line 249.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: display_sm.pdf Graphic file (type pdf)
- <use display_sm.pdf, page 4>
-Package pdftex.def Info: display_sm.pdf, page4 used on input line 249.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: display_sm.pdf Graphic file (type pdf)
-
-<use display_sm.pdf, page 4>
-Package pdftex.def Info: display_sm.pdf, page4 used on input line 249.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [30 <./display_sm.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
@@ -875,124 +783,202 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
-<img/vram_read.png, id=272, 803.0pt x 554.07pt>
+[26
+
+] <img/display_sm.pdf, id=215, page=1, 614.295pt x 794.97pt>
+File: img/display_sm.pdf Graphic file (type pdf)
+
+<use img/display_sm.pdf, page 1>
+Package pdftex.def Info: img/display_sm.pdf, page1 used on input line 255.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: img/display_sm.pdf Graphic file (type pdf)
+ <use img/display_sm.pdf, page 1>
+Package pdftex.def Info: img/display_sm.pdf, page1 used on input line 255.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/display_sm.pdf Graphic file (type pdf)
+
+<use img/display_sm.pdf, page 1>
+Package pdftex.def Info: img/display_sm.pdf, page1 used on input line 255.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/display_sm.pdf Graphic file (type pdf)
+ <use img/display_sm.pdf, page 1>
+Package pdftex.def Info: img/display_sm.pdf, page1 used on input line 255.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/display_sm.pdf Graphic file (type pdf)
+
+<use img/display_sm.pdf, page 1>
+Package pdftex.def Info: img/display_sm.pdf, page1 used on input line 255.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [27 <./img/display_sm.pdf>]
+<img/display_sm.pdf, id=245, page=2, 614.295pt x 794.97pt>
+File: img/display_sm.pdf Graphic file (type pdf)
+
+<use img/display_sm.pdf, page 2>
+Package pdftex.def Info: img/display_sm.pdf, page2 used on input line 255.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/display_sm.pdf Graphic file (type pdf)
+ <use img/display_sm.pdf, page 2>
+Package pdftex.def Info: img/display_sm.pdf, page2 used on input line 255.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/display_sm.pdf Graphic file (type pdf)
+
+<use img/display_sm.pdf, page 2>
+Package pdftex.def Info: img/display_sm.pdf, page2 used on input line 255.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [28 <./img/display_sm.pdf>]
+<img/display_sm.pdf, id=255, page=3, 614.295pt x 794.97pt>
+File: img/display_sm.pdf Graphic file (type pdf)
+
+<use img/display_sm.pdf, page 3>
+Package pdftex.def Info: img/display_sm.pdf, page3 used on input line 255.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/display_sm.pdf Graphic file (type pdf)
+ <use img/display_sm.pdf, page 3>
+Package pdftex.def Info: img/display_sm.pdf, page3 used on input line 255.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/display_sm.pdf Graphic file (type pdf)
+
+<use img/display_sm.pdf, page 3>
+Package pdftex.def Info: img/display_sm.pdf, page3 used on input line 255.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [29 <./img/display_sm.pdf>]
+<img/display_sm.pdf, id=259, page=4, 614.295pt x 794.97pt>
+File: img/display_sm.pdf Graphic file (type pdf)
+
+<use img/display_sm.pdf, page 4>
+Package pdftex.def Info: img/display_sm.pdf, page4 used on input line 255.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/display_sm.pdf Graphic file (type pdf)
+ <use img/display_sm.pdf, page 4>
+Package pdftex.def Info: img/display_sm.pdf, page4 used on input line 255.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/display_sm.pdf Graphic file (type pdf)
+
+<use img/display_sm.pdf, page 4>
+Package pdftex.def Info: img/display_sm.pdf, page4 used on input line 255.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [30 <./img/display_sm.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
+<img/vram_read.png, id=263, 803.0pt x 554.07pt>
 File: img/vram_read.png Graphic file (type png)
  <use img/vram_read.png>
-Package pdftex.def Info: img/vram_read.png used on input line 257.
+Package pdftex.def Info: img/vram_read.png used on input line 263.
 (pdftex.def)             Requested size: 569.05511pt x 392.67383pt.
-
-
-LaTeX Warning: Reference `vram_ctrl' on page 31 undefined on input line 259.
-
-
-LaTeX Warning: Reference `vram_ctrl' on page 31 undefined on input line 259.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [31] [32 <./img/vram_blocks.png>] [33 <./img/vram_ctrl.pdf, page is rotated 90 
 degrees>] [34 <./img/vram_read.png>]
-<img/vram_read_table.pdf, id=292, 614.295pt x 794.97pt>
+<img/vram_read_table.pdf, id=283, 614.295pt x 794.97pt>
 File: img/vram_read_table.pdf Graphic file (type pdf)
 
 <use img/vram_read_table.pdf>
-Package pdftex.def Info: img/vram_read_table.pdf used on input line 267.
+Package pdftex.def Info: img/vram_read_table.pdf used on input line 273.
 (pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
 
 
-LaTeX Warning: Float too large for page by 63.86354pt on input line 271.
+LaTeX Warning: Float too large for page by 63.86354pt on input line 277.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [35 <./img/vram_read_table.pdf>]
-<img/vram_read_table.pdf, id=310, page=2, 614.295pt x 794.97pt>
+<img/vram_read_table.pdf, id=300, page=2, 614.295pt x 794.97pt>
 File: img/vram_read_table.pdf Graphic file (type pdf)
 
 <use img/vram_read_table.pdf, page 2>
-Package pdftex.def Info: img/vram_read_table.pdf, page2 used on input line 275.
+Package pdftex.def Info: img/vram_read_table.pdf, page2 used on input line 281.
 
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: img/vram_read_table.pdf Graphic file (type pdf)
  <use img/vram_read_table.pdf, page 2>
-Package pdftex.def Info: img/vram_read_table.pdf, page2 used on input line 275.
+Package pdftex.def Info: img/vram_read_table.pdf, page2 used on input line 281.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: img/vram_read_table.pdf Graphic file (type pdf)
 
 <use img/vram_read_table.pdf, page 2>
-Package pdftex.def Info: img/vram_read_table.pdf, page2 used on input line 275.
+Package pdftex.def Info: img/vram_read_table.pdf, page2 used on input line 281.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: img/vram_read_table.pdf Graphic file (type pdf)
  <use img/vram_read_table.pdf, page 2>
-Package pdftex.def Info: img/vram_read_table.pdf, page2 used on input line 275.
+Package pdftex.def Info: img/vram_read_table.pdf, page2 used on input line 281.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: img/vram_read_table.pdf Graphic file (type pdf)
 
 <use img/vram_read_table.pdf, page 2>
-Package pdftex.def Info: img/vram_read_table.pdf, page2 used on input line 275.
+Package pdftex.def Info: img/vram_read_table.pdf, page2 used on input line 281.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [36
 
 
  <./img/vram_read_table.pdf>]
-<img/vram_write.png, id=325, 803.0pt x 623.32875pt>
+<img/vram_write.png, id=316, 803.0pt x 623.32875pt>
 File: img/vram_write.png Graphic file (type png)
  <use img/vram_write.png>
-Package pdftex.def Info: img/vram_write.png used on input line 281.
+Package pdftex.def Info: img/vram_write.png used on input line 287.
 (pdftex.def)             Requested size: 711.3189pt x 552.20233pt.
 
 
-LaTeX Warning: Float too large for page by 53.55919pt on input line 285.
+LaTeX Warning: Float too large for page by 53.55919pt on input line 291.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [37 <./img/vram_write.png>]
-<img/vram_write_table.pdf, id=330, 614.295pt x 794.97pt>
+<img/vram_write_table.pdf, id=321, 614.295pt x 794.97pt>
 File: img/vram_write_table.pdf Graphic file (type pdf)
 
 <use img/vram_write_table.pdf>
-Package pdftex.def Info: img/vram_write_table.pdf used on input line 291.
+Package pdftex.def Info: img/vram_write_table.pdf used on input line 297.
 (pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
 
 
-LaTeX Warning: Float too large for page by 63.86354pt on input line 295.
+LaTeX Warning: Float too large for page by 63.86354pt on input line 301.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [38 <./img/vram_write_table.pdf>]
-<img/vram_write_table.pdf, id=347, page=2, 614.295pt x 794.97pt>
+<img/vram_write_table.pdf, id=338, page=2, 614.295pt x 794.97pt>
 File: img/vram_write_table.pdf Graphic file (type pdf)
 
 <use img/vram_write_table.pdf, page 2>
-Package pdftex.def Info: img/vram_write_table.pdf, page2 used on input line 299
+Package pdftex.def Info: img/vram_write_table.pdf, page2 used on input line 305
 .
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: img/vram_write_table.pdf Graphic file (type pdf)
  <use img/vram_write_table.pdf, page 2>
-Package pdftex.def Info: img/vram_write_table.pdf, page2 used on input line 299
+Package pdftex.def Info: img/vram_write_table.pdf, page2 used on input line 305
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: img/vram_write_table.pdf Graphic file (type pdf)
 
 <use img/vram_write_table.pdf, page 2>
-Package pdftex.def Info: img/vram_write_table.pdf, page2 used on input line 299
+Package pdftex.def Info: img/vram_write_table.pdf, page2 used on input line 305
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: img/vram_write_table.pdf Graphic file (type pdf)
  <use img/vram_write_table.pdf, page 2>
-Package pdftex.def Info: img/vram_write_table.pdf, page2 used on input line 299
+Package pdftex.def Info: img/vram_write_table.pdf, page2 used on input line 305
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: img/vram_write_table.pdf Graphic file (type pdf)
 
 <use img/vram_write_table.pdf, page 2>
-Package pdftex.def Info: img/vram_write_table.pdf, page2 used on input line 299
+Package pdftex.def Info: img/vram_write_table.pdf, page2 used on input line 305
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [39
@@ -1000,125 +986,115 @@ Package pdftex.def Info: img/vram_write_table.pdf, page2 used on input line 299
 
 
  <./img/vram_write_table.pdf>]
-<img/vram_serial.png, id=362, 803.0pt x 440.64626pt>
+<img/vram_serial.png, id=353, 803.0pt x 440.64626pt>
 File: img/vram_serial.png Graphic file (type png)
  <use img/vram_serial.png>
-Package pdftex.def Info: img/vram_serial.png used on input line 305.
+Package pdftex.def Info: img/vram_serial.png used on input line 311.
 (pdftex.def)             Requested size: 711.3189pt x 390.36525pt.
 
 
-LaTeX Warning: Float too large for page by 67.1592pt on input line 309.
+LaTeX Warning: Float too large for page by 67.1592pt on input line 315.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [40 <./img/vram_serial.png>]
-<img/vram_serial_table.pdf, id=366, 614.295pt x 794.97pt>
+<img/vram_serial_table.pdf, id=357, 614.295pt x 794.97pt>
 File: img/vram_serial_table.pdf Graphic file (type pdf)
 
 <use img/vram_serial_table.pdf>
-Package pdftex.def Info: img/vram_serial_table.pdf used on input line 315.
+Package pdftex.def Info: img/vram_serial_table.pdf used on input line 321.
 (pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
 
 
-LaTeX Warning: Float too large for page by 63.86354pt on input line 319.
+LaTeX Warning: Float too large for page by 63.86354pt on input line 325.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [41 <./img/vram_serial_table.pdf>]
-<img/vram_serial_table.pdf, id=383, page=2, 614.295pt x 794.97pt>
+<img/vram_serial_table.pdf, id=374, page=2, 614.295pt x 794.97pt>
 File: img/vram_serial_table.pdf Graphic file (type pdf)
 
 <use img/vram_serial_table.pdf, page 2>
 Package pdftex.def Info: img/vram_serial_table.pdf, page2 used on input line 32
-3.
+9.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: img/vram_serial_table.pdf Graphic file (type pdf)
 
 <use img/vram_serial_table.pdf, page 2>
 Package pdftex.def Info: img/vram_serial_table.pdf, page2 used on input line 32
-3.
+9.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: img/vram_serial_table.pdf Graphic file (type pdf)
 
 <use img/vram_serial_table.pdf, page 2>
 Package pdftex.def Info: img/vram_serial_table.pdf, page2 used on input line 32
-3.
+9.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: img/vram_serial_table.pdf Graphic file (type pdf)
 
 <use img/vram_serial_table.pdf, page 2>
 Package pdftex.def Info: img/vram_serial_table.pdf, page2 used on input line 32
-3.
+9.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: img/vram_serial_table.pdf Graphic file (type pdf)
 
 <use img/vram_serial_table.pdf, page 2>
 Package pdftex.def Info: img/vram_serial_table.pdf, page2 used on input line 32
-3.
+9.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [42
 
 
 
  <./img/vram_serial_table.pdf>]
-<img/vram_refresh.png, id=398, 803.0pt x 429.605pt>
+<img/vram_refresh.png, id=389, 803.0pt x 429.605pt>
 File: img/vram_refresh.png Graphic file (type png)
  <use img/vram_refresh.png>
-Package pdftex.def Info: img/vram_refresh.png used on input line 329.
+Package pdftex.def Info: img/vram_refresh.png used on input line 335.
 (pdftex.def)             Requested size: 711.3189pt x 380.58388pt.
 
 
-LaTeX Warning: Float too large for page by 53.55919pt on input line 333.
+LaTeX Warning: Float too large for page by 53.55919pt on input line 339.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [43 <./img/vram_refresh.png>]
-<img/vram_refresh_table.pdf, id=403, 614.295pt x 794.97pt>
+<img/vram_refresh_table.pdf, id=394, 614.295pt x 794.97pt>
 File: img/vram_refresh_table.pdf Graphic file (type pdf)
 
 <use img/vram_refresh_table.pdf>
-Package pdftex.def Info: img/vram_refresh_table.pdf used on input line 339.
+Package pdftex.def Info: img/vram_refresh_table.pdf used on input line 345.
 (pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
 
 
-LaTeX Warning: Float too large for page by 63.86354pt on input line 343.
+LaTeX Warning: Float too large for page by 63.86354pt on input line 349.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [44 <./img/vram_refresh_table.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
 
  []
 
-<img/display_ctrl.pdf, id=418, 794.97pt x 614.295pt>
+<img/display_ctrl.pdf, id=409, 794.97pt x 614.295pt>
 File: img/display_ctrl.pdf Graphic file (type pdf)
 
 <use img/display_ctrl.pdf>
-Package pdftex.def Info: img/display_ctrl.pdf used on input line 352.
+Package pdftex.def Info: img/display_ctrl.pdf used on input line 358.
 (pdftex.def)             Requested size: 853.58267pt x 659.60437pt.
 
 
-LaTeX Warning: Float too large for page by 67.15921pt on input line 356.
+LaTeX Warning: Float too large for page by 67.15921pt on input line 362.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
 
  []
 
@@ -1132,42 +1108,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 368--369
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--373
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
+
+ []
+
 [45
 
 
 
-] <img/display_datasheet_diagram.pdf, id=422, 614.295pt x 794.97pt>
+] <img/display_datasheet_diagram.pdf, id=413, 614.295pt x 794.97pt>
 File: img/display_datasheet_diagram.pdf Graphic file (type pdf)
 
 <use img/display_datasheet_diagram.pdf>
 Package pdftex.def Info: img/display_datasheet_diagram.pdf used on input line 3
-73.
+79.
 (pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
 
 
-LaTeX Warning: Float too large for page by 63.86354pt on input line 377.
+LaTeX Warning: Float too large for page by 63.86354pt on input line 383.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/display1.png, id=423, 803.0pt x 440.64626pt>
+<img/display1.png, id=414, 803.0pt x 440.64626pt>
 File: img/display1.png Graphic file (type png)
  <use img/display1.png>
-Package pdftex.def Info: img/display1.png used on input line 381.
+Package pdftex.def Info: img/display1.png used on input line 387.
 (pdftex.def)             Requested size: 711.3189pt x 390.36525pt.
 
 
-LaTeX Warning: Float too large for page by 53.55919pt on input line 385.
+LaTeX Warning: Float too large for page by 53.55919pt on input line 391.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [46] [47 <./img/display_ctrl.pdf, page is rotated 90 degrees>] [48 <./img/displ
 ay_datasheet_diagram.pdf>] [49 <./img/display1.png>]
-<img/display2.png, id=474, 803.0pt x 440.64626pt>
+<img/display2.png, id=465, 803.0pt x 440.64626pt>
 File: img/display2.png Graphic file (type png)
  <use img/display2.png>
-Package pdftex.def Info: img/display2.png used on input line 389.
+Package pdftex.def Info: img/display2.png used on input line 395.
 (pdftex.def)             Requested size: 711.3189pt x 390.36525pt.
 
 [50
@@ -1177,58 +1163,48 @@ Overfull \vbox (52.91196pt too high) has occurred while \output is active []
 
 
 [51 <./img/display2.png>]
-<img/display_table.pdf, id=481, 614.295pt x 794.97pt>
+<img/display_table.pdf, id=472, 614.295pt x 794.97pt>
 File: img/display_table.pdf Graphic file (type pdf)
 
 <use img/display_table.pdf>
-Package pdftex.def Info: img/display_table.pdf used on input line 395.
+Package pdftex.def Info: img/display_table.pdf used on input line 401.
 (pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
 
 
-LaTeX Warning: Float too large for page by 63.86354pt on input line 399.
+LaTeX Warning: Float too large for page by 63.86354pt on input line 405.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [52 <./img/display_table.pdf>]
-<img/display_table.pdf, id=498, page=2, 614.295pt x 794.97pt>
+<img/display_table.pdf, id=489, page=2, 614.295pt x 794.97pt>
 File: img/display_table.pdf Graphic file (type pdf)
 
 <use img/display_table.pdf, page 2>
-Package pdftex.def Info: img/display_table.pdf, page2 used on input line 403.
+Package pdftex.def Info: img/display_table.pdf, page2 used on input line 409.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: img/display_table.pdf Graphic file (type pdf)
  <use img/display_table.pdf, page 2>
-Package pdftex.def Info: img/display_table.pdf, page2 used on input line 403.
+Package pdftex.def Info: img/display_table.pdf, page2 used on input line 409.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: img/display_table.pdf Graphic file (type pdf)
 
 <use img/display_table.pdf, page 2>
-Package pdftex.def Info: img/display_table.pdf, page2 used on input line 403.
+Package pdftex.def Info: img/display_table.pdf, page2 used on input line 409.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: img/display_table.pdf Graphic file (type pdf)
  <use img/display_table.pdf, page 2>
-Package pdftex.def Info: img/display_table.pdf, page2 used on input line 403.
+Package pdftex.def Info: img/display_table.pdf, page2 used on input line 409.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: img/display_table.pdf Graphic file (type pdf)
 
 <use img/display_table.pdf, page 2>
-Package pdftex.def Info: img/display_table.pdf, page2 used on input line 403.
+Package pdftex.def Info: img/display_table.pdf, page2 used on input line 409.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [53
 
 
  <./img/display_table.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
@@ -1239,29 +1215,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 417--418
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--422
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
 
  []
 
 [54
 
-] [55]
-Underfull \hbox (badness 10000) in paragraph at lines 426--427
+]
+Underfull \hbox (badness 10000) in paragraph at lines 427--428
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 428--429
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 430--431
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
 
  []
 
@@ -1285,58 +1261,76 @@ Underfull \hbox (badness 10000) in paragraph at lines 442--443
 
  []
 
+
+Overfull \hbox (6.06718pt too wide) in paragraph at lines 444--445
+[]\OT1/cmr/m/n/10.95 Buffer \OT1/cmr/m/it/10.95 U7 \OT1/cmr/m/n/10.95 bridges t
+he user in-put lines from the ro-tary en-coders (\OT1/cmr/m/it/10.95 SW0,1\OT1/
+cmr/m/n/10.95 ; \OT1/cmr/m/it/10.95 ROT0A,B\OT1/cmr/m/n/10.95 ; \OT1/cmr/m/it/1
+0.95 ROT1A,B\OT1/cmr/m/n/10.95 )
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 446--447
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
+
+ []
+
 [56
 
 ] [57]
-Underfull \hbox (badness 10000) in paragraph at lines 447--448
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 449--450
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 452--453
+Underfull \hbox (badness 10000) in paragraph at lines 458--459
 
  []
 
-<img/sram_rom.pdf, id=527, 794.97pt x 614.295pt>
+<img/sram_rom.pdf, id=519, 794.97pt x 614.295pt>
 File: img/sram_rom.pdf Graphic file (type pdf)
  <use img/sram_rom.pdf>
-Package pdftex.def Info: img/sram_rom.pdf used on input line 456.
+Package pdftex.def Info: img/sram_rom.pdf used on input line 462.
 (pdftex.def)             Requested size: 739.77165pt x 571.66338pt.
 
 
-LaTeX Warning: Float too large for page by 67.15921pt on input line 459.
+LaTeX Warning: Float too large for page by 67.15921pt on input line 465.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 461--462
+Underfull \hbox (badness 10000) in paragraph at lines 467--468
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--464
+Underfull \hbox (badness 10000) in paragraph at lines 469--470
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--466
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
 
  []
 
-<img/ram_read.png, id=528, 803.0pt x 397.485pt>
+<img/ram_read.png, id=520, 803.0pt x 397.485pt>
 File: img/ram_read.png Graphic file (type png)
  <use img/ram_read.png>
-Package pdftex.def Info: img/ram_read.png used on input line 469.
+Package pdftex.def Info: img/ram_read.png used on input line 475.
 (pdftex.def)             Requested size: 711.3189pt x 352.12901pt.
 
 
-LaTeX Warning: Float too large for page by 53.55919pt on input line 473.
+LaTeX Warning: Float too large for page by 53.55919pt on input line 479.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1344,74 +1338,74 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [58
 
 ] [59 <./img/sram_rom.pdf, page is rotated 90 degrees>] [60 <./img/ram_read.png
->] <img/ram_read_table.pdf, id=544, 614.295pt x 794.97pt>
+>] <img/ram_read_table.pdf, id=536, 614.295pt x 794.97pt>
 File: img/ram_read_table.pdf Graphic file (type pdf)
 
 <use img/ram_read_table.pdf>
-Package pdftex.def Info: img/ram_read_table.pdf used on input line 479.
+Package pdftex.def Info: img/ram_read_table.pdf used on input line 485.
 (pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
 
 
-LaTeX Warning: Float too large for page by 63.86354pt on input line 483.
+LaTeX Warning: Float too large for page by 63.86354pt on input line 489.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [61 <./img/ram_read_table.pdf>]
-<img/ram_write.png, id=560, 803.0pt x 464.73625pt>
+<img/ram_write.png, id=552, 803.0pt x 464.73625pt>
 File: img/ram_write.png Graphic file (type png)
  <use img/ram_write.png>
-Package pdftex.def Info: img/ram_write.png used on input line 489.
+Package pdftex.def Info: img/ram_write.png used on input line 495.
 (pdftex.def)             Requested size: 711.3189pt x 411.70639pt.
 
 
-LaTeX Warning: Float too large for page by 53.55919pt on input line 493.
+LaTeX Warning: Float too large for page by 53.55919pt on input line 499.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [62 <./img/ram_write.png>]
-<img/ram_write_table.pdf, id=564, 614.295pt x 794.97pt>
+<img/ram_write_table.pdf, id=556, 614.295pt x 794.97pt>
 File: img/ram_write_table.pdf Graphic file (type pdf)
 
 <use img/ram_write_table.pdf>
-Package pdftex.def Info: img/ram_write_table.pdf used on input line 499.
+Package pdftex.def Info: img/ram_write_table.pdf used on input line 505.
 (pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
 
 
-LaTeX Warning: Float too large for page by 63.86354pt on input line 503.
+LaTeX Warning: Float too large for page by 63.86354pt on input line 509.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [63 <./img/ram_write_table.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 508--509
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 512--513
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 514--515
 
  []
 
-<img/rom_read.png, id=579, 803.0pt x 351.3125pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--519
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--521
+
+ []
+
+<img/rom_read.png, id=571, 803.0pt x 351.3125pt>
 File: img/rom_read.png Graphic file (type png)
  <use img/rom_read.png>
-Package pdftex.def Info: img/rom_read.png used on input line 518.
+Package pdftex.def Info: img/rom_read.png used on input line 524.
 (pdftex.def)             Requested size: 711.3189pt x 311.22513pt.
 
 
-LaTeX Warning: Float too large for page by 53.55919pt on input line 522.
+LaTeX Warning: Float too large for page by 53.55919pt on input line 528.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1422,50 +1416,35 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ] [65 <./img/rom_read.png>]
-<img/rom_read_table.pdf, id=586, 614.295pt x 794.97pt>
+<img/rom_read_table.pdf, id=578, 614.295pt x 794.97pt>
 File: img/rom_read_table.pdf Graphic file (type pdf)
 
 <use img/rom_read_table.pdf>
-Package pdftex.def Info: img/rom_read_table.pdf used on input line 528.
+Package pdftex.def Info: img/rom_read_table.pdf used on input line 534.
 (pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
 
 
-LaTeX Warning: Float too large for page by 63.86354pt on input line 532.
+LaTeX Warning: Float too large for page by 63.86354pt on input line 538.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [66 <./img/rom_read_table.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 537--538
+Underfull \hbox (badness 10000) in paragraph at lines 543--544
 
  []
 
-<img/vram_disp.pdf, id=601, 794.97pt x 614.295pt>
+<img/vram_disp.pdf, id=593, 794.97pt x 614.295pt>
 File: img/vram_disp.pdf Graphic file (type pdf)
  <use img/vram_disp.pdf>
-Package pdftex.def Info: img/vram_disp.pdf used on input line 541.
+Package pdftex.def Info: img/vram_disp.pdf used on input line 547.
 (pdftex.def)             Requested size: 739.77165pt x 571.66338pt.
 
 
-LaTeX Warning: Float too large for page by 80.75922pt on input line 544.
+LaTeX Warning: Float too large for page by 80.75922pt on input line 550.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 546--547
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 548--549
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 550--551
-
- []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 552--553
@@ -1477,43 +1456,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 554--555
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 556--557
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 558--559
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 560--561
+
+ []
+
 [67
 
 
 ] [68 <./img/vram_disp.pdf, page is rotated 90 degrees>]
-Underfull \hbox (badness 10000) in paragraph at lines 559--560
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 561--562
-
- []
-
-Missing character: There is no Î in font cmr10!
-Missing character: There is no © in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 563--564
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 565--566
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 568--569
+Underfull \hbox (badness 10000) in paragraph at lines 567--568
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 570--571
+Underfull \hbox (badness 10000) in paragraph at lines 569--570
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 572--573
+Underfull \hbox (badness 10000) in paragraph at lines 571--572
 
  []
 
@@ -1522,90 +1499,105 @@ Underfull \hbox (badness 10000) in paragraph at lines 574--575
 
  []
 
-[69
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 579--580
+Underfull \hbox (badness 10000) in paragraph at lines 576--577
 
  []
 
-<img/user_input.pdf, id=619, 794.97pt x 614.295pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--579
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 580--581
+
+ []
+
+[69
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
+
+ []
+
+<img/user_input.pdf, id=610, 794.97pt x 614.295pt>
 File: img/user_input.pdf Graphic file (type pdf)
  <use img/user_input.pdf>
-Package pdftex.def Info: img/user_input.pdf used on input line 583.
+Package pdftex.def Info: img/user_input.pdf used on input line 589.
 (pdftex.def)             Requested size: 739.77165pt x 571.66338pt.
 
 
-LaTeX Warning: Float too large for page by 67.15921pt on input line 586.
+LaTeX Warning: Float too large for page by 67.15921pt on input line 592.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 588--589
+Underfull \hbox (badness 10000) in paragraph at lines 594--595
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 590--591
+Underfull \hbox (badness 10000) in paragraph at lines 596--597
 
  []
 
 [70
 
 ] [71 <./img/user_input.pdf, page is rotated 90 degrees>]
-Underfull \hbox (badness 10000) in paragraph at lines 595--596
+Underfull \hbox (badness 10000) in paragraph at lines 601--602
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 597--598
+Underfull \hbox (badness 10000) in paragraph at lines 603--604
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 599--600
+Underfull \hbox (badness 10000) in paragraph at lines 605--606
 
  []
 
-<img/analog_interface.pdf, id=632, 794.97pt x 614.295pt>
+<img/analog_interface.pdf, id=624, 794.97pt x 614.295pt>
 File: img/analog_interface.pdf Graphic file (type pdf)
 
 <use img/analog_interface.pdf>
-Package pdftex.def Info: img/analog_interface.pdf used on input line 603.
+Package pdftex.def Info: img/analog_interface.pdf used on input line 609.
 (pdftex.def)             Requested size: 739.77165pt x 571.66338pt.
 
 
-LaTeX Warning: Float too large for page by 67.15921pt on input line 606.
+LaTeX Warning: Float too large for page by 67.15921pt on input line 612.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 608--609
+Underfull \hbox (badness 10000) in paragraph at lines 614--615
 
  []
 
 [72
 
 ] [73 <./img/analog_interface.pdf, page is rotated 90 degrees>]
-Underfull \hbox (badness 10000) in paragraph at lines 613--614
+Underfull \hbox (badness 10000) in paragraph at lines 619--620
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 615--616
+Underfull \hbox (badness 10000) in paragraph at lines 621--622
 
  []
 
-<img/op_amp.pdf, id=646, 794.97pt x 614.295pt>
+<img/op_amp.pdf, id=638, 794.97pt x 614.295pt>
 File: img/op_amp.pdf Graphic file (type pdf)
  <use img/op_amp.pdf>
-Package pdftex.def Info: img/op_amp.pdf used on input line 619.
+Package pdftex.def Info: img/op_amp.pdf used on input line 625.
 (pdftex.def)             Requested size: 739.77165pt x 571.66338pt.
 
 
-LaTeX Warning: Float too large for page by 67.15921pt on input line 622.
+LaTeX Warning: Float too large for page by 67.15921pt on input line 628.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1613,78 +1605,69 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [74
 
 ] [75 <./img/op_amp.pdf, page is rotated 90 degrees>]
-Underfull \hbox (badness 10000) in paragraph at lines 627--628
+Underfull \hbox (badness 10000) in paragraph at lines 633--634
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 629--630
+Underfull \hbox (badness 10000) in paragraph at lines 635--636
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 631--632
+Underfull \hbox (badness 10000) in paragraph at lines 637--638
 
  []
 
-<img/adc.png, id=660, 803.0pt x 246.9225pt>
+<img/adc.png, id=651, 803.0pt x 246.9225pt>
 File: img/adc.png Graphic file (type png)
  <use img/adc.png>
-Package pdftex.def Info: img/adc.png used on input line 635.
+Package pdftex.def Info: img/adc.png used on input line 641.
 (pdftex.def)             Requested size: 711.3189pt x 218.7468pt.
 
 
-LaTeX Warning: Float too large for page by 53.55919pt on input line 639.
+LaTeX Warning: Float too large for page by 53.55919pt on input line 645.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [76
 
-] [77 <./img/adc.png>] <img/adc_table.pdf, id=667, 614.295pt x 794.97pt>
+] [77 <./img/adc.png>] <img/adc_table.pdf, id=658, 614.295pt x 794.97pt>
 File: img/adc_table.pdf Graphic file (type pdf)
 
 <use img/adc_table.pdf>
-Package pdftex.def Info: img/adc_table.pdf used on input line 645.
+Package pdftex.def Info: img/adc_table.pdf used on input line 651.
 (pdftex.def)             Requested size: 569.05511pt x 736.47598pt.
 
 
-LaTeX Warning: Float too large for page by 63.86354pt on input line 649.
+LaTeX Warning: Float too large for page by 63.86354pt on input line 655.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [78 <./img/adc_table.pdf>]
-
-Package caption Warning: \label without proper \caption on input line 670.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `tab:rev_history' on page 79 undefined on input line 6
-54.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 654--655
+Underfull \hbox (badness 10000) in paragraph at lines 660--661
 
  []
 
 
-Overfull \hbox (4.43752pt too wide) in paragraph at lines 660--660
+Overfull \hbox (4.43752pt too wide) in paragraph at lines 666--666
 []\OT1/cmr/bx/n/10.95 Revision| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 663--663
+Underfull \hbox (badness 10000) in paragraph at lines 669--669
 []\OT1/cmr/m/n/10.95 User In-put
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 665--665
+Underfull \hbox (badness 10000) in paragraph at lines 671--671
 []\OT1/cmr/m/n/10.95 FPGA
  []
 
 
-Underfull \hbox (badness 5446) in paragraph at lines 668--668
+Underfull \hbox (badness 5446) in paragraph at lines 674--674
 []\OT1/cmr/m/n/10.95 Analog In-ter-
  []
 
@@ -1692,100 +1675,2239 @@ Underfull \hbox (badness 5446) in paragraph at lines 668--668
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 689--690
 
-LaTeX Warning: Reference `fig:orig_schem_1' on page 80 undefined on input line 
-697.
+ []
 
+<img/software_blocks.png, id=677, 1035.87pt x 1273.93588pt>
+File: img/software_blocks.png Graphic file (type png)
 
-LaTeX Warning: Reference `fig:orig_schem_2' on page 80 undefined on input line 
-697.
-
-
-LaTeX Warning: Reference `fig:orig_schem_3' on page 80 undefined on input line 
-697.
-
-
-LaTeX Warning: Reference `fig:orig_schem_4' on page 80 undefined on input line 
-697.
+<use img/software_blocks.png>
+Package pdftex.def Info: img/software_blocks.png used on input line 692.
+(pdftex.def)             Requested size: 452.96796pt x 557.07344pt.
 
 
-LaTeX Warning: Reference `fig:orig_schem_5' on page 80 undefined on input line 
-697.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `fig:orig_pcb_1' on page 80 undefined on input line 69
-7.
-
-
-LaTeX Warning: Reference `fig:orig_pcb_2' on page 80 undefined on input line 69
-7.
-
-
-LaTeX Warning: Reference `sec:ram_rom' on page 80 undefined on input line 697.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 696--698
+Underfull \hbox (badness 10000) in paragraph at lines 702--703
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--700
-
- []
-
-Missing character: There is no Î in font cmr10!
-Missing character: There is no © in font cmr10!
-Missing character: There is no Î in font cmr10!
-Missing character: There is no © in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 701--702
+Underfull \hbox (badness 10000) in paragraph at lines 705--706
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--704
-
- []
-
-
-LaTeX Warning: Reference `tab:code_toc' on page 80 undefined on input line 710.
-
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 709--711
+Underfull \hbox (badness 10000) in paragraph at lines 708--709
 
  []
 
 [80
 
-] (./technical_manual.aux)
+] [81 <./img/software_blocks.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 711--712
 
-LaTeX Warning: There were undefined references.
+ []
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Underfull \hbox (badness 10000) in paragraph at lines 713--714
 
- ) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 715--716
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 717--718
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 719--720
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 721--722
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 724--725
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 726--727
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 728--729
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 730--731
+
+ []
+
+[82]
+Underfull \hbox (badness 10000) in paragraph at lines 732--733
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 734--735
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 737--738
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 739--740
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--742
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 743--744
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--746
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 747--748
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 749--750
+
+ []
+
+[83] [84]
+Underfull \hbox (badness 10000) in paragraph at lines 760--761
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 762--763
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 764--765
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 766--767
+
+ []
+
+<img/fpga_sch_old.pdf, id=693, 794.97pt x 614.295pt>
+File: img/fpga_sch_old.pdf Graphic file (type pdf)
+
+<use img/fpga_sch_old.pdf>
+Package pdftex.def Info: img/fpga_sch_old.pdf used on input line 770.
+(pdftex.def)             Requested size: 739.77165pt x 571.66338pt.
+
+
+LaTeX Warning: Float too large for page by 53.5592pt on input line 773.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/analog_interface_old.pdf, id=694, 794.97pt x 614.295pt>
+File: img/analog_interface_old.pdf Graphic file (type pdf)
+
+<use img/analog_interface_old.pdf>
+Package pdftex.def Info: img/analog_interface_old.pdf used on input line 777.
+(pdftex.def)             Requested size: 739.77165pt x 571.66338pt.
+
+
+LaTeX Warning: Float too large for page by 53.5592pt on input line 780.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/user_input_old.pdf, id=695, 794.97pt x 614.295pt>
+File: img/user_input_old.pdf Graphic file (type pdf)
+
+<use img/user_input_old.pdf>
+Package pdftex.def Info: img/user_input_old.pdf used on input line 784.
+(pdftex.def)             Requested size: 739.77165pt x 571.66338pt.
+
+
+LaTeX Warning: Float too large for page by 53.5592pt on input line 787.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/sram_rom_old.pdf, id=696, 794.97pt x 614.295pt>
+File: img/sram_rom_old.pdf Graphic file (type pdf)
+
+<use img/sram_rom_old.pdf>
+Package pdftex.def Info: img/sram_rom_old.pdf used on input line 791.
+(pdftex.def)             Requested size: 739.77165pt x 571.66338pt.
+
+
+LaTeX Warning: Float too large for page by 53.5592pt on input line 794.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/vram_disp_old.pdf, id=697, 794.97pt x 614.295pt>
+File: img/vram_disp_old.pdf Graphic file (type pdf)
+
+<use img/vram_disp_old.pdf>
+Package pdftex.def Info: img/vram_disp_old.pdf used on input line 798.
+(pdftex.def)             Requested size: 739.77165pt x 571.66338pt.
+
+
+LaTeX Warning: Float too large for page by 53.5592pt on input line 801.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/pcb_old.pdf, id=698, 770.88pt x 589.20125pt>
+File: img/pcb_old.pdf Graphic file (type pdf)
+ <use img/pcb_old.pdf>
+Package pdftex.def Info: img/pcb_old.pdf used on input line 805.
+(pdftex.def)             Requested size: 796.67715pt x 608.91591pt.
+
+
+LaTeX Warning: Float too large for page by 53.5592pt on input line 809.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/pcb_back_old.pdf, id=699, 770.88pt x 589.20125pt>
+File: img/pcb_back_old.pdf Graphic file (type pdf)
+
+<use img/pcb_back_old.pdf>
+Package pdftex.def Info: img/pcb_back_old.pdf used on input line 813.
+(pdftex.def)             Requested size: 796.67715pt x 608.91591pt.
+
+
+LaTeX Warning: Float too large for page by 53.5592pt on input line 817.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[85
+
+] [86 <./img/fpga_sch_old.pdf, page is rotated 90 degrees>] [87 <./img/analog_i
+nterface_old.pdf, page is rotated 90 degrees>] [88 <./img/user_input_old.pdf, p
+age is rotated 90 degrees>] [89 <./img/sram_rom_old.pdf, page is rotated 90 deg
+rees>] [90 <./img/vram_disp_old.pdf, page is rotated 90 degrees>] [91 <./img/pc
+b_old.pdf>] [92 <./img/pcb_back_old.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
+
+ []
+
+[93
+
+]
+\c@codepage=\count117
+ [94]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=784, page=1, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 1>
+Package pdftex.def Info: img/scope_code.pdf, page1 used on input line 863.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 1>
+Package pdftex.def Info: img/scope_code.pdf, page1 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 1>
+Package pdftex.def Info: img/scope_code.pdf, page1 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 1>
+Package pdftex.def Info: img/scope_code.pdf, page1 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 1>
+Package pdftex.def Info: img/scope_code.pdf, page1 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [95
+
+
+ <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=804, page=2, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 2>
+Package pdftex.def Info: img/scope_code.pdf, page2 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 2>
+Package pdftex.def Info: img/scope_code.pdf, page2 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 2>
+Package pdftex.def Info: img/scope_code.pdf, page2 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [96 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=808, page=3, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 3>
+Package pdftex.def Info: img/scope_code.pdf, page3 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 3>
+Package pdftex.def Info: img/scope_code.pdf, page3 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 3>
+Package pdftex.def Info: img/scope_code.pdf, page3 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [97 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=813, page=4, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 4>
+Package pdftex.def Info: img/scope_code.pdf, page4 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 4>
+Package pdftex.def Info: img/scope_code.pdf, page4 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 4>
+Package pdftex.def Info: img/scope_code.pdf, page4 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [98 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=817, page=5, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 5>
+Package pdftex.def Info: img/scope_code.pdf, page5 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 5>
+Package pdftex.def Info: img/scope_code.pdf, page5 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 5>
+Package pdftex.def Info: img/scope_code.pdf, page5 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [99 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=827, page=6, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 6>
+Package pdftex.def Info: img/scope_code.pdf, page6 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 6>
+Package pdftex.def Info: img/scope_code.pdf, page6 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 6>
+Package pdftex.def Info: img/scope_code.pdf, page6 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [100 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=835, page=7, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 7>
+Package pdftex.def Info: img/scope_code.pdf, page7 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 7>
+Package pdftex.def Info: img/scope_code.pdf, page7 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 7>
+Package pdftex.def Info: img/scope_code.pdf, page7 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [101 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=845, page=8, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 8>
+Package pdftex.def Info: img/scope_code.pdf, page8 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 8>
+Package pdftex.def Info: img/scope_code.pdf, page8 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 8>
+Package pdftex.def Info: img/scope_code.pdf, page8 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [102 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=855, page=9, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 9>
+Package pdftex.def Info: img/scope_code.pdf, page9 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 9>
+Package pdftex.def Info: img/scope_code.pdf, page9 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 9>
+Package pdftex.def Info: img/scope_code.pdf, page9 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [103 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=860, page=10, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 10>
+Package pdftex.def Info: img/scope_code.pdf, page10 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 10>
+Package pdftex.def Info: img/scope_code.pdf, page10 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 10>
+Package pdftex.def Info: img/scope_code.pdf, page10 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [104 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=864, page=11, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 11>
+Package pdftex.def Info: img/scope_code.pdf, page11 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 11>
+Package pdftex.def Info: img/scope_code.pdf, page11 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 11>
+Package pdftex.def Info: img/scope_code.pdf, page11 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [105 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=868, page=12, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 12>
+Package pdftex.def Info: img/scope_code.pdf, page12 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 12>
+Package pdftex.def Info: img/scope_code.pdf, page12 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 12>
+Package pdftex.def Info: img/scope_code.pdf, page12 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [106 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=872, page=13, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 13>
+Package pdftex.def Info: img/scope_code.pdf, page13 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 13>
+Package pdftex.def Info: img/scope_code.pdf, page13 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 13>
+Package pdftex.def Info: img/scope_code.pdf, page13 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [107 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=882, page=14, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 14>
+Package pdftex.def Info: img/scope_code.pdf, page14 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 14>
+Package pdftex.def Info: img/scope_code.pdf, page14 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 14>
+Package pdftex.def Info: img/scope_code.pdf, page14 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [108 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=890, page=15, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 15>
+Package pdftex.def Info: img/scope_code.pdf, page15 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 15>
+Package pdftex.def Info: img/scope_code.pdf, page15 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 15>
+Package pdftex.def Info: img/scope_code.pdf, page15 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [109 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=897, page=16, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 16>
+Package pdftex.def Info: img/scope_code.pdf, page16 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 16>
+Package pdftex.def Info: img/scope_code.pdf, page16 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 16>
+Package pdftex.def Info: img/scope_code.pdf, page16 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [110 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=901, page=17, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 17>
+Package pdftex.def Info: img/scope_code.pdf, page17 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 17>
+Package pdftex.def Info: img/scope_code.pdf, page17 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 17>
+Package pdftex.def Info: img/scope_code.pdf, page17 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [111 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=905, page=18, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 18>
+Package pdftex.def Info: img/scope_code.pdf, page18 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 18>
+Package pdftex.def Info: img/scope_code.pdf, page18 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 18>
+Package pdftex.def Info: img/scope_code.pdf, page18 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [112 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=909, page=19, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 19>
+Package pdftex.def Info: img/scope_code.pdf, page19 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 19>
+Package pdftex.def Info: img/scope_code.pdf, page19 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 19>
+Package pdftex.def Info: img/scope_code.pdf, page19 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [113 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=917, page=20, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 20>
+Package pdftex.def Info: img/scope_code.pdf, page20 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 20>
+Package pdftex.def Info: img/scope_code.pdf, page20 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 20>
+Package pdftex.def Info: img/scope_code.pdf, page20 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [114 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=927, page=21, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 21>
+Package pdftex.def Info: img/scope_code.pdf, page21 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 21>
+Package pdftex.def Info: img/scope_code.pdf, page21 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 21>
+Package pdftex.def Info: img/scope_code.pdf, page21 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [115 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=932, page=22, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 22>
+Package pdftex.def Info: img/scope_code.pdf, page22 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 22>
+Package pdftex.def Info: img/scope_code.pdf, page22 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 22>
+Package pdftex.def Info: img/scope_code.pdf, page22 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [116 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=936, page=23, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 23>
+Package pdftex.def Info: img/scope_code.pdf, page23 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 23>
+Package pdftex.def Info: img/scope_code.pdf, page23 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 23>
+Package pdftex.def Info: img/scope_code.pdf, page23 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [117 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=941, page=24, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 24>
+Package pdftex.def Info: img/scope_code.pdf, page24 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 24>
+Package pdftex.def Info: img/scope_code.pdf, page24 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 24>
+Package pdftex.def Info: img/scope_code.pdf, page24 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [118 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=945, page=25, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 25>
+Package pdftex.def Info: img/scope_code.pdf, page25 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 25>
+Package pdftex.def Info: img/scope_code.pdf, page25 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 25>
+Package pdftex.def Info: img/scope_code.pdf, page25 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [119 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=949, page=26, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 26>
+Package pdftex.def Info: img/scope_code.pdf, page26 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 26>
+Package pdftex.def Info: img/scope_code.pdf, page26 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 26>
+Package pdftex.def Info: img/scope_code.pdf, page26 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [120 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=959, page=27, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 27>
+Package pdftex.def Info: img/scope_code.pdf, page27 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 27>
+Package pdftex.def Info: img/scope_code.pdf, page27 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 27>
+Package pdftex.def Info: img/scope_code.pdf, page27 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [121 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=970, page=28, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 28>
+Package pdftex.def Info: img/scope_code.pdf, page28 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 28>
+Package pdftex.def Info: img/scope_code.pdf, page28 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 28>
+Package pdftex.def Info: img/scope_code.pdf, page28 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [122 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=974, page=29, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 29>
+Package pdftex.def Info: img/scope_code.pdf, page29 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 29>
+Package pdftex.def Info: img/scope_code.pdf, page29 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 29>
+Package pdftex.def Info: img/scope_code.pdf, page29 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [123 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=978, page=30, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 30>
+Package pdftex.def Info: img/scope_code.pdf, page30 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 30>
+Package pdftex.def Info: img/scope_code.pdf, page30 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 30>
+Package pdftex.def Info: img/scope_code.pdf, page30 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [124 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=982, page=31, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 31>
+Package pdftex.def Info: img/scope_code.pdf, page31 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 31>
+Package pdftex.def Info: img/scope_code.pdf, page31 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 31>
+Package pdftex.def Info: img/scope_code.pdf, page31 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [125 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=992, page=32, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 32>
+Package pdftex.def Info: img/scope_code.pdf, page32 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 32>
+Package pdftex.def Info: img/scope_code.pdf, page32 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 32>
+Package pdftex.def Info: img/scope_code.pdf, page32 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [126 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=996, page=33, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 33>
+Package pdftex.def Info: img/scope_code.pdf, page33 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 33>
+Package pdftex.def Info: img/scope_code.pdf, page33 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 33>
+Package pdftex.def Info: img/scope_code.pdf, page33 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [127 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1001, page=34, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 34>
+Package pdftex.def Info: img/scope_code.pdf, page34 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 34>
+Package pdftex.def Info: img/scope_code.pdf, page34 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 34>
+Package pdftex.def Info: img/scope_code.pdf, page34 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [128 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1005, page=35, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 35>
+Package pdftex.def Info: img/scope_code.pdf, page35 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 35>
+Package pdftex.def Info: img/scope_code.pdf, page35 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 35>
+Package pdftex.def Info: img/scope_code.pdf, page35 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [129 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1009, page=36, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 36>
+Package pdftex.def Info: img/scope_code.pdf, page36 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 36>
+Package pdftex.def Info: img/scope_code.pdf, page36 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 36>
+Package pdftex.def Info: img/scope_code.pdf, page36 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [130 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1013, page=37, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 37>
+Package pdftex.def Info: img/scope_code.pdf, page37 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 37>
+Package pdftex.def Info: img/scope_code.pdf, page37 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 37>
+Package pdftex.def Info: img/scope_code.pdf, page37 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [131 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1017, page=38, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 38>
+Package pdftex.def Info: img/scope_code.pdf, page38 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 38>
+Package pdftex.def Info: img/scope_code.pdf, page38 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 38>
+Package pdftex.def Info: img/scope_code.pdf, page38 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [132 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1021, page=39, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 39>
+Package pdftex.def Info: img/scope_code.pdf, page39 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 39>
+Package pdftex.def Info: img/scope_code.pdf, page39 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 39>
+Package pdftex.def Info: img/scope_code.pdf, page39 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [133 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1026, page=40, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 40>
+Package pdftex.def Info: img/scope_code.pdf, page40 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 40>
+Package pdftex.def Info: img/scope_code.pdf, page40 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 40>
+Package pdftex.def Info: img/scope_code.pdf, page40 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [134 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1030, page=41, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 41>
+Package pdftex.def Info: img/scope_code.pdf, page41 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 41>
+Package pdftex.def Info: img/scope_code.pdf, page41 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 41>
+Package pdftex.def Info: img/scope_code.pdf, page41 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [135 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1040, page=42, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 42>
+Package pdftex.def Info: img/scope_code.pdf, page42 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 42>
+Package pdftex.def Info: img/scope_code.pdf, page42 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 42>
+Package pdftex.def Info: img/scope_code.pdf, page42 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [136 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1044, page=43, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 43>
+Package pdftex.def Info: img/scope_code.pdf, page43 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 43>
+Package pdftex.def Info: img/scope_code.pdf, page43 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 43>
+Package pdftex.def Info: img/scope_code.pdf, page43 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [137 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1054, page=44, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 44>
+Package pdftex.def Info: img/scope_code.pdf, page44 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 44>
+Package pdftex.def Info: img/scope_code.pdf, page44 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 44>
+Package pdftex.def Info: img/scope_code.pdf, page44 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [138 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1058, page=45, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 45>
+Package pdftex.def Info: img/scope_code.pdf, page45 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 45>
+Package pdftex.def Info: img/scope_code.pdf, page45 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 45>
+Package pdftex.def Info: img/scope_code.pdf, page45 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [139 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1063, page=46, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 46>
+Package pdftex.def Info: img/scope_code.pdf, page46 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 46>
+Package pdftex.def Info: img/scope_code.pdf, page46 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 46>
+Package pdftex.def Info: img/scope_code.pdf, page46 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [140 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1067, page=47, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 47>
+Package pdftex.def Info: img/scope_code.pdf, page47 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 47>
+Package pdftex.def Info: img/scope_code.pdf, page47 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 47>
+Package pdftex.def Info: img/scope_code.pdf, page47 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [141 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1071, page=48, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 48>
+Package pdftex.def Info: img/scope_code.pdf, page48 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 48>
+Package pdftex.def Info: img/scope_code.pdf, page48 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 48>
+Package pdftex.def Info: img/scope_code.pdf, page48 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [142 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1075, page=49, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 49>
+Package pdftex.def Info: img/scope_code.pdf, page49 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 49>
+Package pdftex.def Info: img/scope_code.pdf, page49 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 49>
+Package pdftex.def Info: img/scope_code.pdf, page49 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [143 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1079, page=50, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 50>
+Package pdftex.def Info: img/scope_code.pdf, page50 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 50>
+Package pdftex.def Info: img/scope_code.pdf, page50 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 50>
+Package pdftex.def Info: img/scope_code.pdf, page50 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [144 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1083, page=51, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 51>
+Package pdftex.def Info: img/scope_code.pdf, page51 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 51>
+Package pdftex.def Info: img/scope_code.pdf, page51 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 51>
+Package pdftex.def Info: img/scope_code.pdf, page51 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [145 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1088, page=52, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 52>
+Package pdftex.def Info: img/scope_code.pdf, page52 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 52>
+Package pdftex.def Info: img/scope_code.pdf, page52 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 52>
+Package pdftex.def Info: img/scope_code.pdf, page52 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [146 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1092, page=53, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 53>
+Package pdftex.def Info: img/scope_code.pdf, page53 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 53>
+Package pdftex.def Info: img/scope_code.pdf, page53 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 53>
+Package pdftex.def Info: img/scope_code.pdf, page53 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [147 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1096, page=54, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 54>
+Package pdftex.def Info: img/scope_code.pdf, page54 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 54>
+Package pdftex.def Info: img/scope_code.pdf, page54 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 54>
+Package pdftex.def Info: img/scope_code.pdf, page54 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [148 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1100, page=55, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 55>
+Package pdftex.def Info: img/scope_code.pdf, page55 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 55>
+Package pdftex.def Info: img/scope_code.pdf, page55 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 55>
+Package pdftex.def Info: img/scope_code.pdf, page55 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [149 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1104, page=56, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 56>
+Package pdftex.def Info: img/scope_code.pdf, page56 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 56>
+Package pdftex.def Info: img/scope_code.pdf, page56 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 56>
+Package pdftex.def Info: img/scope_code.pdf, page56 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [150 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1108, page=57, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 57>
+Package pdftex.def Info: img/scope_code.pdf, page57 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 57>
+Package pdftex.def Info: img/scope_code.pdf, page57 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 57>
+Package pdftex.def Info: img/scope_code.pdf, page57 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [151 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1113, page=58, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 58>
+Package pdftex.def Info: img/scope_code.pdf, page58 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 58>
+Package pdftex.def Info: img/scope_code.pdf, page58 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 58>
+Package pdftex.def Info: img/scope_code.pdf, page58 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [152 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1117, page=59, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 59>
+Package pdftex.def Info: img/scope_code.pdf, page59 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 59>
+Package pdftex.def Info: img/scope_code.pdf, page59 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 59>
+Package pdftex.def Info: img/scope_code.pdf, page59 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [153 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1121, page=60, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 60>
+Package pdftex.def Info: img/scope_code.pdf, page60 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 60>
+Package pdftex.def Info: img/scope_code.pdf, page60 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 60>
+Package pdftex.def Info: img/scope_code.pdf, page60 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [154 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1125, page=61, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 61>
+Package pdftex.def Info: img/scope_code.pdf, page61 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 61>
+Package pdftex.def Info: img/scope_code.pdf, page61 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 61>
+Package pdftex.def Info: img/scope_code.pdf, page61 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [155 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1129, page=62, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 62>
+Package pdftex.def Info: img/scope_code.pdf, page62 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 62>
+Package pdftex.def Info: img/scope_code.pdf, page62 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 62>
+Package pdftex.def Info: img/scope_code.pdf, page62 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [156 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1133, page=63, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 63>
+Package pdftex.def Info: img/scope_code.pdf, page63 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 63>
+Package pdftex.def Info: img/scope_code.pdf, page63 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 63>
+Package pdftex.def Info: img/scope_code.pdf, page63 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [157 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1139, page=64, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 64>
+Package pdftex.def Info: img/scope_code.pdf, page64 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 64>
+Package pdftex.def Info: img/scope_code.pdf, page64 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 64>
+Package pdftex.def Info: img/scope_code.pdf, page64 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [158 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1143, page=65, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 65>
+Package pdftex.def Info: img/scope_code.pdf, page65 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 65>
+Package pdftex.def Info: img/scope_code.pdf, page65 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 65>
+Package pdftex.def Info: img/scope_code.pdf, page65 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [159 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1147, page=66, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 66>
+Package pdftex.def Info: img/scope_code.pdf, page66 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 66>
+Package pdftex.def Info: img/scope_code.pdf, page66 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 66>
+Package pdftex.def Info: img/scope_code.pdf, page66 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [160 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1157, page=67, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 67>
+Package pdftex.def Info: img/scope_code.pdf, page67 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 67>
+Package pdftex.def Info: img/scope_code.pdf, page67 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 67>
+Package pdftex.def Info: img/scope_code.pdf, page67 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [161 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1161, page=68, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 68>
+Package pdftex.def Info: img/scope_code.pdf, page68 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 68>
+Package pdftex.def Info: img/scope_code.pdf, page68 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 68>
+Package pdftex.def Info: img/scope_code.pdf, page68 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [162 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1171, page=69, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 69>
+Package pdftex.def Info: img/scope_code.pdf, page69 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 69>
+Package pdftex.def Info: img/scope_code.pdf, page69 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 69>
+Package pdftex.def Info: img/scope_code.pdf, page69 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [163 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1176, page=70, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 70>
+Package pdftex.def Info: img/scope_code.pdf, page70 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 70>
+Package pdftex.def Info: img/scope_code.pdf, page70 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 70>
+Package pdftex.def Info: img/scope_code.pdf, page70 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [164 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1186, page=71, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 71>
+Package pdftex.def Info: img/scope_code.pdf, page71 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 71>
+Package pdftex.def Info: img/scope_code.pdf, page71 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 71>
+Package pdftex.def Info: img/scope_code.pdf, page71 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [165 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1190, page=72, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 72>
+Package pdftex.def Info: img/scope_code.pdf, page72 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 72>
+Package pdftex.def Info: img/scope_code.pdf, page72 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 72>
+Package pdftex.def Info: img/scope_code.pdf, page72 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [166 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1194, page=73, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 73>
+Package pdftex.def Info: img/scope_code.pdf, page73 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 73>
+Package pdftex.def Info: img/scope_code.pdf, page73 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 73>
+Package pdftex.def Info: img/scope_code.pdf, page73 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [167 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1198, page=74, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 74>
+Package pdftex.def Info: img/scope_code.pdf, page74 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 74>
+Package pdftex.def Info: img/scope_code.pdf, page74 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 74>
+Package pdftex.def Info: img/scope_code.pdf, page74 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [168 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1202, page=75, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 75>
+Package pdftex.def Info: img/scope_code.pdf, page75 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 75>
+Package pdftex.def Info: img/scope_code.pdf, page75 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 75>
+Package pdftex.def Info: img/scope_code.pdf, page75 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [169 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1207, page=76, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 76>
+Package pdftex.def Info: img/scope_code.pdf, page76 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 76>
+Package pdftex.def Info: img/scope_code.pdf, page76 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 76>
+Package pdftex.def Info: img/scope_code.pdf, page76 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [170 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1211, page=77, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 77>
+Package pdftex.def Info: img/scope_code.pdf, page77 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 77>
+Package pdftex.def Info: img/scope_code.pdf, page77 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 77>
+Package pdftex.def Info: img/scope_code.pdf, page77 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [171 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1215, page=78, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 78>
+Package pdftex.def Info: img/scope_code.pdf, page78 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 78>
+Package pdftex.def Info: img/scope_code.pdf, page78 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 78>
+Package pdftex.def Info: img/scope_code.pdf, page78 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [172 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1219, page=79, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 79>
+Package pdftex.def Info: img/scope_code.pdf, page79 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 79>
+Package pdftex.def Info: img/scope_code.pdf, page79 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 79>
+Package pdftex.def Info: img/scope_code.pdf, page79 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [173 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1223, page=80, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 80>
+Package pdftex.def Info: img/scope_code.pdf, page80 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 80>
+Package pdftex.def Info: img/scope_code.pdf, page80 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 80>
+Package pdftex.def Info: img/scope_code.pdf, page80 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [174 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1227, page=81, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 81>
+Package pdftex.def Info: img/scope_code.pdf, page81 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 81>
+Package pdftex.def Info: img/scope_code.pdf, page81 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 81>
+Package pdftex.def Info: img/scope_code.pdf, page81 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [175 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1232, page=82, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 82>
+Package pdftex.def Info: img/scope_code.pdf, page82 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 82>
+Package pdftex.def Info: img/scope_code.pdf, page82 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 82>
+Package pdftex.def Info: img/scope_code.pdf, page82 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [176 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1236, page=83, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 83>
+Package pdftex.def Info: img/scope_code.pdf, page83 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 83>
+Package pdftex.def Info: img/scope_code.pdf, page83 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 83>
+Package pdftex.def Info: img/scope_code.pdf, page83 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [177 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1240, page=84, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 84>
+Package pdftex.def Info: img/scope_code.pdf, page84 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 84>
+Package pdftex.def Info: img/scope_code.pdf, page84 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 84>
+Package pdftex.def Info: img/scope_code.pdf, page84 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [178 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1244, page=85, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 85>
+Package pdftex.def Info: img/scope_code.pdf, page85 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 85>
+Package pdftex.def Info: img/scope_code.pdf, page85 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 85>
+Package pdftex.def Info: img/scope_code.pdf, page85 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [179 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1254, page=86, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 86>
+Package pdftex.def Info: img/scope_code.pdf, page86 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 86>
+Package pdftex.def Info: img/scope_code.pdf, page86 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 86>
+Package pdftex.def Info: img/scope_code.pdf, page86 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [180 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1258, page=87, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 87>
+Package pdftex.def Info: img/scope_code.pdf, page87 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 87>
+Package pdftex.def Info: img/scope_code.pdf, page87 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 87>
+Package pdftex.def Info: img/scope_code.pdf, page87 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [181 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1267, page=88, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 88>
+Package pdftex.def Info: img/scope_code.pdf, page88 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 88>
+Package pdftex.def Info: img/scope_code.pdf, page88 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 88>
+Package pdftex.def Info: img/scope_code.pdf, page88 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [182 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1273, page=89, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 89>
+Package pdftex.def Info: img/scope_code.pdf, page89 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 89>
+Package pdftex.def Info: img/scope_code.pdf, page89 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 89>
+Package pdftex.def Info: img/scope_code.pdf, page89 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [183 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1277, page=90, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 90>
+Package pdftex.def Info: img/scope_code.pdf, page90 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 90>
+Package pdftex.def Info: img/scope_code.pdf, page90 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 90>
+Package pdftex.def Info: img/scope_code.pdf, page90 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [184 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1281, page=91, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 91>
+Package pdftex.def Info: img/scope_code.pdf, page91 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 91>
+Package pdftex.def Info: img/scope_code.pdf, page91 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 91>
+Package pdftex.def Info: img/scope_code.pdf, page91 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [185 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1285, page=92, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 92>
+Package pdftex.def Info: img/scope_code.pdf, page92 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 92>
+Package pdftex.def Info: img/scope_code.pdf, page92 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 92>
+Package pdftex.def Info: img/scope_code.pdf, page92 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [186 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1289, page=93, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 93>
+Package pdftex.def Info: img/scope_code.pdf, page93 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 93>
+Package pdftex.def Info: img/scope_code.pdf, page93 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 93>
+Package pdftex.def Info: img/scope_code.pdf, page93 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [187 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1294, page=94, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 94>
+Package pdftex.def Info: img/scope_code.pdf, page94 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 94>
+Package pdftex.def Info: img/scope_code.pdf, page94 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 94>
+Package pdftex.def Info: img/scope_code.pdf, page94 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [188 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1298, page=95, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 95>
+Package pdftex.def Info: img/scope_code.pdf, page95 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 95>
+Package pdftex.def Info: img/scope_code.pdf, page95 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 95>
+Package pdftex.def Info: img/scope_code.pdf, page95 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [189 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1302, page=96, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 96>
+Package pdftex.def Info: img/scope_code.pdf, page96 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 96>
+Package pdftex.def Info: img/scope_code.pdf, page96 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 96>
+Package pdftex.def Info: img/scope_code.pdf, page96 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [190 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1312, page=97, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 97>
+Package pdftex.def Info: img/scope_code.pdf, page97 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 97>
+Package pdftex.def Info: img/scope_code.pdf, page97 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 97>
+Package pdftex.def Info: img/scope_code.pdf, page97 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [191 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1320, page=98, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 98>
+Package pdftex.def Info: img/scope_code.pdf, page98 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 98>
+Package pdftex.def Info: img/scope_code.pdf, page98 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 98>
+Package pdftex.def Info: img/scope_code.pdf, page98 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [192 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1324, page=99, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 99>
+Package pdftex.def Info: img/scope_code.pdf, page99 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 99>
+Package pdftex.def Info: img/scope_code.pdf, page99 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 99>
+Package pdftex.def Info: img/scope_code.pdf, page99 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [193 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1329, page=100, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 100>
+Package pdftex.def Info: img/scope_code.pdf, page100 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 100>
+Package pdftex.def Info: img/scope_code.pdf, page100 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 100>
+Package pdftex.def Info: img/scope_code.pdf, page100 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [194 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1334, page=101, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 101>
+Package pdftex.def Info: img/scope_code.pdf, page101 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 101>
+Package pdftex.def Info: img/scope_code.pdf, page101 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 101>
+Package pdftex.def Info: img/scope_code.pdf, page101 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [195 <./img/scope_code.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./img/scope_code.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<img/scope_code.pdf, id=1338, page=102, 614.295pt x 794.97pt>
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 102>
+Package pdftex.def Info: img/scope_code.pdf, page102 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+ <use img/scope_code.pdf, page 102>
+Package pdftex.def Info: img/scope_code.pdf, page102 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: img/scope_code.pdf Graphic file (type pdf)
+
+<use img/scope_code.pdf, page 102>
+Package pdftex.def Info: img/scope_code.pdf, page102 used on input line 863.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [196 <./img/scope_code.pdf>]
+(./technical_manual.aux) ) 
 Here is how much of TeX's memory you used:
- 6229 strings out of 493315
- 96160 string characters out of 6137904
- 189929 words of memory out of 5000000
- 9546 multiletter control sequences out of 15000+600000
- 13022 words of font info for 50 fonts, out of 8000000 for 9000
+ 6688 strings out of 493315
+ 107526 string characters out of 6137904
+ 191474 words of memory out of 5000000
+ 9990 multiletter control sequences out of 15000+600000
+ 13628 words of font info for 52 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 47i,18n,51p,1603b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on technical_manual.pdf (80 pages, 2255369 bytes).
+ 47i,18n,51p,1599b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmssbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti10.pfb>
+Output written on technical_manual.pdf (196 pages, 3500171 bytes).
 PDF statistics:
- 719 PDF objects out of 1000 (max. 8388607)
- 496 compressed objects within 5 object streams
+ 1378 PDF objects out of 1440 (max. 8388607)
+ 874 compressed objects within 9 object streams
  0 named destinations out of 1000 (max. 500000)
- 301 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 861 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -34,8 +34,8 @@
       5/27/98  Glen George       Change plot_char() to explicitly declare the
 			         size of the external array to avoid linker
 			         errors.
-	    6/3/14   Santiago Navonne  Changed UI display colors, added support for
-               highlighted characters.
+	  6/3/14   Santiago Navonne  Changed UI display colors, added support for
+                     highlighted characters.
 */
 
 

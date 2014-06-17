@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 JUN 2014 00:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  16 JUN 2014 20:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -311,7 +311,9 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 21.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) [1
+
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Overfull \hbox (6.41429pt too wide) in paragraph at lines 25--26
 \OT1/cmr/m/n/10.95 This guide de-scribes the char-ac-ter-is-tics and op-er-a-ti
 on of the EE/CS 52 System-on-Programmable-
@@ -332,7 +334,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-<img/user_board_layout.png, id=1, 2601.72pt x 1573.88pt>
+<img/user_board_layout.png, id=8, 2601.72pt x 1573.88pt>
 File: img/user_board_layout.png Graphic file (type png)
 
 <use img/user_board_layout.png>
@@ -342,17 +344,13 @@ Package pdftex.def Info: img/user_board_layout.png used on input line 51.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[1
-
-
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<img/user_screen_layout.jpg, id=12, 2601.72pt x 1943.26pt>
+<img/user_screen_layout.jpg, id=10, 2601.72pt x 1943.26pt>
 File: img/user_screen_layout.jpg Graphic file (type jpg)
 
 <use img/user_screen_layout.jpg>
 Package pdftex.def Info: img/user_screen_layout.jpg used on input line 59.
 (pdftex.def)             Requested size: 452.96796pt x 338.32614pt.
-
+ [2]
 Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
@@ -362,17 +360,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
-[2 <./img/user_board_layout.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
-
+[3 <./img/user_board_layout.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
-[3 <./img/user_screen_layout.jpg>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
@@ -392,7 +390,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
-
+[4 <./img/user_screen_layout.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
@@ -412,28 +410,25 @@ Overfull \hbox (38.27612pt too wide) in paragraph at lines 90--99
  [] 
  []
 
-[4] (./user_manual.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[5] (./user_manual.aux) ) 
 Here is how much of TeX's memory you used:
- 4661 strings out of 493315
- 71570 string characters out of 6137904
- 158595 words of memory out of 5000000
- 8051 multiletter control sequences out of 15000+600000
+ 4662 strings out of 493315
+ 71582 string characters out of 6137904
+ 158613 words of memory out of 5000000
+ 8052 multiletter control sequences out of 15000+600000
  12714 words of font info for 49 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  47i,9n,46p,692b,294s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
-sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on user_manual.pdf (4 pages, 9822078 bytes).
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmssbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti10.pfb>
+Output written on user_manual.pdf (5 pages, 9826236 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 44 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

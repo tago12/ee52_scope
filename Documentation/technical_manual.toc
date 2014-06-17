@@ -25,7 +25,13 @@
 \contentsline {subsubsection}{\numberline {2.12.2}Analog to Digital Converter }{76}
 \contentsline {subsection}{\numberline {2.13}Revision History}{79}
 \contentsline {section}{\numberline {3}Software}{80}
-\contentsline {subsection}{\numberline {3.1}System Overview}{80}
-\contentsline {subsection}{\numberline {3.2}Block 1 TODO}{80}
-\contentsline {subsection}{\numberline {3.3}Block 2 TODO}{80}
-\contentsline {subsection}{\numberline {3.4}...}{80}
+\contentsline {subsection}{\numberline {3.1}System Overview }{80}
+\contentsline {subsection}{\numberline {3.2}Initialization and Main Loop}{80}
+\contentsline {subsection}{\numberline {3.3}User Interface}{80}
+\contentsline {subsection}{\numberline {3.4}Trace Processing}{82}
+\contentsline {subsection}{\numberline {3.5}Key Hardware Interface}{82}
+\contentsline {subsection}{\numberline {3.6}Display Hardware Interface}{82}
+\contentsline {subsection}{\numberline {3.7}Analog Hardware Interface}{83}
+\contentsline {section}{Appendices}{85}
+\contentsline {section}{\numberline {A}Original Documents }{85}
+\contentsline {section}{\numberline {B}Software Code }{93}

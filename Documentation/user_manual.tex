@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Preamble 
-\documentclass{scrartcl} 
+\documentclass[titlepage]{scrartcl} 
 \usepackage{amsmath,amssymb,amsthm,fullpage} 
 
 \usepackage{graphicx} % support the \includegraphics command and options
@@ -16,7 +16,7 @@
 	\title{EE/CS 52 SoPC Digital Oscilloscope}
 	\subtitle{User Manual}
 	\author{Santiago Navonne} 
-	\date{Spring 2014} 
+	\date{June 2014} 
 	\maketitle
 
 	
@@ -45,7 +45,7 @@
 	\end{center}
 		
 	\section{Layouts}
-	Users only need to interact with three sections of the printed circuit board: the power connector, the probe connector, and the rotary encoders. All three sections are highlighted in Figure~\ref{fig:user_board_layout}. \\
+	Users only need to interact with three sections of the printed circuit board: the power connector, the probe connector, and the rotary encoders. All three sections are highlighted in Figure~\ref{fig:user_board_layout}. Additionally, users can reset the system using the highlighted Reset button. \\
 
 	\begin{figure}[h]
 	\includegraphics[width=\textwidth]{img/user_board_layout.png}
@@ -84,7 +84,7 @@ The \textit{Slope} menu entry is either Slope + or Slope - and determines whethe
 The \textit{Delay} menu entry determines the trigger delay. It sets the time after the trigger event at which the trace will start. It may be set to any value from the minimum delay to the maximum delay times the sample rate and it is displayed as a time.\\
 
 	\section{User Input}
-	The user input section consists of two rotary encoders located in the lower-left corner of the printed circuit board, as shown in Figure~\ref{fig:user_board_layout}. The function of these knobs are summarized in the table below.
+	The user input section consists of two rotary encoders located in the lower-left corner of the printed circuit board, as shown in Figure~\ref{fig:user_board_layout}. The function of these knobs are summarized in the table below. Additionally, the system can be reset by pressing and releasing the Reset button.
 
 	\begin{center}
     		\begin{tabular}{ p{3cm} p{3cm} p{10cm} }
@@ -93,8 +93,8 @@ The \textit{Delay} menu entry determines the trigger delay. It sets the time aft
 		 & Counter-Clockwise & Move the cursor up, if not already at the top menu item. If at the top, do not move the cursor. \\
 		\\ \hline \\
 		Option Selection & Push-button & Display or hide the menu. If the menu is not being displayed, rotating either rotary encoder has no effect. \\
-		 & Clockwise & Change the currently selected (highlighted) menu item. Go "forward" through the list of possible settings. If at the "end" of the list, don't change the current selection. \\
-		 & Counter-Clockwise & Change the currently selected (highlighted) menu item. Go "backward" through the list of possible settings. If at the "beginning" of the list, don't change the current selection. \\
+		 & Clockwise & Change the currently selected (highlighted) menu item. Go ``forward" through the list of possible settings. If at the ``end" of the list, don't change the current selection. \\
+		 & Counter-Clockwise & Change the currently selected (highlighted) menu item. Go ``backward" through the list of possible settings. If at the ``beginning" of the list, don't change the current selection. \\
 		\end{tabular}
 	\end{center}
 

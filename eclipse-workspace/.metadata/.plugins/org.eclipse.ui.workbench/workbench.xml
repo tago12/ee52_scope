@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="33" version="2.0">
+<workbench progressCount="38" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="1024" x="0" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -40,6 +40,12 @@
 <part id="5"/>
 <part id="6"/>
 <part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
 </presentation>
 </folder>
 </info>
@@ -48,33 +54,57 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sopc_scope_1st/interfac.h"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2361" selectionTopPixel="665"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="mainloop.c" partName="mainloop.c" path="C:/Users/tago/Dropbox/OUT/EE52/software/sopc_scope_1st/mainloop.c" title="mainloop.c" tooltip="sopc_scope_1st/mainloop.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sopc_scope_1st/mainloop.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="1" selectionOffset="3444" selectionTopPixel="905"/>
-</editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="cursor.c" partName="cursor.c" path="C:/Users/tago/Dropbox/OUT/EE52/software/sopc_scope_1st/cursor.c" title="cursor.c" tooltip="sopc_scope_1st/cursor.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sopc_scope_1st/cursor.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1729" selectionTopPixel="427"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1490" selectionTopPixel="461"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="display.S" partName="display.S" path="C:/Users/tago/Dropbox/OUT/EE52/software/sopc_scope_1st/display.S" title="display.S" tooltip="sopc_scope_1st/display.S" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sopc_scope_1st/display.S"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="10334" selectionTopPixel="4269"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="10189" selectionTopPixel="3695"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="lcdout.c" partName="lcdout.c" path="C:/Users/tago/Dropbox/OUT/EE52/software/sopc_scope_1st/lcdout.c" title="lcdout.c" tooltip="sopc_scope_1st/lcdout.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sopc_scope_1st/lcdout.c"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="11722" selectionTopPixel="6530"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="tracutil.c" partName="tracutil.c" path="C:/Users/tago/Dropbox/OUT/EE52/software/sopc_scope_1st/tracutil.c" title="tracutil.c" tooltip="sopc_scope_1st/tracutil.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="tracutil.c" partName="tracutil.c" path="C:/Users/tago/Dropbox/OUT/EE52/software/sopc_scope_1st/tracutil.c" title="tracutil.c" tooltip="sopc_scope_1st/tracutil.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sopc_scope_1st/tracutil.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="31241" selectionTopPixel="18979"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5653" selectionTopPixel="1920"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="tracutil.h" partName="tracutil.h" path="C:/Users/tago/Dropbox/OUT/EE52/software/sopc_scope_1st/tracutil.h" title="tracutil.h" tooltip="sopc_scope_1st/tracutil.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sopc_scope_1st/tracutil.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3302" selectionTopPixel="1080"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3393" selectionTopPixel="1015"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="touch.c" partName="touch.c" path="C:/Users/tago/Dropbox/OUT/EE52/software/sopc_scope_1st/touch.c" title="touch.c" tooltip="sopc_scope_1st/touch.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sopc_scope_1st/touch.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1654" selectionTopPixel="523"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="general.h" partName="general.h" path="C:/Users/tago/Dropbox/OUT/EE52/software/sopc_scope_1st/general.h" title="general.h" tooltip="sopc_scope_1st/general.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sopc_scope_1st/general.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="991" selectionTopPixel="110"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="touch.h" partName="touch.h" path="C:/Users/tago/Dropbox/OUT/EE52/software/sopc_scope_1st/touch.h" title="touch.h" tooltip="sopc_scope_1st/touch.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sopc_scope_1st/touch.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1583" selectionTopPixel="436"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="crt0.S" partName="crt0.S" path="C:/Users/tago/Dropbox/OUT/EE52/software/sopc_scope_1st_bsp/HAL/src/crt0.S" title="crt0.S" tooltip="sopc_scope_1st_bsp/HAL/src/crt0.S" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sopc_scope_1st_bsp/HAL/src/crt0.S"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="15998" selectionTopPixel="8106"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="menuact.c" partName="menuact.c" path="C:/Users/tago/Dropbox/OUT/EE52/software/sopc_scope_1st/menuact.c" title="menuact.c" tooltip="sopc_scope_1st/menuact.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sopc_scope_1st/menuact.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5991" selectionTopPixel="1710"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="trigger.S" partName="trigger.S" path="C:/Users/tago/Dropbox/OUT/EE52/software/sopc_scope_1st/trigger.S" title="trigger.S" tooltip="sopc_scope_1st/trigger.S" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sopc_scope_1st/trigger.S"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3506" selectionTopPixel="9096"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8714" selectionTopPixel="2941"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="keys.s" partName="keys.s" path="C:/Users/tago/Dropbox/OUT/EE52/software/sopc_scope_1st/keys.s" title="keys.s" tooltip="sopc_scope_1st/keys.s" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sopc_scope_1st/keys.s"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="9565" selectionTopPixel="3827"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="mainloop.c" partName="mainloop.c" path="C:/Users/tago/Dropbox/OUT/EE52/software/sopc_scope_1st/mainloop.c" title="mainloop.c" tooltip="sopc_scope_1st/mainloop.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sopc_scope_1st/mainloop.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5110" selectionTopPixel="2747"/>
 </editor>
 </editors>
 <views>
@@ -116,6 +146,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="407"/>
@@ -131,7 +162,7 @@
 </view>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List"/>
 </views>
-<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="com.altera.sbtgui.ui.cPerspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="com.altera.sbtgui.ui.cPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -308,7 +339,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2740472" ratioLeft="302" ratioRight="800" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.6090469" ratioLeft="377" ratioRight="242" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.63489497" ratioLeft="393" ratioRight="226" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -370,15 +401,12 @@
 <new_wizard_action id="com.altera.sbtgui.ui.newLibrary"/>
 <perspective_action id="com.altera.sbtgui.ui.cPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@cb75ae" orientation="256" selectedTabId="org.eclipse.debug.ui.MemoryView" style="0">
 <fastViews>
 <view id="org.eclipse.debug.ui.VariableView" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@67ad5e" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
-<fastViews>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29903537"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="org.eclipse.debug.internal.ui.ToolsFolderView" orientation="256" selectedTabId="org.eclipse.debug.ui.VariableView" style="0">
@@ -398,11 +426,6 @@
 <view id="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" ratio="0.29903537"/>
 </fastViews>
 </fastViewBar>
-<fastViewBar fastViewLocation="131072" id="org.eclipse.debug.internal.ui.NavigatorFolderView" orientation="256" selectedTabId="org.eclipse.debug.ui.DebugView" style="0">
-<fastViews>
-<view id="org.eclipse.debug.ui.DebugView" ratio="0.29903537"/>
-</fastViews>
-</fastViewBar>
 <fastViewBar fastViewLocation="131072" id="org.eclipse.debug.internal.ui.OutlineFolderView" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
 <fastViews>
 <view id="org.eclipse.ui.views.ContentOutline" ratio="0.29977462"/>
@@ -413,7 +436,6 @@
 <mainWindow>
 <info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
 <folder appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.DebugView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
@@ -441,6 +463,22 @@
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@172a80d" ratio="0.7498122" ratioLeft="998" ratioRight="333" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@d99094" ratio="0.55573505" ratioLeft="344" ratioRight="275" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
@@ -480,7 +518,6 @@
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@67ad5e" ratio="0.49962434" ratioLeft="665" ratioRight="666" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
 <folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
@@ -491,167 +528,168 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/sopc_scope_1st/tracutil.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/sopc_scope_1st/lcdout.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/sopc_scope_1st/touch.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/sopc_scope_1st/mainloop.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/sopc_scope_1st/cursor.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/sopc_scope_1st/display.S"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/sopc_scope_1st/tracutil.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/sopc_scope_1st/touch.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/sopc_scope_1st/general.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/sopc_scope_1st_bsp/system.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/sopc_scope_1st_bsp/HAL/src/crt0.S"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/sopc_scope_1st/keys.s"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/sopc_scope_1st/sopc_scope_1st.map"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/sopc_scope_1st/menuact.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/sopc_scope_1st/tracutil.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/sopc_scope_1st/trigger.S"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/sopc_scope_1st/display.S"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/sopc_scope_1st/trigger.S"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/sopc_scope_1st/lcdout.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/sopc_scope_1st/tracutil.h"/>
 </editors>
-<item historyLabel="lcdout.c" index="1">
-<position/>
+<item historyLabel="touch.h" index="3">
+<position info="not_deleted" x="1764" y="0"/>
 </item>
-<item historyLabel="tracutil.c" index="0">
-<position info="not_deleted" x="28871" y="0"/>
+<item historyLabel="touch.c" index="0">
+<position info="not_deleted" x="1894" y="0"/>
 </item>
-<item historyLabel="lcdout.c" index="1">
-<position/>
+<item historyLabel="touch.c" index="0">
+<position info="not_deleted" x="1877" y="0"/>
 </item>
-<item historyLabel="tracutil.c" index="0">
-<position info="not_deleted" x="28776" y="0"/>
+<item historyLabel="general.h" index="4">
+<position info="not_deleted" x="991" y="0"/>
 </item>
-<item historyLabel="display.S" index="4">
-<position/>
+<item historyLabel="touch.h" index="3">
+<position info="not_deleted" x="1583" y="0"/>
 </item>
-<item historyLabel="cursor.c" index="3">
-<position info="not_deleted" x="1729" y="0"/>
+<item historyLabel="tracutil.c" index="2">
+<position info="not_deleted" x="5078" y="0"/>
 </item>
-<item historyLabel="display.S" index="4">
-<position/>
+<item historyLabel="touch.c" index="0">
+<position info="not_deleted" x="1877" y="0"/>
 </item>
-<item historyLabel="tracutil.c" index="0">
-<position info="not_deleted" x="28776" y="0"/>
+<item historyLabel="general.h" index="4">
+<position info="not_deleted" x="991" y="0"/>
 </item>
-<item historyLabel="lcdout.c" index="1">
-<position/>
+<item historyLabel="touch.c" index="0">
+<position info="not_deleted" x="1509" y="0"/>
 </item>
-<item historyLabel="display.S" index="4">
-<position info="not_deleted" x="4589" y="0"/>
+<item historyLabel="system.h" index="5">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="lcdout.c" index="1">
-<position/>
+<item historyLabel="system.h" index="5">
+<position info="not_deleted" x="7271" y="0"/>
 </item>
-<item historyLabel="lcdout.c" index="1">
-<position/>
+<item historyLabel="touch.c" index="0">
+<position info="not_deleted" x="1659" y="0"/>
 </item>
-<item historyLabel="display.S" index="4">
-<position info="not_deleted" x="4803" y="0"/>
+<item historyLabel="crt0.S" index="6">
+<position info="not_deleted" x="10037" y="0"/>
 </item>
-<item historyLabel="lcdout.c" index="1">
-<position info="not_deleted" x="13850" y="0"/>
+<item historyLabel="mainloop.c" index="1">
+<position info="not_deleted" x="3423" y="0"/>
 </item>
-<item historyLabel="tracutil.c" index="0">
-<position info="not_deleted" x="26129" y="0"/>
+<item historyLabel="touch.c" index="0">
+<position info="not_deleted" x="1810" y="0"/>
 </item>
-<item historyLabel="mainloop.c" index="2">
-<position info="not_deleted" x="4620" y="0"/>
+<item historyLabel="mainloop.c" index="1">
+<position info="not_deleted" x="3423" y="0"/>
 </item>
-<item historyLabel="lcdout.c" index="1">
-<position info="not_deleted" x="12114" y="0"/>
+<item historyLabel="touch.c" index="0">
+<position info="not_deleted" x="1609" y="0"/>
 </item>
-<item historyLabel="tracutil.c" index="0">
-<position info="not_deleted" x="26129" y="0"/>
+<item historyLabel="touch.c" index="0">
+<position info="not_deleted" x="1660" y="0"/>
 </item>
-<item historyLabel="tracutil.c" index="0">
-<position info="not_deleted" x="28801" y="0"/>
+<item historyLabel="touch.c" index="0">
+<position info="not_deleted" x="1730" y="0"/>
 </item>
-<item historyLabel="tracutil.c" index="0">
-<position info="not_deleted" x="5463" y="0"/>
+<item historyLabel="touch.c" index="0">
+<position info="not_deleted" x="1781" y="0"/>
 </item>
-<item historyLabel="tracutil.h" index="5">
-<position info="not_deleted" x="3302" y="0"/>
+<item historyLabel="general.h" index="4">
+<position info="not_deleted" x="991" y="0"/>
 </item>
-<item historyLabel="tracutil.c" index="0">
-<position info="not_deleted" x="5463" y="0"/>
+<item historyLabel="touch.c" index="0">
+<position info="not_deleted" x="1781" y="0"/>
 </item>
-<item historyLabel="lcdout.c" index="1">
-<position info="not_deleted" x="12114" y="0"/>
+<item historyLabel="touch.c" index="0">
+<position info="not_deleted" x="1853" y="0"/>
 </item>
-<item historyLabel="tracutil.c" index="0">
-<position info="not_deleted" x="5463" y="0"/>
+<item historyLabel="touch.c" index="0">
+<position info="not_deleted" x="1894" y="0"/>
 </item>
-<item historyLabel="tracutil.c" index="0">
-<position/>
+<item historyLabel="touch.c" index="0">
+<position info="not_deleted" x="1654" y="0"/>
 </item>
-<item historyLabel="tracutil.c" index="0">
-<position/>
+<item historyLabel="crt0.S" index="6">
+<position info="not_deleted" x="10037" y="0"/>
 </item>
-<item historyLabel="tracutil.c" index="0">
-<position/>
+<item historyLabel="keys.s" index="7">
+<position info="not_deleted" x="9565" y="0"/>
 </item>
-<item historyLabel="tracutil.c" index="0">
-<position/>
+<item historyLabel="sopc_scope_1st.map" index="8">
+<position info="not_deleted" x="1332" y="0"/>
 </item>
-<item historyLabel="tracutil.h" index="5">
-<position info="not_deleted" x="3302" y="0"/>
+<item historyLabel="keys.s" index="7">
+<position info="not_deleted" x="9565" y="0"/>
 </item>
-<item historyLabel="mainloop.c" index="2">
-<position info="not_deleted" x="4620" y="0"/>
+<item historyLabel="mainloop.c" index="1">
+<position info="not_deleted" x="3423" y="0"/>
 </item>
-<item historyLabel="tracutil.h" index="5">
-<position info="not_deleted" x="3302" y="0"/>
+<item historyLabel="crt0.S" index="6">
+<position info="not_deleted" x="15998" y="0"/>
 </item>
-<item historyLabel="tracutil.c" index="0">
-<position/>
+<item historyLabel="mainloop.c" index="1">
+<position info="not_deleted" x="3423" y="0"/>
 </item>
-<item historyLabel="mainloop.c" index="2">
-<position info="not_deleted" x="3382" y="0"/>
+<item historyLabel="menuact.c" index="9">
+<position info="not_deleted" x="36654" y="0"/>
 </item>
-<item historyLabel="tracutil.c" index="0">
-<position info="not_deleted" x="26863" y="0"/>
+<item historyLabel="mainloop.c" index="1">
+<position info="not_deleted" x="6946" y="0"/>
 </item>
-<item historyLabel="trigger.S" index="6">
-<position info="not_deleted" x="3506" y="0"/>
+<item historyLabel="menuact.c" index="9">
+<position info="not_deleted" x="36654" y="0"/>
 </item>
-<item historyLabel="tracutil.h" index="5">
-<position info="not_deleted" x="3302" y="0"/>
-</item>
-<item historyLabel="tracutil.c" index="0">
-<position info="not_deleted" x="5446" y="0"/>
-</item>
-<item historyLabel="tracutil.c" index="0">
-<position info="not_deleted" x="26944" y="0"/>
-</item>
-<item historyLabel="lcdout.c" index="1">
-<position info="not_deleted" x="12114" y="0"/>
-</item>
-<item historyLabel="tracutil.c" index="0">
-<position info="not_deleted" x="32521" y="0"/>
-</item>
-<item historyLabel="display.S" index="4">
-<position info="not_deleted" x="10334" y="0"/>
-</item>
-<item historyLabel="lcdout.c" index="1">
-<position info="not_deleted" x="11722" y="0"/>
-</item>
-<item historyLabel="tracutil.c" index="0">
-<position info="not_deleted" x="32521" y="0"/>
-</item>
-<item historyLabel="tracutil.c" index="0">
-<position info="not_deleted" x="27010" y="0"/>
-</item>
-<item historyLabel="display.S" index="7">
-<position info="not_deleted" x="10334" y="0"/>
-</item>
-<item historyLabel="trigger.S" index="8">
-<position info="not_deleted" x="3506" y="0"/>
-</item>
-<item historyLabel="display.S" index="7">
-<position info="not_deleted" x="10334" y="0"/>
-</item>
-<item historyLabel="lcdout.c" index="9">
-<position info="not_deleted" x="11722" y="0"/>
+<item historyLabel="tracutil.c" index="2">
+<position info="not_deleted" x="5078" y="0"/>
 </item>
 <item historyLabel="tracutil.h" index="10">
-<position info="not_deleted" x="3302" y="0"/>
+<position info="not_deleted" x="3393" y="0"/>
 </item>
-<item active="true" historyLabel="tracutil.c" index="0">
-<position info="not_deleted" x="5226" y="0"/>
+<item historyLabel="tracutil.c" index="2">
+<position/>
+</item>
+<item historyLabel="tracutil.h" index="10">
+<position info="not_deleted" x="3393" y="0"/>
+</item>
+<item historyLabel="tracutil.c" index="2">
+<position info="not_deleted" x="27242" y="0"/>
+</item>
+<item historyLabel="mainloop.c" index="1">
+<position info="not_deleted" x="5041" y="0"/>
+</item>
+<item historyLabel="tracutil.c" index="2">
+<position/>
+</item>
+<item historyLabel="mainloop.c" index="1">
+<position/>
+</item>
+<item historyLabel="tracutil.c" index="2">
+<position info="not_deleted" x="5653" y="0"/>
+</item>
+<item historyLabel="mainloop.c" index="1">
+<position/>
+</item>
+<item historyLabel="menuact.c" index="9">
+<position info="not_deleted" x="36654" y="0"/>
+</item>
+<item historyLabel="trigger.S" index="11">
+<position info="not_deleted" x="8714" y="0"/>
+</item>
+<item historyLabel="mainloop.c" index="1">
+<position info="not_deleted" x="4883" y="0"/>
+</item>
+<item historyLabel="menuact.c" index="9">
+<position info="not_deleted" x="5991" y="0"/>
+</item>
+<item active="true" historyLabel="mainloop.c" index="1">
+<position info="not_deleted" x="3492" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -680,47 +718,50 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mainloop.c" tooltip="sopc_scope_1st/mainloop.c">
+<persistable path="/sopc_scope_1st/mainloop.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="sopc_scope_1st.map" tooltip="sopc_scope_1st/sopc_scope_1st.map">
+<persistable path="/sopc_scope_1st/sopc_scope_1st.map"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" tooltip="sopc_scope_1st_bsp/system.h">
+<persistable path="/sopc_scope_1st_bsp/system.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="keys.s" tooltip="sopc_scope_1st/keys.s">
+<persistable path="/sopc_scope_1st/keys.s"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="trigger.S" tooltip="sopc_scope_1st/trigger.S">
 <persistable path="/sopc_scope_1st/trigger.S"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tracutil.h" tooltip="sopc_scope_1st/tracutil.h">
-<persistable path="/sopc_scope_1st/tracutil.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="menuact.c" tooltip="sopc_scope_1st/menuact.c">
+<persistable path="/sopc_scope_1st/menuact.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="crt0.S" tooltip="sopc_scope_1st_bsp/HAL/src/crt0.S">
 <persistable path="/sopc_scope_1st_bsp/HAL/src/crt0.S"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="alt_busy_sleep.c" tooltip="sopc_scope_1st_bsp/HAL/src/alt_busy_sleep.c">
+<persistable path="/sopc_scope_1st_bsp/HAL/src/alt_busy_sleep.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="touch.h" tooltip="sopc_scope_1st/touch.h">
+<persistable path="/sopc_scope_1st/touch.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="alt_exception_entry.S" tooltip="sopc_scope_1st_bsp/HAL/src/alt_exception_entry.S">
+<persistable path="/sopc_scope_1st_bsp/HAL/src/alt_exception_entry.S"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="keys.h" tooltip="sopc_scope_1st/keys.h">
+<persistable path="/sopc_scope_1st/keys.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="general.h" tooltip="sopc_scope_1st/general.h">
+<persistable path="/sopc_scope_1st/general.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="touch.c" tooltip="sopc_scope_1st/touch.c">
+<persistable path="/sopc_scope_1st/touch.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tracutil.h" tooltip="sopc_scope_1st/tracutil.h">
+<persistable path="/sopc_scope_1st/tracutil.h"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tracutil.c" tooltip="sopc_scope_1st/tracutil.c">
 <persistable path="/sopc_scope_1st/tracutil.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="keyproc.h" tooltip="sopc_scope_1st/keyproc.h">
-<persistable path="/sopc_scope_1st/keyproc.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="keyproc.c" tooltip="sopc_scope_1st/keyproc.c">
-<persistable path="/sopc_scope_1st/keyproc.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lcdout.h" tooltip="sopc_scope_1st/lcdout.h">
-<persistable path="/sopc_scope_1st/lcdout.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lcdout.c" tooltip="sopc_scope_1st/lcdout.c">
-<persistable path="/sopc_scope_1st/lcdout.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="display.S" tooltip="sopc_scope_1st/display.S">
-<persistable path="/sopc_scope_1st/display.S"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="scopedef.h" tooltip="sopc_scope_1st/scopedef.h">
-<persistable path="/sopc_scope_1st/scopedef.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="cursor.h" tooltip="sopc_scope_1st/cursor.h">
-<persistable path="/sopc_scope_1st/cursor.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="cursor.c" tooltip="sopc_scope_1st/cursor.c">
-<persistable path="/sopc_scope_1st/cursor.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mainloop.c" tooltip="sopc_scope_1st/mainloop.c">
-<persistable path="/sopc_scope_1st/mainloop.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="interfac.h" tooltip="sopc_scope_1st/interfac.h">
-<persistable path="/sopc_scope_1st/interfac.h"/>
 </file>
 </mruList>
 </workbench>

@@ -26,6 +26,8 @@
 #define    TRIG_LEVEL_SHIFT 1        /* Shift trig level left once to convert [0, 127] -> [0, 255] */
 #define    CALIBRATION   13          /* DC offset of front end */
 #define    DELAY_CONSTANT   1        /* Hardware delay offset */
+#define    MAXDELAY      0xFFFFFFFF - 1 - DELAY_CONSTANT
+                                     /* Maximum delay must take hardware delay offset into account */
 
 /* Masks */
 #define    FIFO_INT      1           /* FIFO interrupt bit */

@@ -6,16 +6,20 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{pdfpages}
+\usepackage{calc}
+\usepackage[toc,page]{appendix}
 
 \begin{document}
 \pagestyle{plain}
 \pagenumbering{arabic}
 
+\setlength{\footskip}{\footskip+1cm}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Heading 
 	\title{EE/CS 52 SoPC Digital Oscilloscope}
 	\subtitle{Technical Manual}
 	\author{Santiago Navonne} 
-	\date{Spring 2014} 
+	\date{June 2014} 
 	\maketitle
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Table of Contents
@@ -45,11 +49,13 @@
                	\label{fig:main_blocks}
 	\end{figure}
 	
-	The central component of the system is the NIOS II CPU, a soft-core device generated within the FPGA. A NIOS II/e processor is used upon power-up, and can be upgraded to the faster NIOS II/s by connecting the device to a computer. Within the NIOS CPU are included the chip select decoding and interrupt control logic sections. The chip select decoding logic uses the address bus to activate the chip select control line of the device being accessed, if it requires one. The interrupt controller processes interrupt control signals from hardware devices and makes them available to software procedures.\\
+	The central component of the system is the NIOS II CPU, a soft-core device generated within the FPGA. A NIOS II/f processor is used upon power-up, and can be upgraded to the faster NIOS II/s by connecting the device to a computer. Within the NIOS CPU are included the chip select decoding and interrupt control logic sections. The chip select decoding logic uses the address bus to activate the chip select control line of the device being accessed, if it requires one. The interrupt controller processes interrupt control signals from hardware devices and makes them available to software procedures.\\
 
 	The display controller, also included within the FPGA, controls the VRAM serial clock and all of the display timing signals, updating the VRAM serial data bus as needed to ensure that data is correctly shown on the display. The debouncers and decoders take signals from the user input sections of the system (i.e. rotary encoders and push-button switches), and process them to translate them into interrupt signals for the processor. These signals are accessed through a Parallel IO (PIO) interface. The triggering logic is configured through a PIO interface, and reads the signal output by the ADC, determining the correct moment to trigger based on triggering mode, level, slope, and delay parameters. The component then instructs the FIFO to start writing samples as necessary. The First-In First-Out (FIFO) data structure stores samples to be processed by the CPU. The FIFO starts being filled when instructed by the trigger, and once full transmits this signal to both the trigger, which disables the trigger signal, and the CPU, which goes ahead and processes the samples.\\
 
 	Outside the FPGA but closely related is the reset logic, which generates a reset signal for the NIOS CPU on power-up, power failure, and when requested by the user. Similarly, the clock logic is an outside component that generates a constant, 38 MHz clock signal used throughout the system. A JTAG connector and interface is used to program and debug the FPGA and NIOS CPU.\\
+
+	\clearpage 
 
 	Every signal exiting the FPGA, with the sole exception of the I$^2$C bus, is buffered. These chips provide a layer of protection for the FPGA, as well as more driving power and voltage flexibility for the components being operated.\\
 
@@ -61,13 +67,13 @@
 
 	Two rotary encoders with momentary push-button switches provide the user-input interface of the system: the devices are connected to the FPGA and then the decoders and debouncers, which filter process the signals before making them available to the CPU. Finally, a touch screen controller, currently unimplemented, communicates with the CPU over an I$^2$C bus and a dedicated interrupt line used to identify touch screen events. This line is made available to the CPU through a PIO interface. The controller uses an analog interface to drive and read the touch screen.\\
 	
-	All these elements, after being designed in detail and their connections finalized, are physically placed on a printed circuit board. The front of the board is illustrated in Figure~\ref{fig:pcb}, where each section is highlighted in a different color: the FPGA and related components are colored red; the buffers are green; the memory devices are yellow; the power supply circuitry is blue; the analog interface is orange; the display connector is pink; and the rotary encoders are brown. The components without any highlighting are prototyping and debugging holes and pins, unused in the final design. The back of the board is shown in figure \ref{fib:pcb_back}. Note that no components other than capacitors and resistors are placed on the back of the board, and thus nothing is highlighted.\\
+	All these elements, after being designed in detail and their connections finalized, are physically placed on a printed circuit board. The front of the board is illustrated in Figure~\ref{fig:pcb}, where each section is highlighted in a different color: the FPGA and related components are colored red; the buffers are green; the memory devices are yellow; the power supply circuitry is blue; the analog interface is orange; the display connector is pink; and the rotary encoders are brown. The components without any highlighting are prototyping and debugging holes and pins, unused in the final design. The back of the board is shown in figure \ref{fig:pcb_back}. Note that no components other than capacitors and resistors are placed on the back of the board, and thus nothing is highlighted.\\
 
 	\begin{figure}[h!]
 	\vspace{-2cm}
-	\centerline{\includegraphics[width=28cm, angle=90, origin=c]{img/pcb.pdf}}
+	\centerline{\includegraphics[width=28cm, angle=90, origin=c]{img/pcb.png}}
 		\vspace{-2cm}
-                	\caption{Front side of the system's Printed Circuit Board (PCB). The color each section is highlighted in identifies the corresponding block.}
+                	\caption{Front side of the system's Printed Circuit Board (PCB). The color each section is highlighted and identifies the corresponding block.}
                	\label{fig:pcb}
 	\end{figure}
 
@@ -90,7 +96,7 @@
 	\clearpage
 
 	\subsection{FPGA \label{sec:fpga}}
-	An Altera EP3C25Q240 Cyclone III Field Programmable Gate Array (FPGA), \textit{U2}, is the central unit of the system. The component and its associated parts are at the center of the PCB, highlighted in red in Figure~\ref{fig:pcb}. Its connections at a system's level are illustrated in the schematic of Figure~\ref{fig:fpga_schematic}. The device is programmed and debugged through a JTAG interface. After debugging, the final design is loaded upon power-on from the serial memory device \textit{U4} through lines \textit{DATA0} and \textit{DATA1}, clocked by \textit{DCLK} and configured through \textit{nCSO}; the debugging and design loading configuration is determined by the MSEL jumpers \textit{JP2}, \textit{JP3}, and \textit{JP4}. Pins 100 and 103 are pulled high through \textit{R1} and \textit{R2} to act as the I$^2$C bus lines \textit{SDA} and \textit{SCL}. Configuration lines \textit{INIT\_DONE}, \textit{CONF\_DONE}, and \textit{nSTATUS} are pulled high, while \textit{nCE} and \textit{CLKUSR} are tied low. Configuration lines \textit{DEV\_OE}, \textit{DEV\_CLRn}, and \textit{nCEO} can be left floating, and are therefore connected to break-out pins in \textit{J3}. Finally, memory selection configuration lines \textit{MSEL2..0} are made available on headers \textit{JP4..2}. For the correct operation of the device, \textit{MSEL2} and \textit{MSEL0} should be jumped on the HI position, while \textit{MSEL1} should be configured to the LO position.\\
+	An Altera EP3C25Q240 Cyclone III Field Programmable Gate Array (FPGA), \textit{U2}, is the central unit of the system. The component and its associated parts are at the center of the PCB, highlighted in red in Figure~\ref{fig:pcb}. Its connections at a system's level are illustrated in the schematic of Figure~\ref{fig:fpga_schematic}. The device is programmed and debugged through a JTAG interface. After debugging, the final design is loaded upon power-on from the serial memory device \textit{U4} through lines \textit{DATA0} and \textit{DATA1}, clocked by \textit{DCLK} and configured through \textit{nCSO}; the debugging and design loading configuration is determined by the \textit{MSEL2..0} jumpers \textit{JP2}, \textit{JP3}, and \textit{JP4}; for the correct operation of the device, \textit{MSEL2} and \textit{MSEL0} should be jumped on the HI position, while \textit{MSEL1} should be configured to the LO position. Pins 100 and 103 are pulled high through \textit{R1} and \textit{R2} to act as the I$^2$C bus lines \textit{SDA} and \textit{SCL}. Configuration lines \textit{INIT\_DONE}, \textit{CONF\_DONE}, and \textit{nSTATUS} are pulled high, while \textit{nCE} and \textit{CLKUSR} are tied low. Configuration lines \textit{DEV\_OE}, \textit{DEV\_CLRn}, and \textit{nCEO} can be left floating, and are therefore connected to break-out pins in \textit{J3}.
 
 	\begin{figure}[h!]
 	\vspace{-2cm}
@@ -117,7 +123,7 @@
 
 	The bottom left block, \textit{SR1}, is a necessary component for the functioning of the system's serial memory device (\textit{U4}).\\
 
-	In the bottom right, we recognize the VRAM (\textit{VRAM1}) and display (\textit{DISP1}) controllers. These components' inputs are connected to the processor (\textit{CPU1}), with the exception of the interconnected serial row update request (\textit{UREQ}) and acknowledge (\textit{UACK}) signals. The VRAM receives its own dedicated address bus shifted right twice to turn 4-byte addressing into single-word addressing (\textit{vaddr\_out19..2} to \textit{A17..9} and \textit{A8..0}). The dedicated chip select (\textit{CS}) and shared write enable (\textit{WE}) signals are operated as for any other generic controller. All clocks are connected to the system clock. Finally, these two components output all the necessary timing signals for the display and VRAM devices on pins 82, 83, 87, 88, 93-95, 98. Additionally, the VRAM controller output a \textit{RDY} signal, converted to an active-high \textit{WAIT} signal for the processor through inverter \textit{NOT}, to regulate the VRAM access cycles, which use a variable number of wait states.\\
+	In the bottom right, we recognize the VRAM (\textit{VRAM1}) and display (\textit{DISP1}) controllers. These components' inputs are connected to the processor (\textit{CPU1}), with the exception of the interconnected serial row update request (\textit{UREQ}) and acknowledge (\textit{UACK}) signals. The VRAM receives its own dedicated address bus shifted right twice to turn 4-byte addressing into single-word addressing (\textit{vaddr\_out19..2} to \textit{A17..9} and \textit{A8..0}). The dedicated chip select (\textit{CS}) and shared write enable (\textit{WE}) signals are operated as for any other generic controller. All clocks are connected to the system clock. Finally, these two components output all the necessary timing signals for the display and VRAM devices on pins 82, 83, 87, 88, 93-95, 98. Additionally, the VRAM controller outputs a \textit{RDY} signal, converted to an active-high \textit{WAIT} signal for the processor through inverter \textit{NOT}, to regulate the VRAM access cycles, which use a variable number of wait states.\\
 
 	In the top right, we see the system's NIOS processor (\textit{CPU1}). Apart from the previously described connections, the devices shared address (\textit{ADDR\_BUS18..0}) and data (\textit{DATA\_BUS23..0}) buses for the ROM and RAM devices are output on pins 114, 117-120, 126-128, 131-135, 137, 139, 142, 143, 146-148, 160, 161, 166, 167, 181-189, 194-197, 200-203, 217. The write enable signal (\textit{WE}) is output to the RAM on pin 168, and is also used as the direction signal for the data bus buffers (\textit{U6}, \textit{U9}) on pin 207 (\textit{DATA\_DIR}). The RAM and ROM's dedicated chip select signals (\textit{CS1}, \textit{CS0}) are output on pins 171 and 173, respectively.\\
 
@@ -152,8 +158,8 @@
 		\hline
 		\end{tabular}
 		\end{center}
-	     \label{tab:qsys}
               \caption{Central Processing Unit and related devices configured within the QSys part of the FPGA design.}
+	     \label{tab:qsys}
 	\end{table}
 
 	Note that the Interrupt Controller and Chip Select blocks are automatically implemented by the Altera tool chain, and are therefore not described in this document; these are compiled together with the SoPC design in QSys.\\
@@ -175,13 +181,13 @@
 
 	Manual trigger events are generated in the middle section of the block diagram. Here, the sample from the ADC (\textit{DATA7..0}) is sent through three chained delayed flip-flops (TDFF2) to remove any glitches, and then compared to the desired trigger level (input at \textit{LEVEL7..0}). \textit{CMP2} thus generates the \textit{TL} and \textit{TEQ} signals required by the ScopeTrigger state machine, instantiated in \textit{TRIG1}. This component, which also takes the slope (\textit{SLOPE}), sample clock, and reset signal (\textit{RESET}), generates a trigger event (\textit{TrigEvent}) when the input signal intersects the desired trigger level with the requested slope. The component is part of the EE/CS 52 library, and its code is provided in the next few pages for reference.\\
 
-	\includepdf[pages={-}]{scoptrig.pdf}
+	\includepdf[pages={-}]{img/scoptrig.pdf}
 
-	Trigger events generate by \textit{TRIG1} are then sent through the delay logic. Since the events only last one clock (i.e. only a pulse is generated), \textit{TrigEvent} is used to set J/K flip flop \textit{FF2}. The output of \textit{FF2} enables a counter (\textit{CT2}) that counts sample clocks. When the number of sample clocks from the trigger event reaches the requested 32-bit delay (\textit{DELAY31..0}), \textit{CMP3}'s output goes high. This output clears \textit{FF2}, disabling the counter until the next trigger event, and \textit{CT2}, resetting the counter. Note that \textit{CT2} is also reset on \textit{RESET} events. \textit{CMP3}'s output is therefore a single sample-clock long pulse that is low at all times, except for \textit{DELAY31..0} sample clocks after a \textit{TrigEvent}.\\
+	Trigger events generated by \textit{TRIG1} are then sent through the delay logic. Since the events only last one clock (i.e. only a pulse is generated), \textit{TrigEvent} is used to set J/K flip flop \textit{FF2}. The output of \textit{FF2} enables a counter (\textit{CT2}) that counts sample clocks. When the number of sample clocks from the trigger event reaches the requested 32-bit delay (\textit{DELAY31..0}), \textit{CMP3}'s output goes high. This output clears \textit{FF2}, disabling the counter until the next trigger event, and \textit{CT2}, resetting the counter. Note that \textit{CT2} is also reset on \textit{RESET} events. \textit{CMP3}'s output is therefore a single sample-clock long pulse that is low at all times, except for \textit{DELAY31..0} sample clocks after a \textit{TrigEvent}.\\
 
-	The bottom section of the diagram uses the so far generated delayed trigger events and other settings from the CPU to correctly fill the FIFO (\textit{FIFO1}). When automatic triggering is disabled (\textit{AUTO\_TRIG} low), counter \textit{CT8} gets constantly cleared and is therefore ``bypassed." If writing to the FIFO is disabled because no sample has been started (\textit{FIFO\_WE} high), J/K flip-flop \textit{FF1} will be cleared, and its output, \textit{FIFO1}'s \textit{wrreq}, will be disabled; no data will thus be written to the FIFO. If writing to the FIFO is enabled (\textit{FIFO\_WE} low), \textit{FF1} will be set through \textit{G4} whenever a delayed trigger event (output of \textit{CMP3}) is received. Once \textit{FF1} is set, \textit{wrreq} becomes enabled, and samples from the ADC (\textit{DATA7..0}), sent through three additional delayed flip-flops (\textit{TDFF1}) for pipelining, are written to the FIFO. When the FIFO becomes full, \textit{G5} clears \textit{FF1}, disabling writing to \textit{FIFO1}. The FIFO full signal also acts as an interrupt for the processor through output \textit{FIFO\_FULL}, prompting it to read the completed sample. The sample is read by first disabling writing (sending \textit{FIFO\_WE} low), and then bit-banging the read clock (\textit{READ}). Since the read enable line (\textit{rdreq}) is permanently enabled, every time the \textit{READ} line transitions from low to high a new sample is output from \textit{FIFO1} onto \textit{SAMPLE7..0}. \textit{RESET} signals clear the \textit{FIFO1}.\\
+	The bottom section of the diagram uses the so far generated delayed trigger events and other settings from the CPU to correctly fill the FIFO (\textit{FIFO1}). When automatic triggering is disabled (\textit{AUTO\_TRIG} low), counter \textit{CT8} gets constantly cleared and is therefore ``bypassed." If writing to the FIFO is disabled because no sample has been started (\textit{FIFO\_WE} high), J/K flip-flop \textit{FF1} will be cleared, and its output, \textit{FIFO1}'s \textit{wrreq}, will be disabled; no data will thus be written to the FIFO. If writing to the FIFO is enabled (\textit{FIFO\_WE} low), \textit{FF1} will be set through \textit{G4} whenever a delayed trigger event (output of \textit{CMP3}) is received. Once \textit{FF1} is set, \textit{wrreq} becomes enabled, and samples from the ADC (\textit{DATA7..0}), sent through three additional delayed flip-flops (\textit{TDFF1}) for pipelining, are written to the FIFO. When the FIFO becomes full, \textit{G5} clears \textit{FF1}, disabling writing to \textit{FIFO1}. The FIFO full signal also acts as an interrupt for the processor through output \textit{FIFO\_FULL}, prompting it to read the completed sample. The sample is read by first disabling writing (sending \textit{FIFO\_WE} low), and then bit-banging the read clock (\textit{READ}). Since the read enable line (\textit{rdreq}) is permanently enabled, every time the \textit{READ} line transitions from low to high a new sample is output from \textit{FIFO1} onto \textit{SAMPLE7..0}. \textit{RESET} signals clear \textit{FIFO1}.\\
 
-	When automatic triggering is enabled (\textit{AUTO\_TRIG} high), the logic described above still applies with one addition: counter \textit{CT8} is enabled as long as writing to the FIFO is enabled too (\textit{FIFO\_WE} low), and the FIFO is not currently being written to (input to \textit{wrreq} low). When the counter reaches 380,000, a timeout designed to count 10 ms on the 38 MHz system clock, comparator \textit{CMP12} transitions to high, causing the FIFO to start being written to (\textit{wrreq} sent high). This in turns disables counting in \textit{CT8}, which causes the output of \textit{CMP12} to stay high until writing is disabled (that is until the samples are read). This mechanism effectively forces the generation of a trigger 10 ms after a sample is started, if no regular trigger was generated before then.\\
+	When automatic triggering is enabled (\textit{AUTO\_TRIG} high), the logic described above still applies with one addition: counter \textit{CT8} is enabled as long as writing to the FIFO is enabled too (\textit{FIFO\_WE} low), and the FIFO is not currently being written to (input to \textit{wrreq} low). When the counter reaches 380,000, a timeout designed to count 10 ms on the 38 MHz system clock, comparator \textit{CMP12} transitions to high, causing the FIFO to start being written to (\textit{wrreq} sent high). This in turns disables counting in \textit{CT8}, which causes the output of \textit{CMP12} to stay high until writing is disabled (that is, until the samples are read). This mechanism effectively forces the generation of a trigger 10 ms after a sample is started, if no regular trigger was generated before then.\\
 
 	In a typical interaction, the processor will configure all triggering settings, and send the \textit{FIFO\_WE} line low to start the sample. When a sample is completed, the \textit{FIFO\_FULL} line will exhibit a rising edge. The processor must thus disable the \textit{FIFO\_WE} line (send it high), and clock the \textit{READ} line appropriately to extract all 512 samples from \textit{FIFO1}. Any time settings are changed, the processor should reset the triggering logic by pulsing the \textit{RESET} line high. The line may be maintained high while setting are being changed.\\
 
@@ -200,7 +206,7 @@
 
 	The component takes the signal from the push-button, \textit{BUTTON}, and a debouncing clock, \textit{DEBOUNCE\_CLK}, as inputs. \textit{BUTTON} is assumed to be active-low to support pulled-up switches that are grounded upon activation.\\
 
-	As long as \textit{BUTTON} is high, counter \textit{CT3} will keep getting cleared, and its count enable line will be active; the counter will therefore not count. When \textit{BUTTON} goes low, the counter will start counting \textit{DEBOUNCE\_CLK}. When this value reaches 380,000, the output of \textit{CMP4} will go high. The compare constant was chosen to generate a 10 ms delay on the 38 MHz clock used in the system, and input into \textit{DEBOUNCE\_CLK}. \textit{CMP4}'s output is then inverted to create an active-low signal that is used to prevent \textit{CT3} from counting (and therefore wrapping around and deboucing the signal again), output on line \textit{DEBOUNCED}.
+	As long as \textit{BUTTON} is high, counter \textit{CT3} will keep getting cleared, and its count enable line will be active; the counter will therefore not count. When \textit{BUTTON} goes low, the counter will start counting \textit{DEBOUNCE\_CLK}. When this value reaches 380,000, the output of \textit{CMP4} will go high. The compare constant was chosen to generate a 10 ms delay on the 38 MHz clock used in the system, and input into \textit{DEBOUNCE\_CLK}. \textit{CMP4}'s output is then inverted to create an active-low signal that is used to prevent \textit{CT3} from counting (and therefore wrapping around and deboucing the signal again) and output on line \textit{DEBOUNCED}.
 
 	\clearpage
 	
@@ -217,7 +223,7 @@
 
 	The component takes the \textit{A} and \textit{B} signals from the rotary encoder, which is assumed to have detents only on \textit{A} and \textit{B} active (high), and a decoding clock, \textit{DECODE\_CLK}, as inputs. The bottom part of the block diagram generates an enable signal, while the top part determines the direction of rotation.\\
 
-	To determine whether the encoder was turned (i.e. to generate an enable signal "clock"), an S/R flip-flop, \textit{FF4}, is used. \textit{FF4} is set when both \textit{A} and \textit{B} are high, that is when the encoder finds itself at a detent. \textit{FF4} is reset when both \textit{A} and \textit{B} are low, that is when the encoder is between detents. Since rotary encoders only bounce between adjacent positions, the set and reset signals on \textit{FF4} will not bounce. The output of \textit{FF4} is an active-high enable signal.\\
+	To determine whether the encoder was turned (i.e. to generate an enable signal ``clock"), an S/R flip-flop, \textit{FF4}, is used. \textit{FF4} is set when both \textit{A} and \textit{B} are high, that is when the encoder finds itself at a detent. \textit{FF4} is reset when both \textit{A} and \textit{B} are low, that is when the encoder is between detents. Since rotary encoders only bounce between adjacent positions, the set and reset signals on \textit{FF4} will not bounce. The output of \textit{FF4} is an active-high enable signal.\\
 
 	To determine the direction of rotation, \textit{A} is XOR'd in \textit{G9} with the previous clock's \textit{B}, saved through delayed flip-flop \textit{FF3}. The output of \textit{G9} will be high if the encoder was turned clockwise, and low if the encoder was turned counter-clockwise, due to the order in which positions occur within the encoder. The output is then fed to delayed flip-flop \textit{FF5} for pipelining, and to delayed flip-flop \textit{FF6}, which is clocked on the above described enable signal, to latch the direction only when a detent is reached. The output of \textit{FF6} is thus directly NAND'd with the enable signal in \textit{G13} to generate the active-low clockwise rotation interrupt, \textit{RIGHT}, and inverted through \textit{G12} and then NAND'd with the enable signal in \textit{G15} to generate the active-low counter-clockwise rotation interrupt, \textit{LEFT}. Note that \textit{RIGHT} and \textit{LEFT} will be high most of the time, and exhibit a falling edge when the encoder is turned in the corresponding direction.
 	
@@ -244,11 +250,11 @@
 
 	The address is divided into a row address, \textit{A[17..9]}, and a column address, \textit{A[8..0]}. These are muxed, together with a row address generated by \textit{CT4} and a blank column address, in \textit{MUX1}, allowing the VRAM control to output the correct address onto the VRAM address bus, \textit{VADDR[8..0]}, as needed. \textit{CT4} counts every time a new row transfer is requested, and wraps around the number of rows in the display, 272: this effectively causes the row address used for row updates to sequentially go through the whole display.\\
 
-	The bulk of the controller's logic is implemented in VHDL, using a Moore state machine. The net few pages provide the code of this state machine component. The state machine starts in the idle state (\textit{IDLE}), where all the output signals are maintained at their neutral levels. If a row update is being requested (\textit{UREQ} active), the state machine transitions into a row update cycle (\textit{SERIAL1..6}) to ensure that the display controller is provided with a new row of data before it needs to start outputting at the end of its row porches. If no row update is being requested, but a read or write is being requested (\textit{CS} active), the state machine transitions into the corresponding read (\textit{READ1..6}) or write (\textit{WRITE1..5}) cycle. If no memory access is being requested either, the controller performs a memory refresh by transitioning into the refresh (\textit{REFRESH1..6}) cycle. Note that after each cycle, the state machine transitions back into the idle state.\\
+	The bulk of the controller's logic is implemented in VHDL, using a Moore state machine. The next few pages provide the code of this state machine component. The state machine starts in the idle state (\textit{IDLE}), where all the output signals are maintained at their neutral levels. If a row update is being requested (\textit{UREQ} active), the state machine transitions into a row update cycle (\textit{SERIAL1..6}) to ensure that the display controller is provided with a new row of data before it needs to start outputting at the end of its row porches. If no row update is being requested, but a read or write is being requested (\textit{CS} active), the state machine transitions into the corresponding read (\textit{READ1..6}) or write (\textit{WRITE1..5}) cycle. If no memory access is being requested either, the controller performs a memory refresh by transitioning into the refresh (\textit{REFRESH1..6}) cycle. Note that after each cycle, the state machine transitions back into the idle state.\\
 
-	\includepdf[pages={-}]{display_sm.pdf}
+	\includepdf[pages={-}]{img/display_sm.pdf}
 
-	The transitions within the read, write, serial, and refresh cycles are those of typical RAS/CAS DRAM access cycles, and are shown in the timing diagrams of Figures~\ref{fig:vram_read}-\ref{fig:vram_refresh} and Tables~\ref{tab:vram_read}-\ref{tab:vram_refresh}, and output the necessary signals for the VRAM controller (\textit{RAS}, \textit{CAS}, \textit{TRG}, \textit{WEL/U}), an active-high row update acknowledge signal (\textit{UACK}) to the display controller when the row update has been completed, an active-high ready signal (\textit{RDY}) to the processor when a read or write cycle has been completed (and, in case of the read cycle, valid data will be present on the data bus for 1 clock following the activation of the signal), and the control signals for the address multiplexer (\textit{MUX}) that determine what section of which address bus should be output: \textit{ASRC} is high when the processor's address bus should be output, and low when the row update address should be output, \textit{AROW}) is high when the row address should be output, and low when the column address should.\\
+	The transitions within the read, write, serial, and refresh cycles are those of typical RAS/CAS DRAM access cycles, shown in the timing diagrams of Figures~\ref{fig:vram_read}-\ref{fig:vram_refresh} and Tables~\ref{tab:vram_read}-\ref{tab:vram_refresh}, and output the necessary signals for the VRAM controller (\textit{RAS}, \textit{CAS}, \textit{TRG}, \textit{WEL/U}), an active-high row update acknowledge signal (\textit{UACK}) to the display controller when the row update has been completed, an active-high ready signal (\textit{RDY}) to the processor when a read or write cycle has been completed (and, in case of the read cycle, valid data will be present on the data bus for 1 clock following the activation of the signal), and the control signals for the address multiplexer (\textit{MUX}) that determine what section of which address bus should be output: \textit{ASRC} is high when the processor's address bus should be output, and low when the row update address should be output, \textit{AROW} is high when the row address should be output, and low when the column address should.\\
 
 	Note that the controller does not specify a number of wait states, and requires the processor to wait for the \textit{RDY} signal to go high before completing the access cycle instead.\\
  
@@ -256,7 +262,7 @@
 	\vspace{-2cm}
 	\centerline{\includegraphics[width=20cm, angle=90, origin=c]{img/vram_read.png}}
 		\vspace{1cm}
-                	\caption{Timing diagram of the read cycle of the VRAM device, described in Section~\ref{vram_ctrl}.}
+                	\caption{Timing diagram of the read cycle of the VRAM device, described in Section~\ref{sec:vram_ctrl}.}
                	\label{fig:vram_read}
 	\end{figure}
 
@@ -405,7 +411,7 @@
 	\clearpage
 
 	\subsection{Reset Logic}
-	A MAX706AS reset chip, \textit{U5} (illustrated in Figure~\ref{fig:fpga_schematic}), is used to provide power-on reset and manual reset functionality. The chip is closely connected to the FPGA, and therefore highlighted in red in Figure~\ref{fig:pcb}. The device natively provides the power-on and power-loss reset functionality, while switch \textit{S1} adds the manual reset functionality by allowing the manual reset pin \textit{MR} to be pulled low. Jumper \textit{W1} can be used to enable watchdog timer expiration reset when shorted: in this configuration, FPGA pin 22 (line \textit{WDI}) would need to transition from low to high or high to low every 1.6s at most to avoid reset. \textit{U5}'s reset output line is connected to \textit{U2}'s \textit{nCONFIG} line, which is an active-low reset input to the FPGA. For the correct operation of the system, \textit{W1} should be left unjumped.\\
+	A MAX706AS reset chip, \textit{U5} (illustrated in Figure~\ref{fig:fpga_schematic}), is used to provide power-on reset and manual reset functionality. The chip is closely connected to the FPGA, and therefore highlighted in red in Figure~\ref{fig:pcb}. The device natively provides the power-on and power-loss reset functionality, while switch \textit{S1} adds the manual reset functionality by allowing the manual reset pin \textit{MR} to be pulled low: users can thus reset the system by pressing and releasing \textit{S1}. Jumper \textit{W1} can be used to enable watchdog timer expiration reset when shorted: in this configuration, FPGA pin 22 (line \textit{WDI}) would need to transition from low to high or high to low every 1.6s at most to avoid reset. \textit{U5}'s reset output line is connected to \textit{U2}'s \textit{nCONFIG} line, which is an active-low reset input to the FPGA. For the correct operation of the system, \textit{W1} should be left unjumped.\\
 
 	\subsection{Clock Logic}
 	The FPGA is clocked using a 38 MHz SG363 oscillator, \textit{X1}, illustrated in Figure~\ref{fig:fpga_schematic}. The device is closely connected to the FPGA, and therefore highlighted in red in Figure~\ref{fig:pcb}. Its output enable line is tied high through \textit{R17} to always enable the clock. Its output is connected to the \textit{U2}'s \textit{CLK0} input, and therefore acts as the FPGA's main clock. Every other clock line, \textit{CLK1} through \textit{CLK15}, is tied low and therefore disabled.\\
@@ -425,21 +431,21 @@
 	\subsection{Buffers}
 	Every FPGA pin that can be sent through a buffer is; thus, every buffer is placed between the FPGA, \textit{U2}, and some other chip(s). This provides protection against over-voltage, converts every voltage into 3.3 V, and provides better current characteristics, allowing more devices to be driven with the each line. Seven 74LVT16245 buffers, \textit{U1}, \textit{U3}, and \textit{U6}-\textit{U10} (illustrated in Figure~\ref{fig:fpga_schematic}), are used to this goal. The delay introduced by these devices is assumed throughout the project to be less than 2 ns.\\
 
-	Buffer \textit{U8} relays the low 16 bits of the address bus (\textit{A15..0}) output from \textit{U2} on both ports; therefore, both of its ports are configured as output (B->A) by pulling the direction pins \textit{1DIR} and \textit{2DIR} low through \textit{R26} and \textit{R24}. The outputs are always enabled, and thus \textit{1OE} and \textit{2OE} are also pulled low through \textit{R23} and \textit{R25}.\\
+	Buffer \textit{U8} relays the low 16 bits of the address bus (\textit{A15..0}) output from \textit{U2} on both ports; therefore, both of its ports are configured as output (B$\rightarrow$A) by pulling the direction pins \textit{1DIR} and \textit{2DIR} low through \textit{R26} and \textit{R24}. The outputs are always enabled, and thus \textit{1OE} and \textit{2OE} are also pulled low through \textit{R23} and \textit{R25}.\\
 
-	Buffer \textit{U9} relays the remaining 4 bits of the address bus (\textit{A19..16}), as well as chip select signals \textit{CS2..0}, write enable signal \textit{WR}, and the bottom 8 bits of the data bus \textit{D0..7}. Port A contains only output signals (B->A), and is therefore configured as always-enabled, output-only by pulling \textit{1DIR} and \textit{1OE} low through \textit{R29} and \textit{R27}. The data bus is always enabled by tying \textit{2OE} low through \textit{R30}; however, it is bidirectional, and its direction (\textit{2DIR}) is therefore controlled by an FPGA output line that mediates the data bus, \textit{IO207}.\\
+	Buffer \textit{U9} relays the remaining 4 bits of the address bus (\textit{A19..16}), as well as chip select signals \textit{CS2..0}, write enable signal \textit{WR}, and the bottom 8 bits of the data bus \textit{D0..7}. Port A contains only output signals (B$\rightarrow$A), and is therefore configured as always-enabled, output-only by pulling \textit{1DIR} and \textit{1OE} low through \textit{R29} and \textit{R27}. The data bus is always enabled by tying \textit{2OE} low through \textit{R30}; however, it is bidirectional, and its direction (\textit{2DIR}) is therefore controlled by an FPGA output line that mediates the data bus, \textit{IO207}.\\
 
 	Buffer \textit{U6} connects the remaining 16 bits of the data bus (\textit{D23..D8}). These are always-enabled, bidirectional as described above. Its output enable lines, \textit{1OE} and \textit{2OE} are therefore tied low through \textit{R16} and\textit{R18}, while the direction lines are controller by FPGA output line \textit{IO207}.
 
-	Buffer \textit{U1} relays VRAM and display signals. It transmits the video address bus (\textit{VA8..0}), VRAM control signals (\textit{RAS}, \textit{CAS}, \textit{WEL/U}, \textit{SCLK}, \textit{TRG}, and \textit{DCLK}), and the display enable signal (\textit{DISP}). Since all the signals are always-enabled, output-only (B->A), the direction and output enable control lines (\textit{1DIR}, \textit{2DIR}, \textit{1OE}, \textit{2OE}) are pulled low through resistors \textit{R3}-\textit{R6}.\\
+	Buffer \textit{U1} relays VRAM and display signals. It transmits the video address bus (\textit{VA8..0}), VRAM control signals (\textit{RAS}, \textit{CAS}, \textit{WEL/U}, \textit{SCLK}, \textit{TRG}, and \textit{DCLK}), and the display enable signal (\textit{DISP}). Since all the signals are always-enabled, output-only (B$\rightarrow$A), the direction and output enable control lines (\textit{1DIR}, \textit{2DIR}, \textit{1OE}, \textit{2OE}) are pulled low through resistors \textit{R3}-\textit{R6}.\\
 
 	Buffer \textit{U3} carries the ADC output \textit{SIG7..0} to the FPGA on port 2: the relative direction and output enable lines are therefore tied high and low respectively, through \textit{R11} and \textit{R12}. Port 1 connects eight unused FPGA pins. These pins are made available on break-out header \textit{J3}. To allow the configuration of the direction of these lines, the direction and output enable pins are made available to \textit{U2} on pins \textit{IO55} and \textit{IO56}, respectively.\\
 
-	Buffer \textit{U7} bridges the user input lines from the rotary encoders (\textit{SW0,1}, \textit{ROT0A}, \textit{ROT0B}, \textit{ROT1A}, \textit{ROT1B}) and the interrupt line from the touch screen controller (\textit{PENIRQ}), as well as an unused pin made available on \textit{J3}, on port 2. These lines are configured as always-enabled, input-only (A->B) by tying port 2 direction line \textit{2DIR} high through \textit{R21} and output enable line \textit{2OE} low through \textit{R22}. Port 1 connects display timing lines \textit{HSYNC} and \textit{VSYNC}, ADC clock \textit{ACLK}, and five unused pins; all of these lines are configured always-enabled, output-only (B->A) by tying both port 1 control lines low through \textit{R19,20}.
+	Buffer \textit{U7} bridges the user input lines from the rotary encoders (\textit{SW0,1}; \textit{ROT0A,B}; \textit{ROT1A,B}) and the interrupt line from the touch screen controller (\textit{PENIRQ}), as well as an unused pin made available on \textit{J3}, on port 2. These lines are configured as always-enabled, input-only (A$\rightarrow$B) by tying port 2 direction line \textit{2DIR} high through \textit{R21} and output enable line \textit{2OE} low through \textit{R22}. Port 1 connects display timing lines \textit{HSYNC} and \textit{VSYNC}, ADC clock \textit{ACLK}, and five unused pins; all of these lines are configured always-enabled, output-only (B$\rightarrow$A) by tying both port 1 control lines low through \textit{R19,20}.
 
-	Buffer \textit{U10} connects 12 unused FPGA pins to break-out pins in \textit{J2}.The pins are divided between port 1, with seven connections, and port 2, with five. The direction and output of both ports can be configured by using FPGA pins \textit{IO5,6} and \textit{216,217}.\\
+	Buffer \textit{U10} connects 12 unused FPGA pins to break-out pins in \textit{J2}. The pins are divided between port 1, with seven connections, and port 2, with five. The direction and output of both ports can be configured by using FPGA pins \textit{IO5,6} and \textit{216,217}.\\
 
-	The buffers are highlighted in green in Figure~\ref{fig:pcb}. Note that all bypass capacitors are placed on the backside of the board, drawn in Figure~\ref{fig:pcb_back}.\\
+	The buffers are highlighted in green in Figure~\ref{fig:pcb}. Note that all bypass capacitors are placed on the back side of the board, drawn in Figure~\ref{fig:pcb_back}.\\
 
 	\clearpage
 
@@ -458,7 +464,7 @@
                	\label{fig:ram_rom}
 	\end{figure}
 
-	The chip is connected to the bottom 17 bits of the address bus (\textit{A16..0}) and the bottom 8 bits of the data bus (\textit{D7..0}), which are then routed through buffers \textit{U8} and \textit{U9} to \textit{U2}, the FPGA. Note that both buses are shared between multiple devices. Also note that since this is a volatile memory device, the alignment of the address and data lines does not matter; therefore, both buses are "shuffled" on their interface with the chip to simplify routing on the PCB.\\
+	The chip is connected to the bottom 17 bits of the address bus (\textit{A16..0}) and the bottom 8 bits of the data bus (\textit{D7..0}), which are then routed through buffers \textit{U8} and \textit{U9} to \textit{U2}, the FPGA. Note that both buses are shared between multiple devices. Also note that since this is a volatile memory device, the alignment of the address and data lines does not matter; therefore, both buses are ``shuffled" on their interface with the chip to simplify routing on the PCB.\\
 
 	\textit{U15} is selected by using active-low line \textit{CS1} uniquely, which is then routed through buffer \textit{U9} and into \textit{U2}; the active-high counterpart is tied high through \textit{R36} to render it unnecessary. The chip is configured as always-enabled by pulling the output-enable line low through \textit{R34}. The processor selects whether it's reading or writing to the chip by modulating the active-low write-enable line, \textit{WR}. This line is bridged by buffer \textit{U9} and then routed into the FPGA, \textit{U2}.\\
 
@@ -534,7 +540,7 @@
 	\clearpage
 	
 	\subsubsection{VRAM \label{sec:vram}}
-	Two MSM5416283 512 Kword x 16-bit VRAM chips, \textit{U20} and \textit{U21}, are connected "in parallel" to form a single virtual 512 Kword x 32-bit memory device. The devices' connections are illustrated in Figure~\ref{fig:vram_disp}. The device is accessible by the processor at addresses 0x00000-0xFFFFF, as shown in Figure~\ref{fig:memory_map}.\\
+	Two MSM5416283 512 Kword x 16-bit VRAM chips, \textit{U20} and \textit{U21}, are connected ``in parallel" to form a single virtual 512 Kword x 32-bit memory device. The devices' connections are illustrated in Figure~\ref{fig:vram_disp}. The device is accessible by the processor at addresses 0x00000-0xFFFFF, as shown in Figure~\ref{fig:memory_map}.\\
 
 	\begin{figure}[h!]
 	\vspace{-2cm}
@@ -560,7 +566,7 @@
 
 	The display is connected through Molex connector \textit{J6}, as shown in Figure~\ref{fig:vram_disp}. The 24 data lines for the three colors output by the VRAM memory devices (\textit{R0..8}, \textit{G0..8}, \textit{B0..8}) are output on pins 5 through 28. The display control signals output by the display controller (\textit{DCLK}, \textit{DISP}, \textit{HSYNC}, \textit{VSYNC}), routed through buffers \textit{U1} and \textit{U7}, are output on pins 30 through 33. Pin 43 is used for the \textit{DE} signal, which is unused and therefore left floating.\\
 
-	Pins 37 through 40 are connected to the display's touch screen, and are therefore used by the touch screen controller, \textit{U18}. Pin 2 is used to drive the display backlight's LEDs, and is therefore tied to the +20 V power supply through a current-limiting 20 Ω resistor.\\
+	Pins 37 through 40 are connected to the display's touch screen, and are therefore used by the touch screen controller, \textit{U18}. Pin 2 is used to drive the display backlight's LEDs, and is therefore tied to the +20 V power supply through a current-limiting 20 $\Omega$ resistor.\\
 
 	The display connector is highlighted in pink in Figure~\ref{fig:pcb}.\\
 
@@ -585,7 +591,7 @@
                	\label{fig:user_input}
 	\end{figure}
 
-	Each one of the signals (\textit{ROT0A,B}, \textit{ROT1A,B}, \textit{SW0,1}) is pulled high through resistors \textit{R52-57}. As the rotary encoders are turned, the rotation signals are shorted to the \textit{COM} line, which is tied to ground. Similarly, as either push-button is pressed, the \textit{SW} lines are shorted to ground. The signals are then debounced and decoded as described in Sections~\ref{sec:debouncer} and \ref{sec:decoder}, making user input available to the processor.\\
+	Each one of the signals (\textit{ROT0A,B}; \textit{ROT1A,B}; \textit{SW0,1}) is pulled high through resistors \textit{R52-57}. As the rotary encoders are turned, the rotation signals are shorted to the \textit{COM} line, which is tied to ground. Similarly, as either push-button is pressed, the \textit{SW} lines are shorted to ground. The signals are then debounced and decoded as described in Sections~\ref{sec:debouncer} and \ref{sec:decoder}, making user input available to the processor.\\
 
 	The rotary encoders are highlighted in brown in Figure~\ref{fig:pcb}. Note that the pull-up resistors are placed on the backside of the board, drawn in Figure~\ref{fig:pcb_back}.\\
 
@@ -660,7 +666,7 @@
 		 \textbf{Date} & \textbf{Revision} & \textbf{Document(s)} & \textbf{Changes}\\
 		 \hline
 		 March 2014 & 1.0 & All & Initial revision. \\ \hline
-		 June 2014 & 1.1 & User Input Schematic & Changed rotary encoder pull-up resistors to 1kOhm.\\ \cline{4-4}
+		 June 2014 & 1.1 & User Input Schematic & Changed rotary encoder pull-up resistors to 1k$\Omega$.\\ \cline{4-4}
 		                   &       &                                    & Added pull-up resistor on PENIRQ line.\\ \cline{3-4}
 		                   &       & FPGA Schematic        & Corrected JTAG connector wiring.\\ \cline{4-4}
 		                   &       &                                    & Fixed error in routing of A0.\\ \cline{3-4}
@@ -668,8 +674,8 @@
 		                   &       & Analog Interface Schematic        & Changed value of pull-down resistor at ADC.\\
 		\hline
 		\end{tabular}
-	     \label{tab:rev_history}
               \caption{Revision history.}
+	     \label{tab:rev_history}
 	\end{table}
 
 	\clearpage
@@ -677,40 +683,185 @@
 %%%%%%%%%%%%
 
 	\section{Software}
-	This section describes how the system's software works, from the system overview to the detailed description of each element. The roles and interactions of the various part of the program are described. The code for the program is provided in Appendix~\ref{code}.
+	This section describes how the system's software works, from the system overview to the detailed description of each element. The roles and interactions of the various part of the program are described. The actual code for the program is provided in Appendix~\ref{code}.
 	
-	\subsection{System Overview}
-	TODO
+	\subsection{System Overview \label{sec:sw_overview}}
+	The core of the system's software constitutes in the EE/CS 52 SoPC Oscilloscope software library, written in C, with minor modifications. The hardware interface procedures are written in NIOS assembly, and are specific to the hardware used in the system. The block and file structure of the project is shown in Figure~\ref{fig:software_blocks}. \\
 
-	\subsection{Block 1 TODO}
-	TODO
+	\begin{figure}[h!]
+	\centerline{\includegraphics[width=\textwidth]{img/software_blocks.png}}
+                	\caption{Block diagram of the SoPC Oscilloscope system's software. Blocks in red are part of the EE/CS 52 Oscilloscope library; blocks in green are hardware-specific and implemented for this system. The diagram is described in Section~\ref{sec:sw_overview}.}
+               	\label{fig:software_blocks}
+	\end{figure}
 
-	\subsection{Block 2 TODO}
-	TODO
+	When the system is started, the stack is automatically set up with other initialization, and \textit{main} is run, within \textit{mainloop.c}. This function, performs all required initialization and runs the system. The main loop makes use of several procedures: a set of user interface procedures found in files \textit{lcdlout.c}, \textit{keyproc.c}, \textit{menu.c}, and \textit{menuact.c} allow the system to interact with users through the UI; trace utility procedures in \textit{tracutil.c} process acquired signals; key handling procedures in \textit{keys.s} interface with the software to identify key presses and user actions; display controlling procedures in \textit{display.s} provide a layer of abstraction for the specific LCD used; and analog interface procedures in \textit{trigger.s} control the analog and triggering interface as needed.
 
-	\subsection{...}
-	TODO
+	Note that each file has a header file of the same name, but \textit{.h} extension, associated with it, where functions are declared and constants defined. Additionally, \textit{scopedefs.h} provides general project constants for C files, while \textit{general.h} provides general constants for assembly files. \textit{interfac.h} defines constants specific to the system's hardware interface. Finally, \textit{system.h} contains memory map and IRQ number definitions, and is automatically generated by the Altera toolchain. The used version is also provided in Appendix~\ref{code}.
+
+	\subsection{Initialization and Main Loop}
+	When the system is started as after general initialization is performed by NIOS toolchain functions, \textit{main} is called within \textit{mainloop.c}, part of the Oscilloscope library. This function performs all additional initialization and runs the system. The procedure was modified to initialize the keys handler and the analog/triggering interface on start. For more details on the procedures within \textit{mainloop.c}, please refer to the EE/CS 52 Oscilloscope library documentation.\\
+
+	\subsection{User Interface}
+	In order to interface with users, a number of functions are provided in the Oscilloscope library. \textit{lcdout.c} provides procedures used to output data to the LCD; \textit{keyproc.c} has functions that process the various available keys; \textit{menu.c} constains the functions for processing menu entries; \textit{menuact.c} includes the functions for carrying out menu actions. All of these functions utilize the hardware abstraction procedures provided in the assembly files. \textit{lcdout.c} was modified to support user interface colors, and highlighted characters (used in the menu); \textit{menuact.c} was modified to support a faster sweep rate, and to change the sweep rate values to the actual values obtained by dividing the system clock. For more details on the procedures within the user interface files, please refer to the EE/CS 52 Oscilloscope library documentation.\\
+
+	\subsection{Trace Processing}
+	In order to draw traces to the screen, capturing and outputting the acquired data, procedures within \textit{tracutil.c}, provided by the Oscilloscope library, are used. This library file was modified to change the UI display colors (trace), and clear only the trace instead of the whole display when refreshing the sample, obtaining a better behavior of the display. These procedures employ analog and triggering hardware assembly procedures to perform the required actions. For more details on the procedures within \textit{tracutil.c}, please refer to the EE/CS 52 Oscilloscope library documentation.\\
+
+	\subsection{Key Hardware Interface}
+	To interface with the system's push-buttons and rotary encoders, abstracted as keys, a set of procedures are provided in \textit{keys.s}. These procedures translate user input actions into key values as needed, making them available to the system's software. The procedures use shared variable \textit{curr\_key} to store a pending key press, if any is available.\\
+
+	\textit{keys\_init} performs all the necessary initialization for the keys interface. It initializes shared variable \textit{curr\_key} and sets up interrupts as necessary, preparing the interface for use.\\
+
+	\textit{key\_handler} is executed whenever a key press interrupts occurs after initialization. The function identifies the key pressed, and saves it in buffer \textit{curr\_key} to make it available to \textit{getkey} and \textit{key\_available}, and thus outside functions.\\
+
+	\textit{getkey} returns the currently pending key press if one is available (i.e. present in the \textit{curr\_key} buffer). If none is available, the function blocks in a busy loop.\\
+
+	Finally, \textit{key\_available} checks whether a key press is pending (i.e. there's a valid value in \textit{curr\_key}). This procedure is normally called before \textit{getkey} to avoid blocking.\\
+
+	For more details about the operation of these procedures, please refer to their definitions in \textit{keys.s}.\\
+
+	\subsection{Display Hardware Interface}
+	To interface with the system's color display, a set of procedures are provided in \textit{display.s}. These procedures communicate with the VRAM device as needed to control the display as requested. Note that the display requires no formal initialization; however, \textit{clear\_display} should be called at the start, since the image initially displayed is undefined.\\
+
+	\textit{clear\_display} completely clears the display, making every pixel in it black. This function should be called after initialization, since the image initially shown on the display is undefined.\\
+
+	\textit{clear\_trace} only clears the trace pixels on the display, that is pixels that are the color of the trace or of the cursor; the procedure turns these pixels black. The function is currently unused, but is still provided as it can simplify the implementation of additional features, such as a cursor.\\
+
+	\textit{plot\_pixel} changes the color of one pixel at a given location to an RGB value.\\
+
+	Finally, \textit{pixel\_color} accesses the color, as an RGB value, currently being displayed at a given location. This procedure is currently unused, but is still provided as it can simplify the implementation of additional features, such as a cursor.\\
+
+	For more details about the operation of these procedures, please refer to their definitions in \textit{keys.s}.\\
+
+	\subsection{Analog Hardware Interface}
+	To control the analog and triggering interface, starting and acquiring samples and configuring the trigger parameters, a set of procedures are provided in \textit{trigger.s}. These procedures output the necessary signals to the triggering logic, causing it to acquire samples as needed. Additionally, they transfer samples to the main code when they are requested after completion. The procedures use shared variable \textit{sample\_pending} to keep track of the currently started sample, as well as buffer \textit{sample} to extract the samples from the FIFO and return them to the caller.\\
+
+	\textit{trigger\_init} performs all necessary initialization for the analog and triggering interface. it initializes shared variable \textit{sample\_pending}, sets up interrupts as needed, and resets the triggering logic, preparing the interface for use. The triggering logic is also reset. \\
+
+	\textit{set\_sample\_rate} allows the caller to configure the sampling rate to any positive number of samples per second less than or equal to the system clock divided by two (19.5 Msamples per second). The frequency is translated to a number of system clocks per sample, and the value is then output to the triggering hardware block. The triggering logic is then reset. The number of samples that will be acquired at the configured rate is then returned, but note that this value is always the same, and equal to the width of the display (which must be less than or equal to 512 per hardware limitations).\\
+
+	\textit{set\_trigger} configures the trigger level and slope. The trigger level is translated to the corresponding level in the correct range, and then the its value is output together with the slope to the triggering hardware block. The triggering logic is then reset. \\
+
+	\textit{set\_delay} configures the trigger delay to any positive, unsigned 32-bit number of samples less than $2^32 - 2$. The value is corrected to take into account any hardware limitations (delay must be positive), and the value is then output to the triggering hardware block. The triggering logic is then reset. \\
+
+	\textit{start\_sample} starts a new sample with the previously configured settings. The sample can trigger automatically or manually, as configured via the procedure's argument. The sample is thus started in hardware. \\
+	
+	\textit{sample\_done} checks whether the previously started data sample has been completed and is thus available by reading shared variable \textit{sample\_pending}. If the sample has been completed, it is at this point extracted from the FIFO and returned in a buffer, while variable \textit{sample\_pending} is reset. If no sample is available, a null pointer is provided. \\
+
+	Finally, \textit{sample\_handler} is executed any time the FIFO finished being filled. The procedure simply updates shared variable \textit{sample\_pending} to indicate that there is a sample that can be extracted by \textit{sample\_done}.
 
 %%%%%%%%%%%%
+	
+	\clearpage
 
-	\appendix{Original Documents \label{original}}
-	Figures~\ref{fig:orig_schem_1}, \ref{fig:orig_schem_2}, \ref{fig:orig_schem_3}, \ref{fig:orig_schem_4}, \ref{fig:orig_schem_5} show the schematic of the original design; Figures~\ref{fig:orig_pcb_1}, \ref{fig:orig_pcb_2} show the resulting PCB used in the prototype. Note that the RAM and ROM section is identical to the one described in Section~\ref{sec:ram_rom}. The changes made and their reasons are summarized below.\\
+	\begin{appendices}
 
-	After noticing that the footprints used for the voltage regulators in revision 1.0 were incorrect (power and ground pins were switched), these were corrected in revision 1.1. The bottom bit of the address but was incorrectly routed; the line was thus re-routed in the newest revision. There was a mistake in the wiring of the JTAG connector, where pins 9 and 10 were switched.\\
+	\section{Original Documents \label{original}}
+	Figures~\ref{fig:orig_schem_1}, \ref{fig:orig_schem_2}, \ref{fig:orig_schem_3}, \ref{fig:orig_schem_4}, \ref{fig:orig_schem_5} show the schematic of the original design; Figures~\ref{fig:orig_pcb_1}, \ref{fig:orig_pcb_2} show the resulting PCB used in the prototype. Note that the RAM and ROM section is identical to the one described in Sections~\ref{sec:ram} and \ref{sec:rom}. The changes made and their reasons are summarized below.\\
 
-	Additionally, the values of some resistors had to be changed after noticing too big voltage drops across them: the pull-up resistors at the rotary encoders had to be decreased from 10kΩ to 1kΩ, and the pull-down resistor at the ADC had to be shorted.\\
+	After noticing that the footprints used for the voltage regulators (\textit{U11-13}) in revision 1.0 were incorrect (power and ground pins were switched), these were corrected in revision 1.1. The bottom bit of the address bus (\textit{A0}) but was incorrectly routed through a buffer direction pin; the line was thus re-routed in the newest revision. There was a mistake in the wiring of the JTAG connector (\textit{J1}), where pins 9 and 10 were switched.\\
 
-	Finally, a missing pull-up resistor had to be added to the PENIRQ line in order to keep it from floating when not active.\\
+	Additionally, the values of some resistors had to be changed after noticing too big voltage drops across them: the pull-up resistors at the rotary encoders (\textit{R52-57}) had to be decreased from 10k$\Omega$ to 1k$\Omega$, and the pull-down resistor at the ADC's \textit{*INT/EXT} pin (\textit{R37}) had to be shorted.\\
 
-	TODO schematic figures (fig:orig\_schem\_1..5)
+	Finally, a missing pull-up resistor had to be added to the touch screen controller's PENIRQ line in order to keep it from floating when not active (\textit{R44}).\\
 
-	TODO PCB figures (fig:orig\_pcb\_1, fig:orig\_pcb\_2)
+	\begin{figure}[h!]
+	\vspace{-2cm}
+	\centerline{\includegraphics[width=26cm, angle=90, origin=c]{img/fpga_sch_old.pdf}}
+                	\caption{Original revision of the FPGA and related components schematic.}
+               	\label{fig:orig_schem_1}
+	\end{figure}
 
-	\appendix{Software Code \label{code}}
-	In this appendix, all the code contained within the program's software is provided. Table~\ref{tab:code_toc} shows a quick overview of the various files and their contents for quick reference.\\
+	\begin{figure}[h!]
+	\vspace{-2cm}
+	\centerline{\includegraphics[width=26cm, angle=90, origin=c]{img/analog_interface_old.pdf}}
+                	\caption{Original revision of the analog interface schematic.}
+               	\label{fig:orig_schem_2}
+	\end{figure}
 
-	TODO TOC (tab:code\_toc)
+	\begin{figure}[h!]
+	\vspace{-2cm}
+	\centerline{\includegraphics[width=26cm, angle=90, origin=c]{img/user_input_old.pdf}}
+                	\caption{Original revision of the user input components schematic.}
+               	\label{fig:orig_schem_3}
+	\end{figure}
 
-	TODO code @ end
+	\begin{figure}[h!]
+	\vspace{-2cm}
+	\centerline{\includegraphics[width=26cm, angle=90, origin=c]{img/sram_rom_old.pdf}}
+                	\caption{Original revision of the SRAM and ROM devices schematic.}
+               	\label{fig:orig_schem_4}
+	\end{figure}
+
+	\begin{figure}[h!]
+	\vspace{-2cm}
+	\centerline{\includegraphics[width=26cm, angle=90, origin=c]{img/vram_disp_old.pdf}}
+                	\caption{Original revision of the VRAM and display connector schematic.}
+               	\label{fig:orig_schem_5}
+	\end{figure}
+
+	\begin{figure}[h!]
+	\vspace{-2cm}
+	\centerline{\includegraphics[width=28cm, angle=90, origin=c]{img/pcb_old.pdf}}
+		\vspace{-2cm}
+                	\caption{Front side of the original revision of the system's Printed Circuit Board (PCB).}
+               	\label{fig:orig_pcb_1}
+	\end{figure}
+	
+	\begin{figure}[h!]
+	\vspace{-2cm}
+	\centerline{\includegraphics[width=28cm, angle=90, origin=c]{img/pcb_back_old.pdf}}
+		\vspace{-2cm}
+                	\caption{Back side of the original revision of the system's Printed Circuit Board (PCB).}
+               	\label{fig:orig_pcb_2}
+	\end{figure}
+
+	\clearpage
+
+	\section{Software Code \label{code}}
+	In this appendix, all the code contained within the program's software is provided. Table~\ref{tab:code_toc} shows a quick overview of the various files and their contents for quick reference, in alphabetical order.\\
+
+	\clearpage
+
+	\def\arraystretch{1.5}
+	
+	\begin{table}[b!]
+	  \begin{center}
+	\newcounter{codepage}
+	\setcounter{codepage}{\thepage}
+	\addtocounter{codepage}{1}
+    		\begin{tabular}{p{3cm} p{10cm} p{1cm}}
+		 display.s & Display hardware interface and control routines. & \thecodepage \\ \addtocounter{codepage}{4}
+		 display.h & Display hardware interface constants. & \thecodepage \\ \addtocounter{codepage}{1}
+		 general.h & General project constants for assembly files. & \thecodepage \\ \addtocounter{codepage}{1}
+		 interfac.h & Hardware interface constants for library functions. & \thecodepage \\ \addtocounter{codepage}{1}
+		 keyproc.c & Key processing functions. & \thecodepage \\ \addtocounter{codepage}{5}
+		 keyproc.h & Key processing function prototypes and constants. & \thecodepage \\ \addtocounter{codepage}{1}
+		 keys.s & Key and rotary encoder hardware interface and control routines. & \thecodepage \\ \addtocounter{codepage}{5}
+		 keys.h & Key and rotary encoder hardware interface constants. & \thecodepage \\ \addtocounter{codepage}{1}
+		 lcdout.c & LCD output functions. & \thecodepage \\ \addtocounter{codepage}{6}
+		 lcdout.h & LCD output function prototypes and constants. & \thecodepage \\ \addtocounter{codepage}{1}
+		 mainloop.c & Main processing loop and initialization. & \thecodepage \\ \addtocounter{codepage}{4}
+		 menu.c & Menu entry processing functions. & \thecodepage \\ \addtocounter{codepage}{10}
+		 menu.h & Menu entry processing function prototypes and constants. & \thecodepage \\ \addtocounter{codepage}{2}
+		 menuact.c & Menu action execution functions. & \thecodepage \\ \addtocounter{codepage}{23}
+		 menuact.h & Menu action execution function prototypes and constants. & \thecodepage \\ \addtocounter{codepage}{2}
+		 scopedef.h & General project definitions for C files. & \thecodepage \\ \addtocounter{codepage}{2}
+		 tracutil.c & Trace handling utility functions. & \thecodepage \\ \addtocounter{codepage}{15}
+		 tracutil.h & Trace handling utility function prototypes and constants. & \thecodepage \\ \addtocounter{codepage}{2}
+		 trigger.s & Data sampling and triggering hardware interface and control routines. & \thecodepage \\ \addtocounter{codepage}{9}
+		 trigger.h & Data sampling and triggering hardware interface constants. & \thecodepage \\ \addtocounter{codepage}{1}
+		 system.h & SOPC Builder system and BSP software package information. & \thecodepage 
+		\end{tabular}
+		\end{center}
+              \caption{Table of Contents for system's software code.}
+	     \label{tab:code_toc}
+	\end{table}
+
+	\clearpage
+
+	\includepdf[pages={-}, pagecommand={}]{img/scope_code.pdf}
+
+	\end{appendices}
 	
 	\end{document}
